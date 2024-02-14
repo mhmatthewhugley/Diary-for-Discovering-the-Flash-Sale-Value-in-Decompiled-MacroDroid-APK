@@ -1,0 +1,81 @@
+package p256eu.davidea.flexibleadapter;
+
+/* renamed from: eu.davidea.flexibleadapter.R$styleable */
+public final class R$styleable {
+    public static final int[] ColorStateListItem = {16843173, 16843551, 16844359, 2130968631, 2130969248};
+    public static final int ColorStateListItem_alpha = 3;
+    public static final int ColorStateListItem_android_alpha = 1;
+    public static final int ColorStateListItem_android_color = 0;
+    public static final int ColorStateListItem_android_lStar = 2;
+    public static final int ColorStateListItem_lStar = 4;
+    public static final int[] CoordinatorLayout = {2130969247, 2130969777};
+    public static final int[] CoordinatorLayout_Layout = {16842931, 2130969263, 2130969264, 2130969265, 2130969314, 2130969324, 2130969325};
+    public static final int CoordinatorLayout_Layout_android_layout_gravity = 0;
+    public static final int CoordinatorLayout_Layout_layout_anchor = 1;
+    public static final int CoordinatorLayout_Layout_layout_anchorGravity = 2;
+    public static final int CoordinatorLayout_Layout_layout_behavior = 3;
+    public static final int CoordinatorLayout_Layout_layout_dodgeInsetEdges = 4;
+    public static final int CoordinatorLayout_Layout_layout_insetEdge = 5;
+    public static final int CoordinatorLayout_Layout_layout_keyline = 6;
+    public static final int CoordinatorLayout_keylines = 0;
+    public static final int CoordinatorLayout_statusBarBackground = 1;
+    public static final int[] FastScroller = {2130969079, 2130969080, 2130969081, 2130969082, 2130969083, 2130969084, 2130969085};
+    public static final int FastScroller_fastScrollerAutoHideDelayInMillis = 0;
+    public static final int FastScroller_fastScrollerAutoHideEnabled = 1;
+    public static final int FastScroller_fastScrollerBubbleEnabled = 2;
+    public static final int FastScroller_fastScrollerBubblePosition = 3;
+    public static final int FastScroller_fastScrollerHandleAlwaysVisible = 4;
+    public static final int FastScroller_fastScrollerHandleOpacity = 5;
+    public static final int FastScroller_fastScrollerIgnoreTouchesOutsideHandle = 6;
+    public static final int[] FontFamily = {2130969141, 2130969142, 2130969143, 2130969144, 2130969145, 2130969146, 2130969147};
+    public static final int[] FontFamilyFont = {16844082, 16844083, 16844095, 16844143, 16844144, 2130969139, 2130969148, 2130969149, 2130969150, 2130969975};
+    public static final int FontFamilyFont_android_font = 0;
+    public static final int FontFamilyFont_android_fontStyle = 2;
+    public static final int FontFamilyFont_android_fontVariationSettings = 4;
+    public static final int FontFamilyFont_android_fontWeight = 1;
+    public static final int FontFamilyFont_android_ttcIndex = 3;
+    public static final int FontFamilyFont_font = 5;
+    public static final int FontFamilyFont_fontStyle = 6;
+    public static final int FontFamilyFont_fontVariationSettings = 7;
+    public static final int FontFamilyFont_fontWeight = 8;
+    public static final int FontFamilyFont_ttcIndex = 9;
+    public static final int FontFamily_fontProviderAuthority = 0;
+    public static final int FontFamily_fontProviderCerts = 1;
+    public static final int FontFamily_fontProviderFetchStrategy = 2;
+    public static final int FontFamily_fontProviderFetchTimeout = 3;
+    public static final int FontFamily_fontProviderPackage = 4;
+    public static final int FontFamily_fontProviderQuery = 5;
+    public static final int FontFamily_fontProviderSystemFontFamily = 6;
+    public static final int[] GradientColor = {16843165, 16843166, 16843169, 16843170, 16843171, 16843172, 16843265, 16843275, 16844048, 16844049, 16844050, 16844051};
+    public static final int[] GradientColorItem = {16843173, 16844052};
+    public static final int GradientColorItem_android_color = 0;
+    public static final int GradientColorItem_android_offset = 1;
+    public static final int GradientColor_android_centerColor = 7;
+    public static final int GradientColor_android_centerX = 3;
+    public static final int GradientColor_android_centerY = 4;
+    public static final int GradientColor_android_endColor = 1;
+    public static final int GradientColor_android_endX = 10;
+    public static final int GradientColor_android_endY = 11;
+    public static final int GradientColor_android_gradientRadius = 5;
+    public static final int GradientColor_android_startColor = 0;
+    public static final int GradientColor_android_startX = 8;
+    public static final int GradientColor_android_startY = 9;
+    public static final int GradientColor_android_tileMode = 6;
+    public static final int GradientColor_android_type = 2;
+    public static final int[] RecyclerView = {16842948, 16842987, 16842993, 2130969074, 2130969075, 2130969076, 2130969077, 2130969078, 2130969262, 2130969632, 2130969734, 2130969763};
+    public static final int RecyclerView_android_clipToPadding = 1;
+    public static final int RecyclerView_android_descendantFocusability = 2;
+    public static final int RecyclerView_android_orientation = 0;
+    public static final int RecyclerView_fastScrollEnabled = 3;
+    public static final int RecyclerView_fastScrollHorizontalThumbDrawable = 4;
+    public static final int RecyclerView_fastScrollHorizontalTrackDrawable = 5;
+    public static final int RecyclerView_fastScrollVerticalThumbDrawable = 6;
+    public static final int RecyclerView_fastScrollVerticalTrackDrawable = 7;
+    public static final int RecyclerView_layoutManager = 8;
+    public static final int RecyclerView_reverseLayout = 9;
+    public static final int RecyclerView_spanCount = 10;
+    public static final int RecyclerView_stackFromEnd = 11;
+
+    private R$styleable() {
+    }
+}
