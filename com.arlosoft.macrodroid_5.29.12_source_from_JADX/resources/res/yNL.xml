@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/margin_small" android:layout_marginStart="@dimen/margin_medium" android:layout_marginEnd="@dimen/margin_medium">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:layout_weight="1">
+                <androidx.appcompat.widget.AppCompatEditText android:id="@+id/key" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/action_system_setting_key" android:singleLine="true" android:inputType="textEmailAddress"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <Button android:id="@+id/keyMagicTextButton" style="@style/MagicTextButton"/>
+        </LinearLayout>
+        <TextView android:textSize="14sp" android:textColor="?attr/colorAccent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:layout_marginBottom="@dimen/margin_small" android:text="@string/action_system_setting_known_keys_with_current_values" android:layout_marginStart="@dimen/margin_tiny" android:layout_marginEnd="@dimen/margin_tiny"/>
+        <Spinner android:id="@+id/spinner" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_small" android:layout_marginStart="-4dp"/>
+        <Spinner android:layout_gravity="bottom" android:id="@+id/typeSpinner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:layout_marginBottom="@dimen/margin_small" android:maxWidth="160dp"/>
+        <RadioGroup android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RadioButton android:textSize="18sp" android:id="@+id/radioButtonEquals" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="="/>
+            <RadioButton android:textSize="18sp" android:id="@+id/radioButtonNotEquals" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="!="/>
+            <RadioButton android:textSize="18sp" android:id="@+id/radioButtonLessOrContains" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="&lt;"/>
+            <RadioButton android:textSize="18sp" android:id="@+id/radioButtonGreaterOrExcludes" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="&gt;"/>
+        </RadioGroup>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small">
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:layout_weight="1">
+                <androidx.appcompat.widget.AppCompatEditText android:id="@+id/value" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/value" android:singleLine="true" android:inputType="textEmailAddress"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <Button android:id="@+id/valueMagicTextButton" style="@style/MagicTextButton"/>
+        </LinearLayout>
+        <include layout="@layout/include_ok_cancel_buttons"/>
+    </LinearLayout>
+</ScrollView>

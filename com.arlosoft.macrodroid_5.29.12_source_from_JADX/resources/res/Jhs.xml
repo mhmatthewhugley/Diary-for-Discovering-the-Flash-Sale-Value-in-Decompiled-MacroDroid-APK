@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:paddingTop="?attr/actionBarSize" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_collapseMode="2" app:layout_collapseParallaxMultiplier="0.5">
+    <LinearLayout android:orientation="vertical" android:id="@+id/userRankContainer" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="8dp" android:layout_marginEnd="8dp" app:layout_constraintBottom_toBottomOf="@+id/avatarImage" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toEndOf="@+id/avatarImage" app:layout_constraintTop_toTopOf="@+id/avatarImage">
+        <FrameLayout android:layout_width="40dp" android:layout_height="40dp">
+            <ImageView android:layout_gravity="center_horizontal" android:paddingTop="7dp" android:paddingBottom="5dp" android:layout_width="40dp" android:layout_height="40dp" android:tint="@color/shadow_black" android:paddingStart="7dp" android:paddingEnd="5dp" app:srcCompat="@drawable/ic_trophy"/>
+            <ImageView android:layout_gravity="center_horizontal" android:id="@+id/userRankImage" android:padding="6dp" android:layout_width="40dp" android:layout_height="40dp" app:srcCompat="@drawable/ic_trophy"/>
+        </FrameLayout>
+        <TextView android:textSize="12sp" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@+id/userRank" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <com.arlosoft.macrodroid.avatar.views.AvatarView android:layout_gravity="center" android:id="@+id/avatarImage" android:fitsSystemWindows="true" android:layout_width="96dp" android:layout_height="96dp" android:layout_marginBottom="8dp" android:scaleType="centerCrop" android:layout_marginStart="8dp" android:layout_marginEnd="8dp" android:transitionName="avatarImage" app:layout_collapseMode="2" app:layout_constraintBottom_toTopOf="@+id/description" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0"/>
+    <TextView android:textColor="@color/white" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/description" android:padding="@dimen/margin_small" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8dp" android:maxLines="10" android:layout_marginStart="8dp" android:layout_marginEnd="8dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/userStatsLayout" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8dp" android:layout_marginStart="8dp" android:layout_marginEnd="8dp" app:layout_constraintBottom_toBottomOf="@+id/avatarImage" app:layout_constraintEnd_toStartOf="@+id/avatarImage" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="@+id/avatarImage">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0dp">
+            <FrameLayout android:layout_width="40dp" android:layout_height="40dp">
+                <ImageView android:layout_gravity="center_horizontal" android:id="@+id/starImageBackground" android:paddingTop="7dp" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:tint="@color/shadow_black" android:paddingStart="7dp" android:paddingEnd="5dp" app:srcCompat="@drawable/ic_star_white_24dp"/>
+                <ImageView android:layout_gravity="center_horizontal" android:id="@+id/starImage" android:padding="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:tint="@color/template_star_color" app:srcCompat="@drawable/ic_star_white_24dp"/>
+            </FrameLayout>
+            <TextView android:textSize="16sp" android:textColor="@color/white" android:layout_gravity="center_vertical" android:id="@+id/starRating" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/margin_tiny"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <FrameLayout android:layout_width="40dp" android:layout_height="40dp">
+                <ImageView android:layout_gravity="center" android:paddingTop="7dp" android:paddingBottom="5dp" android:layout_width="32dp" android:layout_height="32dp" android:tint="@color/shadow_black" android:paddingStart="7dp" android:paddingEnd="5dp" app:srcCompat="@drawable/active_icon_new"/>
+                <ImageView android:layout_gravity="center" android:id="@+id/macrosImage" android:padding="6dp" android:layout_width="32dp" android:layout_height="32dp" app:srcCompat="@drawable/active_icon_new"/>
+            </FrameLayout>
+            <TextView android:textSize="16sp" android:textColor="@color/white" android:layout_gravity="center_vertical" android:id="@+id/numMacros" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/margin_tiny"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

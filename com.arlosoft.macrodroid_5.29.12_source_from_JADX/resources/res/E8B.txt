@@ -1,0 +1,26 @@
+Versie 5.29 (november/december 2022)
+=====================================
+
+Ondersteuning toegevoegd voor template store-abonnementen op macro/gebruikers om meldingen te ontvangen over updates (alleen professionele gebruikers).
+
+JSON Output-actie toegevoegd.
+
+Actie Digitale assistent instellen toegevoegd.
+
+Vliegtuigmodus actie kan nu werken met ADB hack (geen vereiste om MacroDroid de standaard digitale assistent te maken).
+
+Activiteitsherkenningsactivering ondersteunt nu minder dan vergelijking voor het detecteren wanneer een activiteit eindigt.
+
+Screen Content trigger heeft nu een instelbare updatesnelheid.
+
+Ondersteuning toegevoegd voor het porten van een Webhook Trigger-apparaat-id naar een nieuw apparaat.
+
+De actie Zwevende tekst ondersteunt nu de uitlijning naar links, het midden en rechts.
+
+Probleem opgelost waarbij gebeurtenissen op de kalender van de hele dag onjuist konden worden geactiveerd vanwege zomertijd.
+
+Probleem opgelost waarbij triggerspecifieke waarden (bijv. inkomende oproepnummer) niet werkten na een wachttijd voor de volgende triggeractie.
+
+Probleem opgelost waarbij decimale getallen in dialoogvensters onjuist als koppelingen konden worden weergegeven.
+
+Probleem opgelost waarbij actieblok in sommige situaties niet werd uitgevoerd wanneer de categorie niet-gecategoriseerd was uitgeschakeld.

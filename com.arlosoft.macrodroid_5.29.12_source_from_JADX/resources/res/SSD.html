@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+
+        <style>
+            body {
+	            margin: 0; padding: 0;
+                background: url(../images/body_bg.gif) repeat-y right #FFFFFF;
+                font: normal 13px Arial, Georgia, Droid-Sans, Helvetica, sans-serif ;
+                color: #222222;
+            }
+
+            ul {
+                padding: 0px;
+                margin: 20px;
+            }
+        </style>
+	</head>
+	<body>
+
+    <div id="4b"  style="padding:10px;" >
+	<h2>Bevezetés</h2>
+	<p>A MacroDroid egy könnyen használható eszköz, amely automatizálja az eseményeken alapuló műveleteket.</p>
+	
+	<p>Egy makró a következőkből áll:</p>
+	<ul><li type=square><p>Esemény</p></li></ul>
+	<p>Az eszközön lezajlott esemény (pl. egy beérkező SMS, fejhallgató csatlakoztatása)</p>
+	<ul><li type=square><p>Egy vagy több művelet</p></li></ul>
+	<p>Az eszköz által végrehajtott művelet (például háttérkép beállítása, fotó készítése)</p>
+	<ul><li type=square><p>Egy vagy több feltétel</p></li></ul>
+	<p>Olyan feltétel, melynek meg kell felelni az esemény aktiválódásához (például a hét adott napja van, vagy az akkumulátor töltöttségi szintje)</p>
+	
+	<h2>Makró hozzáadása</h2>
+	<p>Kattintson a "+" gombra a MacroDroid főképernyőjén, vagy a makrók szerkesztése lapon.</p>
+	<p>Válasszon ki egy megfelelő eseményt a listából. Ha az esemény további beállításokat igényel, ezeket meg kell adni mielőtt a műveletet is kiválasztanánk.</p>
+	<p>Válassza ki a kívánt műveletet és adja meg ennek paramétereit ha szükséges. Válasszon további műveleteket mindaddig, amíg meg nem adta az összes tevékenységet. Ha végzett, kattintson a jobbra mutató nyílra a továbblépéshez. Ne feledje, hogy legalább egy műveletet kell adnia, mielőtt áttérne a feltételek listájára.</p>
+	<p>Feltétel hozzáadásához válassza ki azt a listából és adja meg a paramétereket ha szükséges. Válasszon további feltételeket, ha végzett, kattintson a jobbra mutató nyílra a továbblépéshez. Továbblépés előtt nincs szükség feltétel hozzáadására, a feltételek nem kötelezőek.</p>
+	<p>Adja meg a makró elnevezését (amivel később könnyendén beazonosíthatja), majd a név megadása után kattintson az "OK" gombra. A makró listában megjelenik az újonnan létrehozott makró.</p>
+	<p>Ne feledje, hogy az események, műveletek és feltételek kiválasztása közben röviden megnyomva azokat, további súgóinformációk jeleníthetőek meg.</p>
+	<p>Ha nem kívánja a Macrodroid varázslóját használni, a beállításokban ezt kikapcsolhatja. Ebben az esetben az Események-Műveletek-Feltételek füleken tetszés szerinti sorrendben lehet a makrót felépíteni.</p>
+
+	<h2>Makró szerkesztése/törlése</h2>	
+	<p>Válassza ki a "Makrók" csempét a MacroDroid főképernyőn.</p>
+	<p>Megjelenik a már beállított makrók listája. Minden makró rendelkezik egy kapcsolóval, így gyorsan engedélyezhető vagy letiltható. Minden makrónak van egy szerkesztő gombja, amely megnyitja a szerkesztő képernyőt.</p>
+	<p>A szerkesztés képernyőn hozzáadhat vagy eltávolíthat műveleteket és feltételeket, módosíthatja a makró eseményeit. Szerkesztés befejezése után a makró mentéséhez nyomja meg a műveletsávon a makró mentését végrehajtó "pipa" ikont.</p>
+	<p>Makró törléséhez nyomjuk meg a szemeteskuka ikont a műveletsávon.</p>
+	<p>A menüben (vagy a készüléken található MENÜ gombbal) további lehetőségeket talál a makró másolásához, a makró megosztásához és a makró műveleteinek teszteléséhez.</p>
+
+	<h2>Makró sablonok</h2>
+	<p>Válassza a "Sablonok" lehetőséget a MacroDroid főképernyőjén.</p>
+	<p>A MacroDroid rengeteg példa sablont tartalmaz. Ezeket a sablonokat egy az egyben lehet használni, vagy igény szerint testreszabhatóak.</p>
+	<p>Válasszon ki egy sablont a listából, ezt követően megjelenik az események, műveletek és feltételek listája, amelyeket a kívánsága szerint módosíthat. Ha makróként szeretné elmenteni, nyomja meg a "Hozzáadás" gombot. Ha nem, nyomja meg a Vissza gombot, hogy visszatérjen a sablonok listájához.</p>
+	<p>Ne feledje, hogy egyes sablonoknak konfigurálásra van szükségük, mivel azok konkrét készülék-specifikus tulajdonságokra (például egy adott Névjegyre) hivatkoznak. Ezekben az esetekben az érvénytelen mező piros színnel jelenik meg, és a "Hozzáadás" gomb inaktív marad.</p>
+	
+	<h2>Makrók exportálása/importálása</h2>
+	<p>Válassza ki az "Exportálás/Importálás" csempét a MacroDroid főképernyőn.</p>
+	<p>Az aktuális makrókról biztonsági másolatot készíthet a készülék SD kártyájára. Ezt a biztonsági másolatot importálhatja, ha az alkalmazás újratelepítésre vagy új eszközre kerül.</p>
+	<p>Exportáláskor meg kell adnia egy fájlnevet és az exportálás helyét.</p>
+	<p>Importáláskor egy fájlkiválasztó segítségével válassza ki a megfelelő biztonsági másolatot.</p>
+	<p>Ne feledje, hogy a teljes biztonsági mentésből történő importáláskor az aktuális makrók törlődnek. Ha új készüléken importál, bizonyos makrókat újra kell konfigurálni, mivel hivatkozások lehetnek bennük az előző készülékre. A konfigurálást igénylő makrók piros színnel jelennek meg a makró listában.</p>
+    <p>Makróit megoszthatja a megosztás gomb segítségével is a makró szerkesztése közben.</p>
+
+    <h2>Minialkalmazás (Widget) gombok</h2>
+	<p>A MacroDroid lehetővé teszi Minialkalmazások (Widgetek) hozzáadását a Főképernyőhöz, melyek gombként működnek és makrókat aktiválhatnak.</p>
+	<p>Egy Minialkalmazás hozzáadásához a készülék Főképernyőjén válassza a Menü > Hozzáadás > Minialkalmazások lehetőséget (a pontos menüpont elnevezések készülékfüggőek), és keresse meg a hozzáadni kívánt Minialkalmazást.</p>
+	<p>A MacroDroid tartalmaz egy 4 színes gombot tartalmazó Minialkalmazást, amelyek különböző makrókhoz rendelhetők, és korlátlan számú felhasználó által testreszabható egyedülálló gombot.</p>
+
+    <h2>Egyéb alkalmazások integrálása</h2>
+    <p>Minden makró elindítható szabványos Android-gyorsbillentyűként, amely lehetővé teszi makrók indítását a főképernyőről, vagy bármely alkalmazásból amely támogatja az Android-gyorsbillentyűket. A "Hivatkozás indítása" művelet lehetővé teszi más alkalmazások meghívását, amelyek a funkciókat hivatkozásokon keresztül kínálják fel. A MacroDroid támogatja a Locale/Tasker bővítményeket is, de az ilyen bővítmények bizonyos Tasker-specifikus bővítményei esetleg nem érhetők el a MacroDroidon belül.</p>
+
+    <h2>Frissítés Pro verzióra</h2>
+	<p>A MacroDroid szabadon letölthető verziója maximum öt makrót engedélyez és reklámokat jelenít meg.</p>
+	<p>E korlátozások megszüntetése érdekében lehetőség van Pro verzióra frissíteni, ezáltal korlátlan számú makró hozható létre és a reklámok megszűnnek.</p>
+    
+    <h2>GYIK</h2>
+    <ul><li type=square><p>Mi a MacroDroid módok lényege?</p></li></ul>
+    <p>A MacroDroid módokat elsősorban az események korlátozására használhatjuk. Például egy esemény beállíthatja a készüléket "Autó mód"-ba, miközben egy másik esemény csak akkor működhet, ha az eszköz "Autó mód"-ban van.</p>
+    <ul><li type=square><p>Milyen típusú NFC címkéket lehet használni MacroDroid alatt?</p></li></ul>
+    <p>Bármely NFC címke használható, amely NDEF-kompatibilis és írható.</p>
+    <ul><li type=square><p>Miért nem működik megfelelően az eszközön egy esemény/művelet/feltétel?</p></li></ul>
+    <p>Ez lehet hiba a szoftverben, vagy korlátozás az adott készülékkel. Tudassa velünk, mi a probléma, mi a készülék típusa, az Android verziója és mindent megteszek, hogy a problémát megoldjuk.</p>
+    <ul><li type=square><p>Hozzáadható-e az "xy" funkció a MacroDroid-hoz?</p></li></ul>
+    <p>Talán. Kérését tegye közzé a MacroDroid Fórum szolgáltatáskérelem részében, hogy megossza ötletét.</p>
+    <ul><li type=square><p>Miért engedi ezt az alkalmazást a Google ilyen engedélykérésekkel? Csak kicsit homályos ez nekem?</p></li></ul>
+    <p>Ez az alkalmazás lényege. Hozzá kell férni a készülék minden olyan eleméhez, amik jelzik az eseményeket és az összes különböző műveletre hivatkoznak. Az alkalmazás *soha* nem fog visszaélni ezekkel az engedélyekkel, és nem sérti meg az Ön személyes adatait. Megpróbálok egy igen hasznos alkalmazást létrehozni, így vagy bízni kell az alkalmazásban, vagy ha még mindig gyanakszik, akkor szerezze meg a Charles/Fiddler/Wireshark (vagy hasonló) programokat, és nézze meg, hogy az alkalmazás hogyan működik!</p>
+	<ul><li type=square><p>Miért kell fizetni a teljes funkcionalitás érdekében?</p></li></ul>
+    <p>Tudom hogy senki sem szeret fizetni az alkalmazásokért, de a szoftverek írása időigényes és sok erőfeszítést igényel (és minden másért is fizetni kell). Próbálja meg a MacroDroid ingyenes verzióját használni az alapműveletekhez, és remélem, hogy a haladóbb igényeket támasztó felhasználók örömmel fognak fizetni egy kisebb összeget.</p>
+    <ul><li type=square><p>Miért nem tudom eltávolítani a MacroDroid programot?</p></li></ul>
+    <p>Ha engedélyezte az "Eszközadminisztrátor hozzáférést" a MacroDroidhoz, akkor az eltávolítás előtt el ezt meg kell szüntetnie. Az Android 5.0 előtti verziói nem figyelmeztetnek erről egy alkalmazás eltávolításakor, így zavaros lehet, hogy miért nem lehet az adott alkalmazást eltávolítani. A kényelem érdekében beépítettem egy opciót a MacroDroid eltávolítására a Beállítások közé, hogy megoldjam a problémát.</p>
+    </div>
+	</body>
+</html>

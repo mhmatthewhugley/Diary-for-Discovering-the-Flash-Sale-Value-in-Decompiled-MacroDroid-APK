@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.textfield.TextInputLayout android:id="@+id/nameInputLayout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_marginBottom="16dp" android:layout_marginStart="16dp" android:layout_marginEnd="16dp">
+        <com.google.android.material.textfield.TextInputEditText android:id="@+id/nameText" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/action_block_name" android:maxLines="1" android:singleLine="true"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <com.google.android.material.textfield.TextInputLayout android:id="@+id/descriptionInputLayout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16dp" android:layout_marginStart="16dp" android:layout_marginEnd="16dp">
+            <com.google.android.material.textfield.TextInputEditText android:id="@+id/descriptionText" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/description"/>
+        </com.google.android.material.textfield.TextInputLayout>
+    </ScrollView>
+    <include layout="@layout/include_ok_cancel_buttons"/>
+</LinearLayout>

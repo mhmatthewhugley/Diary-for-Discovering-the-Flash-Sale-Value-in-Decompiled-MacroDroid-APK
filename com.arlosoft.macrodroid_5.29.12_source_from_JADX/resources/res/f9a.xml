@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:padding="@dimen/margin_small" android:layout_width="match_parent" android:layout_height="match_parent">
+    <Button android:textColor="@color/white" android:id="@+id/configure_smtp_server" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/configure_smtp_server"/>
+    <CheckBox android:id="@+id/html_check_box" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:text="HTML"/>
+    <com.google.android.material.textfield.TextInputLayout android:id="@+id/fromEmailAddressLayout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium">
+        <com.google.android.material.textfield.TextInputEditText android:gravity="top" android:id="@+id/fromAddress" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/send_email_from_email_address" android:inputType="textEmailAddress"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small">
+        <com.google.android.material.textfield.TextInputEditText android:gravity="top" android:id="@+id/toAddress" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/enter_email_address" android:inputType="textEmailAddress"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small">
+        <com.google.android.material.textfield.TextInputEditText android:gravity="top" android:id="@+id/subject" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/enter_subject" android:inputType="textEmailSubject"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small">
+        <com.google.android.material.textfield.TextInputEditText android:gravity="top" android:id="@+id/body" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/enter_message_here" android:inputType="textMultiLine"/>
+    </com.google.android.material.textfield.TextInputLayout>
+</LinearLayout>

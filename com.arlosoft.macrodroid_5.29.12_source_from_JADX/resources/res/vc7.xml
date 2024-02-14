@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:padding="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RadioGroup android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RadioButton android:id="@+id/configure_pebble_text_set_radio_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/configure_pebble_text_set" android:layout_weight="1"/>
+            <RadioButton android:id="@+id/configure_pebble_text_clear_radio_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/configure_pebble_text_clear" android:layout_weight="1"/>
+        </RadioGroup>
+        <LinearLayout android:orientation="horizontal" android:paddingTop="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatEditText android:id="@+id/configure_pebble_text_text" android:layout_width="0dp" android:layout_height="wrap_content" android:hint="@string/configure_pebble_text_enter" android:maxLines="1" android:layout_weight="1" android:inputType="textUri">
+                <requestFocus/>
+            </androidx.appcompat.widget.AppCompatEditText>
+            <Button android:id="@+id/configure_pebble_text_magic_text_button" style="@style/MagicTextButton"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:paddingTop="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/configure_pebble_text_duration" android:paddingEnd="15dp"/>
+            <Spinner android:entries="@array/set_pebble_text_duration" android:layout_gravity="center_vertical" android:id="@+id/configure_pebble_text_spinner_duration" android:layout_width="match_parent" android:layout_height="wrap_content" android:entryValues="@array/set_pebble_text_duration_values"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:paddingTop="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_size" android:paddingEnd="15dp"/>
+            <Spinner android:entries="@array/set_pebble_text_size" android:layout_gravity="center_vertical" android:id="@+id/configure_pebble_text_spinner_size" android:layout_width="match_parent" android:layout_height="wrap_content" android:entryValues="@array/set_pebble_text_size"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@color/ok_cancel_button_border" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="6dp"/>
+    <LinearLayout android:gravity="end" android:id="@+id/button_bar" android:paddingTop="0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:id="@+id/cancelButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/button_bar_button_min_width" android:text="@android:string/cancel" style="?android:attr/buttonBarButtonStyle"/>
+        <View android:background="@color/ok_cancel_button_border" android:layout_width="1dp" android:layout_height="match_parent"/>
+        <Button android:id="@+id/okButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/button_bar_button_min_width" android:text="@android:string/ok" style="?android:attr/buttonBarButtonStyle"/>
+    </LinearLayout>
+</LinearLayout>

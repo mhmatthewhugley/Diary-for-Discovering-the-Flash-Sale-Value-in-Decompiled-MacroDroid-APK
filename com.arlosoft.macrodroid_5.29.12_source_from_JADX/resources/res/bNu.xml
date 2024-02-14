@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar android:theme="@style/Toolbar" android:id="@+id/toolbar" android:background="@color/primary" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" android:elevation="0dp" app:titleTextAppearance="@style/TitleToolbarText"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/commentsRecyclerView" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:textColor="@color/white" android:id="@+id/deleteMacroButton" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/delete_macro" android:layout_weight="1" style="@style/ColoredButton"/>
+        <Button android:textColor="@color/white" android:id="@+id/clearReportsButton" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/moderator_clear_macro_reports" android:layout_weight="1" style="@style/ColoredButton"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:paddingTop="10dp" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="10dp" android:paddingEnd="10dp">
+            <RadioGroup android:orientation="horizontal" android:id="@+id/calendar_configure_radio_buttons" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <RadioButton android:id="@+id/calendar_configure_in_event" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/constraint_calendar_in_event" android:layout_weight="1"/>
+                <RadioButton android:id="@+id/calendar_configure_not_in_event" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/constraint_calendar_not_in_event" android:layout_weight="1"/>
+            </RadioGroup>
+            <TextView android:textSize="12sp" android:id="@+id/select_calendar_spinner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/select_calendar" android:paddingStart="@dimen/margin_small"/>
+            <Spinner android:id="@+id/calendar_configure_spinner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_tiny"/>
+            <TextView android:textSize="12sp" android:id="@+id/calendar_configure_availability_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/select_availability" android:paddingStart="4dp"/>
+            <Spinner android:entries="@array/availability_options" android:id="@+id/calendar_configure_availability_spinner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:layout_marginBottom="@dimen/margin_small" android:minWidth="100dp"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small">
+                <com.google.android.material.textfield.TextInputLayout android:id="@+id/calendar_title_textinputlayout" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                    <androidx.appcompat.widget.AppCompatEditText android:id="@+id/calendar_configure_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/enter_title" android:maxLines="1" android:singleLine="true"/>
+                </com.google.android.material.textfield.TextInputLayout>
+                <Button android:id="@+id/calendar_configure_title_magic_text" style="@style/MagicTextButton"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_tiny">
+                <com.google.android.material.textfield.TextInputLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                    <androidx.appcompat.widget.AppCompatEditText android:id="@+id/calendar_configure_detail" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/enter_event_detail" android:maxLines="1" android:singleLine="true"/>
+                </com.google.android.material.textfield.TextInputLayout>
+                <Button android:id="@+id/calendar_configure_detail_magic_text" style="@style/MagicTextButton"/>
+            </LinearLayout>
+        </LinearLayout>
+        <include layout="@layout/include_calendar_duration"/>
+        <TextView android:id="@+id/variable_constraint_dialog_wildcards_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_small" android:text="@string/wildcards_supported" android:layout_marginStart="16dp"/>
+        <CheckBox android:id="@+id/enable_regex" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/enable_regular_expression_matching" android:layout_marginStart="8dp"/>
+        <CheckBox android:id="@+id/ignore_all_day" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ignore_all_day_events" android:layout_marginStart="8dp"/>
+        <CheckBox android:id="@+id/check_in_advance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/check_in_advance" android:layout_marginStart="8dp"/>
+        <CheckBox android:id="@+id/use_alarm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/use_alarm" android:layout_marginStart="8dp"/>
+        <TextView android:textSize="12sp" android:id="@+id/use_alarm_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/use_alarm_description" android:layout_marginStart="12dp" android:layout_marginEnd="12dp"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/calendar_advance_time_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TableLayout android:padding="12dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:layout_gravity="center_vertical" android:paddingTop="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/days_captial" android:paddingEnd="8dp"/>
+                    <com.arlosoft.macrodroid.common.NumberPicker android:id="@+id/calendar_advance_day_picker" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                </TableRow>
+                <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:layout_gravity="center_vertical" android:paddingTop="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hours_capital" android:paddingEnd="8dp"/>
+                    <com.arlosoft.macrodroid.common.NumberPicker android:id="@+id/calendar_advance_hour_picker" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                </TableRow>
+                <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:layout_gravity="center_vertical" android:paddingTop="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/minutes_capital" android:paddingEnd="8dp"/>
+                    <com.arlosoft.macrodroid.common.NumberPicker android:id="@+id/calendar_advance_minute_picker" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                </TableRow>
+            </TableLayout>
+            <CheckBox android:id="@+id/check_negative" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_tiny" android:text="@string/use_negative_value_after_event" android:layout_marginStart="@dimen/margin_small"/>
+        </LinearLayout>
+        <View android:background="@color/ok_cancel_button_border" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="4dp"/>
+        <LinearLayout android:gravity="end" android:id="@+id/button_bar" android:paddingTop="0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:id="@+id/cancelButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/button_bar_button_min_width" android:text="@android:string/cancel" style="?android:attr/buttonBarButtonStyle"/>
+            <View android:background="@color/ok_cancel_button_border" android:layout_width="1dp" android:layout_height="match_parent"/>
+            <Button android:id="@+id/okButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/button_bar_button_min_width" android:text="@android:string/ok" style="?android:attr/buttonBarButtonStyle"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:orientation="vertical" android:padding="@dimen/margin_medium" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textColor="@color/default_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/report_a_bug_screenshots"/>
+            <org.apmem.tools.layouts.FlowLayout android:orientation="horizontal" android:id="@+id/screenshotsContainer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:layout_marginBottom="@dimen/margin_small"/>
+            <TextView android:textSize="18sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/enter_bug_details"/>
+            <androidx.appcompat.widget.AppCompatEditText android:id="@+id/description_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/enter_bug_description_hint" android:inputType="none|text|textCapSentences|textMultiLine"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <Button android:textColor="@color/white" android:id="@+id/continueButton" android:layout_width="match_parent" android:layout_height="64dp" android:text="@string/pebble_info_button_continue" app:backgroundTint="@color/primary"/>
+</LinearLayout>

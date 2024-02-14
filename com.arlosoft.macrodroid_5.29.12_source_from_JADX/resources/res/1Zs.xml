@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <CheckBox android:id="@+id/helperFileCheckBox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:text="@string/use_helper_file" android:layout_marginStart="@dimen/margin_small"/>
+        <TextView android:textSize="12sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginRight="12dp" android:text="@string/use_helper_file_shell_script_info"/>
+        <RadioGroup android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:layout_marginStart="@dimen/margin_small" android:layout_marginEnd="@dimen/margin_small">
+            <RadioButton android:id="@+id/root_only" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rooted"/>
+            <RadioButton android:id="@+id/non_rooted" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/non_rooted" android:layout_marginStart="@dimen/margin_small"/>
+        </RadioGroup>
+        <TextView android:textSize="12sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginRight="12dp" android:text="@string/shell_root_info"/>
+        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatEditText android:textSize="14sp" android:id="@+id/dialog_shell_script_text" android:layout_width="0dp" android:layout_height="wrap_content" android:hint="@string/enter_script" android:layout_weight="1">
+                <requestFocus/>
+            </androidx.appcompat.widget.AppCompatEditText>
+            <Button android:id="@+id/dialog_shell_script_magic_text_button" style="@style/MagicTextButton"/>
+        </LinearLayout>
+        <TextView android:textColor="@color/actions_accent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/timeout" android:layout_marginStart="@dimen/margin_medium" android:layout_marginEnd="10dp"/>
+        <Spinner android:id="@+id/timeoutSpinner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_small"/>
+        <TextView android:textColor="@color/actions_accent" android:id="@+id/dialog_shell_script_save_output" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:text="@string/action_shell_script_save_output" android:layout_marginStart="@dimen/margin_medium" android:layout_marginEnd="10dp"/>
+        <com.arlosoft.macrodroid.widget.NDSpinner android:id="@+id/dialog_shell_script_variable_spinner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/margin_small"/>
+        <TextView android:id="@+id/dialog_shell_script_variable_info" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:text="@string/shell_script_variable_info" android:layout_marginStart="@dimen/margin_medium"/>
+        <CheckBox android:id="@+id/blockActionsCheckbox" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:layout_marginBottom="@dimen/margin_small" android:text="@string/block_actions_until_complete" android:layout_marginStart="@dimen/margin_small"/>
+        <View android:background="@color/ok_cancel_button_border" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="10dp"/>
+        <LinearLayout android:gravity="end" android:id="@+id/button_bar" android:paddingTop="0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:id="@+id/cancelButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/button_bar_button_min_width" android:text="@android:string/cancel" style="?android:attr/buttonBarButtonStyle"/>
+            <View android:background="@color/ok_cancel_button_border" android:layout_width="1dp" android:layout_height="match_parent"/>
+            <Button android:id="@+id/okButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/button_bar_button_min_width" android:text="@android:string/ok" style="?android:attr/buttonBarButtonStyle"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

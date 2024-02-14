@@ -1,0 +1,6 @@
+com.sun.mail.imap.IMAPProvider
+com.sun.mail.imap.IMAPSSLProvider
+com.sun.mail.smtp.SMTPProvider
+com.sun.mail.smtp.SMTPSSLProvider
+a8.e
+a8.f

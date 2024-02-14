@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ViewFlipper android:id="@+id/template_cloud_list_viewflipper" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateTint="@color/template_primary" android:indeterminateTintMode="src_in"/>
+        <ListView android:id="@+id/template_cloud_list_list" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="@null" android:layout_marginStart="4dp" android:layout_marginEnd="4dp"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <Button android:id="@+id/template_cloud_list_retry_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/retry" android:layout_centerInParent="true" android:layout_centerHorizontal="true"/>
+            <TextView android:textSize="18sp" android:id="@+id/template_cloud_list_no_connection_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8dp" android:text="@string/no_templates_found" android:layout_above="@+id/template_cloud_list_retry_button" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        <TextView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no_templates_found"/>
+    </ViewFlipper>
+</FrameLayout>

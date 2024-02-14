@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/coordinator_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout android:id="@+id/appBarLayout" android:background="@color/template_primary" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar android:theme="@style/Toolbar.Main" android:id="@+id/toolbar" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:elevation="@dimen/toolbar_elevation" app:titleTextAppearance="@style/HelveticaToolbarText.Main">
+            <LinearLayout android:orientation="horizontal" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <Spinner android:layout_gravity="center_vertical" android:id="@+id/categoriesSpinner" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="0dp" android:layout_marginEnd="8dp"/>
+                <ImageView android:id="@+id/searchButton" android:background="?attr/selectableItemBackgroundBorderless" android:focusable="true" android:clickable="true" android:layout_width="48dp" android:layout_height="48dp" android:scaleType="centerInside" app:srcCompat="@drawable/ic_search_white"/>
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <com.google.android.material.tabs.TabLayout android:id="@+id/tabBar" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" app:tabMode="0" app:tabTextAppearance="@style/TabStyle" style="@style/CustomTabLayout"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <net.cachapa.expandablelayout.ExpandableLayout android:id="@+id/infoBar" android:layout_width="match_parent" android:layout_height="wrap_content" app:el_duration="1000" app:el_expanded="false" app:el_parallax="0.5" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/remediesHeader">
+            <FrameLayout android:id="@+id/infoBarBg" android:background="@color/md_light_blue_600" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/margin_small_medium" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="16sp" android:textColor="@color/white" android:gravity="bottom" android:id="@+id/infoText" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/translation_supported_template_store_message" android:lineSpacingMultiplier="1.2" android:fontFamily="@font/proximanova_regular" android:layout_marginStart="@dimen/margin_medium" android:layout_marginEnd="40dp"/>
+                    <View android:id="@+id/barBottomSpace" android:layout_width="match_parent" android:layout_height="@dimen/margin_small_medium"/>
+                    <Button android:textColor="@color/white" android:layout_gravity="end" android:id="@+id/infoBarButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/enable_now" android:textAllCaps="false" android:layout_marginEnd="@dimen/margin_medium" style="?attr/borderlessButtonStyle"/>
+                </LinearLayout>
+                <ImageView android:layout_gravity="top|right|center_vertical|center_horizontal|center|end" android:id="@+id/infoBarDismissButton" android:background="?attr/selectableItemBackgroundBorderless" android:padding="10dp" android:focusable="true" android:clickable="true" android:layout_width="@dimen/home_info_dismiss_button_size" android:layout_height="@dimen/home_info_dismiss_button_size" app:srcCompat="@drawable/material_ic_clear_24px_svg"/>
+            </FrameLayout>
+        </net.cachapa.expandablelayout.ExpandableLayout>
+        <androidx.viewpager.widget.ViewPager android:id="@+id/viewPager" android:layout_width="match_parent" android:layout_height="match_parent" android:splitMotionEvents="false"/>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/loadingBlocker" android:background="@color/black_transparent" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center_horizontal" android:layout_width="240dp" android:layout_height="240dp" app:lottie_autoPlay="true" app:lottie_loop="true" app:lottie_rawRes="@raw/simple_loader"/>
+            <TextView android:textSize="16sp" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-48dp" android:text="@string/initialising"/>
+        </LinearLayout>
+    </FrameLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

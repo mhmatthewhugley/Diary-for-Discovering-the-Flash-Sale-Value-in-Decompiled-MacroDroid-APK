@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme.Template">
+        <item name="android:dialogTheme">@style/Theme.App.Dialog.Template</item>
+        <item name="android:alertDialogTheme">@style/Theme.App.Dialog.Template</item>
+        <item name="android:navigationBarColor">@color/nav_bar_black</item>
+        <item name="colorAccent">@color/white</item>
+        <item name="colorPrimary">@color/template_primary</item>
+        <item name="colorPrimaryDark">@color/template_primary</item>
+    </style>
+    <style name="AppTheme.Template.EditText">
+        <item name="colorAccent">@color/default_text_color_secondary</item>
+    </style>
+    <style name="PreferencesTheme">
+        <item name="android:navigationBarColor">@color/nav_bar_black</item>
+        <item name="colorAccent">@color/white</item>
+        <item name="colorPrimary">@color/settings_primary</item>
+        <item name="colorPrimaryDark">@color/settings_primary</item>
+    </style>
+    <style name="Theme.App">
+        <item name="android:navigationBarColor">@color/nav_bar_black</item>
+        <item name="actionBarStyle">@style/ActionBar</item>
+        <item name="buttonHighlightColor">@color/buttonHighlight</item>
+        <item name="buttonNormalColor">@color/buttonNormal</item>
+        <item name="buttonTextColor">@color/buttonText</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary</item>
+        <item name="primaryButtonTheme">@style/Widget.Button.Primary</item>
+        <item name="primaryTextColor">@color/primaryText</item>
+    </style>
+    <style name="Theme.App.Action">
+        <item name="android:dialogTheme">@style/Theme.App.Dialog.Action</item>
+        <item name="android:alertDialogTheme">@style/Theme.App.Dialog.Action</item>
+        <item name="colorAccent">@color/actions_accent</item>
+        <item name="colorButtonNormal">@color/actions_primary</item>
+        <item name="colorPrimary">@color/actions_primary</item>
+        <item name="colorPrimaryDark">@color/actions_primary</item>
+    </style>
+    <style name="Theme.App.Constraint">
+        <item name="android:dialogTheme">@style/Theme.App.Dialog.Constraint</item>
+        <item name="android:alertDialogTheme">@style/Theme.App.Dialog.Constraint</item>
+        <item name="colorAccent">@color/constraints_accent</item>
+        <item name="colorPrimary">@color/constraints_primary</item>
+        <item name="colorPrimaryDark">@color/constraints_primary</item>
+    </style>
+    <style name="Theme.App.Dialog">
+        <item name="colorAccent">@color/accent</item>
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+    </style>
+    <style name="Theme.App.Dialog.Action">
+        <item name="colorAccent">@color/actions_accent</item>
+        <item name="colorPrimary">@color/actions_primary</item>
+        <item name="colorPrimaryDark">@color/actions_primary</item>
+    </style>
+    <style name="Theme.App.Dialog.Constraint">
+        <item name="colorAccent">@color/constraints_accent</item>
+        <item name="colorPrimary">@color/constraints_primary</item>
+        <item name="colorPrimaryDark">@color/constraints_primary</item>
+    </style>
+    <style name="Theme.App.Dialog.ExportImport">
+        <item name="colorAccent">@color/export_import_accent</item>
+        <item name="colorPrimary">@color/export_import_primary</item>
+        <item name="colorPrimaryDark">@color/export_import_primary</item>
+    </style>
+    <style name="Theme.App.Dialog.Invert.Trigger">
+        <item name="android:windowBackground">@color/trigger_primary_dark</item>
+    </style>
+    <style name="Theme.App.Dialog.Settings">
+        <item name="colorAccent">@color/settings_accent</item>
+        <item name="colorControlActivated">@color/settings_accent</item>
+        <item name="colorControlHighlight">@color/settings_accent</item>
+        <item name="colorControlNormal">@color/settings_accent</item>
+        <item name="colorPrimary">@color/settings_primary</item>
+        <item name="colorPrimaryDark">@color/settings_primary</item>
+    </style>
+    <style name="Theme.App.Dialog.SubmitPlugin">
+        <item name="android:windowBackground">#2b2b2b</item>
+    </style>
+    <style name="Theme.App.Dialog.Trigger">
+        <item name="colorAccent">@color/trigger_accent</item>
+        <item name="colorPrimary">@color/trigger_primary</item>
+        <item name="colorPrimaryDark">@color/trigger_primary</item>
+    </style>
+    <style name="Theme.App.MacroListSwitch">
+        <item name="colorControlActivated">@color/white</item>
+        <item name="colorSwitchThumbNormal">#888888</item>
+        <item name="trackTint">@color/switch_track_selector_dark</item>
+    </style>
+    <style name="Theme.App.NoActionBar">
+        <item name="android:navigationBarColor">@color/nav_bar_black</item>
+        <item name="actionBarStyle">@style/ActionBar</item>
+        <item name="buttonHighlightColor">@color/buttonHighlight</item>
+        <item name="buttonNormalColor">@color/buttonNormal</item>
+        <item name="buttonTextColor">@color/buttonText</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary</item>
+        <item name="primaryButtonTheme">@style/Widget.Button.Primary</item>
+        <item name="primaryTextColor">@color/primaryText</item>
+    </style>
+    <style name="Theme.App.NoActionBar.Wizard">
+        <item name="colorAccent">@android:color/white</item>
+    </style>
+    <style name="Theme.App.Settings">
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="colorAccent">@color/settings_accent</item>
+        <item name="colorButtonNormal">@color/settings_primary</item>
+        <item name="colorPrimary">@color/settings_primary</item>
+        <item name="colorPrimaryDark">@color/settings_primary</item>
+    </style>
+    <style name="Theme.App.Settings.Zone">
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textColorHint">#666666</item>
+        <item name="colorAccent">@color/settings_accent</item>
+        <item name="colorButtonNormal">@color/settings_primary</item>
+        <item name="colorPrimary">@color/settings_primary</item>
+        <item name="colorPrimaryDark">@color/settings_primary</item>
+    </style>
+    <style name="Theme.AppCompat.DayNight">
+    </style>
+    <style name="Theme.AppCompat.DayNight.DarkActionBar">
+    </style>
+    <style name="Theme.AppCompat.DayNight.Dialog">
+    </style>
+    <style name="Theme.AppCompat.DayNight.Dialog.Alert">
+    </style>
+    <style name="Theme.AppCompat.DayNight.Dialog.MinWidth">
+    </style>
+    <style name="Theme.AppCompat.DayNight.DialogWhenLarge">
+    </style>
+    <style name="Theme.AppCompat.DayNight.NoActionBar">
+    </style>
+    <style name="Theme.Material3.DayNight">
+    </style>
+    <style name="Theme.Material3.DayNight.BottomSheetDialog">
+    </style>
+    <style name="Theme.Material3.DayNight.Dialog">
+    </style>
+    <style name="Theme.Material3.DayNight.Dialog.Alert">
+    </style>
+    <style name="Theme.Material3.DayNight.Dialog.MinWidth">
+    </style>
+    <style name="Theme.Material3.DayNight.DialogWhenLarge">
+    </style>
+    <style name="Theme.Material3.DayNight.NoActionBar">
+    </style>
+    <style name="Theme.Material3.DynamicColors.DayNight">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight.BottomSheetDialog">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight.Bridge">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight.DarkActionBar">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight.DarkActionBar.Bridge">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight.Dialog">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight.Dialog.Alert">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight.Dialog.Alert.Bridge">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight.Dialog.Bridge">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight.Dialog.FixedSize">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight.Dialog.FixedSize.Bridge">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight.Dialog.MinWidth">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight.Dialog.MinWidth.Bridge">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight.DialogWhenLarge">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight.NoActionBar">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight.NoActionBar.Bridge">
+    </style>
+    <style name="ThemeOverlay.AppCompat.DayNight">
+    </style>
+    <style name="ThemeOverlay.Material3.DynamicColors.DayNight">
+    </style>
+    <style name="Toolbar">
+        <item name="android:textColorPrimary">#ffffff</item>
+        <item name="android:textColorSecondary">#ffffff</item>
+        <item name="popupTheme">@style/Theme.AppCompat</item>
+    </style>
+    <style name="Widget.MaterialComponents.ActionBar.PrimarySurface">
+    </style>
+    <style name="Widget.MaterialComponents.AppBarLayout.PrimarySurface">
+    </style>
+    <style name="Widget.MaterialComponents.BottomAppBar.PrimarySurface">
+    </style>
+    <style name="Widget.MaterialComponents.BottomNavigationView.PrimarySurface">
+    </style>
+    <style name="Widget.MaterialComponents.NavigationRailView.PrimarySurface">
+    </style>
+    <style name="Widget.MaterialComponents.TabLayout.PrimarySurface">
+    </style>
+    <style name="Widget.MaterialComponents.Toolbar.PrimarySurface">
+    </style>
+</resources>

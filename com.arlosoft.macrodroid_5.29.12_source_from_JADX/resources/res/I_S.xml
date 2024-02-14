@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center" android:id="@+id/loadingView" android:visibility="gone" android:layout_width="240dp" android:layout_height="240dp" app:lottie_autoPlay="true" app:lottie_loop="true" app:lottie_rawRes="@raw/simple_loader"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/updatesList" android:paddingBottom="@dimen/margin_small" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@+id/emptyView" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="64dp">
+        <com.airbnb.lottie.LottieAnimationView android:layout_width="240dp" android:layout_height="240dp" app:lottie_autoPlay="true" app:lottie_colorFilter="@color/default_text_color_secondary" app:lottie_loop="true" app:lottie_rawRes="@raw/crying"/>
+        <TextView android:textSize="18sp" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-40dp" android:text="@string/no_templates_found"/>
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@+id/pirateView" android:paddingBottom="@dimen/margin_large" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center_horizontal" android:id="@+id/sadFaceAnimation" android:layout_width="160dp" android:layout_height="160dp" app:lottie_autoPlay="true" app:lottie_loop="true" app:lottie_rawRes="@raw/sad_face_animation"/>
+        <TextView android:textSize="18sp" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_large" android:layout_marginRight="@dimen/margin_large" android:text="@string/no_templates_for_pirate_app_version"/>
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@+id/errorView" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="64dp">
+        <com.airbnb.lottie.LottieAnimationView android:layout_width="160dp" android:layout_height="160dp" app:lottie_autoPlay="true" app:lottie_loop="true" app:lottie_rawRes="@raw/cloud_disconnection"/>
+        <TextView android:textSize="18sp" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/could_not_connect"/>
+        <androidx.appcompat.widget.AppCompatButton android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@+id/retryButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:text="@string/retry" app:backgroundTint="@color/template_primary"/>
+    </LinearLayout>
+</FrameLayout>

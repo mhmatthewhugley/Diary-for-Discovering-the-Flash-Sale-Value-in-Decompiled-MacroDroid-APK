@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <CheckBox android:id="@+id/dialog_filter_templates_hide_root_only" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/hide_root_only_templates" android:layout_marginStart="4dp"/>
+    <LinearLayout android:orientation="horizontal" android:paddingTop="10dp" android:paddingBottom="6dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="10dp" android:paddingEnd="10dp">
+        <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/language" style="@style/FilterDialogTitleText"/>
+            <TextView android:textColor="@color/template_primary" android:ellipsize="end" android:id="@+id/dialog_filter_templates_langauge_list" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/all_languages" style="@style/FilterDialogListText"/>
+        </LinearLayout>
+        <ImageButton android:id="@+id/dialog_filter_templates_edit_language_button" android:background="@drawable/template_edit_language" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/ic_mode_edit_white_24dp" android:scaleType="center" android:contentDescription="@string/language"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:paddingTop="10dp" android:paddingBottom="6dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="10dp" android:paddingEnd="10dp">
+        <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/triggers" style="@style/FilterDialogTitleText"/>
+            <TextView android:textColor="@color/trigger_text" android:ellipsize="end" android:id="@+id/dialog_filter_templates_triggers_list" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/all_triggers" style="@style/FilterDialogListText"/>
+        </LinearLayout>
+        <ImageButton android:id="@+id/dialog_filter_templates_edit_triggers_button" android:background="@drawable/template_edit_trigger" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/ic_mode_edit_white_24dp" android:scaleType="center" android:contentDescription="@string/triggers"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:paddingTop="10dp" android:paddingBottom="6dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="10dp" android:paddingEnd="10dp">
+        <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/actions" style="@style/FilterDialogTitleText"/>
+            <TextView android:textColor="@color/actions_text" android:id="@+id/dialog_filter_templates_actions_list" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/all_actions" style="@style/FilterDialogListText"/>
+        </LinearLayout>
+        <ImageButton android:id="@+id/dialog_filter_templates_edit_actions_button" android:background="@drawable/template_edit_action" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/ic_mode_edit_white_24dp" android:scaleType="center" android:contentDescription="@string/actions"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:paddingTop="10dp" android:paddingBottom="2dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="10dp" android:paddingEnd="10dp">
+        <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/constraints" style="@style/FilterDialogTitleText"/>
+            <TextView android:textColor="@color/constraints_text" android:id="@+id/dialog_filter_templates_constraints_list" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/all_constraints" style="@style/FilterDialogListText"/>
+        </LinearLayout>
+        <ImageButton android:layout_gravity="center_vertical" android:id="@+id/dialog_filter_templates_edit_constraints_button" android:background="@drawable/template_edit_constraint" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/ic_mode_edit_white_24dp" android:scaleType="center" android:contentDescription="@string/constraints"/>
+    </LinearLayout>
+    <View android:background="@color/ok_cancel_button_border" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="10dp"/>
+    <LinearLayout android:paddingTop="0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_tiny" android:layout_marginStart="@dimen/margin_tiny">
+        <Button android:gravity="start" android:id="@+id/button_neutral" android:layout_width="0dp" android:layout_height="wrap_content" android:minWidth="@dimen/button_bar_button_min_width" android:text="@string/reset" android:layout_weight="1" style="?android:attr/buttonBarButtonStyle"/>
+        <Button android:id="@+id/cancelButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/button_bar_button_min_width" android:text="@android:string/cancel" style="?android:attr/buttonBarButtonStyle"/>
+        <View android:background="@color/ok_cancel_button_border" android:layout_width="1dp" android:layout_height="match_parent"/>
+        <Button android:id="@+id/okButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/button_bar_button_min_width" android:text="@android:string/ok" style="?android:attr/buttonBarButtonStyle"/>
+    </LinearLayout>
+</LinearLayout>

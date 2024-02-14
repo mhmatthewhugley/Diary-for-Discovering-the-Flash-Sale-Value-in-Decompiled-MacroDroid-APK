@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ViewFlipper xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/viewFlipper" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginTop="@dimen/margin_medium" android:layout_marginRight="@dimen/margin_medium" android:layout_marginBottom="@dimen/margin_medium" android:text="@string/webhook_device_id_export_detail"/>
+        <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginRight="@dimen/margin_medium">
+            <EditText android:id="@+id/password" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/password" android:maxLines="1" android:singleLine="true"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:id="@+id/exportButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginTop="@dimen/margin_small" android:layout_marginRight="@dimen/margin_medium" android:text="@string/webhook_export_device_id_title" style="@style/ColoredButton"/>
+            <ProgressBar android:layout_gravity="center" android:id="@+id/exportingProgressIndicator" android:visibility="gone" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginTop="3dp" android:indeterminate="true"/>
+        </FrameLayout>
+        <Button android:layout_gravity="end" android:id="@+id/cancelButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginRight="@dimen/margin_medium" android:minWidth="@dimen/button_bar_button_min_width" android:text="@android:string/cancel" style="?android:attr/buttonBarButtonStyle"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginTop="@dimen/margin_medium" android:layout_marginRight="@dimen/margin_medium" android:text="@string/webhook_device_id_porting_enabled"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium">
+            <TextView android:textSize="12sp" android:textColor="@color/trigger_accent" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/webhook_device_id_hint" android:layout_marginStart="@dimen/margin_medium"/>
+            <ImageView android:id="@+id/shareDeviceIdButton" android:background="?attr/selectableItemBackgroundBorderless" android:padding="8dp" android:focusable="true" android:clickable="true" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/ic_export_white_24dp" app:tint="@color/trigger_accent"/>
+        </LinearLayout>
+        <TextView android:id="@+id/deviceIdValue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginRight="@dimen/margin_medium"/>
+        <TextView android:textSize="12sp" android:textColor="@color/trigger_accent" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="40dp" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginRight="@dimen/margin_medium" android:text="@string/password"/>
+        <TextView android:id="@+id/passwordValue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginRight="@dimen/margin_medium"/>
+        <Button android:layout_gravity="end" android:id="@+id/dismissButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginTop="@dimen/margin_medium" android:layout_marginRight="@dimen/margin_medium" android:minWidth="@dimen/button_bar_button_min_width" android:text="@android:string/ok" style="?android:attr/buttonBarButtonStyle"/>
+    </LinearLayout>
+</ViewFlipper>

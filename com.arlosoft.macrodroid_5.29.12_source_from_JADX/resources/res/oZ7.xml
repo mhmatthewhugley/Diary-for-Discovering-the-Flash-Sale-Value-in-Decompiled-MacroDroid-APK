@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_small" android:layout_marginRight="@dimen/margin_small" android:layout_marginBottom="@dimen/margin_small" android:layout_marginHorizontal="@dimen/margin_small" app:cardBackgroundColor="@color/quick_settings_config_primary" app:cardCornerRadius="8dp" app:cardElevation="3dp">
+    <LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/margin_small" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/margin_medium" android:paddingBottom="@dimen/margin_small" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/margin_medium" android:paddingEnd="@dimen/margin_medium">
+            <FrameLayout android:layout_width="56dp" android:layout_height="56dp">
+                <ImageView android:id="@+id/image" android:background="?android:attr/selectableItemBackgroundBorderless" android:padding="8dp" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/ic_settings_applications_white_24dp" android:scaleType="fitCenter"/>
+                <ImageView android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@+id/editImage" android:layout_width="16dp" android:layout_height="16dp" android:layout_marginBottom="2dp" android:src="@drawable/material_ic_edit_24px_svg" android:scaleType="fitCenter" android:layout_marginEnd="2dp"/>
+            </FrameLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="@dimen/margin_medium">
+                <TextView android:textSize="12sp" android:textColor="@color/white" android:id="@+id/button_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/margin_micro"/>
+                <androidx.appcompat.widget.AppCompatEditText android:textColor="@color/white" android:textColorHint="@color/white_very_transparent" android:layout_gravity="center_vertical" android:id="@+id/tile_label" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/enter_label" android:maxLines="1" android:singleLine="true"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="12sp" android:textColor="@color/white" android:layout_gravity="end" android:id="@+id/enabled_state" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_small"/>
+                <androidx.appcompat.widget.SwitchCompat android:layout_gravity="end" android:id="@+id/tile_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/margin_medium"/>
+            </LinearLayout>
+        </LinearLayout>
+        <RadioGroup android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/margin_small">
+            <RadioButton android:textColor="@color/white" android:id="@+id/toggle_option" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/quick_settings_button_toggle_option" app:buttonTint="@color/white"/>
+            <RadioButton android:textColor="@color/white" android:id="@+id/button_option" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/button" android:layout_marginStart="@dimen/margin_small" app:buttonTint="@color/white"/>
+        </RadioGroup>
+        <CheckBox android:textColor="@color/white" android:id="@+id/collapse_on_press" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/collapse_on_press" android:layout_marginStart="@dimen/margin_small" app:buttonTint="@color/white"/>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

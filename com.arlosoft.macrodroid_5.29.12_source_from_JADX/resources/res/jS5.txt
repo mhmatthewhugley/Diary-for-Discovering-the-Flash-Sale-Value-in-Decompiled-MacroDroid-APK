@@ -1,0 +1,589 @@
+Sürüm 5.28 (Ekim 2022)
+=============================
+
+Kayan Metin eylemi eklendi.
+
+Eylem bloklarına "Çalışma Değişkenleri" eklendi.
+
+Eylem Engelleme eylemi artık tamamlanana kadar sonraki eylemleri engelleme seçeneğini desteklemektedir (varsayılan olarak etkindir).
+
+Tek tek girişlerin temizlenmesine veya silinmesine izin vermek için Sözlük/Dizi girişini temizle eylemi eklendi.
+
+Şablon Deposu'nda gerçek zamanlı otomatik çeviriler için destek eklendi.
+
+Geofence yapılandırma ekranında uydu görünümü için destek eklendi.
+
+Hücre Kulesi Sinyal Gücü için sihirli metin eklendi.
+
+Bloklar içindeki eylemleri de aramak için eylem engelleme listesi ekranı iyileştirildi.
+
+Metin İşleme'nin diziye bölünmesinin birden çok karakter sınırlayıcısıyla çalışmaması sorunu düzeltildi.
+
+Güç Düğmesi Geçişi tetikleyicisinin tamamlanma süresini ayarlamak için tetikleyici seçeneklerine yeni ayar eklendi.
+
+Diğer küçük düzeltmeler ve iyileştirmeler.
+
+Sürüm 5.27.8 (Eylül 2022)
+===============================
+
+Bir dizi küçük sorunu çözmek için küçük hata düzeltme sürümü.
+
+Sürüm 5.27 (Eylül 2022)
+=============================
+
+Erişilebilirlik Hizmeti eylemi eklendi (ADB Hack gereklidir).
+
+Bazı cihazların devre dışı bırakabileceği sorunlara geçici bir çözüm bulmak için erişilebilirlik hizmetlerini etkin tutmak için işlevsellik eklendi (ADB Hack gereklidir).
+
+Sistem Ayarı kısıtlaması eklendi.
+
+Sihirli metin seçeneklerine toplam ve kullanılabilir RAM değerleri eklendi.
+
+Metin okuma eylemindeki perde ve hız değerleri için sayısal göstergeler eklendi.
+
+Karanlık modu açıp kapatırken kısayolların simge / etiketlerini kaybetmesini önlemek için Samsung başlatıcısı sorunu için geçici çözüm eklendi.
+
+SIM/taşıyıcı ağ adı için sihirli metin eklendi.
+
+Hücre bağlantı türü için sihirli metin eklendi (ör. 3G/4G/5G).
+
+MacroDroid pro için sihirli metin eklendi (true veya false döndürür)
+
+Makro Etkin/Devre Dışı kısıtlamasına 'Bu Makro' seçeneği için destek eklendi.
+
+Açılır mesaj eylemine boşlukları koru seçeneği eklendi.
+
+Kronometrelerin yeniden adlandırılması için destek eklendi.
+
+Makro listesi ekranında son düzenlenme zamanını gösterme seçeneği eklendi (Bu son sürümle düzenlenene kadar tüm değerler başlangıçta bilinmeyecektir).
+
+Değişkeni Ayarla eylemi (Yeni Değişken seçeneğini kullanarak) artık değişkeni çalışma zamanında oluşturacak ve değişken adı için sihirli metni destekleyecektir.
+
+Wear OS yardımcı uygulaması artık döner kumanda ile listede gezinmeyi mümkün kılıyor.
+
+Değişken tetikleyici ve kısıtlamasında sözlük/dizi işlemeyle ilgili iyileştirmeler ve düzeltmeler.
+
+Set variable eyleminin bazı durumlarda dizi yerine sözlük oluşturabilmesi sorunu düzeltildi.
+
+Yerel dizi/sözlük değişkeninin yeniden adlandırılamaması sorunu düzeltildi.
+
+Eylem blokları olan bir şablonu görüntülemenin istenmeyen genel değişkenler ekleyebilmesi sorunu düzeltildi.
+
+Bir eylem bloğu sözlüğünden/dizisinden bir girdinin silinmesinin sözlüğü/diziyi silmesine neden olan sorun düzeltildi.
+
+Sürüm 5.26 (Temmuz 2022)
+========================
+
+Makroyu Çalıştır, Makroyu İptal Et ve Makroyu Devre Dışı Bırak eylemleri artık makroyu ada göre girmeyi destekliyor (bir değişkenden makro adlarına başvurmak için sihirli metni destekliyor).
+
+Gün batımı/gün doğumu konumu ve hava durumu konumu gibi ek ayarlar artık dışa aktarılırken ve otomatik yedekleme yoluyla kaydediliyor.
+
+MacroDroid Değişken kısıtlaması artık sözlük/dizi değişkenleri için anahtarları manuel olarak tanımla seçeneğini desteklemektedir.
+
+Seçenek İletişim Kutusu artık ana ileti metninde temel HTML biçimlendirmesini desteklemektedir.
+
+Kategorilerin kategori listesi ekranına eklenememesi veya kategori listesinden kaldırılamaması sorunu düzeltildi.
+
+Gelen SMS/arama tetikleyicilerinde, sihirli metin kullanılırken numara karşılaştırmasının her zaman düzgün çalışmaması sorunu düzeltildi.
+
+Bir MacroDroid kısayolunun başlatılmasının, ön plandaysa MacroDroid'i en aza indirmesi sorunu düzeltildi.
+
+Aynı eylem bloğuna zaten başvuran bir makro içe aktarılırken eylem bloğunun çoğaltılması sorunu düzeltildi.
+
+Belirli eylemleri test ederken eylem bloklarının silinebilmesi sorunu düzeltildi.
+
+Döngüden kopmanın yineleme sözlüğü/dizi eylemiyle her zaman düzgün çalışmaması sorunu düzeltildi.
+
+Simge aramanın simge paketleri için düzgün çalışmaması sorunu düzeltildi.
+
+Kayan Düğme yapılandırmasının Tetikleyiciye Kadar Bekle eyleminde tetikleyici seçimine izin vermemesi sorunu düzeltildi.
+
+Diğer küçük düzeltmeler.
+
+Sürüm 5.25.6 (Temmuz 2022)
+===============================
+
+Önceki v5.25 sürümüne küçük hata düzeltme güncellemesi. Önceki sürümde bulunan bir dizi küçük sorunu giderir.
+
+Sürüm 5.25 (Haziran 2022)
+========================
+
+Makro Etkin tetikleyicisi eklendi.
+
+Bölme simgesi aracılığıyla kaldırıldığında tetikleyiciyi (tüm makroyu değil) devre dışı bırakmak için Kayan Düğme Tetiği'ne seçenek eklendi.
+
+Kayan Düğme yapılandırma eylemi eklendi.
+
+Sözlük/dizi sözdizimi ile karışıklığı azaltmak için kıvırcık parantezleri destekleyecek sihirli metin güncellendi. (Köşeli parantezler hala desteklenmektedir, {system_time} ve [system_time] hem çalışır hem de varsayılan olarak MacroDroid ayarlarından değiştirilebilir)
+
+Özel anahtarlara doğrudan yazmaya izin vermek için HTTP İsteği ve Dosya Okuma gibi eylemlere daha iyi dizi/sözlük desteği eklendi.
+
+Metin İşleme eylemine "Diziye böl" seçeneği eklendi.
+
+Farklı saat dilimlerindeki tüm gün süren etkinliklerle daha iyi çalışmak için Takvim tetikleyicisi ayarlandı.
+
+Bir şablon makrosunu görüntülerken "Devre dışı bırak" için yeni bir menü öğesi kullanılabilir.
+
+Ses girişi artık sihirli metin içeren yeni sözlük tuşlarına/dizi dizinlerine doğrudan ayarlamayı destekliyor.
+
+Açılır ileti eylemi artık BOLD ve <i>ITALIC</i> gibi temel <b>html'yi</b> destekliyor
+
+Makro ekranını düzenlemek için Etkinleştir/Devre Dışı Bırak (alt öğeler dahil) eklendi, büyük koşulların ve döngülerin etkinleştirilmesini kolaylaştırdı.
+
+MacroDroid Çekmecesini açmak için yatay kaydırmaları etkinleştirme/devre dışı bırakma seçeneği eklendi.
+
+Dosyaya Yaz eylemine 'Üzerine Yaz' seçeneği eklendi.
+
+Hem standart hem de iş uygulamasını desteklemek için WhatsApp Gönder eylemine seçenek eklendi.
+
+Sözlük/dizi boyutu için sihirli metin eklendi.
+
+IF/Loop bloğunda kesim kullanılmasının düzgün çalışmaması sorunu düzeltildi.
+
+Seçenek iletişim kutusu devam seçeneği seçeneğinin düzgün çalışmaması sorunu düzeltildi.
+
+Kayıt mikrofonu eyleminin doğru dosya uzantısını yazmaması sorunu düzeltildi.
+
+MacroDroid çekmecesi açıkken bir değişkenin değerinin güncellenmesi durumunda yenilenmemesi sorunu düzeltildi.
+
+Devre dışı bırakılmış bir makroyu düzenlemenin makroyu yeniden etkinleştirebilmesi sorunu düzeltildi.
+
+Ekran bildiriminin Basıldığında çalıştır seçeneğinde değişkenleri doğru şekilde iletememesi sorunu düzeltildi.
+
+Daha önce kapatılan tüm yardım bilgi kartlarını geri yüklemek için ayara seçenek eklendi.
+
+Sürüm 5.24.3 (Haziran 2022)
+==========================
+
+Bu güncelleme, Google'ın MacroDroid'i varsayılan asistan olarak kullanırken bir Tanıma Hizmeti eklemesi için gerekliydi.
+
+Sürüm 5.24 (Mayıs 2022)
+==========================
+
+Ekran İçeriğini Oku eylemi eklendi.
+
+Ekran İçeriği tetikleyicisi eklendi.
+
+Dosyadan Oku eylemi eklendi.
+
+Kategori Etkin/Devre Dışı kısıtlaması eklendi.
+
+Günlüğü Dışa Aktar eylemi eklendi.
+
+UI Etkileşimi tıklamalarına görüntüleme kimliğini manuel olarak girme seçeneği eklendi.
+
+Arka planda MacroDroid ile ses ayarına izin vermeyen cihazlar için Ses Düzeyini Ayarla eylemine yönelik forground seçeneği eklendi.
+
+Önceki açılır pencereyi iptal etmek için Açılır Mesaj eylemine seçenek eklendi (Örneğin ikinci geri sayımlar için kullanışlıdır)
+
+Geri düğmesinin kapanmasını önlemek için İleti İletişim Kutusu ve Seçenek İletişim Kutusu eylemlerine seçenek eklendi.
+
+Sözlük/dizi değişkeni girişlerini ayarlamak için WebHook tetikleyicisinde destek eklendi.
+
+Hata bildirme özelliği artık ekran görüntüsü ekleme özelliğini de içeriyor.
+
+MacroDroid çekmecesindeki Kısayolları yeniden adlandırma desteği eklendi.
+
+MacroDroid Çekmecesi artık yukarı kaydırma ve / veya aşağı kaydırma hareketi ile açma seçeneklerini desteklemektedir.
+
+Diğer küçük düzeltmeler ve ince ayarlar.
+
+Sürüm 5.23 (Nisan 2022)
+==========================
+
+Sözlük ve Dizi değişken türleri eklendi (yalnızca Pro kullanıcıları).
+
+Bir sözlük/dizi içindeki tüm öğeler üzerinde döngü oluşturmak için kullanılabilecek Yinele Sözlük/Dizi eylemi eklendi.
+
+JSON Ayrıştırma eylemi eklendi.
+
+Hızlı Ayar Kutucuk Durumunu Ayarla eylemi, simge ve etiketin ek ayarına izin vermek için Hızlı Döşeme eylemini Yapılandır olarak değiştirildi.
+
+Kaydırma kilidi desenleri gibi karmaşık hareketleri etkinleştirmek için UI Etkileşimi eylemine hareket sırası seçeneği eklendi.
+
+Dokunmatik konum kaplamasını değiştirmek için UI Etkileşimi yapılandırma ekranına seçenek eklendi.
+
+Logcat tetikleyicisine tek tek arabellekleri etkinleştirme/devre dışı bırakma yeteneği eklendi.
+
+IP Adresi kısıtlaması eklendi.
+
+WebHook temel URL'si için Sihirli Metin eklendi.
+
+Action Block liste ekranına arama işlevi eklendi.
+
+Sistem günlüğünü HTML olarak dışa aktarma seçeneği eklendi, böylece uygulamada gösterildiği gibi aynı renk kodlamasını çıkarabilir.
+
+Tam kesme, kopyalama ve yapıştırma işlevine izin vermek için Makro ve Eylem Bloğu ekranlarını Düzenle ekranlarına kesme seçeneği eklendi.
+
+Eylem Bloğu "Test Eylemleri" artık çalıştırıldığında çıktı değişkenlerinin bir özetini görüntüleyecektir.
+
+Makro Çağırma Yöntemi'nin her durumda düzgün çalışmaması sorunu düzeltildi.
+
+"Etkinlikte değil" koşulunun Takvim kısıtlamasında düzgün çalışmamasıyla ilgili sorun düzeltildi.
+
+HTTP İsteği eylemindeki dosya adının sihirli metin değerlerini doğru şekilde işlememesi sorunu düzeltildi.
+
+Üst makro iptal edildiğinde eylem bloğundaki eylemlerin iptal edilmemesi sorunu düzeltildi.
+
+Duvar kağıdının bazı cihazlarda yanlış döndürülmesine neden olan sorun düzeltildi.
+
+Diğer küçük sabit ve ince ayarlar.
+
+Sürüm 5.22.6 (Şubat 2022)
+============================
+
+MacroDroid videolarının çalışmaması sorunu düzeltildi.
+
+Sürüm 5.22 (Şubat 2022)
+============================
+
+Http İstek eylemi eklendi.
+
+Standart olmayan makro tetikleyicilerinden bir makro çağrıldığında algılamaya izin vermek için Çağırma Yöntemi kısıtlaması eklendi.
+
+Simge seçiciye temel (yalnızca İngilizce) arama işlevi eklendi.
+
+MacroDroid Çekmecesine Eylem Bloğu desteği eklendi.
+
+Parola koruma ayarlarında biyometri ve gecikmeli parola istemi desteği eklendi.
+
+MacroDroid sürüm numarası için sihirli metin eklendi.
+
+Değişken tetikleyici ve kısıtlama öğesine yoksayma servis talebi seçeneği eklendi.
+
+Boole değişken değerlerini eylem bloğu giriş parametrelerine iletmek için destek eklendi.
+
+Seçildiğinde daha fazla eylemin çalıştırılmasını önlemek için seçenek iletişim kutusu için Yoksayma (Makroyu iptal et) seçeneği eklendi.
+
+Genel değişkenler ekranında değişkenleri türe göre filtreleme yeteneği eklendi.
+
+Çağrı / sms tabanlı tetikleyicilere hariç tutma seçeneği eklendi ve seçim iletişim kutusuna aranabilir kişi adları eklendi.
+
+Tasker dizisi değerlerini tek bir dizeye birleştirmenin bazen öğelerin sırasını yanlış alması sorunu düzeltildi.
+
+Yakındaki cihazla paylaşmanın Android 12 cihazlarda her zaman çalışmaması sorunu düzeltildi.
+
+Ses Çıkışı eylemi için genel bir değişken seçmenin yanlış değişkeni ayarlayabilmesi sorunu düzeltildi.
+
+Bluetooth işaretçisi tetikleyicisinin tek bir olay için birden çok kez tetiklenmesine neden olabilecek sorun düzeltildi.
+
+Geofence'in arama yaparken veya yakınlaştırırken/uzaklaştırırken doğru alana odaklanmaması sorunu düzeltildi.
+
+Wifi SSID listesinin yinelenen girişler içerebilmesi sorunu düzeltildi.
+
+Yerel değişkendeki çok uzun bir dizenin Tamam düğmesinin erişilebilir olmasını engelleyebilmesi sorunu düzeltildi.
+
+Set MacroDroid simgesinin bazı senaryolarda simgeyi güncelleştirememesi sorunu düzeltildi.
+
+Takvim kısıtlamasındaki tüm gün etkinliklerinin çeşitli saat dilimlerinde düzgün çalışmaması sorunu düzeltildi.
+
+Diğer birçok küçük düzeltme ve ince ayar.
+
+Sürüm 5.21
+============
+
+Küçük hata düzeltme sürümü.
+
+Tweaked action block input parametre işleme, böylece boş bir değeri geçirebilir ve her zaman varsayılan giriş parm değerini kullanabilirsiniz.
+
+Action Block düzenleme ekranına "Görüntü Olarak Paylaş" seçeneği eklendi.
+
+Eylem bloğu düzenleme ile ilgili birkaç küçük sorun düzeltildi.
+
+Ücretsiz kullanıcıların 5 makro sınırındaysa makroları kaybedebilmesi ve bir düzenlemeyi makroya veya eylem bloğuna atmalarına neden olan sorun düzeltildi.
+
+Ana ekrandaki "Son Açılan" kutucuğunun bazı durumlarda çalışmamasıyla ilgili sorun düzeltildi.
+
+"Ses Girişi" eyleminin bir değişkene yazarken değişken tetikleyicisinin tetiklenmesine neden olmaması sorunu düzeltildi.
+
+Bir eylem bloğuna öğe yapıştırmanın eylemleri her zaman doğru şekilde yapılandırmaması sorunu düzeltildi.
+
+Sürüm 5.20
+============
+
+Makrolardan veya diğer eylem bloklarından çağrılabilen yaygın olarak kullanılan eylemlerin gruplandırılmasına izin vermek için eylem blokları eklendi.
+
+Makro düzenleme ve eylem bloğu düzenleme ekranından yakındaki cihazlarla paylaşım desteği eklendi.
+
+Düğmelerin MacroDroid bildirim düğmesi çubuğuyla güncellenmesine izin vermek için "Düğme Çubuğu Görüntüsünü Ayarla" eylemi eklendi.
+
+Sesli metin istemek ve ardından bir dize değişkenine kaydetmek için Sesli Giriş eylemi eklendi.
+
+Yalnızca bireysel kişilere temel mesaj gönderilmesine izin vermek için WhatsApp eylemi (beta) eklendi.
+
+Makroları favori olarak işaretleme ve favori/tüm makrolar arasında kolayca filtreleme özelliği eklendi.
+
+Favori makrolara hızlı kısayol bağlantısı sağlamak için ana ekran döşemesi eklendi.
+
+Yeni resmi MacroDroid YouTube videolarına bağlantılar içeren MacroDroid Videoları için ana ekran döşemesi eklendi.
+
+Çeviriler ekranı artık her dil için çevirinin ne kadar eksiksiz olduğunu gösteriyor.
+
+Çeşitli küçük hata düzeltmeleri ve küçük iyileştirmeler.
+
+Sürüm 5.19.11
+===============
+
+Uygulamaya girmek için parola koruması kullanılırken bazı durumlarda parola isteminin görünmemesi sorunu düzeltildi.
+
+Son fotoğrafı paylaşmanın her durumda çalışmaması sorunu düzeltildi.
+
+Uyku tetikleyicisinin kısıtlamaları kontrol etmemesi sorunu düzeltildi.
+
+Diğer küçük hata düzeltmeleri.
+
+Sürüm 5.19.9
+==============
+
+Bu sürümün, dosya erişimine önceki sürümlerden daha sıkı kısıtlamalar getiren Android 11 SDK'yı hedefleyecek şekilde güncellendiğini lütfen unutmayın. Dosyalara yazmaya devam etmek için az sayıda makronun güncelleştirilmesi gerekebilir.
+
+** Lütfen bu sürümle ilgili hataları veya sorunları sorun giderme bölümündeki "Hata bildir" bölümünden bildirin **
+
+Uyku Tetiği eklendi (Android 10+).
+
+Değişkenleri Temizle eylemi eklendi.
+
+Android 10+ kullanıcıları için Pano Tetiği'ni desteklemek için logcat seçeneği eklendi (Root / ADB hack).
+
+Panonun içeriğini Android 10+ kullanıcıları için MacroDroid'e almak için Pano Yenileme eylemi eklendi.
+
+Bildirim Görüntüle eylemine, basıldığında diğer makroları çalıştırabilen üç adede kadar eylem düğmesi desteği eklendi.
+
+Çekmecenin sağdan sola mizanpajlara sahip cihazlarda doğru görüntülenmemesi sorunu düzeltildi.
+
+Birden fazla kayan düğme eklendiğinde/kaldırıldığında performans artırıldı.
+
+UDP gönder eylemi artık hedef ve bağlantı noktası alanları için sihirli metni desteklemektedir.
+
+Arkadan basıldığında Çıkar seçeneği eklendi Sonra Onayla eylemi için.
+
+HTTP Get'e 'Herhangi bir sertifikaya izin ver' seçeneği eklendi.
+
+Konum Paylaş eylemine SMTP üzerinden e-posta gönderme desteği eklendi.
+
+Yardımcı dosya aracılığıyla kabuk komut dosyası komutlarını çalıştırmak için destek eklendi (Yardımcı dosya 1.7 gerektirir)
+
+Tüm değerleri virgül veya yeni satırla ayrılmış dizeye kaydederek tasker dizisi değerlerine (Tasker eklentisi/eylemi) erişmek için sınırlı destek eklendi.
+
+Önceki güncellemeye bir düzeltme: Kapsamlı Vietnamca çeviri için lamvankhoat1'e çok teşekkürler.
+
+Sürüm 5.18
+============
+
+Küçük hata düzeltme sürümü
+
+E-posta Gönder'de (SMTP aracılığıyla) HTML gönderme modunu etkinleştirmek/devre dışı bırakmak için geçiş eklendi.
+
+Bildirim eyleminde simgenin seçilememesi sorunu düzeltildi.
+
+ScreenShot Al eyleminin bazı cihazlarda yanlış görüntü göndermesine neden olan sorun düzeltildi.
+
+Ekran kapalıyken Onaylanırsa eyleminin çağrılması durumunda düzgün çalışmaması sorunu düzeltildi.
+
+Bazı UI Etkileşimi hareket değerlerinin doğru değeri yeniden oluşturmaması sorunu düzeltildi.
+
+SMS Gönder eylemindeki verileri yapılandırıldıktan sonra düzenleyememeniz sorunu düzeltildi.
+
+Diğer küçük düzeltmeler. W
+
+Sürüm 5.17
+============
+
+Koyu Tema Değişikliği tetikleyicisi eklendi (Android 10+)
+
+Makroyu düzenle ekranındaki makro açıklama metni, makro içeriğiyle birlikte kaydırılacak şekilde değiştirildi ve izin verilen karakter sayısı genişletildi.
+
+UI Etkileşimi hareketi eylemindeki değişkenler için destek eklendi.
+
+Değişkeni Ayarla eylemi - kullanıcı istemine parola girişi için destek eklendi.
+
+Kullanıcı Arabirimi Etkileşiminin uygulamada tanımlama seçeneğinin bazı cihazlarda çalışmaması sorunu düzeltildi.
+
+Vietnam dili eklendi (Bunu tamamladığınız için lamvankhoat1'e çok teşekkürler)
+
+MacroDroid Çekmecesindeki uygulama kısayollarının metnini değiştirme yeteneği eklendi.
+
+Diğer birçok küçük düzeltme ve ince ayar.
+
+Sürüm 5.16.2
+==============
+
+Uygulamanın başlatılan tetikleyici ve ön plan uygulamasını algılamasının bazı cihazlarda çalışmaması sorunu düzeltildi.
+
+Diğer küçük düzeltmeler.
+
+Sürüm 5.16
+============
+
+Bazı makroların şablon listesinde eksik olması sorunu düzeltildi.
+
+Çok sayıda küçük hata düzeltmesi.
+
+Sürüm 5.15
+============
+
+Sırayı tersine çevir seçeneği sistem günlüğüne geri getirildi.
+
+Logcat tetikleyicisine Logcat mesajlarını yakalama (ve bir giriş seçme) seçeneği eklendi.
+
+Yan menüde wiki bağlantısı eklendi (Wiki yalnızca İngilizce'dir).
+
+Bildirim tetikleyicisindeki alt metin (ve ilişkili sihirli metin) için destek eklendi.
+
+Kayan düğmelerin önceki konumlarını koruyamaması sorunu düzeltildi.
+
+Açık sistem günlüğünün düzgün çalışmaması sorunu düzeltildi.
+
+E-posta göndermek için sistem günlüğü ekleme eyleminin düzgün çalışmaması sorunu düzeltildi.
+
+Diğer birçok küçük düzeltme ve ince ayar.
+
+Sürüm 5.14
+============
+
+Daha önce Bildirimleri Temizle eylemiyle gizlenen kalıcı bildirimlerin geri yüklenmesine izin vermek için Gizli Bildirimleri Geri Yükle eylemi (Android 11+) eklendi.
+
+Sistem günlüğünün makrolara bağlantılar göstermemesi sorunu düzeltildi.
+
+Diğer küçük düzeltmeler ve iyileştirmeler.
+
+Sürüm 5.13
+============
+
+Arama ve filtreleme özelliklerine sahip Yeni Sistem Günlüğü.
+
+Tek bir makronun günlüğünü yalnızca makro listesinden ve makro düzenleme ekranından görüntüleme desteği eklendi.
+
+SMS Gönderildi tetikleyicisi yeniden etkinleştirildi. (MacroDroid'in artık gerekli izni kullanmasına izin veriliyor)
+
+SMS Alındı tetikleyicisindeki 'monitör gelen kutusu' seçeneği yeniden etkinleştirildi. (MacroDroid'in artık gerekli izni kullanmasına izin veriliyor)
+
+Ses Çal eylemi artık tek bir eylem için ses kanalının ayarlanmasını desteklemektedir.
+
+Tetikleyene Kadar Bekle eyleminin, olmaması gereken diğer blokları yanlış bir şekilde çağırması sorunu düzeltildi.
+
+Sistem Ayarı eylemine sihirli metin desteği eklendi.
+
+Hızlı Çalıştırma Makro verileri artık makroları verirken/alırken dahil edilmiştir.
+
+Cevapsız Arama ve Etkin Arama tetikleyicileri artık doğrudan numara girişini ve grup seçimini desteklemektedir.
+
+Makro listesindeki kategoriler ve makrolar artık herhangi bir rengin ayarlanmasına izin vermek için özel renkleri desteklemektedir.
+
+Şablon deposundaki bazı makroların içe aktarılamaması sorunu düzeltildi.
+
+Sürüm 5.12
+============
+
+Geofence (Konum) kısıtlaması eklendi.
+
+Bir makronun asistan tarafından çağrılıp çağrılmadığını (başka bir tetikleyici tarafından değil) kolayca belirleyebilmeniz için Google Asistan tetikleyicisi eklendi.
+
+Alt eylemlere sahip döngüler ve koşul eylemleri artık büyük makroların düzenlenmesini kolaylaştırmak için daraltılabilir/genişletilebilir.
+
+Sürüm 5.11
+============
+
+Artık Google asistanı aracılığıyla Makroları çalıştırma desteği de içeriyor (şu anda yalnızca İngilizce). Lütfen bu özelliği kullanmak için hem cihazınızın dilinin hem de Google asistan dilinin İngilizce olarak yapılandırıldığından emin olun.
+
+"Tamam Google, MacroDroid'de 'makro adı' çalıştır" diyerek makroları çağırın. Şu anda Google bu işlevi yalnızca ABD İngilizcesi için desteklemektedir. Google izin verdiğinde diğer yerel ayarlar ve diller için destek ekleyeceğim.
+
+Ekran bildirimi eylemiyle kullanılmak üzere özel bildirim kanalları eklendi.
+
+Döngüden Ara eylemi eklendi.
+
+Döngüye Devam Et eylemi eklendi.
+
+Diğer hata düzeltmeleri ve küçük iyileştirmeler.
+
+Sürüm 5.10
+============
+
+Hata düzeltme sürümü. Birkaç küçük sorunu ve nadir çökmeleri giderir.
+
+Bazı eksik izinler etrafında geliştirilmiş işleme.
+
+Sürüm 5.9
+===========
+
+Otomatik yedekleme ekranında bulut yedekleme özelliği eklendi (yalnızca Pro kullanıcılar).
+
+MacroDroid forumu Tapatalk'tan daha temiz, kendi kendine barındırılan bir foruma taşındı.
+
+Birkaç küçük hata düzeltmesi.
+
+Sürüm 5.8
+===========
+
+Wifi eylemini ayarla artık Android 10+ işletim sisteminde bir yardımcı dosya gerektiriyor (Google kısıtlaması uygulamalara zorlanıyor).
+
+Çalışan bir makronun belirli bir tetikleyici tetiklenene kadar duraklatılmasına izin vermek için Tetikleyiciye Kadar Bekle eylemi eklendi.
+
+Kategorileri bir şifre / pin ile kilitlemek için seçenek eklendi.
+
+Güç düğmesi menüsüne MacroDroid makroları ekleme özelliği eklendi (yalnızca Android 11)
+
+Açılır mesaj eylemine metin rengi seçeneği eklendi.
+
+'Makro Çalıştır' eylemi için tamamlanana kadar bekle seçeneği eklendi.
+
+Popup Message eylemine metin rengi seçeneği ve simge tonu eklendi.
+
+Metni Konuş eylemi artık her bir eylem örneğinde dilin ayarlanmasına izin veriyor.
+
+Takvim Girişi Ekle eylemi artık girişin zamanını bir değişkenin değerine göre ayarlamayı desteklemektedir.
+
+Sihirli metnin çalışmaması logcat_line sorun düzeltildi.
+
+Makro eylemlerini iptal etme eylemlerinin Tetikleyiciye Kadar Bekle eylemini iptal etmemesi sorunu düzeltildi.
+
+İç içe geçmiş IF/ELSE komutlarının bazı uç durumlarda beklendiği gibi davranmamasına neden olan bazı mantık sorunları düzeltildi.
+
+Sürüm 5.7
+===========
+
+MacroDroid (Ana ekran kutucuğu) ile uyumlu üçüncü taraf uygulamaları keşfetmek/paylaşmak için Eklentiler listesi eklendi.
+
+Son düzenlenen makroya hızlı erişim için ana ekran kutucuğu eklendi.
+
+Hızlı çalışan makrolar için ana ekran kutucuğu eklendi.
+
+Kameranın, cihazdaki tüm uygulamalar için devre dışı bırakılmasına izin vermek üzere Kamera Etkinleştir/Devre Dışı Bırak eylemi eklendi.
+
+Tweaked Kontrol Medya Eylemi, böylece Ses Düğmesini Simüle Et seçeneği son kullanılan medya uygulamasını kontrol etmek için daha iyi çalışır.
+
+Gün/Saat tetikleyicisi artık belirli bir saniye değerinin ayarlanmasına izin veriyor.
+
+Arama özelliğini değişkenler listesi ekranına ekleyin.
+
+Sürüm 5.6
+===========
+
+Uçak modu eylemi artık Android 7+ 'da köklü olmayan bir cihazda yapılabilir (MacroDroid'i varsayılan asistan uygulaması yaparak).
+
+Uygulamayı Başlat eylemi artık bir paket adı seçeneğini desteklemektedir (değişkenleri desteklemek için sihirli metin vb. dahil).
+
+MacroDroid değişken değerleri artık Tasker biçimlendirme stili (%varname) kullanılarak Tasker eklentilerine geçirilebilir.
+
+Bildirim düğmesi çubuğu arka planı/renk tonu ve SMTP ayarları artık makroları dışa aktarırken kaydedilmektedir.
+
+Hava durumu tetikleyicisine (ve hava durumuna özgü sihirli metine) rüzgar yönü değeri eklendi.
+
+Tamsayı değişkenleri, değerleri 2.147.483.647 > tutabilmeleri için artık uzun bir türle desteklenecek şekilde güncelleştirildi.
+
+Diğer küçük düzeltmeler ve iyileştirmeler.
+
+Sürüm 5.5
+===========
+
+MacroDroid Açık / Kapalı (Android 7+) açmak için hızlı karo geçişi eklendi.
+
+Makro ayrıntılarını makro listesi görünümünde gizleme seçeneği eklendi.
+
+VPN Tetikleyicisinin tetiklenmemesi sorunu düzeltildi.
+
+Yapılandırma çubuğu düğmesi tetikleyicisinin simgeleri göstermemesi sorunu düzeltildi.
+
+Bazı çevirilerde önemli güncellemeler.
+
+Diğer küçük düzeltmeler ve UI tweaks.

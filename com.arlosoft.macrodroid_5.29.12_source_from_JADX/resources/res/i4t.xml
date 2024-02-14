@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ListView android:scrollbarStyle="outsideInset" android:id="@+id/sound_list" android:padding="2dp" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    <View android:background="#bbbbbb" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <TextView android:textSize="16sp" android:textColor="?attr/colorAccent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="@string/select_audio_stream" android:layout_marginStart="16dp" android:layout_marginEnd="16dp"/>
+    <Spinner android:id="@+id/audio_stream" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_marginStart="12dp" android:layout_marginEnd="8dp"/>
+    <CheckBox android:id="@+id/wait_to_complete_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:text="@string/block_actions_until_complete" android:layout_marginStart="@dimen/margin_medium" android:layout_marginEnd="@dimen/margin_medium"/>
+    <View android:background="@color/ok_cancel_button_border" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="4dp"/>
+    <include layout="@layout/include_ok_cancel_buttons"/>
+</LinearLayout>

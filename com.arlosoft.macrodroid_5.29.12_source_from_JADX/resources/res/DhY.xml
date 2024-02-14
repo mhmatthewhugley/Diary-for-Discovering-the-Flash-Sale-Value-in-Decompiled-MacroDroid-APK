@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:icon="@drawable/ic_description_white_24dp" android:id="@+id/menu_toggle_description" android:title="@string/description" app:showAsAction="always"/>
+    <item android:icon="@drawable/ic_action_discard_white" android:id="@+id/menu_delete" android:title="@string/menu_delete_macro" app:showAsAction="ifRoom"/>
+    <item android:icon="@drawable/ic_action_share_white" android:id="@+id/menu_share_action_block" android:title="@string/share_action_block" app:showAsAction="never"/>
+    <item android:icon="@drawable/ic_action_share_white" android:id="@+id/menu_share_nearby" android:title="@string/share_to_nearby_device" app:showAsAction="never"/>
+    <item android:icon="@drawable/ic_action_share_white" android:id="@+id/menu_share_as_image" android:title="@string/menu_share_as_image" app:showAsAction="never"/>
+    <item android:id="@+id/menu_allow_logging" android:title="@string/allow_logging" android:checkable="true" app:showAsAction="never"/>
+    <item android:icon="@drawable/ic_action_copy_white" android:id="@+id/menu_clone_action_block" android:title="@string/clone_action_block" app:showAsAction="never"/>
+    <item android:icon="@drawable/ic_action_play_white" android:id="@+id/menu_test_actions" android:title="@string/menu_run" app:showAsAction="never"/>
+    <item android:icon="@drawable/ic_format_size_white_24dp" android:id="@+id/menu_text_size" android:title="@string/text_size" app:showAsAction="never"/>
+    <item android:id="@+id/menu_save_changes" android:title="@string/save_changes" app:showAsAction="never"/>
+</menu>

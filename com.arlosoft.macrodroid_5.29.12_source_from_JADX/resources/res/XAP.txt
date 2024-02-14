@@ -1,0 +1,589 @@
+Versiunea 5.28 (octombrie 2022)
+=============================
+
+S-a adăugat acțiunea Text flotant.
+
+A adăugat "Variabile de lucru" la blocurile de acțiune.
+
+Acțiunea Blocare acțiune acceptă acum opțiunea de a bloca acțiunile următoare până la finalizare (activată în mod implicit).
+
+S-a adăugat acțiunea de intrare Golire dicționar/matrice pentru a permite ștergerea intrărilor individuale.
+
+S-a adăugat suport pentru traduceri automate în timp real în Template Store.
+
+S-a adăugat suport pentru vizualizarea prin satelit în ecranul de configurare Geofence.
+
+Adăugat text magic pentru cell tower puterea semnalului.
+
+Căutare îmbunătățită în ecranul listei de blocări de acțiuni pentru a căuta, de asemenea, acțiuni în blocuri.
+
+S-a remediat problema în care manipularea textului împărțită la matrice nu ar funcționa cu delimitatorul de caractere multiple.
+
+Adăugat noi setări în opțiunile de declanșare pentru a ajusta butonul de alimentare comutare declanșatorul de timp pentru a finaliza.
+
+Alte remedieri și îmbunătățiri minore.
+
+Versiunea 5.27.8 (septembrie 2022)
+===============================
+
+Mic bug fix de presă, pentru a remedia o serie de probleme minore.
+
+Versiunea 5.27 (septembrie 2022)
+=============================
+
+Adăugat acțiune serviciu de accesibilitate (ADB Hack necesare).
+
+Adăugat funcționalitate pentru a menține serviciile de accesibilitate activat pentru a rezolva problemele în cazul în care unele dispozitive le pot dezactiva (ADB Hack necesare).
+
+S-a adăugat constrângerea de setare a sistemului.
+
+S-au adăugat valori RAM totale și disponibile la opțiunile de text magic.
+
+S-au adăugat indicatori numerici pentru valorile pasului și vitezei în text la acțiunea de vorbire.
+
+S-a adăugat soluție pentru problema lansatorului Samsung pentru a preveni ca scurtăturile să-și piardă pictograma / eticheta atunci când porniți/dezactivați modul întunecat.
+
+Adăugat text magic pentru SIM / numele de rețea operator.
+
+A adăugat text magic pentru tipul de conexiune celulară (de exemplu, 3G/4G/5G).
+
+Adăugat text magic pentru MacroDroid este pro (returnează adevărat sau fals)
+
+S-a adăugat suport pentru opțiunea "Această macrocomandă" la constrângerea Macro Enabled/Disabled.
+
+Adăugat menține spații opțiune pentru a pop-up mesaj de acțiune.
+
+S-a adăugat suport pentru redenumirea cronometrului.
+
+Adăugat opțiunea de a afișa ultima dată editată în ecranul listei de macrocomenzi (Toate valorile vor fi inițial necunoscute până când vor fi editate cu această ultimă versiune).
+
+Setarea acțiunii variabilă (utilizând opțiunea Variabilă nouă) va crea acum variabila la momentul execuției și acceptă text magic pentru numele variabilei.
+
+Aplicația companion Wear OS permite acum defilarea prin listă cu control rotativ.
+
+Îmbunătățiri și remedieri în jurul handle-ului dicționar/matrice în declanșare variabilă și constrângere.
+
+S-a remediat problema în care acțiunea variabilă setată putea, în unele situații, să creeze un dicționar în loc de o matrice.
+
+S-a remediat problema în care variabila matrice/dicționar local nu a putut fi redenumită.
+
+S-a remediat problema în care vizualizarea unui șablon cu blocuri de acțiune ar putea adăuga variabile globale nedorite.
+
+S-a remediat problema în care ștergerea unei intrări dintr-un dicționar/matrice de blocuri de acțiuni ar șterge dicționarul/matricea.
+
+Versiunea 5.26 (iulie 2022)
+========================
+
+Rularea acțiunilor Macrocomandă, Anulare macrocomandă și Dezactivare macrocomandă acceptă acum introducerea macrocomenzii după nume (acceptă text magic pentru a permite corelarea numelor macrocomenzilor dintr-o variabilă).
+
+Setările suplimentare, cum ar fi locația apusului/răsăritului și locația vremii, sunt acum salvate la export și prin backup automat.
+
+Constrângerea variabilă MacroDroid acceptă acum opțiunea de definire manuală a tastelor pentru variabilele dicționar/matrice.
+
+Opțiune dialog acceptă acum formatarea HTML de bază în textul mesajului principal.
+
+S-a remediat problema în care categoriile nu puteau fi adăugate sau eliminate din ecranul listei de categorii.
+
+S-a remediat problema în sms-urile/apelurile primite, unde comparația numerelor nu ar funcționa întotdeauna corect atunci când se utilizează text magic.
+
+Fix problemă în cazul în care lansarea unei comenzi rapide MacroDroid ar minimiza MacroDroid dacă este în prim-plan.
+
+Fix problemă în cazul în care blocul de acțiune ar putea obține duplicat atunci când importați o macrocomandă care face deja referire la același bloc de acțiune.
+
+S-a remediat problema în care blocurile de acțiune ar putea fi șterse atunci când testați anumite acțiuni.
+
+S-a remediat problema în care întreruperea de la buclă nu ar funcționa întotdeauna corect cu acțiunea dicționar/matrice iterată.
+
+S-a remediat problema în care căutarea pictogramelor nu a funcționat corect pentru pachetele de pictograme.
+
+Fix problemă în cazul în care configurarea butonului flotant nu ar permite selectarea de declanșează într-o așteptați până la declanșare acțiune.
+
+Alte remedieri minore.
+
+Versiunea 5.25.6 (iulie 2022)
+===============================
+
+Mici bug fix actualizare la versiunea anterioară v5.25. Remediază o serie de probleme minore găsite în versiunea anterioară.
+
+Versiunea 5.25 (iunie 2022)
+========================
+
+S-a adăugat declanșatorul activat pentru macrocomenzi.
+
+Adăugat opțiunea de a plutitor buton de declanșare pentru a dezactiva declanșare (nu macrocomandă întreagă) atunci când eliminat prin pictograma bin.
+
+Adăugat butonul flotant configura acțiune.
+
+Actualizat text magic pentru a sprijini paranteze creț pentru a reduce confuzia cu dicționar / sintaxa matrice. (Paranteze pătrate sunt încă acceptate, {system_time} și [system_time] atât locul de muncă, cât și implicit pot fi modificate în setările MacroDroid)
+
+S-a adăugat un suport mai bun pentru matrice/dicționar la acțiuni precum Solicitarea HTTP și Citirea fișierelor pentru a permite scrierea directă la chei particularizate.
+
+S-a adăugat opțiunea "Divizare la matrice" la acțiunea Manipulare text.
+
+Tweaked Calendar declanșa pentru a lucra mai bine cu toate evenimentele de zi în fusuri orare diferite.
+
+Când vizualizați o macrocomandă șablon, un element de meniu nou este disponibil pentru "Adăugare dezactivat".
+
+Intrarea vocală acceptă acum setarea directă în noile chei de dicționar /indexuri matrice cu text magic.
+
+Acțiunea mesajului pop-up acceptă acum html de bază, cum ar fi <b>BOLD</b> și <i>ITALIC</i>
+
+Adăugat Activare/Dezactivare (inclusiv copii) pentru a edita ecranul macrocomenzilor facilitează activarea condițiilor mari și a buclelor.
+
+Adăugat opțiune pentru a activa / dezactiva glisări orizontale pentru a deschide Sertar MacroDroid.
+
+S-a adăugat opțiunea "Suprascriere" la acțiunea Scriere în fișier.
+
+S-a adăugat opțiunea la acțiunea Trimitere WhatsApp pentru a accepta atât aplicația standard, cât și cea de afaceri.
+
+Adăugat text magic pentru dictionar / dimensiune matrice.
+
+Fix problemă în cazul în care utilizarea tăiat pe un bloc IF/Loop nu ar funcționa corect.
+
+S-a remediat problema în care opțiunea de continuare a dialogului de opțiuni nu ar funcționa corect.
+
+Fix problemă în cazul în care înregistrarea microfon de acțiune nu ar scrie extensia de fișier corectă.
+
+Fix problemă în cazul în care valoarea unei variabile nu s-ar reîmprospăta dacă actualizat în timp ce sertar macroDroid este deschis.
+
+S-a remediat problema în care editarea unei macrocomenzi dezactivate ar putea să o reactiveze.
+
+S-a remediat problema în care notificarea de afișare nu ar trece corect variabilele în opțiunea Executare atunci când este apăsată.
+
+Adăugat opțiune în setarea pentru a restabili toate cardurile de informații de ajutor care au fost anterior di pierdut.
+
+Versiunea 5.24.3 (iunie 2022)
+==========================
+
+Această actualizare a fost necesară de Google pentru a adăuga un serviciu de recunoaștere atunci când utilizați MacroDroid ca asistent implicit.
+
+Versiunea 5.24 (mai 2022)
+==========================
+
+S-a adăugat acțiunea Citire conținut ecran.
+
+Adăugat ecran cuprins declanșa.
+
+Adăugat citiți din acțiunea Fișier.
+
+S-a adăugat restricția Categorie activată/dezactivată.
+
+S-a adăugat acțiunea Jurnal de export.
+
+Adăugat opțiunea de a introduce manual id-ul de vizualizare în clicuri interacțiune UI.
+
+S-a adăugat opțiunea forground la acțiunea Setare volum pentru dispozitivele care nu permit setarea volumului cu MacroDroid în fundal.
+
+S-a adăugat opțiunea la acțiunea Mesaj pop-up pentru a anula fereastra pop-up anterioară (utilă pentru a doua numărătoare inversă, de exemplu)
+
+Adăugat opțiune la mesaj dialog și opțiuni dialog acțiuni pentru a preveni dialogul de închidere butonul înapoi.
+
+S-a adăugat suport în declanșatorul WebHook pentru setarea intrărilor de variabile dicționar/matrice.
+
+Raportați o caracteristică de eroare include acum posibilitatea de a adăuga capturi de ecran.
+
+S-a adăugat suport pentru redenumirea Scurtăturilor în sertarul MacroDroid.
+
+Sertar macroDroid acceptă acum opțiuni pentru deschidere prin glisare în sus și / sau glisați în jos gest.
+
+Alte remedieri minore și trucuri.
+
+Versiunea 5.23 (aprilie 2022)
+==========================
+
+S-au adăugat tipuri de variabile Dicționar și Matrice (numai pentru utilizatorii Pro).
+
+Adăugat Iterate Dicționar / matrice de acțiune care pot fi utilizate pentru a bucla peste toate elementele dintr-un dicționar /matrice.
+
+Adăugat JSON Parse acțiune.
+
+S-a modificat acțiunea Setare rapidă stare dală pentru a configura acțiunea Dală rapidă pentru a permite setarea suplimentară a pictogramei și a etichetei.
+
+S-a adăugat opțiunea de secvență de gesturi la acțiunea Interacțiune cu interfața utilizator pentru a activa gesturi complexe, cum ar fi tiparele de blocare a glisării.
+
+Adăugat opțiunea la ecranul de configurare interacțiune UI pentru a comuta suprapunerea locației tactile.
+
+Adăugat capacitatea de a activa / dezactiva tampoane individuale la Logcat declanșa.
+
+S-a adăugat constrângerea adresei IP.
+
+Adăugat Magic Text pentru Url-ul de bază WebHook.
+
+S-a adăugat funcționalitatea de căutare la ecranul listei Blocare acțiune.
+
+Adăugat opțiunea de a exporta sistemul de log în HTML, astfel încât să poată obține aceeași culoare de codificare ca se arată în aplicație.
+
+S-a adăugat opțiunea de tăiere la editarea ecranelor blocului de macrocomenzi și acțiuni pentru a permite funcționalitatea de tăiere, copiere și lipire completă.
+
+Blocul de acțiune "Acțiuni de testare" va afișa acum un rezumat al variabilelor de ieșire atunci când se execută.
+
+Fix problemă în cazul în care macro invocarea metoda nu ar funcționa corect în toate cazurile.
+
+S-a remediat problema cu condiția "not in event" care nu funcționează corect în constrângerea Calendar.
+
+S-a remediat problema în care numele fișierului în acțiunea Solicitare HTTP nu ar procesa corect valorile textului magic.
+
+S-a remediat problema în care acțiunile dintr-un bloc de acțiune nu vor fi anulate atunci când macrocomanda părinte este anulată.
+
+Fix problemă în cazul în care tapet ar putea fi rotit incorect pe unele dispozitive.
+
+Alte minore fixe și trucuri.
+
+Versiunea 5.22.6 (februarie 2022)
+============================
+
+Fix problemă în cazul în care macroDroid videoclipuri nu ar funcționa.
+
+Versiunea 5.22 (februarie 2022)
+============================
+
+Adăugat http cerere de acțiune.
+
+S-a adăugat constrângerea metodei de invocare pentru a permite detectarea atunci când o macrocomandă este invocată din declanșatoare de macrocomenzi non-standard.
+
+S-a adăugat funcționalitatea de căutare de bază (numai în limba engleză) la selectorul de pictograme.
+
+Adăugat suport bloc de acțiune la sertar MacroDroid.
+
+S-a adăugat suport pentru biometrie și a întârzie solicitarea parolei în setările de protecție prin parolă.
+
+Adăugat text magic pentru numărul de versiune MacroDroid.
+
+S-a adăugat opțiunea ignorare caz la variabilă declanșare și constrângere.
+
+S-a adăugat suport pentru trecerea valorilor variabilelor booleene în parametrii de intrare a blocului de acțiune.
+
+Adăugat Ignorare (Anulare macrocomandă) opțiune pentru opțiunea de dialog pentru a preveni rularea orice acțiuni futher, dacă a ales.
+
+Adăugat capacitatea de a filtra variabilele după tip pe ecranul variabile globale.
+
+Adăugat exclude opțiunea de apel / SMS-uri bazate pe declanșează și a adăugat nume de persoane de contact care pot fi căutate la caseta de dialog de selecție.
+
+Fix problemă în cazul în care asamblarea tasker matrice valori într-un singur șir ar obține, uneori, ordinea elementelor greșit.
+
+S-a remediat problema în care partajarea pe dispozitivul din apropiere nu ar funcționa întotdeauna pe dispozitivele Android 12.
+
+S-a remediat problema în care selectarea unei variabile globale pentru acțiunea Ieșire vocală ar putea seta variabila greșită.
+
+Fix problemă în cazul în care bluetooth beacon declanșa ar putea sfârși prin a declanșa de mai multe ori pentru un singur eveniment.
+
+S-a remediat problema în care Geofence nu s-ar centra pe zona corectă atunci când căutați sau măriți/micșorați.
+
+Fix problemă în cazul în care lista wifi SSID-ul ar putea conține intrări dublate.
+
+Fix problema în cazul în care un șir foarte lung într-o variabilă locală ar putea împiedica butonul OK fiind accesibile.
+
+S-a remediat problema în care pictograma Setare MacroDroid nu a reușit să actualizeze pictograma în unele scenarii.
+
+Fix problemă în cazul în care toate evenimentele de zi în calendar constrângere nu ar funcționa corect în diferite fusuri orare.
+
+Multe alte remedieri minore și trucuri.
+
+Versiunea 5.21
+============
+
+Bug mic fix de presă.
+
+Optimizate de acțiune bloc de intrare parametru de manipulare, astfel încât să puteți trece într-o valoare goală și să utilizați întotdeauna implicit de intrare parm valoare.
+
+Adăugat "Share as Image" opțiune la acțiune bloc editare ecran.
+
+Fix mai multe probleme mici în jurul editare bloc de acțiune.
+
+S-a remediat problema în care utilizatorii liberi puteau pierde macrocomenzi dacă se aflau la limita de 5 macrocomenzi și renunțau la o editare la o macrocomandă sau la un bloc de acțiune.
+
+S-a remediat problema cu dala "Ultima deschidere" de pe ecranul de pornire care nu funcționa în unele situații.
+
+S-a remediat problema cu acțiunea "Intrare vocală" care nu a provocat declanșarea unei variabile la foc atunci când scrieți la o variabilă.
+
+Fix problemă în cazul în care lipirea elemente într-un bloc de acțiune nu ar configura întotdeauna acțiunile corect.
+
+Versiunea 5.20
+============
+
+S-au adăugat blocuri de acțiune, pentru a permite gruparea acțiunilor utilizate în mod obișnuit care pot fi invocate din macrocomenzi sau din alte blocuri de acțiune.
+
+S-a adăugat suport pentru partajarea pe dispozitivele din apropiere din ecranul de editare a macrocomenzilor și de editare a blocului de acțiuni.
+
+Adăugat "Set Button Bar Image" acțiune pentru a permite actualizarea butoanelor cu bara de buton de notificare MacroDroid.
+
+S-a adăugat acțiunea intrare vocală pentru a solicita textul vorbit și apoi salvați-l într-o variabilă șir.
+
+S-a adăugat acțiunea WhatsApp (beta) pentru a permite trimiterea mesajelor de bază numai către persoane de contact individuale.
+
+S-a adăugat posibilitatea de a marca macrocomenzile ca fiind preferate și de a filtra cu ușurință între macrocomenzile preferate/toate.
+
+Adăugat dala ecranului de pornire pentru a oferi link rapid de comenzi rapide la macrocomenzile preferate.
+
+Adăugat dale ecran de start pentru MacroDroid Video care conține link-uri către noi oficial MacroDroid YouTube videoclipuri.
+
+Ecranul Traduceri arată acum cât de completă este traducerea pentru fiecare limbă.
+
+Diverse remedieri minore de erori și mici îmbunătățiri.
+
+Versiunea 5.19.11
+===============
+
+S-a remediat problema în care solicitarea de parolă nu apărea în unele cazuri atunci când se utiliza protecția prin parolă pentru a intra în aplicație.
+
+S-a remediat problema în care partajarea ultimei fotografii nu ar funcționa în toate cazurile.
+
+Fix problemă în cazul în care declanșa somn nu a verifica constrângerile.
+
+Alte remedieri minore de erori.
+
+Versiunea 5.19.9
+==============
+
+Rețineți că această versiune este actualizată pentru a viza SDK-ul Android 11, care impune restricții mai stricte privind accesul la fișiere decât versiunile anterioare. Este posibil ca un număr mic de macrocomenzi să aibă nevoie de actualizare pentru a continua să scrie în fișiere.
+
+** Vă rugăm să raportați orice bug-uri sau probleme cu această versiune prin "Raportați o eroare" în secțiunea de depanare **
+
+Adăugat Sleep Trigger (Android 10 +).
+
+S-a adăugat acțiunea Variabile clare.
+
+Adăugat opțiunea logcat pentru a sprijini Clipboard Trigger pentru utilizatorii de Android 10 + (Root / ADB hack).
+
+S-a adăugat acțiunea De reîmprospătare Clipboard pentru a obține conținutul clipboard-ului în MacroDroid pentru utilizatorii Android 10+.
+
+S-a adăugat suport pentru până la trei butoane de acțiune la acțiunea Notificare afișată care poate rula alte macrocomenzi atunci când este apăsată.
+
+S-a remediat problema în care sertarul nu se afișa corect pe dispozitiv cu machete de la dreapta la stânga.
+
+Performanță îmbunătățită atunci când sunt adăugate/eliminate mai multe butoane flotante.
+
+Trimiterea acțiunii UDP acceptă acum text magic pentru câmpurile de destinație și port.
+
+Adăugat ieși pe înapoi apăsați opțiune pentru dacă apoi confirmați acțiunea.
+
+Adăugat opțiunea "Permiteți orice certificat" la HTTP Get.
+
+S-a adăugat suport pentru trimiterea de e-mailuri prin SMTP la acțiunea Partajare locație.
+
+S-a adăugat suport pentru executarea comenzilor de script shell prin intermediul fișierului helper (Necesită fișier de ajutor 1.7)
+
+Adăugat suport limitat pentru accesarea tasker matrice valori (Tasker plug-in / acțiune) prin salvarea tuturor valorilor în virgulă sau linie nouă separate șir.
+
+O corecție la actualizarea anterioară: Multe mulțumiri lamvankhoat1 pentru traducerea vietnameză aprofundată.
+
+Versiunea 5.18
+============
+
+Versiune minoră de remediere a erorilor
+
+Adăugat toggle pentru a activa / dezactiva modul de trimitere HTML pe Trimite e-mail (prin SMTP).
+
+Fix problemă în cazul în care pictograma nu a putut fi selectat pe acțiune de notificare.
+
+S-a remediat problema în care acțiunea Take ScreenShot ar trimite imagini incorecte pe unele dispozitive.
+
+Fix problemă în cazul în care dacă acțiunea confirmată nu ar funcționa corect dacă invocate atunci când ecranul este oprit.
+
+Fix problemă în cazul în care unele valori gest de interacțiune UI nu ar reating valoarea corectă.
+
+Fix problemă în cazul în care nu a putut edita date în sms trimite acțiune odată ce a fost configurat.
+
+Alte corecții mici. W
+
+Versiunea 5.17
+============
+
+Adăugat dark tema schimbare declanșa (Android 10 +)
+
+A modificat textul descrierii macrocomenzii în ecranul de editare a macrocomenzii, astfel încât să deruleze cu conținutul macrocomenzii și să extindă numărul de caractere permise.
+
+S-a adăugat suport pentru variabile în acțiunea gestului de interacțiune UI.
+
+S-a adăugat suport pentru introducerea parolei în acțiunea Setare variabilă - solicitare utilizator.
+
+S-a remediat problema în care opțiunea Interacțiune interfață utilizator identificată în aplicație nu funcționa pe unele dispozitive.
+
+Adăugat limba vietnameză (Multe mulțumiri lamvankhoat1 pentru completarea acestui)
+
+Adăugat capacitatea de a schimba textul comenzilor rapide de aplicare în sertar MacroDroid.
+
+O mulțime de alte remedieri mici și trucuri.
+
+Versiunea 5.16.2
+==============
+
+Fix problemă în cazul în care app lansat declanșa și detectarea aplicației prim-plan nu ar funcționa pe unele dispozitive.
+
+Alte corecții mici.
+
+Versiunea 5.16
+============
+
+S-a remediat problema în care unele macrocomenzi puteau lipsi din lista de șabloane.
+
+O mulțime de remedieri minore de erori.
+
+Versiunea 5.15
+============
+
+Reintrodusă opțiunea de inversare a ordinii în jurnalul de sistem.
+
+Adăugat opțiunea de a captura mesaje Logcat (și selectați o intrare) la declanșatorul Logcat.
+
+Adăugat link-ul la wiki în meniul lateral (Wiki este doar în limba engleză).
+
+S-a adăugat suport pentru sub-text în declanșarea notificării (și textul magic asociat).
+
+S-a remediat problema în care butoanele plutitoare nu și-au păstrat poziția anterioară.
+
+Fix problemă în cazul în care jurnalul de sistem deschis nu ar funcționa corect.
+
+Fix problemă în cazul în care atașarea jurnalului de sistem pentru a trimite acțiunea de e-mail nu ar funcționa corect.
+
+O mulțime de alte remedieri mici și trucuri.
+
+Versiunea 5.14
+============
+
+S-a adăugat acțiunea Restaurare notificări ascunse (Android 11+), pentru a permite restaurarea notificărilor persistente care au fost ascunse anterior cu acțiunea Ștergeți notificările.
+
+Fix problemă în cazul în care jurnalul de sistem nu ar afișa link-uri către macrocomenzi.
+
+Alte mici remedieri și îmbunătățiri.
+
+Versiunea 5.13
+============
+
+Jurnal de sistem nou cu caracteristici de căutare și filtrare.
+
+S-a adăugat suport pentru vizualizarea jurnalului pentru o singură macrocomandă numai din lista de macrocomenzi și editarea ecranului de macrocomenzi.
+
+Reintrodus SMS trimis de declanșare. (MacroDroid este acum permis să utilizeze permisiunea necesară)
+
+Restabilit "monitoriza inbox" opțiune pe SMS-ul primit declanșa. (MacroDroid este acum permis să utilizeze permisiunea necesară)
+
+Acțiunea Redare sunet acceptă acum setarea canalului audio pentru o acțiune individuală.
+
+Fix problemă în cazul în care așteptați până la declanșare acțiune ar putea invoca incorect alte blocuri care nu ar trebui să.
+
+A adăugat suport pentru text magic la acțiunea Setare sistem.
+
+Executarea rapidă a datelor macrocomenzilor este acum inclusă la exportul/importul macrocomenzilor.
+
+Declanșatoarele Call Missed și Call Active acceptă acum introducerea directă a numerelor și selecția grupului.
+
+Categoriile și macrocomenzile din lista de macrocomenzi acceptă acum culori personalizate pentru a permite setarea oricărei culori.
+
+S-a remediat problema în care unele macrocomenzi din depozitul de șabloane nu puteau fi importate.
+
+Versiunea 5.12
+============
+
+Adăugat Geofence (Locație) constrângere.
+
+Adăugat Google Assistant declanșa astfel încât să puteți determina cu ușurință dacă o macrocomandă a fost invocată de către asistent (și nu un alt declanșator).
+
+Buclele și acțiunile de condiționare cu acțiunile copilului pot fi acum restrânse/extinse pentru a facilita editarea macrocomenzilor mari.
+
+Versiunea 5.11
+============
+
+Acum include suport pentru rularea macrocomenzilor prin intermediul asistentului Google (numai în limba engleză în prezent). Asigurați-vă că atât limba dispozitivului, cât și limba asistentului Google sunt configurate la limba engleză pentru a utiliza această funcție.
+
+Invocați macrocomenzile spunând "Ok Google rulează "macroname" în MacroDroid". În prezent, Google acceptă această funcționalitate numai pentru engleza americană. Voi adăuga suport pentru alte setări regionale și limbi atunci când Google permite.
+
+S-au adăugat canale de notificare personalizate pentru a fi utilizate cu acțiunea de notificare de afișare.
+
+S-a adăugat acțiunea Pauză de la buclă.
+
+S-a adăugat acțiunea Continuare buclă.
+
+Alte remedieri de erori și mici îmbunătățiri.
+
+Versiunea 5.10
+============
+
+Bug fix de presă. Remediază mai multe probleme mici și căderi rare.
+
+Manipulare îmbunătățită în jurul unor permisiuni lipsă.
+
+Versiunea 5.9
+===========
+
+S-a adăugat funcția de backup în cloud în ecranul de backup automat (numai pentru utilizatorii Pro).
+
+Forumul MacroDroid sa mutat departe de Tapatalk la un auto mai curat găzduit forum.
+
+Mai multe remedieri minore de erori.
+
+Versiunea 5.8
+===========
+
+Setarea acțiunii Wifi necesită acum un fișier de ajutor pe Android 10+ (restricția Google impusă aplicațiilor).
+
+S-a adăugat acțiunea Așteptați până la declanșare pentru a permite unei macrocomenzi care rulează să se oprească până când se declanșează un anumit declanșator.
+
+Adăugat opțiunea de a bloca categoriile cu o parolă / pin.
+
+Adăugat capacitatea de a adăuga macrocomenzi MacroDroid în meniul butonului de alimentare (Android 11 numai)
+
+Adăugat opțiunea de culoare text la acțiunea mesajului pop-up.
+
+Adăugat așteptați până la opțiunea completă pentru acțiunea "Macro Run".
+
+S-a adăugat opțiunea de culoare text și nuanța pictogramei la acțiunea Mesaj pop-up.
+
+Acțiunea Vorbire text permite acum setarea limbii pe fiecare instanță de acțiune individuală.
+
+Acțiunea Adăugare intrare calendar acceptă acum setarea orei intrării în raport cu valoarea unei variabile.
+
+S-a remediat problema cu logcat_line text magic care nu funcționa.
+
+Fix problemă în cazul în care anula acțiunile de macrocomandă nu ar anula acțiunea așteptați până la declanșare.
+
+Fix unele probleme de logică în cazul în care imbricate IF /ELSE comenzi nu s-ar comporta așa cum vă așteptați în unele cazuri margine.
+
+Versiunea 5.7
+===========
+
+Adăugat lista plugin-uri pentru descoperirea / partajarea aplicațiilor terțe care sunt compatibile cu MacroDroid (dala ecran de pornire).
+
+S-a adăugat dala ecranului de pornire pentru acces rapid la ultima macrocomandă editată.
+
+S-a adăugat dala ecranului de pornire pentru rularea rapidă a macrocomenzilor.
+
+Adăugat Camera Enable / Dezactivați acțiune pentru a permite camera pentru a fi dezactivate pentru toate aplicațiile de pe dispozitiv.
+
+Optimizat Control Media Action, astfel încât opțiunea Simulate Audio Button să funcționeze mai bine pentru a controla ultima aplicație media utilizată.
+
+Declanșatorul zi/oră permite acum setarea unei valori specifice secundelor.
+
+Adăugați caracteristica Căutare la ecranul listei de variabile.
+
+Versiunea 5.6
+===========
+
+Acțiunea modului avion se poate face acum pe un dispozitiv care nu este înrădăcinat pe Android 7+ (făcând MacroDroid aplicația implicită de asistent).
+
+Acțiunea Launch Application acceptă acum o opțiune de nume de pachet (inclusiv text magic pentru a accepta variabile etc.).
+
+Valorile variabile MacroDroid pot fi acum transmise plugin-urilor Tasker folosind stilul de formatare Tasker (%varname).
+
+Bara de butoane de notificare fundal /nuanță și setările SMTP sunt acum salvate la exportul macrocomenzilor.
+
+S-a adăugat valoarea direcției vântului la declanșatorul vremii (și textul magic specific vremii).
+
+Variabile întregi actualizate, astfel încât acestea sunt acum susținute de un tip lung, astfel încât acestea să poată deține valori > 2,147,483,647.
+
+Alte remedieri și îmbunătățiri minore.
+
+Versiunea 5.5
+===========
+
+Adăugat comutator rapid dală pentru a activa MacroDroid On / Off (Android 7 +).
+
+Adăugat opțiunea de a ascunde detaliile macrocomenzilor în vizualizarea listă de macrocomenzi.
+
+Fix problemă în cazul în care VPN Trigger nu s-ar foc.
+
+S-a remediat problema în care configurarea declanșatorului butonului barei de notificare nu ar afișa pictograme.
+
+Actualizări semnificative pentru unele traduceri.
+
+Alte remedieri minore și trucuri UI.

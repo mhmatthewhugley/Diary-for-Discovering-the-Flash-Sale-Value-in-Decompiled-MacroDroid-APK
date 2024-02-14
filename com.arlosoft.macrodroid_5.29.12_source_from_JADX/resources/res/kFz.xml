@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_medium">
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_small">
+                <androidx.appcompat.widget.AppCompatEditText android:id="@+id/action" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/intent_action" android:inputType="textNoSuggestions"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/extras_container" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <CheckBox android:id="@+id/enable_regex" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:layout_marginBottom="@dimen/margin_small" android:text="@string/enable_regular_expression_matching"/>
+            <Button android:id="@+id/add_extra_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:layout_marginBottom="@dimen/margin_small" android:text="@string/add_intent_extra" style="@style/ColoredButton"/>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:gravity="end" android:id="@+id/button_bar" android:paddingTop="0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:id="@+id/cancelButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/button_bar_button_min_width" android:text="@android:string/cancel" style="?android:attr/buttonBarButtonStyle"/>
+        <View android:background="@color/ok_cancel_button_border" android:layout_width="1dp" android:layout_height="match_parent"/>
+        <Button android:id="@+id/okButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/button_bar_button_min_width" android:text="@android:string/ok" style="?android:attr/buttonBarButtonStyle"/>
+    </LinearLayout>
+</LinearLayout>

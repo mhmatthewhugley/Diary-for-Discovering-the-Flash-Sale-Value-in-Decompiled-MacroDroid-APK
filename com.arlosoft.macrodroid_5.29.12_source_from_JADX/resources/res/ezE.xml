@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/linearLayout1" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RadioGroup android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="60dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/devices_connected" android:paddingEnd="20dp"/>
+            <RadioButton android:id="@+id/hotspot_devices_constraint_dialog_equals" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="=" android:layout_weight="1"/>
+            <RadioButton android:id="@+id/hotspot_devices_constraint_dialog_less_than" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="&lt;" android:layout_weight="1"/>
+            <RadioButton android:id="@+id/hotspot_devices_constraint_dialog_greater_than" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="&gt;" android:layout_weight="1"/>
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="10dp" android:paddingEnd="10dp">
+        <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:layout_gravity="center_horizontal" android:id="@+id/hotspot_devices_constraint_dialog_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1" android:layout_weight="1"/>
+        <SeekBar android:id="@+id/hotspot_devices_constraint_dialog_seek_bar" android:layout_width="match_parent" android:layout_height="wrap_content" android:max="5" android:layout_weight="1"/>
+    </LinearLayout>
+    <View android:background="@color/ok_cancel_button_border" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="12dp"/>
+    <LinearLayout android:gravity="end" android:id="@+id/button_bar" android:paddingTop="0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:id="@+id/cancelButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/button_bar_button_min_width" android:text="@android:string/cancel" style="?android:attr/buttonBarButtonStyle"/>
+        <View android:background="@color/ok_cancel_button_border" android:layout_width="1dp" android:layout_height="match_parent"/>
+        <Button android:id="@+id/okButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/button_bar_button_min_width" android:text="@android:string/ok" style="?android:attr/buttonBarButtonStyle"/>
+    </LinearLayout>
+</LinearLayout>

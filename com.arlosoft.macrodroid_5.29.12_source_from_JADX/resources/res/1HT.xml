@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:title="@string/email_settings" android:key="preferences:screen_gmail_settings" android:summary="@string/email_settings_summary" app:iconSpaceReserved="false">
+    <Preference android:title="@string/gmail_account" android:key="preferences:gmail_account" app:iconSpaceReserved="false"/>
+    <CheckBoxPreference android:title="@string/use_password_authentication" android:key="preferences:email_use_password" android:summary="@string/use_password_authentication_summary" android:defaultValue="false" app:iconSpaceReserved="false"/>
+    <com.arlosoft.macrodroid.common.EncryptedEditTextPreference android:title="@string/email_password" android:key="preferences:email_password" android:summary="@string/email_password_summary" android:inputType="textPassword" app:iconSpaceReserved="false"/>
+    <ListPreference android:entries="@array/upload_retry_rate_names" android:title="@string/send_retry_period" android:key="preferences:send_email_retry_period" android:summary="@string/send_retry_period_summary" android:defaultValue="5" android:dialogTitle="@string/send_retry_period" android:entryValues="@array/upload_retry_rates" app:iconSpaceReserved="false"/>
+    <CheckBoxPreference android:title="@string/notify_when_done" android:key="preferences:send_email_notify_success" android:summary="@string/notify_when_done_email_summary" android:defaultValue="true" app:iconSpaceReserved="false"/>
+    <CheckBoxPreference android:title="@string/notify_failure" android:key="preferences:send_email_notify_failure" android:summary="@string/notify_failure_email_summary" android:defaultValue="true" app:iconSpaceReserved="false"/>
+</PreferenceScreen>

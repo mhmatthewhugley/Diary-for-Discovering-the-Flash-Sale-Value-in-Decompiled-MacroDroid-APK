@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/destination" android:layout_marginStart="12dp" android:layout_marginEnd="12dp"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="12dp" android:paddingEnd="12dp">
+        <androidx.appcompat.widget.AppCompatEditText android:id="@+id/dialog_udp_destination" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="@string/destination_hint" android:maxLines="1" android:inputType="textUri" android:layout_marginEnd="6dp"/>
+        <Button android:id="@+id/dialog_udp_magic_text_destination" style="@style/MagicTextButton"/>
+    </LinearLayout>
+    <TextView android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="@string/port" android:layout_marginStart="12dp" android:layout_marginEnd="12dp"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="12dp" android:paddingEnd="12dp">
+        <com.arlosoft.macrodroid.widget.NDSpinner android:id="@+id/variablesSpinner" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_medium" android:layout_weight="1"/>
+        <androidx.appcompat.widget.AppCompatEditText android:id="@+id/dialog_udp_port" android:layout_width="0dp" android:layout_height="wrap_content" android:hint="@string/port_hint" android:maxLines="1" android:layout_weight="1" android:inputType="number" android:layout_marginEnd="6dp"/>
+    </LinearLayout>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="@string/start_msg_to_send_hex" android:paddingStart="12dp"/>
+    <LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/margin_tiny" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="12dp" android:paddingEnd="12dp">
+        <androidx.appcompat.widget.AppCompatEditText android:id="@+id/dialog_udp_message" android:layout_width="0dp" android:layout_height="wrap_content" android:hint="@string/enter_message_text" android:maxLines="1" android:layout_weight="1" android:inputType="textUri" android:layout_marginEnd="6dp">
+            <requestFocus/>
+        </androidx.appcompat.widget.AppCompatEditText>
+        <Button android:id="@+id/dialog_udp_magic_text_button" style="@style/MagicTextButton"/>
+    </LinearLayout>
+    <View android:background="@color/ok_cancel_button_border" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="10dp"/>
+    <LinearLayout android:gravity="end" android:id="@+id/button_bar" android:paddingTop="0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:id="@+id/cancelButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/button_bar_button_min_width" android:text="@android:string/cancel" style="?android:attr/buttonBarButtonStyle"/>
+        <View android:background="@color/ok_cancel_button_border" android:layout_width="1dp" android:layout_height="match_parent"/>
+        <Button android:id="@+id/okButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/button_bar_button_min_width" android:text="@android:string/ok" style="?android:attr/buttonBarButtonStyle"/>
+    </LinearLayout>
+</LinearLayout>

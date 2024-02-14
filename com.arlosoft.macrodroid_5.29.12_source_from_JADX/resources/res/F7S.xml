@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/dateHeader" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:layout_gravity="center_vertical" android:background="@color/system_log_accent" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="@dimen/margin_small" android:layout_weight="1"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/ic_arrow_down" app:tint="@color/system_log_accent"/>
+            <TextView android:textColor="@color/system_log_accent" android:gravity="center_horizontal" android:id="@+id/dateText" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_tiny" android:layout_weight="1"/>
+        </LinearLayout>
+        <View android:layout_gravity="center_vertical" android:background="@color/system_log_accent" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginBottom="@dimen/margin_tiny" android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="8sp" android:textColor="@color/default_text_color_secondary" android:id="@+id/timeText" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textSize="12sp" android:textColor="@color/default_text_color" android:id="@+id/logText" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/margin_small" android:layout_marginEnd="10dp"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/dateHeaderBottom" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:layout_gravity="center_vertical" android:background="@color/system_log_accent" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="@dimen/margin_small" android:layout_weight="1"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/ic_arrow_down" android:rotation="180" app:tint="@color/system_log_accent"/>
+            <TextView android:textColor="@color/system_log_accent" android:gravity="center_horizontal" android:id="@+id/dateTextBottom" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_tiny" android:layout_weight="1"/>
+        </LinearLayout>
+        <View android:layout_gravity="center_vertical" android:background="@color/system_log_accent" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginBottom="@dimen/margin_tiny" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

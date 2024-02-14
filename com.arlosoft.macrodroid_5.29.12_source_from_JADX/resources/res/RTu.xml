@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:fitsSystemWindows="false" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" android:id="@+id/appBarLayout" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.google.android.material.appbar.CollapsingToolbarLayout android:id="@+id/collapsing_toolbar" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent" app:contentScrim="?attr/colorPrimary" app:layout_scrollFlags="3" app:titleEnabled="false">
+            <include layout="@layout/include_user_header"/>
+            <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" app:contentInsetStart="0dp" app:layout_collapseMode="1" app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ImageButton android:id="@+id/backButton" android:background="?attr/selectableItemBackgroundBorderless" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/material_ic_arrow_back_24px_svg" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toTopOf="0" app:tint="@color/white"/>
+                    <View android:id="@+id/space_filler" android:layout_width="48dp" android:layout_height="48dp"/>
+                    <TextView android:textSize="18sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@+id/usernameText" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginRight="8dp" android:layout_weight="1" android:fontFamily="@font/heading_font" android:layout_marginHorizontal="8dp"/>
+                    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <ImageView android:layout_gravity="center" android:id="@+id/subscribeButton" android:background="?attr/selectableItemBackgroundBorderless" android:padding="10dp" android:focusable="true" android:clickable="true" android:layout_width="48dp" android:layout_height="48dp" app:srcCompat="@drawable/ic_bell"/>
+                        <ProgressBar android:layout_gravity="center" android:id="@+id/subscribingProgress" android:visibility="gone" android:layout_width="12dp" android:layout_height="12dp" android:indeterminate="true"/>
+                    </FrameLayout>
+                    <ImageView android:layout_gravity="center" android:id="@+id/menuButton" android:background="?attr/selectableItemBackgroundBorderless" android:padding="10dp" android:focusable="true" android:clickable="true" android:layout_width="48dp" android:layout_height="48dp" app:srcCompat="@drawable/ic_dots_vertical"/>
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <FrameLayout android:id="@+id/templateListContainer" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+    <FrameLayout android:id="@+id/blockedContainer" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <Button android:layout_gravity="center" android:id="@+id/unblockUserButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/template_store_unblock_user" android:backgroundTint="@color/primary"/>
+    </FrameLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

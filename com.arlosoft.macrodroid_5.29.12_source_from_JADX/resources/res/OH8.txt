@@ -1,0 +1,26 @@
+Sürüm 5.29 (Aralık 2022)
+=====================================
+
+Güncellemeler hakkında bildirim almak için makro/kullanıcılarda şablon deposu abonelikleri için destek eklendi (yalnızca profesyonel kullanıcılar).
+
+JSON Çıkış eylemi eklendi.
+
+Dijital Asistanı Ayarla eylemi eklendi.
+
+Uçak modu eylemi artık ADB kesmek ile çalışabilir (MacroDroid'i varsayılan dijital asistan yapmak için gerekli değildir).
+
+Etkinlik Tanıma tetikleyicisi artık bir etkinliğin ne zaman sona erdiğini algılamak için karşılaştırmadan daha azını desteklemektedir.
+
+Ekran İçeriği tetikleyicisi artık ayarlanabilir bir güncelleme oranına sahiptir.
+
+Webhook Tetikleyici cihaz kimliğini yeni bir cihaza taşıma desteği eklendi.
+
+Kayan Metin eylemi artık sol, orta ve sağ hizalamayı desteklemektedir.
+
+Takvimdeki tüm gün etkinliklerinin yaz saati uygulaması nedeniyle yanlış tetiklenmesine neden olan sorun düzeltildi.
+
+Tetikleyiciye özgü değerlerin (ör. gelen çağrı numarası) bir sonraki tetikleme eyleminden önce bekledikten sonra çalışmaması sorunu düzeltildi.
+
+İletişim kutularındaki ondalık sayıların yanlış bağlantı olarak gösterilebilmesi sorunu düzeltildi.
+
+Kategorilere ayrılmamış kategorinin devre dışı bırakıldığı bazı durumlarda eylem bloğunun çalışmaması sorunu düzeltildi.

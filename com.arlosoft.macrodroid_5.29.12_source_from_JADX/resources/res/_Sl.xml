@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ListView android:id="@+id/configure_notification_states" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    <View android:background="@color/ok_cancel_button_border" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="6dp"/>
+    <LinearLayout android:gravity="end" android:orientation="horizontal" android:id="@+id/button_bar" android:paddingTop="0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <Button android:id="@+id/configure_notification_states_button_toggle" android:paddingTop="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/action_configure_app_notifications_toggle_all" android:layout_marginStart="@dimen/margin_small" style="?android:attr/buttonBarButtonStyle"/>
+        </FrameLayout>
+        <View android:background="@color/ok_cancel_button_border" android:layout_width="1dp" android:layout_height="match_parent"/>
+        <Button android:id="@+id/cancelButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/button_bar_button_min_width" android:text="@android:string/cancel" style="?android:attr/buttonBarButtonStyle"/>
+        <View android:background="@color/ok_cancel_button_border" android:layout_width="1dp" android:layout_height="match_parent"/>
+        <Button android:id="@+id/okButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/button_bar_button_min_width" android:text="@android:string/ok" style="?android:attr/buttonBarButtonStyle"/>
+    </LinearLayout>
+</LinearLayout>

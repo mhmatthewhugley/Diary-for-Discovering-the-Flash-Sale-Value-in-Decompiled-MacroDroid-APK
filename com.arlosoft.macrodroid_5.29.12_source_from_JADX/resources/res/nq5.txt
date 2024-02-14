@@ -1,0 +1,26 @@
+Version 5.29 (décembre 2022)
+=====================================
+
+Ajout de la prise en charge des abonnements au magasin de modèles sur les macros/utilisateurs pour être averti des mises à jour (utilisateurs pro uniquement).
+
+Ajout de l’action de sortie JSON.
+
+Ajout de l’action Définir l’assistant numérique.
+
+L’action en mode avion peut maintenant fonctionner avec ADB hack (aucune exigence de faire de MacroDroid l’assistant numérique par défaut).
+
+Le déclencheur de reconnaissance d’activité prend désormais en charge moins que la comparaison pour détecter la fin d’une activité.
+
+Le déclencheur Contenu de l’écran a maintenant un taux de mise à jour réglable.
+
+Ajout de la prise en charge du portage d’un ID de périphérique Webhook Trigger vers un nouveau périphérique.
+
+L’action Texte flottant prend désormais en charge l’alignement à gauche, au centre et à droite.
+
+Correction d’un problème où tous les événements quotidiens du calendrier pouvaient se déclencher de manière incorrecte en raison de l’heure d’été.
+
+Correction d’un problème où les valeurs spécifiques du déclencheur (par exemple, le numéro d’appel entrant) ne fonctionnaient pas après une attente avant la prochaine action de déclenchement.
+
+Correction d’un problème où les nombres décimaux dans les boîtes de dialogue pouvaient être affichés de manière incorrecte sous forme de liens.
+
+Correction d’un problème où le bloc d’action ne s’exécutait pas dans certaines situations lorsque la catégorie non catégorisée était désactivée.

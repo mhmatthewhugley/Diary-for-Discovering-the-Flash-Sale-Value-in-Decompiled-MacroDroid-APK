@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.BiometricPromptDialog">
+        <item name="android:backgroundDimAmount">0.7</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowTitleStyle">@style/DialogTitle</item>
+        <item name="android:windowAnimationStyle">@style/DialogAnimation</item>
+        <item name="android:windowEnterAnimation">@anim/move_in</item>
+        <item name="android:windowExitAnimation">@anim/move_out</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowMinWidthMajor">75%</item>
+        <item name="android:windowMinWidthMinor">100%</item>
+    </style>
+    <style name="Theme.TileDialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="?0x1010605">false</item>
+        <item name="colorAccent">@android:color/transparent</item>
+        <item name="colorPrimary">@android:color/transparent</item>
+        <item name="colorPrimaryDark">@android:color/transparent</item>
+    </style>
+    <style name="Theme.TransparentGeneral">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="?0x1010605">false</item>
+        <item name="colorAccent">@android:color/transparent</item>
+        <item name="colorPrimary">@android:color/transparent</item>
+        <item name="colorPrimaryDark">@android:color/transparent</item>
+    </style>
+</resources>

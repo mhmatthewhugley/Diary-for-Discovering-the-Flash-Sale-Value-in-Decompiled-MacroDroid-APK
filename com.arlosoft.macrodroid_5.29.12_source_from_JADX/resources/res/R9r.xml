@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/stopwatch_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_small" app:cardCornerRadius="8dp" app:cardElevation="4dp">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="horizontal" android:background="@color/stopwatches_primary" android:paddingTop="@dimen/margin_tiny" android:paddingBottom="@dimen/margin_tiny" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:id="@+id/stopwatch_icon" android:padding="@dimen/margin_small" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/ic_timer_white_24dp"/>
+            <TextView android:textColor="@color/white" android:layout_gravity="center_vertical" android:id="@+id/stopwatch_name" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+            <TextView android:textColor="@color/white" android:layout_gravity="center_vertical" android:id="@+id/stopwatch_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/margin_small"/>
+            <ImageView android:id="@+id/play_pause_button" android:background="?attr/selectableItemBackgroundBorderless" android:padding="@dimen/margin_small" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/ic_action_play_white" android:contentDescription="@string/start" android:layout_marginStart="@dimen/margin_small"/>
+            <ImageView android:id="@+id/clear_button" android:background="?attr/selectableItemBackgroundBorderless" android:padding="12dp" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/material_ic_clear_24px_svg" android:contentDescription="@android:string/cancel"/>
+        </LinearLayout>
+        <org.apmem.tools.layouts.FlowLayout android:gravity="top|left|center_vertical|center_horizontal|center|start" android:id="@+id/stopwatch_macro_list" android:background="@color/stopwatches_primary_dark" android:paddingTop="@dimen/margin_small" android:paddingBottom="@dimen/margin_small" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

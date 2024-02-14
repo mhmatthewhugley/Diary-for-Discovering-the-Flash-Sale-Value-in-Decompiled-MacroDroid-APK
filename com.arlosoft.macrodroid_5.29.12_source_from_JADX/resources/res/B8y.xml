@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:padding="@dimen/margin_tiny" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RadioGroup android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_small_medium" android:layout_marginTop="@dimen/margin_small_medium" android:layout_marginRight="@dimen/margin_small_medium" android:layout_marginBottom="@dimen/margin_small_medium" android:layout_marginHorizontal="@dimen/margin_small_medium" android:layout_marginVertical="@dimen/margin_small_medium">
+            <RadioButton android:id="@+id/show_radio_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/action_floating_text_option_show"/>
+            <RadioButton android:id="@+id/hide_radio_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/action_floating_text_option_hide" android:layout_marginStart="@dimen/margin_medium"/>
+            <RadioButton android:id="@+id/hide_all_radio_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/action_floating_text_option_hide_all" android:layout_marginStart="@dimen/margin_medium"/>
+        </RadioGroup>
+        <LinearLayout android:id="@+id/identifier_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:layout_marginEnd="12dp">
+            <com.google.android.material.textfield.TextInputLayout android:id="@+id/editable_identifier" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_small_medium" android:layout_marginTop="@dimen/margin_small" android:layout_marginRight="@dimen/margin_small_medium" android:layout_weight="1" android:layout_marginHorizontal="@dimen/margin_small_medium">
+                <EditText android:id="@+id/identifier_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/web_url_identifier" android:maxLines="1" android:singleLine="true"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <Button android:id="@+id/magic_text_identifier_button" style="@style/MagicTextButton"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/show_config_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:text="@string/preview" android:layout_marginStart="@dimen/margin_medium"/>
+            <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginTop="@dimen/margin_small" android:layout_marginRight="@dimen/margin_medium" android:layout_marginHorizontal="@dimen/margin_medium">
+                <TextView android:layout_gravity="center" android:id="@+id/previewText" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </FrameLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:layout_marginEnd="12dp">
+                <com.google.android.material.textfield.TextInputLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_small_medium" android:layout_marginTop="@dimen/margin_small" android:layout_marginRight="@dimen/margin_small_medium" android:layout_weight="1" android:layout_marginHorizontal="@dimen/margin_small_medium">
+                    <EditText android:id="@+id/display_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/text"/>
+                </com.google.android.material.textfield.TextInputLayout>
+                <Button android:id="@+id/magic_text_button" style="@style/MagicTextButton"/>
+            </LinearLayout>
+            <TextView android:textSize="18sp" android:textColor="@color/default_text_color" android:id="@+id/static_identifier" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_small_medium" android:layout_marginTop="@dimen/margin_small" android:layout_marginRight="@dimen/margin_small_medium" android:layout_marginBottom="@dimen/margin_small" android:layout_marginHorizontal="@dimen/margin_small_medium" android:layout_marginVertical="@dimen/margin_small"/>
+            <Spinner android:entries="@array/floating_button_action_enable_options" android:id="@+id/enabled_state_options" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:layout_marginBottom="@dimen/margin_small" android:layout_marginStart="@dimen/margin_small"/>
+            <LinearLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium">
+                <ImageButton android:id="@+id/leftJustifyButton" android:background="@drawable/action_icon_button_background" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/ic_format_align_left" app:tint="@color/accent"/>
+                <ImageButton android:id="@+id/centerJustifyButton" android:background="@drawable/action_icon_button_background" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/ic_format_align_center" android:layout_marginStart="@dimen/margin_small" app:tint="@color/accent"/>
+                <ImageButton android:id="@+id/rightJustifyButton" android:background="@drawable/action_icon_button_background" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/ic_format_align_right" android:layout_marginStart="@dimen/margin_small" app:tint="@color/accent"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_small" android:layout_marginTop="@dimen/margin_small" android:layout_marginRight="@dimen/margin_small" android:layout_marginHorizontal="@dimen/margin_small">
+                <com.google.android.material.card.MaterialCardView android:layout_gravity="center_vertical" android:id="@+id/bg_color_circle" android:layout_width="40dp" android:layout_height="40dp" app:cardCornerRadius="24dp" app:strokeColor="@color/default_text_color" app:strokeWidth="2dp"/>
+                <Button android:id="@+id/change_background_colour" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/background_color" style="?android:attr/borderlessButtonStyle"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_small" android:layout_marginRight="@dimen/margin_small" android:layout_marginHorizontal="@dimen/margin_small">
+                <com.google.android.material.card.MaterialCardView android:layout_gravity="center_vertical" android:id="@+id/text_color_circle" android:layout_width="40dp" android:layout_height="40dp" app:cardCornerRadius="24dp" app:strokeColor="@color/default_text_color" app:strokeWidth="2dp"/>
+                <Button android:id="@+id/change_text_colour" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_color" style="?android:attr/borderlessButtonStyle"/>
+            </LinearLayout>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:text="@string/text_size" android:layout_marginStart="@dimen/margin_medium"/>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/size_bar_layout" android:padding="@dimen/margin_small" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <SeekBar android:id="@+id/size_seekbar" android:layout_width="0dp" android:layout_height="wrap_content" android:max="50" android:layout_weight="1"/>
+                <TextView android:layout_gravity="center_vertical" android:id="@+id/size_value" android:layout_width="50dp" android:layout_height="wrap_content" android:layout_marginStart="10dp"/>
+            </LinearLayout>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:text="@string/padding" android:layout_marginStart="@dimen/margin_medium"/>
+            <LinearLayout android:orientation="horizontal" android:padding="@dimen/margin_small" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <SeekBar android:id="@+id/padding_seekbar" android:layout_width="0dp" android:layout_height="wrap_content" android:max="30" android:layout_weight="1"/>
+                <TextView android:layout_gravity="center_vertical" android:id="@+id/padding_value_text" android:layout_width="50dp" android:layout_height="wrap_content" android:layout_marginStart="10dp"/>
+            </LinearLayout>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:text="@string/opacity" android:layout_marginStart="@dimen/margin_medium"/>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/brightness_bar_layout" android:padding="@dimen/margin_small" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <SeekBar android:id="@+id/alpha_seekbar" android:layout_width="0dp" android:layout_height="wrap_content" android:max="100" android:layout_weight="1"/>
+                <TextView android:layout_gravity="center_vertical" android:id="@+id/alpha_percent_text" android:layout_width="50dp" android:layout_height="wrap_content" android:layout_marginStart="10dp"/>
+            </LinearLayout>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:text="@string/floating_text_rounded_corners" android:layout_marginStart="@dimen/margin_medium"/>
+            <LinearLayout android:orientation="horizontal" android:padding="@dimen/margin_small" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <SeekBar android:id="@+id/corners_seekbar" android:layout_width="0dp" android:layout_height="wrap_content" android:max="30" android:layout_weight="1"/>
+                <TextView android:layout_gravity="center_vertical" android:id="@+id/corners_value_text" android:layout_width="50dp" android:layout_height="wrap_content" android:layout_marginStart="10dp"/>
+            </LinearLayout>
+            <CheckBox android:id="@+id/force_location_on_enable" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:text="@string/force_location_on_enable" android:layout_marginStart="@dimen/margin_small" android:layout_marginEnd="@dimen/margin_small"/>
+            <TextView android:textColor="?attr/colorAccent" android:id="@+id/text_position" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="@string/action_floating_text_position" android:layout_marginStart="@dimen/margin_small" android:layout_marginEnd="@dimen/margin_small"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginTop="@dimen/margin_small" android:layout_marginStart="@dimen/margin_medium" android:layout_marginEnd="@dimen/margin_medium">
+                <ImageView android:layout_gravity="center_vertical" android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/material_ic_chevron_left_24px_svg" app:tint="?attr/colorAccent"/>
+                <FrameLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                    <TextView android:textSize="12sp" android:layout_gravity="center_horizontal" android:id="@+id/horizontal_percent" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <SeekBar android:id="@+id/horizontal_position_seek_bar" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                </FrameLayout>
+                <ImageView android:layout_gravity="center_vertical" android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/material_ic_chevron_right_24px_svg" app:tint="?attr/colorAccent"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginTop="@dimen/margin_small" android:layout_marginStart="@dimen/margin_medium" android:layout_marginEnd="@dimen/margin_medium">
+                <ImageView android:layout_gravity="center_vertical" android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/material_ic_keyboard_arrow_up_24px_svg" app:tint="?attr/colorAccent"/>
+                <FrameLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                    <TextView android:textSize="12sp" android:layout_gravity="center_horizontal" android:id="@+id/vertical_percent" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <SeekBar android:id="@+id/vertical_position_seek_bar" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                </FrameLayout>
+                <ImageView android:layout_gravity="center_vertical" android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/ic_arrow_down" app:tint="?attr/colorAccent"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="end" android:id="@+id/button_bar" android:paddingTop="0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:id="@+id/cancelButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/button_bar_button_min_width" android:text="@android:string/cancel" style="?android:attr/buttonBarButtonStyle"/>
+            <View android:background="@color/ok_cancel_button_border" android:layout_width="1dp" android:layout_height="match_parent"/>
+            <Button android:id="@+id/okButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/button_bar_button_min_width" android:text="@android:string/ok" style="?android:attr/buttonBarButtonStyle"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

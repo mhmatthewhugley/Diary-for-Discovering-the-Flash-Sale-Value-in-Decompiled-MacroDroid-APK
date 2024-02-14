@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:padding="@dimen/margin_medium" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="18sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/enter_email_for_bug"/>
+        <androidx.appcompat.widget.AppCompatEditText android:id="@+id/email_address" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/enter_email_address"/>
+        <Button android:textColor="@color/white" android:id="@+id/submit_bug" android:layout_width="match_parent" android:layout_height="64dp" android:layout_marginTop="@dimen/margin_medium" android:text="@string/submit_bug" android:backgroundTint="@color/primary"/>
+    </LinearLayout>
+</FrameLayout>

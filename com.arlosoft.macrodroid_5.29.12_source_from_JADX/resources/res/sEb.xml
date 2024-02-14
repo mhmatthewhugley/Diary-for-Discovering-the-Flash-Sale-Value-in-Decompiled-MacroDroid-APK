@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/margin_medium" android:layout_marginEnd="@dimen/margin_medium">
+        <TextView android:textColor="?attr/colorAccent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_marginBottom="@dimen/margin_tiny" android:text="@string/text_content"/>
+        <com.arlosoft.macrodroid.widget.ToggleButtonGroupTableLayout android:layout_gravity="center_horizontal" android:id="@+id/radGroup1" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TableRow>
+                <RadioButton android:id="@+id/notification_text_dialog_any_radio_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="@string/any" android:layout_weight="1"/>
+                <RadioButton android:id="@+id/notification_text_dialog_matches_radio_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:text="@string/matches" android:layout_weight="1"/>
+            </TableRow>
+            <TableRow>
+                <RadioButton android:id="@+id/notification_text_dialog_contains_radio_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:text="@string/contains" android:layout_weight="1"/>
+                <RadioButton android:id="@+id/notification_text_dialog_excludes_radio_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:text="@string/excludes" android:layout_weight="1"/>
+            </TableRow>
+        </com.arlosoft.macrodroid.widget.ToggleButtonGroupTableLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatEditText android:enabled="false" android:id="@+id/notification_text_dialog_text_content" android:layout_width="0dp" android:layout_height="wrap_content" android:hint="@string/enter_text_to_match" android:singleLine="true" android:layout_weight="1">
+                <requestFocus/>
+            </androidx.appcompat.widget.AppCompatEditText>
+            <Button android:layout_gravity="bottom" android:id="@+id/magic_text_button" style="@style/MagicTextButton"/>
+        </LinearLayout>
+        <TextView android:id="@+id/notification_text_dialog_wildcards_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wildcards_supported"/>
+        <CheckBox android:id="@+id/enable_regex" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:checked="false" android:text="@string/enable_regular_expression_matching"/>
+        <CheckBox android:id="@+id/notification_text_dialog_exclude_ongoing" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:checked="false" android:text="@string/ignore_ongoing_notifications"/>
+        <CheckBox android:id="@+id/notification_text_dialog_supress_multiples" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:checked="false" android:text="@string/notification_trigger_prevent_multi_triggers"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/sound_options_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textColor="?attr/colorAccent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:text="@string/notification_sound"/>
+            <androidx.appcompat.widget.AppCompatSpinner android:id="@+id/sound_option_spinner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small"/>
+        </LinearLayout>
+        <LinearLayout android:textColor="?attr/colorAccent" android:orientation="vertical" android:id="@+id/older_than_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small">
+            <TextView android:textSize="@dimen/dialog_title" android:textColor="?attr/colorAccent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/older_than"/>
+            <TableLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:layout_gravity="center_vertical" android:paddingTop="@dimen/margin_small" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hours_capital" android:paddingEnd="8dp"/>
+                    <com.arlosoft.macrodroid.common.NumberPicker android:id="@+id/hour_picker" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                </TableRow>
+                <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:layout_gravity="center_vertical" android:paddingTop="@dimen/margin_small" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/minutes_capital" android:paddingEnd="8dp"/>
+                    <com.arlosoft.macrodroid.common.NumberPicker android:id="@+id/minute_picker" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                </TableRow>
+                <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:layout_gravity="center_vertical" android:paddingTop="@dimen/margin_small" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/seconds_capital" android:paddingEnd="8dp"/>
+                    <com.arlosoft.macrodroid.common.NumberPicker android:id="@+id/second_picker" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/actions_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_small">
+            <TextView android:textColor="?attr/colorAccent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:layout_marginBottom="@dimen/margin_tiny" android:text="@string/action_notification_interaction_action_to_perform"/>
+            <Spinner android:id="@+id/notification_actions_spinner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:minWidth="200dp"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="end" android:id="@+id/button_bar" android:paddingTop="0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:id="@+id/cancelButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/button_bar_button_min_width" android:text="@android:string/cancel" style="?android:attr/buttonBarButtonStyle"/>
+            <View android:background="@color/ok_cancel_button_border" android:layout_width="1dp" android:layout_height="match_parent"/>
+            <Button android:id="@+id/okButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/button_bar_button_min_width" android:text="@android:string/ok" style="?android:attr/buttonBarButtonStyle"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

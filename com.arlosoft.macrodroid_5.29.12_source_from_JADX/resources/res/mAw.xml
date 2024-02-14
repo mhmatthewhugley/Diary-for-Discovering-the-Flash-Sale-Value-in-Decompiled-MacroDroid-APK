@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_small">
+            <TextView android:padding="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/intent_param_values_description"/>
+            <LinearLayout android:orientation="vertical" android:padding="8dp" android:layout_width="match_parent" android:layout_height="match_parent">
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/intent_target"/>
+                <Spinner android:entries="@array/intent_target_options" android:layout_gravity="center_vertical" android:id="@+id/configure_intent_target_spinner" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginBottom="12dp"/>
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/intent_action"/>
+                <androidx.appcompat.widget.AppCompatEditText android:id="@+id/configure_intent_action" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/intent_action_hint" android:inputType="textNoSuggestions"/>
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/intent_package"/>
+                <androidx.appcompat.widget.AppCompatEditText android:id="@+id/configure_intent_package_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/intent_package_hint" android:inputType="textNoSuggestions"/>
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/intent_class"/>
+                <androidx.appcompat.widget.AppCompatEditText android:id="@+id/configure_intent_class_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/intent_class_hint" android:inputType="textNoSuggestions"/>
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/intent_data"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <androidx.appcompat.widget.AppCompatEditText android:id="@+id/configure_intent_data" android:layout_width="0dp" android:layout_height="wrap_content" android:hint="@string/intent_data_hint" android:layout_weight="1" android:inputType="textNoSuggestions"/>
+                    <Button android:id="@+id/configure_intent_data_magic_text_button" style="@style/MagicTextButton"/>
+                </LinearLayout>
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/intent_mime_type"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <androidx.appcompat.widget.AppCompatEditText android:id="@+id/configure_intent_mime_type" android:layout_width="0dp" android:layout_height="wrap_content" android:hint="@string/intent_mime_type_hint" android:layout_weight="1" android:inputType="textNoSuggestions"/>
+                    <Button android:id="@+id/configure_intent_mime_type_magic_text_button" style="@style/MagicTextButton"/>
+                </LinearLayout>
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/extra_1" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <androidx.appcompat.widget.AppCompatEditText android:id="@+id/configure_intent_extra1_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/intent_extra_enter_param_name" android:inputType="textNoSuggestions"/>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <androidx.appcompat.widget.AppCompatEditText android:id="@+id/configure_intent_extra1_parameter" android:layout_width="0dp" android:layout_height="wrap_content" android:hint="@string/intent_extra_enter_value" android:layout_weight="1" android:inputType="textNoSuggestions"/>
+                        <Button android:id="@+id/configure_intent_param1_magic_text_button" style="@style/MagicTextButton"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/extra_2" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <androidx.appcompat.widget.AppCompatEditText android:id="@+id/configure_intent_extra2_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/intent_extra_enter_param_name" android:inputType="textNoSuggestions"/>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <androidx.appcompat.widget.AppCompatEditText android:id="@+id/configure_intent_extra2_parameter" android:layout_width="0dp" android:layout_height="wrap_content" android:hint="@string/intent_extra_enter_value" android:layout_weight="1" android:inputType="textNoSuggestions"/>
+                        <Button android:id="@+id/configure_intent_param2_magic_text_button" style="@style/MagicTextButton"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/extra_3" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <androidx.appcompat.widget.AppCompatEditText android:id="@+id/configure_intent_extra3_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/intent_extra_enter_param_name" android:inputType="textNoSuggestions"/>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <androidx.appcompat.widget.AppCompatEditText android:id="@+id/configure_intent_extra3_parameter" android:layout_width="0dp" android:layout_height="wrap_content" android:hint="@string/intent_extra_enter_value" android:layout_weight="1" android:inputType="textNoSuggestions"/>
+                        <Button android:id="@+id/configure_intent_param3_magic_text_button" style="@style/MagicTextButton"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/extra_4" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <androidx.appcompat.widget.AppCompatEditText android:id="@+id/configure_intent_extra4_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/intent_extra_enter_param_name" android:inputType="textNoSuggestions"/>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <androidx.appcompat.widget.AppCompatEditText android:id="@+id/configure_intent_extra4_parameter" android:layout_width="0dp" android:layout_height="wrap_content" android:hint="@string/intent_extra_enter_value" android:layout_weight="1" android:inputType="textNoSuggestions"/>
+                        <Button android:id="@+id/configure_intent_param4_magic_text_button" style="@style/MagicTextButton"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <View android:background="@color/ok_cancel_button_border" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="10dp"/>
+    <LinearLayout android:gravity="end" android:id="@+id/button_bar" android:paddingTop="0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:id="@+id/cancelButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/button_bar_button_min_width" android:text="@android:string/cancel" style="?android:attr/buttonBarButtonStyle"/>
+        <View android:background="@color/ok_cancel_button_border" android:layout_width="1dp" android:layout_height="match_parent"/>
+        <Button android:id="@+id/okButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/button_bar_button_min_width" android:text="@android:string/ok" style="?android:attr/buttonBarButtonStyle"/>
+    </LinearLayout>
+</LinearLayout>

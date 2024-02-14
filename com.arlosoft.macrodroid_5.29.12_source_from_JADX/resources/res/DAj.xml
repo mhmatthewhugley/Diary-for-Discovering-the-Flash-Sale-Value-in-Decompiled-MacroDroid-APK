@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/categoryContainer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_marginStart="16dp" android:layout_marginEnd="16dp" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+        <TextView android:textColor="@color/template_accent" android:layout_gravity="center_vertical" android:id="@+id/selectCategoryLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/category"/>
+        <Spinner android:id="@+id/catgorySpinner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="250dp" android:layout_marginStart="16dp"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/languageContainer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_marginStart="16dp" android:layout_marginEnd="16dp">
+        <TextView android:textColor="@color/template_accent" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/language" android:layout_marginEnd="@dimen/margin_small"/>
+        <Spinner android:entries="@array/languages" android:id="@+id/languageSpinner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="250dp" android:entryValues="@array/languages_codes"/>
+    </LinearLayout>
+    <com.google.android.material.textfield.TextInputLayout android:id="@+id/nameInputLayout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_marginBottom="16dp" android:layout_marginStart="16dp" android:layout_marginEnd="16dp">
+        <com.google.android.material.textfield.TextInputEditText android:id="@+id/nameText" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/macro_name" android:maxLines="1" android:singleLine="true"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <com.google.android.material.textfield.TextInputLayout android:id="@+id/descriptionInputLayout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16dp" android:layout_marginStart="16dp" android:layout_marginEnd="16dp">
+            <com.google.android.material.textfield.TextInputEditText android:id="@+id/descriptionText" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/description"/>
+        </com.google.android.material.textfield.TextInputLayout>
+    </ScrollView>
+    <include layout="@layout/include_ok_cancel_buttons"/>
+</LinearLayout>

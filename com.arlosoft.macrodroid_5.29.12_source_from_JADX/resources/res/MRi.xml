@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:paddingTop="@dimen/widget_margin_top" android:paddingBottom="@dimen/widget_margin_bottom" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="@dimen/widget_margin_left" android:paddingEnd="@dimen/widget_margin_right">
+    <LinearLayout android:orientation="vertical" android:id="@+id/linearLayout1" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageButton android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@+id/custom_widget_button" android:background="@drawable/widget_background" android:paddingBottom="0dp" android:layout_width="54dp" android:layout_height="54dp" android:scaleType="fitCenter" android:paddingStart="5dp" android:paddingEnd="5dp"/>
+            <ImageButton android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@+id/custom_widget_button_faded" android:background="@drawable/widget_background" android:paddingBottom="0dp" android:layout_width="54dp" android:layout_height="54dp" android:scaleType="fitCenter" android:alpha="0.4" android:paddingStart="5dp" android:paddingEnd="5dp"/>
+        </FrameLayout>
+        <TextView android:ellipsize="end" android:gravity="center_horizontal" android:id="@+id/custom_widget_label" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" style="@style/WidgetText"/>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="@string/enter_description_info"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="10dp">
+        <TextView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/language" android:layout_marginEnd="@dimen/margin_small"/>
+        <Spinner android:entries="@array/languages" android:id="@+id/enter_description_dialog_language_spinner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="200dp" android:entryValues="@array/languages_codes"/>
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatEditText android:id="@+id/enter_description_dialog_description" android:layout_width="match_parent" android:layout_height="0dp" android:layout_margin="10dp" android:hint="@string/enter_description_hint" android:maxLength="200" android:layout_weight="1" android:inputType="none|text|textCapSentences|textMultiLine">
+        <requestFocus/>
+    </androidx.appcompat.widget.AppCompatEditText>
+    <View android:background="@color/ok_cancel_button_border" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="10dp"/>
+    <LinearLayout android:gravity="end" android:id="@+id/button_bar" android:paddingTop="0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:id="@+id/cancelButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/button_bar_button_min_width" android:text="@android:string/cancel" style="?android:attr/buttonBarButtonStyle"/>
+        <View android:background="@color/ok_cancel_button_border" android:layout_width="1dp" android:layout_height="match_parent"/>
+        <Button android:enabled="false" android:id="@+id/okButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/button_bar_button_min_width" android:text="@android:string/ok" style="?android:attr/buttonBarButtonStyle"/>
+    </LinearLayout>
+</LinearLayout>

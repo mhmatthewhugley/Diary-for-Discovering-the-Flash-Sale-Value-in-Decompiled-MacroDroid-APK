@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:icon="@drawable/ic_magnify_white_24dp" android:id="@+id/menu_search" android:title="@string/search" app:actionViewClass="androidx.appcompat.widget.SearchView" app:showAsAction="always"/>
+    <item android:id="@+id/menu_delete_all" android:title="@string/delete_all_macros" app:showAsAction="never"/>
+    <item android:id="@+id/menu_import_from_nearby" android:title="@string/import_from_nearby_device" app:showAsAction="never"/>
+    <item android:id="@+id/menu_descriptions" android:title="@string/show_descriptions" app:showAsAction="never"/>
+    <item android:icon="@drawable/ic_format_list_bulleted_white_24dp" android:id="@+id/menu_expand_collapse_categories" android:title="@string/expand_categories" app:showAsAction="ifRoom"/>
+    <item android:id="@+id/menu_set_max_lines" android:title="@string/set_max_lines" app:showAsAction="never"/>
+    <item android:id="@+id/menu_last_invoked" android:title="@string/show_last_activations" android:checkable="true" app:showAsAction="never"/>
+    <item android:id="@+id/menu_last_edited" android:title="@string/show_last_edited" android:checkable="true" app:showAsAction="never"/>
+    <item android:id="@+id/menu_show_macro_details" android:title="@string/macro_list_show_macro_details_toggle" android:checkable="true" app:showAsAction="never"/>
+    <item android:id="@+id/categories_collapsed_default" android:title="@string/categories_collapsed_default" android:checkable="true" app:showAsAction="never"/>
+</menu>

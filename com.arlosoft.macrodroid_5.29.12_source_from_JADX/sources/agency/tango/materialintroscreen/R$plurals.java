@@ -1,0 +1,8 @@
+package agency.tango.materialintroscreen;
+
+public final class R$plurals {
+    public static final int mtrl_badge_content_description = 2131820545;
+
+    private R$plurals() {
+    }
+}

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <fragment android:name="com.google.android.gms.maps.SupportMapFragment" android:id="@+id/map" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <View android:layout_gravity="center" android:id="@+id/area_radius" android:background="@drawable/area_circle" android:layout_width="1dp" android:layout_height="1dp"/>
+    <ImageView android:layout_gravity="center" android:layout_width="48dp" android:layout_height="48dp" android:layout_marginBottom="24dp" android:src="@drawable/geofence_pin"/>
+    <FrameLayout android:background="@drawable/search_location_background" android:padding="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_small">
+        <TextView android:textSize="16sp" android:textColor="@color/black" android:id="@+id/search_box" android:layout_width="match_parent" android:layout_height="wrap_content" android:drawableLeft="@drawable/ic_search_black_24dp" android:drawablePadding="@dimen/margin_small"/>
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="bottom" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@+id/config_panel" android:background="?android:attr/windowBackground" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="28dp">
+            <View android:id="@+id/divider_line" android:background="#40000000" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <LinearLayout android:orientation="horizontal" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_marginStart="@dimen/margin_medium" android:layout_marginEnd="@dimen/margin_medium">
+                <TextView android:textColor="@color/default_text_color" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zone_name"/>
+                <androidx.appcompat.widget.AppCompatEditText android:textColor="@color/default_text_color" android:id="@+id/zone_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/enter_zone_name" android:singleLine="true" android:imeOptions="actionDone" android:layout_marginStart="@dimen/margin_medium" android:layout_marginEnd="56sp"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_marginBottom="18dp" android:layout_marginStart="@dimen/margin_medium" android:layout_marginEnd="@dimen/margin_medium">
+                <TextView android:textColor="@color/default_text_color" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/radius"/>
+                <SeekBar android:layout_gravity="center_vertical" android:id="@+id/area_seek_bar" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="1dp" android:max="4950" android:layout_weight="1"/>
+                <TextView android:textColor="@color/default_text_color" android:layout_gravity="center_vertical" android:id="@+id/radius_value_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="46sp" android:text="100m"/>
+            </LinearLayout>
+        </LinearLayout>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton android:layout_gravity="end" android:id="@+id/save_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_action_accept_white" android:contentDescription="@string/save" android:layout_marginEnd="@dimen/margin_medium" app:backgroundTint="@color/geofences_primary" app:elevation="4dp"/>
+    </FrameLayout>
+</FrameLayout>

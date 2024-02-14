@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:animateLayoutChanges="true">
+    <ScrollView android:scrollbarStyle="outsideInset" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/margin_medium" android:paddingEnd="@dimen/margin_medium">
+            <RadioGroup android:orientation="horizontal" android:id="@+id/constraint_options" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small">
+                <RadioButton android:id="@+id/greater_than" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/greater_than"/>
+                <RadioButton android:id="@+id/less_than" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/less_than" android:layout_weight="1" android:layout_marginStart="@dimen/margin_medium"/>
+            </RadioGroup>
+            <com.arlosoft.macrodroid.widget.NDSpinner android:id="@+id/spinner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium"/>
+            <TableLayout android:id="@+id/time_layout" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/margin_small">
+                <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:textSize="16sp" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hours_capital" android:paddingEnd="8dp"/>
+                    <com.arlosoft.macrodroid.common.NumberPicker android:id="@+id/hour_picker" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                </TableRow>
+                <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:textSize="16sp" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/minutes_capital" android:paddingEnd="8dp"/>
+                    <com.arlosoft.macrodroid.common.NumberPicker android:id="@+id/minute_picker" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                </TableRow>
+                <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:textSize="16sp" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/seconds_capital" android:paddingEnd="8dp"/>
+                    <com.arlosoft.macrodroid.common.NumberPicker android:id="@+id/second_picker" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                </TableRow>
+            </TableLayout>
+            <CheckBox android:id="@+id/force_alarm_checkbox" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:text="@string/use_alarm" android:layout_marginEnd="@dimen/margin_small"/>
+            <TextView android:id="@+id/force_alarm_description" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_small" android:text="@string/use_alarm_description" android:layout_marginStart="@dimen/margin_small" android:layout_marginEnd="@dimen/margin_small"/>
+            <View android:background="@color/ok_cancel_button_border" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="4dp"/>
+            <LinearLayout android:gravity="end" android:id="@+id/button_bar" android:paddingTop="0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <Button android:id="@+id/cancelButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/button_bar_button_min_width" android:text="@android:string/cancel" style="?android:attr/buttonBarButtonStyle"/>
+                <View android:background="@color/ok_cancel_button_border" android:layout_width="1dp" android:layout_height="match_parent"/>
+                <Button android:id="@+id/okButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/button_bar_button_min_width" android:text="@android:string/ok" style="?android:attr/buttonBarButtonStyle"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

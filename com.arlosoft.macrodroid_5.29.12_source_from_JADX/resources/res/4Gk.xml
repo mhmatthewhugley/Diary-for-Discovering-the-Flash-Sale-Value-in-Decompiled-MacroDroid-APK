@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:id="@+id/descriptionText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="12dp" android:layout_marginRight="16dp" android:text="@string/variable_dictionary_define_keys_manually_description" android:layout_marginHorizontal="16dp"/>
+    <TextView android:id="@+id/forceArrayText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="12dp" android:layout_marginRight="16dp" android:text="@string/variable_dictionary_define_keys_force_array" android:layout_marginHorizontal="16dp"/>
+    <LinearLayout android:orientation="horizontal" android:paddingTop="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="16dp" android:paddingEnd="16dp">
+        <androidx.appcompat.widget.AppCompatEditText android:id="@+id/manualKeysEntry" android:layout_width="0dp" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1" android:inputType="textUri">
+            <requestFocus/>
+        </androidx.appcompat.widget.AppCompatEditText>
+        <Button android:id="@+id/magicTextButton" style="@style/MagicTextButton"/>
+    </LinearLayout>
+    <TextView android:textSize="14sp" android:textColor="?attr/colorAccent" android:layout_gravity="center_vertical" android:id="@+id/fullVarTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small_medium" android:text="@string/variable_full_variable_name_with_dictionary_keys" android:layout_marginStart="16dp"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:paddingStart="16dp" android:paddingEnd="16dp">
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/validIndicator" android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/green_tick"/>
+        <TextView android:textSize="18sp" android:textColor="@color/default_text_color_full" android:layout_gravity="center_vertical" android:id="@+id/fullVariableText" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="8dp"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/variableTypeContainer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:layout_marginBottom="@dimen/margin_medium" android:layout_marginVertical="@dimen/margin_medium">
+        <TextView android:textSize="16sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/variable_type_heading" android:layout_marginStart="16dp"/>
+        <Spinner android:entries="@array/dictionary_entry_types_no_sub_elements" android:id="@+id/valueTypeSpinner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="16dp"/>
+    </LinearLayout>
+    <include layout="@layout/include_ok_cancel_buttons"/>
+</LinearLayout>

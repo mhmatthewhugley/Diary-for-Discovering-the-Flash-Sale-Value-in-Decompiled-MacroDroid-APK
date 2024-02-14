@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:padding="@dimen/margin_medium" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/accessibility_services_intro"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:text="@string/macrodroid" style="@style/AccessibilityTextTitle"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:text="@string/accessibility_service_detail_main" style="@style/AccessibilityTextInfo"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:text="@string/md_ui_interaction" style="@style/AccessibilityTextTitle"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:text="@string/accessibility_service_detail_ui_interaction" style="@style/AccessibilityTextInfo"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:text="@string/md_volume_button_monitoring" style="@style/AccessibilityTextTitle"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:text="@string/accessibility_service_detail_volume_button_monitor" style="@style/AccessibilityTextInfo"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:text="@string/md_fingerprint_gesture_detector" style="@style/AccessibilityTextTitle"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:text="@string/accessibility_service_detail_finger_print_gesture_detector" style="@style/AccessibilityTextInfo"/>
+        <TextView android:textStyle="italic" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:text="@string/accessibility_service_general_disclaimer"/>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/container" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="16dp" android:layout_weight="1" android:layout_marginStart="8dp" android:layout_marginEnd="8dp">
+        <include android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/item_template_macro"/>
+    </ScrollView>
+    <ViewFlipper android:id="@+id/bottomViewFlipper" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:orientation="horizontal" android:id="@+id/buttonBar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8dp" android:layout_marginEnd="8dp">
+            <Button android:id="@+id/cancelButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@android:string/cancel" android:layout_marginEnd="8dp" style="?android:attr/buttonBarButtonStyle"/>
+            <Button android:id="@+id/uploadButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/button_bar_button_min_width" android:text="@string/upload" style="?android:attr/buttonBarButtonStyle"/>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@+id/uploadingBar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8dp" android:layout_marginStart="8dp" android:layout_marginEnd="8dp">
+            <TextView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium" android:text="@string/uploading" style="@style/TextAppearance.AppCompat.Medium"/>
+            <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center" android:id="@+id/loadingView" android:layout_width="64dp" android:layout_height="64dp" app:lottie_autoPlay="true" app:lottie_loop="true" app:lottie_rawRes="@raw/simple_loader"/>
+        </LinearLayout>
+    </ViewFlipper>
+</LinearLayout>

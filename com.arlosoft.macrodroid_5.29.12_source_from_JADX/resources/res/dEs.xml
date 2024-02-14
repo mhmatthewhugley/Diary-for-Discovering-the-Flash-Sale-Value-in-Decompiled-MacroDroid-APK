@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="20dp" android:paddingEnd="20dp">
+    <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/calibrate_touch_device_instruction_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7dp" android:layout_marginBottom="25dp" android:layout_alignParentTop="true"/>
+    <View android:id="@+id/view1" android:background="#888888" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/button_border" android:layout_below="@+id/calibrate_touch_device_instruction_text"/>
+    <View android:id="@+id/button_border" android:background="@color/ok_cancel_button_border" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="12dp" android:layout_above="@+id/cancelButton"/>
+    <Button android:id="@+id/cancelButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@android:string/cancel" android:layout_alignParentBottom="true" android:onClick="onCancelClick" style="?android:attr/buttonBarButtonStyle"/>
+</RelativeLayout>

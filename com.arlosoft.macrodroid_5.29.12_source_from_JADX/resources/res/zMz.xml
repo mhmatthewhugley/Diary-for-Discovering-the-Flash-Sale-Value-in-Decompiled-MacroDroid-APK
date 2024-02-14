@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/margin_medium" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/margin_medium" android:paddingEnd="@dimen/margin_medium"> ` 
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">` 
+                <androidx.appcompat.widget.AppCompatEditText android:id="@+id/user_prompt_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/title" android:maxLines="1"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <Button android:id="@+id/title_magic_text_button" style="@style/MagicTextButton"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/margin_medium" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/margin_medium" android:paddingEnd="@dimen/margin_medium">
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <androidx.appcompat.widget.AppCompatEditText android:id="@+id/user_prompt_description" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/description"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <Button android:id="@+id/description_magic_text_button" style="@style/MagicTextButton"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/true_label_layout" android:paddingTop="@dimen/margin_medium" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/margin_medium" android:paddingEnd="@dimen/margin_medium">
+            <com.google.android.material.textfield.TextInputLayout android:id="@+id/input_layout_password" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <androidx.appcompat.widget.AppCompatEditText android:id="@+id/true_label" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/true_label" android:singleLine="true"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <Button android:id="@+id/true_label_magic_text_button" style="@style/MagicTextButton"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/false_label_layout" android:paddingTop="@dimen/margin_medium" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/margin_medium" android:paddingEnd="@dimen/margin_medium">
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <androidx.appcompat.widget.AppCompatEditText android:id="@+id/false_label" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/false_label" android:singleLine="true"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <Button android:id="@+id/false_label_magic_text_button" style="@style/MagicTextButton"/>
+        </LinearLayout>
+        <CheckBox android:id="@+id/password_field" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:text="@string/variable_user_prompt_option_password_entry" android:layout_marginStart="@dimen/margin_small" android:layout_marginEnd="@dimen/margin_small"/>
+        <CheckBox android:id="@+id/existing_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:text="@string/variable_user_prompt_option_display_existing_value" android:layout_marginStart="@dimen/margin_small" android:layout_marginEnd="@dimen/margin_small"/>
+        <CheckBox android:id="@+id/allow_cancel_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:text="@string/allow_cancel" android:layout_marginStart="@dimen/margin_small" android:layout_marginEnd="@dimen/margin_small"/>
+        <CheckBox android:id="@+id/cancel_stops_running_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:text="@string/cancel_stops_macro_running" android:layout_marginStart="@dimen/margin_small" android:layout_marginEnd="@dimen/margin_small"/>
+        <CheckBox android:id="@+id/dark_mode_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:text="@string/dark_mode" android:layout_marginStart="@dimen/margin_small" android:layout_marginEnd="@dimen/margin_small"/>
+        <View android:background="@color/ok_cancel_button_border" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="8dp"/>
+        <LinearLayout android:gravity="end" android:id="@+id/button_bar" android:paddingTop="0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:id="@+id/cancelButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/button_bar_button_min_width" android:text="@android:string/cancel" style="?android:attr/buttonBarButtonStyle"/>
+            <View android:background="@color/ok_cancel_button_border" android:layout_width="1dp" android:layout_height="match_parent"/>
+            <Button android:id="@+id/okButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/button_bar_button_min_width" android:text="@android:string/ok" style="?android:attr/buttonBarButtonStyle"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

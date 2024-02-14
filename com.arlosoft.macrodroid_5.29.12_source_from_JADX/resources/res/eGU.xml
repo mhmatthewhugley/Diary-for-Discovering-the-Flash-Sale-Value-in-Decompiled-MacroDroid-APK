@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:id="@+id/menu_enable_disable_macro" android:title="@string/action_disable_macro_disable" app:showAsAction="never"/>
+    <item android:icon="@drawable/ic_description_white_24dp" android:id="@+id/menu_toggle_description" android:title="@string/description" app:showAsAction="always"/>
+    <item android:icon="@drawable/ic_format_list_bulleted_white_24dp" android:id="@+id/menu_select_category" android:title="@string/select_category" app:showAsAction="always"/>
+    <item android:icon="@drawable/ic_action_share_white" android:id="@+id/menu_share" android:title="@string/menu_share" app:showAsAction="never"/>
+    <item android:icon="@drawable/ic_action_share_white" android:id="@+id/menu_share_nearby" android:title="@string/share_to_nearby_device" app:showAsAction="never"/>
+    <item android:icon="@drawable/ic_action_share_white" android:id="@+id/menu_share_as_image" android:title="@string/menu_share_as_image" app:showAsAction="never"/>
+    <item android:id="@+id/menu_allow_logging" android:title="@string/allow_logging" android:checkable="true" app:showAsAction="never"/>
+    <item android:icon="@drawable/ic_action_copy_white" android:id="@+id/menu_copy" android:title="@string/menu_copy" app:showAsAction="never"/>
+    <item android:icon="@drawable/ic_action_discard_white" android:id="@+id/menu_delete" android:title="@string/menu_delete_macro" app:showAsAction="ifRoom"/>
+    <item android:icon="@drawable/ic_action_play_white" android:id="@+id/menu_run" android:title="@string/menu_run" app:showAsAction="never"/>
+    <item android:icon="@drawable/ic_action_play_white" android:id="@+id/menu_test_macro" android:title="@string/menu_test_macro" app:showAsAction="never"/>
+    <item android:icon="@drawable/ic_format_size_white_24dp" android:id="@+id/menu_text_size" android:title="@string/text_size" app:showAsAction="never"/>
+    <item android:id="@+id/menu_variables" android:title="@string/variables" app:showAsAction="never"/>
+    <item android:id="@+id/menu_local_variables_display_mode" android:title="@string/local_variable_display_option" app:showAsAction="never">
+        <menu/>
+    </item>
+    <item android:id="@+id/show_log" android:title="@string/edit_macro_screen_show_log" app:showAsAction="never"/>
+    <item android:id="@+id/menu_save_changes" android:title="@string/save_changes" app:showAsAction="never"/>
+    <item android:id="@+id/add_disabled" android:visible="false" android:title="@string/template_macro_menu_option_add_disabled" app:showAsAction="never"/>
+</menu>

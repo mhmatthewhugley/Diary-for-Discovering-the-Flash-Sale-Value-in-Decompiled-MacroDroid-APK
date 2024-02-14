@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/cardView" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_small" android:layout_marginTop="@dimen/margin_small" android:layout_marginRight="@dimen/margin_small" android:foreground="?android:attr/selectableItemBackground" android:layout_marginHorizontal="@dimen/margin_small" app:cardBackgroundColor="@color/card_bg_1" app:cardCornerRadius="8dp" app:cardElevation="3dp">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="18sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/rank" android:layout_width="44dp" android:layout_height="match_parent" android:text="bold" android:shadowColor="@color/black" android:shadowDx="1" android:shadowDy="1" android:shadowRadius="2" android:fontFamily="@font/helvetica"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+                <com.arlosoft.macrodroid.avatar.views.AvatarView android:layout_gravity="center_vertical" android:id="@+id/avatarImage" android:padding="2dp" android:layout_width="60dp" android:layout_height="60dp" android:layout_marginTop="@dimen/margin_small" android:layout_marginBottom="@dimen/margin_small" android:layout_marginStart="0dp" android:layout_marginEnd="@dimen/margin_tiny" android:layout_marginVertical="@dimen/margin_small" app:av_border_color="@android:color/white" app:av_border_width="1dp" app:av_text_size_percentage="55"/>
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:paddingTop="4dp" android:paddingBottom="4dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:paddingStart="4dp" android:paddingEnd="4dp">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <ImageView android:layout_gravity="center_vertical" android:id="@+id/subscriptionIndicator" android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/ic_bell" android:layout_marginEnd="@dimen/margin_tiny" app:tint="@color/subscribed_indicator_color"/>
+                        <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/white" android:ellipsize="end" android:id="@+id/name" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true"/>
+                    </LinearLayout>
+                    <TextView android:textSize="14sp" android:textColor="@color/white" android:ellipsize="end" android:id="@+id/description" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2"/>
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:paddingTop="@dimen/margin_tiny" android:paddingBottom="@dimen/margin_tiny" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingEnd="@dimen/margin_small">
+                    <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:paddingTop="@dimen/margin_tiny" android:paddingBottom="@dimen/margin_tiny" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingEnd="@dimen/margin_tiny">
+                        <ImageView android:layout_gravity="center_vertical" android:id="@+id/starIcon" android:layout_width="24dp" android:layout_height="24dp" android:tint="@color/template_star_color" app:srcCompat="@drawable/ic_star_white_24dp"/>
+                        <TextView android:textSize="18sp" android:textColor="@color/white" android:layout_gravity="center_vertical" android:id="@+id/starRating" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/margin_tiny"/>
+                    </LinearLayout>
+                    <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:paddingTop="@dimen/margin_tiny" android:paddingBottom="@dimen/margin_tiny" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingEnd="@dimen/margin_small">
+                        <ImageView android:gravity="center" android:layout_gravity="center" android:id="@+id/macroIcon" android:padding="4dp" android:layout_width="26dp" android:layout_height="26dp" app:srcCompat="@drawable/active_icon_new"/>
+                        <TextView android:textSize="14sp" android:textColor="@color/white" android:layout_gravity="center_vertical" android:id="@+id/numMacros" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/margin_tiny"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

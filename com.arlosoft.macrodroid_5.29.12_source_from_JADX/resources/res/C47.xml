@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/bottomSheetVariables" android:layout_width="match_parent" android:layout_height="wrap_content" app:behavior_hideable="false" app:behavior_peekHeight="@dimen/local_var_bottom_bar_height" app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"/>

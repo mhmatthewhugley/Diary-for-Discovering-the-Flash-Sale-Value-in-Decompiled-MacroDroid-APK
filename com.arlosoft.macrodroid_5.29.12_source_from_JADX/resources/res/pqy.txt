@@ -1,0 +1,26 @@
+Version 5.29 (december 2022)
+=====================================
+
+Stöd för mallbutiksprenumerationer på makro/användare har lagts till för att få ett meddelande om uppdateringar (endast pro-användare).
+
+JSON-utdataåtgärden har lagts till.
+
+Åtgärden Set Digital Assistant har lagts till.
+
+Flygplanslägesåtgärd kan nu fungera med ADB-hack (inget krav på att göra MacroDroid till standard digital assistent).
+
+Aktivitetsigenkänningsutlösaren stöder nu mindre än jämförelse för att identifiera när en aktivitet avslutas.
+
+Screen Content trigger har nu en justerbar uppdateringshastighet.
+
+Stöd har lagts till för att porta ett Webhook Trigger-enhets-ID till en ny enhet.
+
+Åtgärden Flytande text stöder nu vänster-, mitt- och högerjustering.
+
+Åtgärdat problem där alla dagshändelser i kalendern kunde utlösas felaktigt på grund av sommartider.
+
+Åtgärdat problem där utlösarspecifika värden (t.ex. inkommande samtalsnummer) inte fungerade efter en väntan innan nästa utlösaråtgärd.
+
+Åtgärdat problem där decimaltal i dialogrutor kunde visas felaktigt som länkar.
+
+Åtgärdat problem där åtgärdsblocket inte kunde köras i vissa situationer när den okategoriserade kategorin var inaktiverad.

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.core.widget.NestedScrollView android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+            <LinearLayout android:orientation="vertical" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="match_parent" android:animateLayoutChanges="true">
+                <include android:id="@+id/infoCard" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_small" android:layout_marginTop="@dimen/margin_small" android:layout_marginRight="@dimen/margin_small" android:layout_marginHorizontal="@dimen/margin_small" layout="@layout/info_card"/>
+                <androidx.recyclerview.widget.RecyclerView android:id="@+id/recyclerView" android:paddingTop="@dimen/margin_small" android:visibility="gone" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+                <FrameLayout android:id="@+id/emptyView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center" android:id="@+id/animationView" android:layout_width="70dp" android:layout_height="70dp" app:lottie_autoPlay="true" app:lottie_colorFilter="@color/default_text_color" app:lottie_loop="true" app:lottie_rawRes="@raw/face_animation"/>
+                        <TextView android:textSize="18sp" android:textStyle="italic" android:textColor="@color/default_text_color" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:text="@string/no_backup_files_found"/>
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+        <FrameLayout android:id="@+id/loadingView" android:background="@color/loading_view_dimmer_darker" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center" android:layout_width="240dp" android:layout_height="240dp" app:lottie_autoPlay="true" app:lottie_loop="true" app:lottie_rawRes="@raw/simple_loader"/>
+        </FrameLayout>
+    </FrameLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

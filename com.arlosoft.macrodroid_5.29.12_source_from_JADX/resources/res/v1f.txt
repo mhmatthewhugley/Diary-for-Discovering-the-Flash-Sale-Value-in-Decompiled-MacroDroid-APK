@@ -1,0 +1,589 @@
+Versión 5.28 (octubre de 2022)
+=============================
+
+Se ha agregado la acción Texto flotante.
+
+Se agregaron "Variables de trabajo" a los bloques de acción.
+
+Acción La acción Bloquear ahora admite la opción de bloquear las siguientes acciones hasta que se complete (habilitada de forma predeterminada).
+
+Se ha agregado la acción de entrada Borrar diccionario/Matriz para permitir que se borren o eliminen entradas individuales.
+
+Se ha añadido soporte para traducciones automáticas en tiempo real en Template Store.
+
+Se ha añadido compatibilidad con la vista de satélite en la pantalla de configuración de Geofence.
+
+Se agregó texto mágico para la intensidad de la señal de la torre celular.
+
+Se ha mejorado la pantalla de búsqueda en la lista de bloqueo de acciones para buscar también acciones dentro de los bloques.
+
+Se ha corregido el problema por el que la manipulación de texto dividida en matriz no funcionaba con el delimitador de varios caracteres.
+
+Se agregó una nueva configuración en las opciones de activación para ajustar el tiempo de finalización del disparador de alternancia del botón de encendido.
+
+Otras correcciones y mejoras menores.
+
+Versión 5.27.8 (septiembre de 2022)
+===============================
+
+Pequeña versión de corrección de errores, para solucionar una serie de problemas menores.
+
+Versión 5.27 (septiembre de 2022)
+=============================
+
+Se ha añadido la acción del servicio de accesibilidad (se requiere ADB Hack).
+
+Se agregó funcionalidad para mantener los servicios de accesibilidad habilitados para solucionar problemas en los que algunos dispositivos pueden deshabilitarlos (se requiere ADB Hack).
+
+Se ha agregado la restricción Configuración del sistema.
+
+Se agregaron valores de RAM totales y disponibles a las opciones de texto mágico.
+
+Se agregaron indicadores numéricos para los valores de tono y velocidad en la acción de texto a voz.
+
+Se agregó una solución alternativa para el problema del iniciador de Samsung para evitar que los accesos directos pierdan su icono / etiqueta al activar / desactivar el modo oscuro.
+
+Se ha añadido texto mágico para el nombre de la red SIM/operador.
+
+Se ha añadido texto mágico para el tipo de conexión celular (por ejemplo, 3G/4G/5G).
+
+El texto mágico agregado para MacroDroid es pro (devuelve true o false)
+
+Se agregó soporte para la opción 'Esta macro' a la restricción Macro habilitada / deshabilitada.
+
+Se agregó la opción mantener espacios a la acción de mensaje emergente.
+
+Se ha añadido compatibilidad para cambiar el nombre de los cronómetros.
+
+Se agregó la opción para mostrar la última hora editada en la pantalla de lista de macros (todos los valores serán inicialmente desconocidos hasta que se editen con esta última versión).
+
+Establecer la acción Variable (usando la opción Nueva variable) ahora creará la variable en tiempo de ejecución y admite texto mágico para el nombre de la variable.
+
+La aplicación complementaria Wear OS ahora permite desplazarse por la lista con control giratorio.
+
+Mejoras y correcciones en torno al manejo de diccionarios/matrices en El desencadenador y la restricción de variables.
+
+Se ha corregido el problema por el que establecer una acción variable podía, en algunas situaciones, crear un diccionario en lugar de una matriz.
+
+Se ha corregido el problema por el que no se podía cambiar el nombre de la variable de matriz/diccionario local.
+
+Se ha corregido el problema por el que la visualización de una plantilla con bloques de acción podía agregar variables globales no deseadas.
+
+Se ha corregido el problema por el que la eliminación de una entrada de un diccionario/matriz de bloques de acción eliminaría el diccionario/matriz.
+
+Versión 5.26 (julio de 2022)
+========================
+
+Las acciones Ejecutar macro, Cancelar macro y Deshabilitar macro ahora admiten la introducción de macros por nombre (admite texto mágico para permitir hacer referencia a nombres de macros desde una variable).
+
+Las configuraciones adicionales, como la ubicación de la puesta de sol / salida del sol y la ubicación del clima, ahora se guardan al exportar y mediante una copia de seguridad automática.
+
+La restricción MacroDroid Variable ahora admite la opción definir claves manualmente para variables de diccionario/matriz.
+
+Option Dialog ahora admite el formato HTML básico en el texto del mensaje principal.
+
+Se ha corregido el problema por el que no se podían agregar o quitar categorías de la pantalla de lista de categorías.
+
+Se ha corregido un problema en los disparadores entrantes de SMS/llamadas en los que la comparación de números no siempre funcionaba correctamente cuando se usaba texto mágico.
+
+Se ha corregido el problema por el que el inicio de un acceso directo a MacroDroid minimizaría MacroDroid si está en primer plano.
+
+Se ha corregido el problema por el que el bloque de acción podía duplicarse al importar una macro que ya hacía referencia al mismo bloque de acción.
+
+Se ha corregido el problema por el que los bloques de acción podían eliminarse al probar determinadas acciones.
+
+Se ha corregido el problema por el que la interrupción del bucle no siempre funcionaba correctamente con la acción de diccionario/matriz iterada.
+
+Se ha corregido el problema por el que la búsqueda de iconos no funcionaba correctamente para los paquetes de iconos.
+
+Se ha corregido el problema por el que la configuración del botón flotante no permitía la selección de desencadenadores dentro de una acción esperar hasta el desencadenador.
+
+Otras correcciones menores.
+
+Versión 5.25.6 (julio de 2022)
+===============================
+
+Pequeña actualización de corrección de errores a la versión anterior v5.25. Corrige una serie de problemas menores encontrados en la versión anterior.
+
+Versión 5.25 (junio de 2022)
+========================
+
+Se ha agregado el desencadenador habilitado para macros.
+
+Se agregó la opción al disparador de botón flotante para deshabilitar el disparador (no toda la macro) cuando se elimina a través del icono de la papelera.
+
+Se ha añadido la acción de configuración del botón flotante.
+
+Se ha actualizado el texto mágico para admitir corchetes rizados para reducir la confusión con la sintaxis del diccionario/matriz. (Los corchetes siguen siendo compatibles, {system_time} y [system_time] tanto funcionan como los predeterminados se pueden cambiar en la configuración de MacroDroid)
+
+Se agregó una mejor compatibilidad con matrices/diccionarios a acciones como solicitud HTTP y lectura de archivos para permitir la escritura directa en claves personalizadas.
+
+Se agregó la opción "Dividir en matriz" a la acción Manipulación de texto.
+
+Disparador de calendario ajustado para que funcione mejor con eventos de todo el día en diferentes zonas horarias.
+
+Al ver una macro de plantilla, hay un nuevo elemento de menú disponible para "Agregar deshabilitado".
+
+La entrada de voz ahora admite la configuración directa en nuevas teclas de diccionario / índices de matriz con texto mágico.
+
+La acción de mensaje emergente ahora admite html básico como <b>BOLD</b> e <i>ITALIC</i>
+
+Se agregó Habilitar/Deshabilitar (incluidos los niños) para editar la pantalla de macros, lo que facilita la habilitación de grandes condiciones y bucles.
+
+Se agregó la opción para habilitar / deshabilitar deslizamientos horizontales para abrir MacroDroid Drawer.
+
+Se agregó la opción 'Sobrescribir' a la acción Escribir en archivo.
+
+Se agregó la opción a la acción enviar de WhatsApp para admitir tanto la aplicación estándar como la empresarial.
+
+Se ha añadido texto mágico para el tamaño del diccionario/matriz.
+
+Se ha corregido el problema por el que el uso de corte en un bloque IF/Loop no funcionaba correctamente.
+
+Se ha corregido el problema por el que la opción continuar del cuadro de diálogo no funcionaba correctamente.
+
+Se ha corregido el problema por el que la acción del micrófono de grabación no escribía la extensión de archivo correcta.
+
+Se ha corregido el problema por el que el valor de una variable no se actualizaba si se actualizaba mientras el cajón de MacroDroid estaba abierto.
+
+Se ha corregido el problema por el que la edición de una macro deshabilitada podía volver a habilitarla.
+
+Se ha corregido el problema por el que la notificación de visualización no pasaba las variables correctamente en la opción Ejecutar cuando se presionaba.
+
+Se agregó la opción en la configuración para restaurar todas las tarjetas de información de ayuda que se desperdiciaron anteriormente.
+
+Versión 5.24.3 (junio de 2022)
+==========================
+
+Google requirió esta actualización para agregar un servicio de reconocimiento al usar MacroDroid como asistente predeterminado.
+
+Versión 5.24 (mayo de 2022)
+==========================
+
+Se ha añadido la acción Leer contenido de pantalla.
+
+Se ha añadido el desencadenador de contenido de pantalla.
+
+Se ha agregado la acción Leer desde archivo.
+
+Se ha agregado la restricción Categoría habilitada/Deshabilitada.
+
+Se ha agregado la acción Exportar registro.
+
+Se ha agregado la opción de introducir manualmente el identificador de vista en los clics de Interacción de la interfaz de usuario.
+
+Se ha agregado la opción forground para establecer la acción Volumen para dispositivos que no permiten configurar el volumen con MacroDroid en segundo plano.
+
+Se agregó la opción a la acción Mensaje emergente para cancelar la ventana emergente anterior (Útil para segundas cuentas regresivas, por ejemplo)
+
+Se ha agregado una opción a las acciones Diálogo de mensaje y Diálogo de opciones para evitar el cierre del cuadro de diálogo del botón Atrás.
+
+Se ha agregado compatibilidad con el desencadenador WebHook para establecer entradas de variables de diccionario/matriz.
+
+La función Informar de un error ahora incluye la capacidad de agregar capturas de pantalla.
+
+Se ha añadido compatibilidad para cambiar el nombre de los accesos directos en el cajón de MacroDroid.
+
+MacroDroid Drawer ahora admite opciones para abrir mediante el gesto de deslizar hacia arriba y / o deslizar hacia abajo.
+
+Otras correcciones y ajustes menores.
+
+Versión 5.23 (abril de 2022)
+==========================
+
+Se agregaron tipos de variables Dictionary y Array (solo para usuarios Pro).
+
+Se ha agregado la acción Iterate Dictionary/Array que se puede usar para repetir todos los elementos dentro de un diccionario/array.
+
+Se ha agregado la acción de análisis JSON.
+
+Se ha cambiado la acción Establecer ajuste rápido estado de icono a Configurar la acción icono rápido para permitir la configuración adicional del icono y la etiqueta.
+
+Se agregó la opción de secuencia de gestos a la acción Interacción de la interfaz de usuario para habilitar gestos complejos como patrones de bloqueo de deslizamiento.
+
+Se agregó una opción a la pantalla de configuración de Interacción de la interfaz de usuario para alternar la superposición de ubicación táctil.
+
+Se ha añadido la capacidad de habilitar/deshabilitar búferes individuales para el desencadenador de Logcat.
+
+Se ha agregado la restricción de dirección IP.
+
+Se ha añadido Magic Text para la URL base de WebHook.
+
+Se ha agregado funcionalidad de búsqueda a la pantalla lista de acciones bloqueadas.
+
+Se agregó la opción de exportar el registro del sistema en HTML para que pueda generar el mismo código de colores que se muestra en la aplicación.
+
+Se agregó la opción de corte a las pantallas Editar macro y bloque de acción para permitir la funcionalidad completa de cortar, copiar y pegar.
+
+El bloque de acciones "Acciones de prueba" ahora mostrará un resumen de las variables de salida cuando se ejecute.
+
+Se ha corregido el problema por el que el método de invocación de macros no funcionaba correctamente en todos los casos.
+
+Se ha corregido un problema con la condición "no en caso" que no funcionaba correctamente en la restricción Calendario.
+
+Se ha corregido el problema por el que el nombre de archivo en la acción solicitud HTTP no procesaba correctamente los valores de texto mágico.
+
+Se ha corregido el problema por el que las acciones dentro de un bloque de acciones no se cancelaban cuando se cancelaba la macro principal.
+
+Se ha corregido el problema por el que el fondo de pantalla se podía girar incorrectamente en algunos dispositivos.
+
+Otros arreglos y retoques menores.
+
+Versión 5.22.6 (febrero de 2022)
+============================
+
+Se ha corregido el problema por el que los vídeos de MacroDroid no funcionaban.
+
+Versión 5.22 (febrero de 2022)
+============================
+
+Se ha agregado la acción Solicitud Http.
+
+Se ha agregado la restricción Método de invocación para permitir la detección cuando se invoca una macro desde desencadenadores de macros no estándar.
+
+Se ha añadido la funcionalidad de búsqueda básica (solo en inglés) al selector de iconos.
+
+Se ha añadido compatibilidad con bloques de acción a MacroDroid Drawer.
+
+Se agregó soporte para biometría y aviso de contraseña de retraso en la configuración de protección con contraseña.
+
+Se ha añadido texto mágico para el número de versión de MacroDroid.
+
+Se ha añadido la opción ignorar mayúsculas y minúsculas al desencadenador y la restricción de variables.
+
+Se ha añadido compatibilidad para pasar valores de variables booleanas a parámetros de entrada de bloques de acción.
+
+Se ha agregado la opción Ignorar (cancelar macro) para el cuadro de diálogo de opciones para evitar la ejecución de más acciones si se elige.
+
+Se ha añadido la posibilidad de filtrar variables por tipo en la pantalla global de variables.
+
+Se agregó la opción de exclusión a los desencadenadores basados en llamadas / sms y se agregaron nombres de contactos de búsqueda al cuadro de diálogo de selección.
+
+Se ha corregido el problema por el que ensamblar los valores de la matriz del tasker en una sola cadena a veces obtenía un orden incorrecto de los elementos.
+
+Se ha corregido el problema por el que compartir con un dispositivo cercano no siempre funcionaba en dispositivos Android 12.
+
+Se ha corregido el problema por el que la selección de una variable global para la acción Salida de voz podía establecer la variable incorrecta.
+
+Se ha corregido el problema por el que el disparador de baliza bluetooth podía terminar activándose varias veces para un solo evento.
+
+Se ha corregido el problema por el que Geofence no se centraba en el área correcta al buscar o acercar o alejar.
+
+Se ha corregido el problema por el que la lista de SSID de Wifi podía contener entradas duplicadas.
+
+Se ha corregido el problema por el que una cadena muy larga en una variable local podía impedir que se pudiera acceder al botón Aceptar.
+
+Se ha corregido el problema por el que establecer el icono de MacroDroid no podía actualizar el icono en algunos escenarios.
+
+Se ha corregido el problema por el que los eventos de todo el día en la restricción de calendario no funcionaban correctamente en varias zonas horarias.
+
+Muchas otras correcciones y ajustes menores.
+
+Versión 5.21
+============
+
+Pequeña versión de corrección de errores.
+
+Manejo de parámetros de entrada de bloque de acción ajustado para que pueda pasar un valor vacío y usar siempre el valor de parm de entrada predeterminado.
+
+Se agregó la opción "Compartir como imagen" a la pantalla de edición de Bloque de acción.
+
+Se han corregido varios pequeños problemas relacionados con la edición de bloques de acción.
+
+Se ha corregido el problema por el que los usuarios gratuitos podían perder macros si estaban en el límite de 5 macros y descartaban una edición de una macro o bloque de acción.
+
+Se ha corregido un problema con el icono "Última apertura" en la pantalla de inicio que no funcionaba en algunas situaciones.
+
+Se ha corregido un problema con la acción "Entrada de voz" que no provocaba que se disparara un desencadenador variable al escribir en una variable.
+
+Se ha corregido el problema por el que pegar elementos en un bloque de acciones no siempre configuraba las acciones correctamente.
+
+Versión 5.20
+============
+
+Se agregaron bloques de acción, para permitir la agrupación de acciones de uso común que se pueden invocar desde macros u otros bloques de acción.
+
+Se agregó soporte para compartir en dispositivos cercanos desde la pantalla de edición de macros y edición de bloques de acción.
+
+Se agregó la acción "Establecer imagen de barra de botones" para permitir la actualización de botones con la barra de botones de notificación de MacroDroid.
+
+Se agregó la acción de entrada de voz para solicitar texto hablado y luego guardarlo en una variable de cadena.
+
+Se agregó la acción de WhatsApp (beta) para permitir el envío de mensajes básicos solo a contactos individuales.
+
+Se agregó la capacidad de marcar macros como favoritas y filtrar fácilmente entre las macros favoritas / todas.
+
+Se agregó el mosaico de la pantalla de inicio para proporcionar un enlace de acceso directo rápido a las macros favoritas.
+
+Se agregó el mosaico de la pantalla de inicio para MacroDroid Videos que contiene enlaces a nuevos videos oficiales de MacroDroid en YouTube.
+
+La pantalla de traducciones ahora muestra qué tan completa es la traducción para cada idioma.
+
+Varias correcciones de errores menores y pequeñas mejoras.
+
+Versión 5.19.11
+===============
+
+Se ha corregido el problema por el que el mensaje de contraseña no aparecía en algunos casos al usar la protección con contraseña para ingresar a la aplicación.
+
+Se ha corregido el problema por el que compartir la última foto no funcionaba en todos los casos.
+
+Se ha corregido el problema por el que el desencadenador de suspensión no comprobaba las restricciones.
+
+Otras correcciones de errores menores.
+
+Versión 5.19.9
+==============
+
+Tenga en cuenta que esta versión se actualiza para apuntar al SDK de Android 11, que impone restricciones más estrictas en el acceso a archivos que las versiones anteriores. Es posible que sea necesario actualizar un pequeño número de macros para continuar escribiendo en archivos.
+
+** Informe de cualquier error o problema con esta versión a través de "Informar de un error" en la sección de solución de problemas **
+
+Se ha añadido sleep trigger (Android 10+).
+
+Se ha agregado la acción Borrar variables.
+
+Se agregó la opción logcat para admitir Clipboard Trigger para usuarios de Android 10+ (Root / ADB hack).
+
+Se agregó la acción Actualizar el portapapeles para obtener el contenido del portapapeles en MacroDroid para usuarios de Android 10+.
+
+Se ha agregado compatibilidad con hasta tres botones de acción a la acción Notificación de visualización que puede ejecutar otras macros cuando se presiona.
+
+Se ha corregido el problema por el que el cajón no se mostraba correctamente en el dispositivo con diseños de derecha a izquierda.
+
+Rendimiento mejorado cuando se agregan/eliminan varios botones flotantes.
+
+La acción Enviar UDP ahora admite texto mágico para los campos de destino y puerto.
+
+Se agregó la opción de salir en la parte posterior de la barra para Si luego confirmar acción.
+
+Se agregó la opción 'Permitir cualquier certificado' a HTTP Get.
+
+Se ha agregado compatibilidad para enviar correo electrónico a través de SMTP a la acción Compartir ubicación.
+
+Se ha agregado compatibilidad para ejecutar comandos de script de shell a través del archivo auxiliar (requiere el archivo auxiliar 1.7)
+
+Se ha añadido compatibilidad limitada para acceder a los valores de la matriz del tasker (complemento/acción del tasker) guardando todos los valores en comas o en una nueva cadena separada por líneas.
+
+Una corrección a la actualización anterior: Muchas gracias a lamvankhoat1 por la traducción completa al vietnamita.
+
+Versión 5.18
+============
+
+Versión de corrección de errores menores
+
+Se agregó alternar para habilitar / deshabilitar el modo de envío HTML en Enviar correo electrónico (a través de SMTP).
+
+Se ha corregido el problema por el que no se podía seleccionar el icono en la acción de notificación.
+
+Se ha corregido el problema por el que la acción Tomar Captura de pantalla enviaba una imagen incorrecta en algunos dispositivos.
+
+Se ha corregido el problema por el que la acción If Confirmed no funcionaba correctamente si se invocaba cuando la pantalla estaba apagada.
+
+Se ha corregido un problema por el que algunos valores de gestos de interacción de la interfaz de usuario no volvían a colocar el valor correcto.
+
+Se ha corregido el problema por el que no se podían editar los datos en la acción Enviar SMS una vez configurado.
+
+Otras pequeñas correcciones. W
+
+Versión 5.17
+============
+
+Se agregó el disparador de cambio de tema oscuro (Android 10+)
+
+Se modificó el texto de descripción de la macro en la pantalla de edición de macros para que se desplazara con el contenido de la macro y ampliara el número de caracteres permitidos.
+
+Se ha agregado compatibilidad con variables en la acción de gesto interacción de la interfaz de usuario.
+
+Se ha agregado compatibilidad con la entrada de contraseña en la acción Establecer variable - solicitud del usuario.
+
+Se ha corregido el problema por el que la opción De identificación de interacción de interfaz de usuario en la aplicación no funcionaba en algunos dispositivos.
+
+Se agregó el idioma vietnamita (Muchas gracias a lamvankhoat1 por completar esto)
+
+Se ha añadido la posibilidad de cambiar el texto de los accesos directos de la aplicación en MacroDroid Drawer.
+
+Muchas otras pequeñas correcciones y ajustes.
+
+Versión 5.16.2
+==============
+
+Se ha corregido el problema por el que el desencadenador de inicio de la aplicación y la detección de la aplicación en primer plano no funcionaban en algunos dispositivos.
+
+Otras pequeñas correcciones.
+
+Versión 5.16
+============
+
+Se ha corregido el problema por el que podían faltar algunas macros en la lista de plantillas.
+
+Muchas correcciones de errores menores.
+
+Versión 5.15
+============
+
+Opción de orden invertido restablecido en el registro del sistema.
+
+Se ha añadido la opción de capturar mensajes de Logcat (y seleccionar una entrada) en el desencadenador de Logcat.
+
+Se agregó un enlace a wiki en el menú lateral (Wiki es solo en inglés).
+
+Se ha agregado compatibilidad con el subtexto en el desencadenador de notificaciones (y el texto mágico asociado).
+
+Se ha corregido el problema por el que los botones flotantes no conservaban su posición anterior.
+
+Se ha corregido el problema por el que el registro del sistema abierto no funcionaba correctamente.
+
+Se ha corregido el problema por el que adjuntar el registro del sistema para enviar la acción de correo electrónico no funcionaba correctamente.
+
+Muchas otras pequeñas correcciones y ajustes.
+
+Versión 5.14
+============
+
+Se ha añadido la acción Restaurar notificaciones ocultas (Android 11+), para permitir la restauración de notificaciones persistentes que anteriormente estaban ocultas con la acción Borrar notificaciones.
+
+Se ha corregido el problema por el que el registro del sistema no mostraba vínculos a macros.
+
+Otras pequeñas correcciones y mejoras.
+
+Versión 5.13
+============
+
+Nuevo registro del sistema con funciones de búsqueda y filtrado.
+
+Se ha agregado compatibilidad para ver el registro de una sola macro solo desde la lista de macros y la pantalla de edición de macros.
+
+Activado de SMS enviado restablecido. (MacroDroid ahora puede usar el permiso requerido)
+
+Se restableció la opción 'monitorear bandeja de entrada' en el disparador SMS recibido. (MacroDroid ahora puede usar el permiso requerido)
+
+La acción Reproducir sonido ahora admite la configuración del canal de audio para una acción individual.
+
+Se ha corregido el problema por el que la acción Esperar hasta que se activaba podía invocar incorrectamente otros bloques que no debería.
+
+Se ha añadido compatibilidad con texto mágico a la acción Configuración del sistema.
+
+Los datos de la macro de ejecución rápida ahora se incluyen al exportar/importar macros.
+
+Los desencadenadores llamada perdida y Llamada activa ahora admiten la entrada directa de números y la selección de grupos.
+
+Las categorías y macros de la lista de macros ahora admiten colores personalizados para permitir que se establezca cualquier color.
+
+Se ha corregido el problema por el que no se podían importar algunas macros del almacén de plantillas.
+
+Versión 5.12
+============
+
+Se ha agregado la restricción Geofence (Location).
+
+Se agregó el disparador del Asistente de Google para que pueda determinar fácilmente si el asistente invocó una macro (y no algún otro desencadenante).
+
+Los bucles y las acciones de condición con acciones secundarias ahora se pueden contraer/expandir para facilitar la edición de macros grandes.
+
+Versión 5.11
+============
+
+Ahora incluye soporte para ejecutar Macros a través del asistente de Google (solo en inglés actualmente). Asegúrate de que tanto el idioma del dispositivo como el idioma del asistente de Google estén configurados en inglés para usar esta función.
+
+Invoca macros diciendo "Ok Google run 'macroname' in MacroDroid". Actualmente, Google solo admite esta funcionalidad para el inglés de EE. UU. Agregaré soporte para otras configuraciones regionales e idiomas cuando Google lo permita.
+
+Se agregaron canales de notificación personalizados para su uso con la acción de notificación de visualización.
+
+Se ha añadido la acción Interrumpir del bucle.
+
+Se ha agregado la acción Continuar bucle.
+
+Más correcciones de errores y pequeñas mejoras.
+
+Versión 5.10
+============
+
+Versión de corrección de errores. Corrige varios problemas pequeños y bloqueos raros.
+
+Se ha mejorado el manejo de algunos permisos que faltan.
+
+Versión 5.9
+===========
+
+Se agregó la función de copia de seguridad en la nube en la pantalla de copia de seguridad automática (solo para usuarios Pro).
+
+El foro MacroDroid se ha alejado de Tapatalk a un foro autohospedado más limpio.
+
+Varias correcciones de errores menores.
+
+Versión 5.8
+===========
+
+Establecer la acción Wifi ahora requiere un archivo auxiliar en Android 10+ (restricción de Google impuesta a las aplicaciones).
+
+Se ha agregado la acción Esperar hasta el desencadenamiento para permitir que una macro en ejecución se detenga hasta que se active un desencadenador específico.
+
+Se agregó la opción de bloquear categorías con una contraseña / pin.
+
+Se ha añadido la posibilidad de añadir macros de MacroDroid en el menú del botón de encendido (solo Android 11)
+
+Se agregó la opción de color de texto a la acción del mensaje emergente.
+
+Se agregó la opción de esperar hasta completar la acción 'Ejecución de macros'.
+
+Se agregó la opción de color de texto y el tinte del icono a la acción Del mensaje emergente.
+
+La acción Speak Text ahora permite establecer el idioma en cada instancia de acción individual.
+
+La acción Agregar entrada de calendario ahora admite la configuración de la hora de la entrada en relación con el valor de una variable.
+
+Se ha corregido un problema con logcat_line texto mágico que no funcionaba.
+
+Se ha corregido el problema por el que las acciones de cancelación de macros no cancelaban la acción Esperar hasta desencadenar.
+
+Se han corregido algunos problemas lógicos en los que los comandos IF/ELSE anidados no se comportaban como se esperaba en algunos casos extremos.
+
+Versión 5.7
+===========
+
+Se ha añadido una lista de complementos para descubrir/compartir aplicaciones de terceros que son compatibles con MacroDroid (icono de la pantalla de inicio).
+
+Se ha añadido el icono de la pantalla de inicio para acceder rápidamente a la última macro editada.
+
+Se ha añadido el icono de la pantalla de inicio para ejecutar macros rápidamente.
+
+Se agregó la acción Habilitar/Deshabilitar cámara para permitir que la cámara se deshabilite para todas las aplicaciones del dispositivo.
+
+Acción de medios de control ajustada para que la opción Simular botón de audio funcione mejor para controlar la última aplicación multimedia utilizada.
+
+El disparador Día/Hora ahora permite establecer un valor de segundos específico.
+
+Agregue la función de búsqueda a la pantalla de lista de variables.
+
+Versión 5.6
+===========
+
+La acción en modo avión ahora se puede realizar en un dispositivo no rooteado en Android 7 + (haciendo de MacroDroid la aplicación asistente predeterminada).
+
+La acción Iniciar aplicación ahora admite una opción de nombre de paquete (incluido texto mágico para admitir variables, etc.).
+
+Los valores de las variables macroDroid ahora se pueden pasar a los complementos de Tasker utilizando el estilo de formato Tasker (%varname).
+
+La configuración de fondo/tinte de la barra de botones de notificación y SMTP ahora se guarda al exportar macros.
+
+Valor agregado de dirección del viento al disparador del clima (y texto mágico específico del clima).
+
+Se actualizaron las variables enteras para que ahora estén respaldadas por un tipo largo para que puedan contener valores > 2.147.483.647.
+
+Otras correcciones y mejoras menores.
+
+Versión 5.5
+===========
+
+Se agregó un interruptor rápido de mosaico para activar / desactivar MacroDroid (Android 7+).
+
+Se ha agregado la opción de ocultar los detalles de la macro en la vista de lista de macros.
+
+Se ha corregido el problema por el que VPN Trigger no se activaba.
+
+Se ha corregido el problema por el que la configuración del disparador del botón de la barra de notificaciones no mostraba iconos.
+
+Actualizaciones significativas de algunas traducciones.
+
+Otras correcciones menores y ajustes de la interfaz de usuario.

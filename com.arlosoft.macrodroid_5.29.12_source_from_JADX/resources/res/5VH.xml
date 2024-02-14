@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="top" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RadioGroup android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+        <RadioButton android:id="@+id/dim_dialog_on_radio_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/action_dim_screen_on" android:layout_weight="1"/>
+        <RadioButton android:id="@+id/dim_dialog_off_radio_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/action_dim_screen_off" android:layout_weight="1"/>
+    </RadioGroup>
+    <LinearLayout android:orientation="vertical" android:id="@+id/dim_dialog_values_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dim_screen_explanation" android:layout_marginStart="8dp" android:layout_marginEnd="8dp"/>
+        <com.arlosoft.macrodroid.widget.NDSpinner android:id="@+id/dim_dialog_spinner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_marginBottom="12dp"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/dim_bar_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+            <SeekBar android:id="@+id/dim_dialog_seek_bar" android:layout_width="0dp" android:layout_height="wrap_content" android:max="100" android:layout_weight="1"/>
+            <TextView android:layout_gravity="center_vertical" android:id="@+id/dim_percent_text" android:layout_width="50dp" android:layout_height="wrap_content" android:layout_marginStart="10dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@color/ok_cancel_button_border" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="10dp"/>
+    <LinearLayout android:gravity="end" android:paddingTop="0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:id="@+id/cancelButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/button_bar_button_min_width" android:text="@android:string/cancel" style="?android:attr/buttonBarButtonStyle"/>
+        <View android:background="@color/ok_cancel_button_border" android:layout_width="1dp" android:layout_height="match_parent"/>
+        <Button android:id="@+id/okButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/button_bar_button_min_width" android:text="@android:string/ok" style="?android:attr/buttonBarButtonStyle"/>
+    </LinearLayout>
+</LinearLayout>

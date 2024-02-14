@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/textInputLayout" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textColor="?attr/colorAccent" android:id="@+id/varName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+    <TextView android:textSize="12sp" android:textStyle="italic" android:textColor="?attr/colorAccent" android:id="@+id/varDescription" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Spinner android:id="@+id/varSpinner" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <androidx.appcompat.widget.AppCompatButton android:id="@+id/addVarButton" android:layout_width="@dimen/special_text_button_width" android:layout_height="wrap_content" android:text="+" style="@style/MagicTextButton"/>
+    </LinearLayout>
+</LinearLayout>

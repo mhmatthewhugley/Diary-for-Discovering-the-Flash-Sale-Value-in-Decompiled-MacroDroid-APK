@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textColor="?attr/colorAccent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small_medium" android:text="@string/clipboard_text" android:layout_marginStart="16dp" android:layout_marginEnd="12dp"/>
+    <LinearLayout android:orientation="horizontal" android:paddingTop="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="12dp" android:paddingEnd="12dp">
+        <androidx.appcompat.widget.AppCompatEditText android:id="@+id/dialog_clipboard_change_trigger_text" android:layout_width="0dp" android:layout_height="wrap_content" android:hint="@string/enter_text_to_match" android:maxLines="1" android:layout_weight="1" android:inputType="textUri">
+            <requestFocus/>
+        </androidx.appcompat.widget.AppCompatEditText>
+        <Button android:id="@+id/dialog_clipboard_change_trigger_magic_text_button" style="@style/MagicTextButton"/>
+    </LinearLayout>
+    <TextView android:id="@+id/variable_constraint_dialog_wildcards_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_small" android:text="@string/wildcards_supported" android:layout_marginStart="@dimen/margin_medium"/>
+    <CheckBox android:id="@+id/enable_regex" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_small" android:text="@string/enable_regular_expression_matching" android:layout_marginStart="@dimen/margin_small"/>
+    <CheckBox android:id="@+id/useLogcatCheckbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_small" android:text="@string/clipboard_trigger_use_logcat_detection" android:layout_marginStart="@dimen/margin_small"/>
+    <TextView android:textSize="13sp" android:id="@+id/useLogcatInfo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_small_medium" android:layout_marginRight="@dimen/margin_small_medium" android:text="@string/clipboard_trigger_use_logcat_info" android:layout_marginHorizontal="@dimen/margin_small_medium"/>
+    <CheckBox android:id="@+id/useAccessibilityCheckbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:text="@string/clipboard_trigger_use_accessibility_service" android:layout_marginStart="@dimen/margin_small"/>
+    <TextView android:textSize="13sp" android:id="@+id/useAccessibilityInfo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_small_medium" android:layout_marginRight="@dimen/margin_small_medium" android:text="@string/clipboard_trigger_use_accessibility_service_info" android:layout_marginHorizontal="@dimen/margin_small_medium"/>
+    <include layout="@layout/include_ok_cancel_buttons"/>
+</LinearLayout>

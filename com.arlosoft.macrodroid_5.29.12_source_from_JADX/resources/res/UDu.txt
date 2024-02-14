@@ -1,0 +1,26 @@
+Wersja 5.29 (grudzień 2022 r.)
+=====================================
+
+Dodano obsługę subskrypcji magazynu szablonów dla makr/użytkowników, aby otrzymywać powiadomienia o aktualizacjach (tylko użytkownicy wersji Pro).
+
+Dodano akcję JSON Output.
+
+Dodano akcję Set Digital Assistant.
+
+Działanie w trybie samolotowym może teraz działać z hackiem ADB (nie ma wymogu, aby MacroDroid był domyślnym asystentem cyfrowym).
+
+Wyzwalacz rozpoznawania aktywności obsługuje teraz mniej niż porównanie w wykrywaniu zakończenia aktywności.
+
+Wyzwalacz zawartości ekranu ma teraz regulowaną częstotliwość aktualizacji.
+
+Dodano obsługę przenoszenia identyfikatora urządzenia wyzwalacza Webhook na nowe urządzenie.
+
+Akcja Tekst przestawny obsługuje teraz wyrównanie do lewej, do środka i do prawej.
+
+Naprawiono problem polegający na tym, że wydarzenia całodzienne w kalendarzu mogły być uruchamiane niepoprawnie z powodu czasu letniego.
+
+Rozwiązano problem polegający na tym, że wartości wyzwalające określone (np. numer połączenia przychodzącego) nie działały po oczekiwaniu przed następną akcją wyzwalającą.
+
+Rozwiązano problem polegający na tym, że liczby dziesiętne w oknach dialogowych mogły być wyświetlane niepoprawnie jako łącza.
+
+Rozwiązano problem polegający na tym, że blok akcji nie działał w niektórych sytuacjach, gdy kategoria bez kategorii była wyłączona.

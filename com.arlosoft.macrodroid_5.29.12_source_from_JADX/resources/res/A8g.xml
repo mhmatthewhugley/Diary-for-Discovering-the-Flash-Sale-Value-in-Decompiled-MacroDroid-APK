@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:paddingStart="16dp" android:paddingEnd="16dp">
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginEnd="@dimen/margin_tiny">
+                <EditText android:id="@+id/applicationsText" android:background="@color/transparent" android:paddingTop="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:layout_marginBottom="5dp" android:text="@string/all_applications" android:hint="@string/applications" android:maxLines="1" android:singleLine="true" android:editable="false" android:layout_weight="1">
+                    <requestFocus/>
+                </EditText>
+            </com.google.android.material.textfield.TextInputLayout>
+            <ImageButton android:id="@+id/selectAppsButton" android:layout_height="48dp" android:src="@drawable/ic_apps_white_24dp" app:tint="@color/default_text_color_inverse" style="@style/MagicTextButton"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:paddingStart="16dp" android:paddingEnd="16dp">
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginEnd="@dimen/margin_tiny">
+                <androidx.appcompat.widget.AppCompatEditText android:id="@+id/textToMatch" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:layout_marginBottom="5dp" android:hint="@string/text_to_match" android:maxLines="1" android:singleLine="true" android:layout_weight="1">
+                    <requestFocus/>
+                </androidx.appcompat.widget.AppCompatEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+            <Button android:id="@+id/magicTextButton" style="@style/MagicTextButton"/>
+        </LinearLayout>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_small" android:text="@string/star_wildcards_supported" android:layout_marginStart="16dp"/>
+        <CheckBox android:id="@+id/enableRegexCheckbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_small" android:checked="false" android:text="@string/enable_regular_expression_matching" android:layout_marginStart="12dp"/>
+        <CheckBox android:id="@+id/ignoreCaseCheckbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_small" android:checked="false" android:text="@string/text_compare_ignore_case" android:layout_marginStart="12dp"/>
+        <TextView android:textColor="@color/trigger_accent" android:id="@+id/updateRateLink" android:background="?attr/selectableItemBackground" android:paddingTop="@dimen/margin_small_medium" android:paddingBottom="@dimen/margin_small_medium" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/read_screen_update_rate" android:layout_marginStart="@dimen/margin_medium" android:paddingVertical="@dimen/margin_small_medium"/>
+        <include layout="@layout/include_ok_cancel_buttons"/>
+    </LinearLayout>
+</ScrollView>

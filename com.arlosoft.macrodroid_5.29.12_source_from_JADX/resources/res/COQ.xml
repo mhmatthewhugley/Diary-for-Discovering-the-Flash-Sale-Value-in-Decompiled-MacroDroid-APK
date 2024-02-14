@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small">
+        <ImageView android:layout_width="48dp" android:layout_height="48dp" android:layout_marginStart="@dimen/margin_small" style="@style/OnboardingIcon"/>
+        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textSize="18sp" android:textColor="@color/default_text_color" android:layout_gravity="center_vertical" android:id="@+id/titleText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/margin_tiny"/>
+    </LinearLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <ScrollView android:id="@+id/whats_new_dialog_scroll_view" android:padding="16dp" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textSize="14sp" android:textColor="@color/default_text_color" android:id="@+id/whatsNewText" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </ScrollView>
+        <FrameLayout android:id="@+id/loadingBlocker" android:background="@color/loading_blocker" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="-40dp">
+            <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center_horizontal" android:layout_width="240dp" android:layout_height="240dp" app:lottie_autoPlay="true" app:lottie_loop="true" app:lottie_rawRes="@raw/simple_loader"/>
+            </LinearLayout>
+        </FrameLayout>
+    </FrameLayout>
+    <View android:background="@color/ok_cancel_button_border" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="8dp"/>
+    <Button android:layout_gravity="end" android:id="@+id/okButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="120dp" android:text="@android:string/ok" style="?android:attr/buttonBarButtonStyle"/>
+</LinearLayout>

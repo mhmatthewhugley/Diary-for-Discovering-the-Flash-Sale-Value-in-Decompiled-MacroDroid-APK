@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="1">
+    <ScrollView android:scrollbarStyle="outsideInset" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TableLayout android:layout_gravity="center_horizontal" android:id="@+id/tableLayout1" android:padding="12dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TableRow android:id="@+id/tableRow1" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:textSize="16sp" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hours_capital" android:paddingEnd="8dp"/>
+                    <com.arlosoft.macrodroid.common.NumberPicker android:id="@+id/regular_interval_setting_hour_picker" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                </TableRow>
+                <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:textSize="16sp" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/minutes_capital" android:paddingEnd="8dp"/>
+                    <com.arlosoft.macrodroid.common.NumberPicker android:id="@+id/regular_interval_setting_minute_picker" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                </TableRow>
+                <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:textSize="16sp" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/seconds_capital" android:paddingEnd="8dp"/>
+                    <com.arlosoft.macrodroid.common.NumberPicker android:id="@+id/regular_interval_setting_second_picker" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                </TableRow>
+            </TableLayout>
+            <CheckBox android:layout_gravity="center_horizontal" android:id="@+id/regular_interval_setting_reference_start_time_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/use_reference_time"/>
+            <TimePicker android:layout_gravity="center_horizontal" android:id="@+id/regular_interval_setting_time_picker" android:layout_width="wrap_content" android:layout_height="wrap_content" android:timePickerMode="spinner"/>
+            <View android:id="@+id/regular_interval_setting_padding" android:visibility="gone" android:layout_width="match_parent" android:layout_height="14dp"/>
+            <CheckBox android:id="@+id/force_alarm_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/use_alarm" android:layout_marginStart="@dimen/margin_medium" android:layout_marginEnd="@dimen/margin_medium"/>
+            <TextView android:id="@+id/force_alarm_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/use_alarm_description" android:layout_marginStart="@dimen/margin_medium" android:layout_marginEnd="@dimen/margin_medium"/>
+            <View android:background="@color/ok_cancel_button_border" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="6dp"/>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:gravity="end" android:id="@+id/button_bar" android:paddingTop="0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:id="@+id/cancelButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/button_bar_button_min_width" android:text="@android:string/cancel" style="?android:attr/buttonBarButtonStyle"/>
+        <View android:background="@color/ok_cancel_button_border" android:layout_width="1dp" android:layout_height="match_parent"/>
+        <Button android:id="@+id/okButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/button_bar_button_min_width" android:text="@android:string/ok" style="?android:attr/buttonBarButtonStyle"/>
+    </LinearLayout>
+</LinearLayout>

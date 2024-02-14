@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <CheckBox android:textColor="?attr/colorAccent" android:id="@+id/screen_off_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:text="@string/work_with_screen_off" android:layout_marginStart="@dimen/margin_small"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_tiny" android:text="@string/sensor_screen_off_info" android:layout_marginStart="@dimen/margin_medium" android:layout_marginEnd="@dimen/margin_medium"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:layout_marginStart="@dimen/margin_small" android:layout_marginEnd="@dimen/margin_small">
+                <CheckBox android:id="@+id/face_up_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/constraint_face_up_down_option_face_up"/>
+                <ImageView android:layout_gravity="center_vertical" android:id="@+id/indicator_face_up" android:layout_width="16dp" android:layout_height="16dp" android:layout_marginStart="@dimen/margin_medium"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/margin_small" android:layout_marginEnd="@dimen/margin_small">
+                <CheckBox android:id="@+id/face_down_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/constraint_face_up_down_option_face_down"/>
+                <ImageView android:layout_gravity="center_vertical" android:id="@+id/indicator_face_down" android:layout_width="16dp" android:layout_height="16dp" android:layout_marginStart="@dimen/margin_medium"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/margin_small" android:layout_marginEnd="@dimen/margin_small">
+                <CheckBox android:id="@+id/vertical_upright_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/constraint_facing_vertical_upright"/>
+                <ImageView android:layout_gravity="center_vertical" android:id="@+id/indicator_upright" android:layout_width="16dp" android:layout_height="16dp" android:layout_marginStart="@dimen/margin_medium"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/margin_small" android:layout_marginEnd="@dimen/margin_small">
+                <CheckBox android:id="@+id/vertical_upside_down_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/constraint_facing_vertical_upside_down"/>
+                <ImageView android:layout_gravity="center_vertical" android:id="@+id/indicator_upside_down" android:layout_width="16dp" android:layout_height="16dp" android:layout_marginStart="@dimen/margin_medium"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/margin_small" android:layout_marginEnd="@dimen/margin_small">
+                <CheckBox android:id="@+id/sideways_left_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/constraint_facing_vertical_sideways_left"/>
+                <ImageView android:layout_gravity="center_vertical" android:id="@+id/indicator_sideways_left" android:layout_width="16dp" android:layout_height="16dp" android:layout_marginStart="@dimen/margin_medium"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/margin_small" android:layout_marginEnd="@dimen/margin_small">
+                <CheckBox android:id="@+id/sideways_right_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/constraint_facing_vertical_sideways_right"/>
+                <ImageView android:layout_gravity="center_vertical" android:id="@+id/indicator_sideways_right" android:layout_width="16dp" android:layout_height="16dp" android:layout_marginStart="@dimen/margin_medium"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <View android:background="@color/ok_cancel_button_border" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="4dp"/>
+    <LinearLayout android:gravity="end" android:id="@+id/button_bar" android:paddingTop="0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:id="@+id/cancelButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/button_bar_button_min_width" android:text="@android:string/cancel" style="?android:attr/buttonBarButtonStyle"/>
+        <View android:background="@color/ok_cancel_button_border" android:layout_width="1dp" android:layout_height="match_parent"/>
+        <Button android:id="@+id/okButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/button_bar_button_min_width" android:text="@android:string/ok" style="?android:attr/buttonBarButtonStyle"/>
+    </LinearLayout>
+</LinearLayout>

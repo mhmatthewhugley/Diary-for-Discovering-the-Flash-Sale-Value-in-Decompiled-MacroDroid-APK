@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <CheckBox android:id="@+id/auto_brightness_checkbox" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:text="@string/auto_brightness" android:layout_marginStart="14dp" android:layout_marginEnd="14dp"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/value_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <RadioGroup android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <RadioButton android:textSize="18sp" android:id="@+id/lessThanRadioButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_tiny" android:text="@string/less_than" android:layout_weight="1"/>
+                    <RadioButton android:textSize="18sp" android:id="@+id/greaterThanRadioButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_tiny" android:checked="true" android:text="@string/greater_than" android:layout_weight="1"/>
+                    <RadioButton android:textSize="18sp" android:id="@+id/equalsRadioButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_tiny" android:checked="false" android:text="=" android:layout_weight="1"/>
+                </RadioGroup>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="10dp" android:layout_marginEnd="10dp">
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:layout_gravity="center_horizontal" android:id="@+id/batteryPercentLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="50%" android:layout_weight="1"/>
+                <SeekBar android:id="@+id/batteryLevelSeekBar" android:layout_width="match_parent" android:layout_height="wrap_content" android:max="100" android:layout_weight="1"/>
+            </LinearLayout>
+            <CheckBox android:id="@+id/use_android_pie_checkbox" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:text="@string/brightness_use_alternative_android_pie_mode" android:layout_marginStart="14dp" android:layout_marginEnd="14dp"/>
+            <TextView android:id="@+id/use_android_pie_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:text="@string/android_pie_brightness_explanation" android:layout_marginStart="@dimen/margin_medium" android:layout_marginEnd="@dimen/margin_medium"/>
+        </LinearLayout>
+        <View android:background="@color/ok_cancel_button_border" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="4dp"/>
+        <LinearLayout android:gravity="end" android:id="@+id/button_bar" android:paddingTop="0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:id="@+id/cancelButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/button_bar_button_min_width" android:text="@android:string/cancel" style="?android:attr/buttonBarButtonStyle"/>
+            <View android:background="@color/ok_cancel_button_border" android:layout_width="1dp" android:layout_height="match_parent"/>
+            <Button android:id="@+id/okButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/button_bar_button_min_width" android:text="@android:string/ok" style="?android:attr/buttonBarButtonStyle"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

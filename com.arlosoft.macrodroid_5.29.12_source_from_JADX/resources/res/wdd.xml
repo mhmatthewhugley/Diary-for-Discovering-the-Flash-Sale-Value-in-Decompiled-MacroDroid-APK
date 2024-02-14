@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:padding="@dimen/margin_tiny" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputLayout android:id="@+id/editable_identifier" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_small_medium" android:layout_marginTop="@dimen/margin_small" android:layout_marginRight="@dimen/margin_small_medium" android:layout_marginHorizontal="@dimen/margin_small_medium">
+            <EditText android:id="@+id/identifier_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/web_url_identifier" android:maxLines="1" android:singleLine="true"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <TextView android:textSize="18sp" android:textColor="@color/default_text_color" android:id="@+id/static_identifier" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_small_medium" android:layout_marginTop="@dimen/margin_small" android:layout_marginRight="@dimen/margin_small_medium" android:layout_marginBottom="@dimen/margin_small" android:layout_marginHorizontal="@dimen/margin_small_medium" android:layout_marginVertical="@dimen/margin_small"/>
+        <Spinner android:entries="@array/floating_button_action_enable_options" android:id="@+id/enabled_state_options" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:layout_marginBottom="@dimen/margin_small" android:layout_marginStart="@dimen/margin_small"/>
+        <RelativeLayout android:orientation="horizontal" android:padding="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.melnykov.fab.FloatingActionButton android:id="@+id/fab" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitCenter" android:layout_centerVertical="true" app:fab_shadow="false"/>
+            <ImageView android:id="@+id/floating_button_image" android:background="@drawable/icon_background" android:padding="@dimen/margin_tiny" android:visibility="gone" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/not_icon_setup" android:layout_centerVertical="true" android:layout_marginStart="6dp"/>
+            <Button android:id="@+id/floating_button_change_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/set_background" android:layout_centerVertical="true" android:layout_toStartOf="@+id/floating_button_change_icon" android:layout_toEndOf="@+id/floating_button_image" style="?android:attr/borderlessButtonStyle"/>
+            <Button android:id="@+id/floating_button_change_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/icon" android:layout_centerVertical="true" android:layout_alignParentEnd="true" style="?android:attr/borderlessButtonStyle"/>
+        </RelativeLayout>
+        <CheckBox android:id="@+id/transparent_background_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:text="@string/transparent_background" android:layout_marginStart="@dimen/margin_small"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:text="@string/padding" android:layout_marginStart="@dimen/margin_medium"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/icon_padding_layout" android:padding="@dimen/margin_small" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <SeekBar android:id="@+id/padding_seekbar" android:layout_width="0dp" android:layout_height="wrap_content" android:max="100" android:layout_weight="1"/>
+            <TextView android:layout_gravity="center_vertical" android:id="@+id/padding_value_text" android:layout_width="50dp" android:layout_height="wrap_content" android:layout_marginStart="10dp"/>
+        </LinearLayout>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:text="@string/opacity" android:layout_marginStart="@dimen/margin_medium"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/brightness_bar_layout" android:padding="@dimen/margin_small" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <SeekBar android:id="@+id/floating_button_alpha_seekbar" android:layout_width="0dp" android:layout_height="wrap_content" android:max="100" android:layout_weight="1"/>
+            <TextView android:layout_gravity="center_vertical" android:id="@+id/alpha_percent_text" android:layout_width="50dp" android:layout_height="wrap_content" android:layout_marginStart="10dp"/>
+        </LinearLayout>
+        <RadioGroup android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:layout_marginStart="@dimen/margin_small">
+            <RadioButton android:id="@+id/normal_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/normal"/>
+            <RadioButton android:id="@+id/mini_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/small" android:layout_marginStart="@dimen/margin_medium"/>
+        </RadioGroup>
+        <Spinner android:entries="@array/floating_button_remove_options" android:id="@+id/disable_options_spinner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:layout_marginBottom="@dimen/margin_small" android:layout_marginStart="@dimen/margin_small"/>
+        <CheckBox android:id="@+id/show_on_lock_screen" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:text="@string/show_on_lock_screen" android:layout_marginStart="@dimen/margin_small" android:layout_marginEnd="@dimen/margin_small"/>
+        <CheckBox android:id="@+id/force_location_on_enable" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:text="@string/force_location_on_enable" android:layout_marginStart="@dimen/margin_small" android:layout_marginEnd="@dimen/margin_small"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:layout_marginStart="@dimen/margin_medium" android:layout_marginEnd="@dimen/margin_medium">
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <androidx.appcompat.widget.AppCompatEditText android:id="@+id/x_location" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/x_location" android:singleLine="true" android:maxLength="4" android:inputType="numberSigned"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <androidx.appcompat.widget.AppCompatEditText android:id="@+id/y_location" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/y_location" android:singleLine="true" android:maxLength="4" android:inputType="numberSigned"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="end" android:id="@+id/button_bar" android:paddingTop="0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:id="@+id/cancelButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/button_bar_button_min_width" android:text="@android:string/cancel" style="?android:attr/buttonBarButtonStyle"/>
+            <View android:background="@color/ok_cancel_button_border" android:layout_width="1dp" android:layout_height="match_parent"/>
+            <Button android:id="@+id/okButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/button_bar_button_min_width" android:text="@android:string/ok" style="?android:attr/buttonBarButtonStyle"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

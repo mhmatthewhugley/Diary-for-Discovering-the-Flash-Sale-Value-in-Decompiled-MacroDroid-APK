@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:paddingTop="@dimen/margin_small" android:paddingBottom="48dp" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include android:id="@+id/infoCard" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_small" android:layout_marginRight="@dimen/margin_small" android:layout_marginBottom="@dimen/margin_small" layout="@layout/info_card"/>
+        <FrameLayout android:id="@+id/loadingView" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </FrameLayout>
+        <FrameLayout android:id="@+id/emptyView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:paddingBottom="@dimen/margin_medium" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center" android:id="@+id/animation_view" android:layout_width="wrap_content" android:layout_height="wrap_content" app:lottie_autoPlay="true" app:lottie_loop="true" app:lottie_rawRes="@raw/radar_scanning"/>
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textStyle="italic" android:textColor="@color/default_text_color" android:gravity="center" android:layout_gravity="center" android:id="@+id/celltowers_empty_text" android:paddingTop="@dimen/margin_medium" android:paddingBottom="@dimen/margin_tiny" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/recent_cell_towers_empty_state"/>
+            </LinearLayout>
+        </FrameLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycler_view" android:paddingBottom="@dimen/margin_small" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

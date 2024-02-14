@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/menuHeaderContainer" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/menu_profile_image" android:layout_width="32dp" android:layout_height="32dp" android:layout_marginTop="16dp" android:layout_marginBottom="16dp" android:layout_marginStart="12dp" style="@style/OnboardingIcon"/>
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginBottom="8dp" android:layout_marginStart="72dp">
+        <TextView android:textSize="18sp" android:textColor="@color/default_text_color" android:id="@+id/headerTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/macrodroid" android:textAllCaps="true" android:fontFamily="@font/heading_font"/>
+        <TextView android:textSize="12sp" android:textColor="@color/default_text_color" android:id="@+id/nav_header_version_info" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <View android:layout_gravity="bottom" android:background="@color/header_view_divider" android:layout_width="match_parent" android:layout_height="1dp"/>
+</FrameLayout>

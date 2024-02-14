@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium">
+        <TextView android:textSize="18sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/button" android:layout_marginStart="@dimen/margin_medium_large"/>
+        <Spinner android:entries="@array/button_bar_numbers" android:id="@+id/buttonNumberSpinner" android:layout_width="80dp" android:layout_height="wrap_content" android:layout_marginStart="@dimen/margin_small"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:layout_marginBottom="@dimen/margin_small">
+        <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:textColor="@color/accent" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/button_bar_current_image"/>
+            <ImageView android:layout_gravity="center" android:id="@+id/existingImage" android:background="?android:attr/selectableItemBackgroundBorderless" android:padding="8dp" android:layout_width="56dp" android:layout_height="56dp" android:layout_marginTop="@dimen/margin_small" android:src="@drawable/ic_settings_applications_white_24dp" android:scaleType="fitCenter"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:textColor="@color/accent" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/button_bar_new_image"/>
+            <FrameLayout android:layout_gravity="center" android:id="@+id/newImageFrame" android:background="?attr/selectableItemBackgroundBorderless" android:focusable="true" android:clickable="true" android:layout_width="56dp" android:layout_height="56dp" android:layout_marginTop="@dimen/margin_small">
+                <ImageView android:id="@+id/newImage" android:background="?android:attr/selectableItemBackgroundBorderless" android:padding="8dp" android:layout_width="56dp" android:layout_height="56dp" android:src="@drawable/ic_settings_applications_white_24dp" android:scaleType="fitCenter"/>
+                <ImageView android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@+id/editImage" android:layout_width="16dp" android:layout_height="16dp" android:layout_marginBottom="2dp" android:src="@drawable/material_ic_edit_24px_svg" android:scaleType="fitCenter" android:layout_marginEnd="2dp"/>
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <include layout="@layout/include_ok_cancel_buttons"/>
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:padding="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/action_set_screen_timeout_custom_explanation"/>
+    <TableLayout android:layout_gravity="center_horizontal" android:id="@+id/tableLayout1" android:padding="12dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:textSize="16sp" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/minutes_capital" android:paddingStart="8dp" android:paddingEnd="8dp"/>
+            <com.arlosoft.macrodroid.common.NumberPicker android:id="@+id/screen_timeout_custom_minutes" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </TableRow>
+        <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:textSize="16sp" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/seconds_capital" android:paddingStart="8dp"/>
+            <com.arlosoft.macrodroid.common.NumberPicker android:id="@+id/screen_timeout_custom_seconds" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </TableRow>
+    </TableLayout>
+    <LinearLayout android:gravity="end" android:id="@+id/button_bar" android:paddingTop="0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:id="@+id/cancelButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/button_bar_button_min_width" android:text="@android:string/cancel" style="?android:attr/buttonBarButtonStyle"/>
+        <View android:background="@color/ok_cancel_button_border" android:layout_width="1dp" android:layout_height="match_parent"/>
+        <Button android:id="@+id/okButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/button_bar_button_min_width" android:text="@android:string/ok" style="?android:attr/buttonBarButtonStyle"/>
+    </LinearLayout>
+</LinearLayout>

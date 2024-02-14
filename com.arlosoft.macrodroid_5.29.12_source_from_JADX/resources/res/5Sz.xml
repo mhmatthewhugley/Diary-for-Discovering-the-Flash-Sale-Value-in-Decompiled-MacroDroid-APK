@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="18sp" android:textColor="@color/default_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_medium" android:text="@string/output_variables"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/outputVars" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+    <Button android:layout_gravity="end" android:id="@+id/okButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/button_bar_button_min_width" android:text="@android:string/ok" style="?android:attr/buttonBarButtonStyle"/>
+</LinearLayout>

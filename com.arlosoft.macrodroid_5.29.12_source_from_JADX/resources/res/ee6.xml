@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/margin_medium" android:paddingEnd="@dimen/margin_small">
+        <RadioGroup android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RadioButton android:textSize="16sp" android:id="@+id/app_launched_radio" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:text="@string/trigger_application_launched_app_launched"/>
+            <RadioButton android:textSize="16sp" android:id="@+id/app_closed_radio" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:text="@string/trigger_application_launched_app_closed"/>
+        </RadioGroup>
+        <CheckBox android:textSize="14sp" android:id="@+id/force_legacy_setting" android:background="?attr/selectableItemBackground" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:layout_marginBottom="@dimen/margin_tiny" android:text="@string/force_legacy_mechanism"/>
+        <TextView android:textSize="12sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/legacy_mechanism_info" android:layout_marginStart="@dimen/margin_small"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/legacy_settings_view" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <CheckBox android:textSize="14sp" android:id="@+id/prevent_notification_interrupt" android:background="?attr/selectableItemBackground" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:layout_marginBottom="@dimen/margin_tiny" android:text="@string/prevent_notifications_interfering"/>
+            <TextView android:textSize="12sp" android:id="@+id/prevent_notification_interrupt_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/prevent_notifications_interfering_detail" android:layout_marginStart="@dimen/margin_small"/>
+        </LinearLayout>
+        <View android:background="@color/ok_cancel_button_border" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="4dp"/>
+        <LinearLayout android:gravity="end" android:id="@+id/button_bar" android:paddingTop="0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:id="@+id/cancelButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/button_bar_button_min_width" android:text="@android:string/cancel" style="?android:attr/buttonBarButtonStyle"/>
+            <View android:background="@color/ok_cancel_button_border" android:layout_width="1dp" android:layout_height="match_parent"/>
+            <Button android:id="@+id/okButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/button_bar_button_min_width" android:text="@android:string/ok" style="?android:attr/buttonBarButtonStyle"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

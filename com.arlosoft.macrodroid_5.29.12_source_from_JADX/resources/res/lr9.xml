@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/rootContainer" android:layout_width="match_parent" android:layout_height="match_parent" android:animateLayoutChanges="true">
+        <LinearLayout android:theme="@style/Toolbar.WhiteAccent" android:orientation="vertical" android:background="@color/variables_primary" android:layout_width="match_parent" android:layout_height="wrap_content" android:elevation="@dimen/toolbar_elevation">
+            <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" app:titleTextAppearance="@style/TitleToolbarText"/>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/filterPanel" android:paddingLeft="@dimen/margin_medium" android:paddingRight="@dimen/margin_medium" android:paddingBottom="@dimen/margin_medium" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <Spinner android:textColor="@color/white" android:entries="@array/variable_types_filter_options" android:id="@+id/variableTypeSpinner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/margin_small" app:drawableTint="@color/white"/>
+            </LinearLayout>
+        </LinearLayout>
+        <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_small" android:layout_marginTop="@dimen/margin_small" android:layout_marginRight="@dimen/margin_small" layout="@layout/info_card"/>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <ListView android:scrollbarStyle="outsideOverlay" android:orientation="vertical" android:id="@+id/variables_activity_list" android:paddingBottom="88dp" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="@android:color/transparent" android:dividerHeight="0dp"/>
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@+id/variables_emptyView" android:paddingBottom="@dimen/margin_medium" android:layout_width="match_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true">
+                <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center_horizontal" android:id="@+id/animation_view" android:layout_width="240dp" android:layout_height="240dp" android:layout_marginTop="-100dp" android:layout_marginBottom="-60dp" app:lottie_autoPlay="true" app:lottie_loop="true" app:lottie_rawRes="@raw/empty_list"/>
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textStyle="italic" android:textColor="@color/default_text_color" android:gravity="center" android:layout_gravity="center" android:paddingTop="@dimen/margin_tiny" android:paddingBottom="@dimen/margin_tiny" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/no_variables_configured"/>
+            </LinearLayout>
+        </FrameLayout>
+        <FrameLayout android:id="@+id/local_variable_option_layout" android:background="@color/variables_primary" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <CheckBox android:theme="@style/Theme.App.NoActionBar.Variables" android:textColor="@color/white" android:id="@+id/local_variable_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8dp" android:text="@string/local_variables_only"/>
+        </FrameLayout>
+    </LinearLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton android:layout_gravity="bottom|right|center_vertical|center_horizontal|center|end" android:id="@+id/fab" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_medium" android:src="@drawable/ic_plus_white_24dp" android:tint="@color/variables_primary" android:contentDescription="@string/add_category" android:layout_marginEnd="@dimen/margin_medium" app:backgroundTint="#eeeeee"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

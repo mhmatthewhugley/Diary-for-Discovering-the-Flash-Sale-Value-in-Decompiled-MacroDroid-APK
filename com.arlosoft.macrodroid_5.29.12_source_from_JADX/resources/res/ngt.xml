@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_marginStart="16dp">
+            <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pitch" android:paddingEnd="10dp"/>
+            <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/pitch_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="(50)"/>
+        </LinearLayout>
+        <SeekBar android:id="@+id/speak_action_config_dialog_pitch_seekbar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:progress="50" android:layout_weight="1" android:layout_marginStart="8dp" android:layout_marginEnd="16dp"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_marginStart="16dp">
+            <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/speed" android:paddingEnd="10dp"/>
+            <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/speed_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="(50)"/>
+        </LinearLayout>
+        <SeekBar android:id="@+id/speak_action_config_dialog_speed_seekbar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:progress="50" android:layout_weight="1" android:layout_marginStart="8dp" android:layout_marginEnd="16dp"/>
+        <CheckBox android:id="@+id/speak_action_config_dialog_queue_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/queue_text" android:layout_marginStart="16dp" android:layout_marginEnd="16dp"/>
+        <CheckBox android:id="@+id/speak_action_config_dialog_wait_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/block_actions_until_complete" android:layout_marginStart="16dp" android:layout_marginEnd="16dp"/>
+        <CheckBox android:id="@+id/speak_digits_individually_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/speak_text_speak_digits_individually" android:layout_marginStart="16dp" android:layout_marginEnd="16dp"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="16dp" android:paddingEnd="16dp">
+            <androidx.appcompat.widget.AppCompatEditText android:id="@+id/speak_action_config_dialog_text_to_say" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:layout_marginBottom="5dp" android:hint="@string/enter_text_to_speak" android:maxLines="1" android:singleLine="true" android:layout_weight="1">
+                <requestFocus/>
+            </androidx.appcompat.widget.AppCompatEditText>
+            <Button android:id="@+id/speak_action_config_dialog_button_special_text" style="@style/MagicTextButton"/>
+        </LinearLayout>
+        <TextView android:textSize="16sp" android:textColor="?attr/colorAccent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/select_audio_stream" android:layout_marginStart="16dp" android:layout_marginEnd="16dp"/>
+        <Spinner android:id="@+id/audio_stream" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_marginStart="12dp" android:layout_marginEnd="8dp"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginStart="16dp">
+            <TextView android:textSize="16sp" android:textColor="?attr/colorAccent" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/language_to_speak" android:layout_marginEnd="16dp"/>
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/language_to_speak_help" android:background="?attr/selectableItemBackgroundBorderless" android:padding="12dp" android:focusable="true" android:clickable="true" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/material_ic_help_24px_svg" android:tint="?attr/colorAccent"/>
+        </LinearLayout>
+        <Spinner android:id="@+id/language_to_speak" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="12dp" android:layout_marginEnd="8dp"/>
+        <Button android:enabled="false" android:id="@+id/speak_action_config_dialog_button_test" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_marginBottom="8dp" android:text="@string/test" android:layout_marginStart="16dp" android:layout_marginEnd="16dp" style="@style/ColoredButton"/>
+        <TextView android:textColor="@color/default_text_color_secondary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginTop="@dimen/margin_small" android:layout_marginRight="@dimen/margin_medium" android:text="@string/text_to_speech_number_formatting_warning"/>
+        <TextView android:textColor="@color/actions_accent" android:id="@+id/ttsSettingsLink" android:background="?attr/selectableItemBackground" android:paddingTop="@dimen/margin_small_medium" android:paddingBottom="@dimen/margin_small_medium" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/open_text_to_speech_settings" android:layout_marginStart="@dimen/margin_medium"/>
+        <TextView android:textColor="@color/actions_accent" android:id="@+id/ttsEngineLink" android:background="?attr/selectableItemBackground" android:paddingTop="@dimen/margin_small_medium" android:paddingBottom="@dimen/margin_small_medium" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/preference_text_to_speech_engine_to_use" android:layout_marginStart="@dimen/margin_medium"/>
+        <include layout="@layout/include_ok_cancel_buttons"/>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="horizontal" android:padding="12dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatEditText android:id="@+id/enter_url_dialog_url" android:layout_width="0dp" android:layout_height="wrap_content" android:hint="@string/enter_url" android:maxLines="1" android:layout_weight="1" android:inputType="textUri">
+                <requestFocus/>
+            </androidx.appcompat.widget.AppCompatEditText>
+            <Button android:id="@+id/enter_url_dialog_magic_text_button" style="@style/MagicTextButton"/>
+        </LinearLayout>
+        <CheckBox android:id="@+id/enter_url_dialog_url_encode_checkbox" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/action_open_web_page_url_encode_params" android:layout_marginStart="10dp" android:layout_marginEnd="10dp"/>
+        <CheckBox android:id="@+id/enter_url_dialog_http_get_checkbox" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/action_open_web_page_http_request" android:layout_marginStart="10dp" android:layout_marginEnd="10dp"/>
+        <TextView android:textSize="12sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginRight="12dp" android:text="@string/http_get_deprecated_warning" android:layout_marginHorizontal="12dp"/>
+        <CheckBox android:id="@+id/block_next_action_checkbox" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/block_actions_until_complete" android:layout_marginStart="10dp" android:layout_marginEnd="10dp"/>
+        <CheckBox android:id="@+id/allow_any_certificate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/http_action_allow_any_certificate" android:layout_marginStart="10dp" android:layout_marginEnd="10dp"/>
+        <CheckBox android:id="@+id/enter_url_dialog_save_success_state" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/action_open_web_page_save_success_state" android:layout_marginStart="10dp" android:layout_marginEnd="10dp"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_small" android:layout_marginStart="@dimen/margin_small" android:layout_marginEnd="12dp">
+            <Spinner android:id="@+id/enter_url_dialog_boolean_spinner" android:paddingTop="4dp" android:paddingBottom="4dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginEnd="@dimen/margin_small"/>
+            <Button android:id="@+id/addBooleanVariableButton" android:layout_width="@dimen/special_text_button_width" android:layout_height="wrap_content" android:text="+" style="@style/MagicTextButton"/>
+        </LinearLayout>
+        <CheckBox android:id="@+id/enter_url_dialog_save_http_response" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/action_open_web_page_save_http" android:layout_marginStart="10dp" android:layout_marginEnd="10dp"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_small" android:layout_marginStart="@dimen/margin_small" android:layout_marginEnd="12dp">
+            <Spinner android:id="@+id/enter_url_dialog_variable_spinner" android:paddingTop="4dp" android:paddingBottom="4dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginEnd="@dimen/margin_small"/>
+            <Button android:id="@+id/addStringVariableButton" android:layout_width="@dimen/special_text_button_width" android:layout_height="wrap_content" android:text="+" style="@style/MagicTextButton"/>
+        </LinearLayout>
+        <View android:background="@color/ok_cancel_button_border" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="10dp"/>
+        <LinearLayout android:gravity="end" android:id="@+id/button_bar" android:paddingTop="0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:id="@+id/cancelButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/button_bar_button_min_width" android:text="@android:string/cancel" style="?android:attr/buttonBarButtonStyle"/>
+            <View android:background="@color/ok_cancel_button_border" android:layout_width="1dp" android:layout_height="match_parent"/>
+            <Button android:id="@+id/okButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/button_bar_button_min_width" android:text="@android:string/ok" style="?android:attr/buttonBarButtonStyle"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:elevation="@dimen/toolbar_elevation">
+        <androidx.appcompat.widget.Toolbar android:theme="@style/Toolbar" android:id="@+id/toolbar" android:background="@color/primary" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize"/>
+        <com.google.android.material.tabs.TabLayout android:id="@+id/tabLayout" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" app:tabTextAppearance="@style/TabStyle"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.viewpager2.widget.ViewPager2 android:id="@+id/viewPager" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:textColor="@color/default_text_color_inverse" android:layout_gravity="center" android:id="@+id/reportBugButton" android:paddingLeft="@dimen/margin_large" android:paddingRight="@dimen/margin_large" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_small" android:layout_marginTop="@dimen/margin_small" android:layout_marginRight="@dimen/margin_small" android:layout_marginBottom="@dimen/margin_small" android:text="@string/report_a_bug" style="@style/RoundedButton.ReportBug"/>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:padding="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RadioGroup android:orientation="horizontal" android:paddingLeft="8dp" android:paddingTop="8dp" android:paddingRight="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="8dp">
+            <RadioButton android:id="@+id/standardRadioButton" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/whatsapp_app_standard" android:layout_weight="1"/>
+            <RadioButton android:id="@+id/businessRadioButton" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/whatsapp_app_business" android:layout_weight="1"/>
+        </RadioGroup>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:layout_weight="1" android:layout_marginEnd="@dimen/margin_small">
+                <androidx.appcompat.widget.AppCompatEditText android:layout_gravity="center_vertical" android:id="@+id/phoneNumber" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/enter_number_here" android:singleLine="true"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <Button android:layout_gravity="center_vertical" android:id="@+id/magicTextButtonNumber" style="@style/MagicTextButton"/>
+            <ImageButton android:layout_gravity="center_vertical" android:id="@+id/selectContactButton" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/ic_account_white_24dp" app:tint="@color/default_text_color_inverse" style="@style/MagicTextButton"/>
+        </LinearLayout>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="@string/whats_app_phone_number_info" android:layout_marginStart="2dp"/>
+        <CheckBox android:layout_gravity="center_vertical" android:id="@+id/prePopulateCheckbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:text="@string/send_sms_pre_populate"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small_medium" android:layout_marginBottom="@dimen/margin_small">
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <androidx.appcompat.widget.AppCompatEditText android:gravity="top" android:id="@+id/messageText" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/enter_message_here" android:inputType="textMultiLine"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <Button android:id="@+id/magicTextButtonMessage" style="@style/MagicTextButton"/>
+        </LinearLayout>
+        <CheckBox android:layout_gravity="center_vertical" android:id="@+id/exitAfterSendCheckbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:text="@string/whats_app_exit_after_sending"/>
+        <TextView android:textSize="12sp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="2dp" android:layout_marginTop="8dp" android:layout_marginRight="2dp" android:text="@string/action_whats_app_help" android:layout_marginHorizontal="2dp"/>
+        <include layout="@layout/include_ok_cancel_buttons"/>
+    </LinearLayout>
+</ScrollView>

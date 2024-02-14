@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:minWidth="300dp">
+    <RadioGroup android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/weather_dialog_radio_group" android:paddingTop="@dimen/margin_medium" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RadioButton android:id="@+id/weather_dialog_below_radio_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="@string/trigger_weather_below" android:layout_marginEnd="20dp"/>
+        <RadioButton android:id="@+id/weather_dialog_above_radio_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/trigger_weather_above"/>
+    </RadioGroup>
+    <LinearLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp">
+        <androidx.appcompat.widget.AppCompatEditText android:gravity="center" android:id="@+id/weather_dialog_text_value" android:layout_width="80dp" android:layout_height="wrap_content" android:inputType="numberSigned" android:layout_marginEnd="20dp">
+            <requestFocus/>
+        </androidx.appcompat.widget.AppCompatEditText>
+        <Spinner android:entries="@array/temperature_options" android:layout_gravity="center_vertical" android:id="@+id/weather_dialog_temperature_unit" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <View android:background="@color/ok_cancel_button_border" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="6dp"/>
+    <include layout="@layout/include_ok_cancel_buttons"/>
+</LinearLayout>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="10dp" android:paddingEnd="10dp">
+    <androidx.appcompat.widget.SwitchCompat android:theme="@style/SwitchOffDarkerStyle" android:gravity="center_vertical" android:id="@+id/action_bar_switch" android:layout_width="wrap_content" android:layout_height="match_parent" android:switchTextAppearance="@style/SwitchTextAppearance" android:switchMinWidth="@dimen/on_off_switch_min_width" android:splitTrack="false"/>
+</FrameLayout>

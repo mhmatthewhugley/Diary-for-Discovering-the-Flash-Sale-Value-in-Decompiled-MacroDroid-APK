@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <fragment android:id="@+id/map" android:layout_width="match_parent" android:layout_height="match_parent" class="com.google.android.gms.maps.SupportMapFragment"/>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton android:layout_gravity="center_horizontal" android:id="@+id/activity_location_trigger_v2_set_location_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_medium" android:src="@drawable/ic_map_marker_white_24dp" android:scaleType="centerInside" android:layout_alignParentBottom="true" android:contentDescription="@string/trigger_weather_set_location" android:layout_marginEnd="@dimen/margin_medium" android:layout_alignParentEnd="true" app:backgroundTint="@color/trigger_primary" app:elevation="6dp"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/activity_location_trigger_v2_radius_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="6dp">
+        <TextView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/radius"/>
+        <SeekBar android:id="@+id/activity_location_trigger_v2_radius_bar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="6dp"/>
+    </LinearLayout>
+</LinearLayout>

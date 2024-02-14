@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:id="@+id/menu_use_icon_pack" android:title="@string/use_icon_pack" app:showAsAction="never"/>
+    <item android:id="@+id/menu_install_new_icon_pack" android:title="@string/install_new_icon_pack" app:showAsAction="never"/>
+    <item android:id="@+id/menu_show_info_card" android:title="@string/show_info_card" app:showAsAction="never"/>
+    <item android:id="@+id/menu_icon_pack_search" android:title="@string/icon_pack_search" app:showAsAction="never"/>
+</menu>

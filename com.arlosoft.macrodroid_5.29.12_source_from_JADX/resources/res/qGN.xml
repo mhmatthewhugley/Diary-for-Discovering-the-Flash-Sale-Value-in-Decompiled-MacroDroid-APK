@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RadioGroup android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RadioButton android:id="@+id/android_wear_notification_action_disabled_radio_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/disabled" android:layout_weight="1"/>
+        <RadioButton android:id="@+id/android_wear_notification_action_enabled_radio_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/enabled" android:layout_weight="1"/>
+    </RadioGroup>
+    <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="18sp" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/icon" android:paddingEnd="10dp"/>
+        <FrameLayout android:layout_width="0dp" android:layout_height="48dp" android:layout_weight="1">
+            <FrameLayout android:background="@drawable/actions_none" android:layout_width="48dp" android:layout_height="48dp">
+                <ImageView android:layout_gravity="center" android:id="@+id/android_wear_notification_action_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/active_icon_new"/>
+            </FrameLayout>
+        </FrameLayout>
+        <Button android:id="@+id/android_wear_notification_action_change_icon_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Change"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="18sp" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/title" android:paddingEnd="10dp"/>
+        <androidx.appcompat.widget.AppCompatEditText android:id="@+id/android_wear_notification_action_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/enter_action_name"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="18sp" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/run_macro" android:paddingEnd="10dp"/>
+        <Spinner android:layout_gravity="center_vertical" android:id="@+id/android_wear_notification_action_macro_spinner" android:layout_width="match_parent" android:layout_height="wrap_content" android:minWidth="150dp"/>
+    </LinearLayout>
+    <View android:background="@color/ok_cancel_button_border" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="4dp"/>
+    <LinearLayout android:gravity="end" android:id="@+id/button_bar" android:paddingTop="0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:id="@+id/cancelButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/button_bar_button_min_width" android:text="@android:string/cancel" style="?android:attr/buttonBarButtonStyle"/>
+        <View android:background="@color/ok_cancel_button_border" android:layout_width="1dp" android:layout_height="match_parent"/>
+        <Button android:id="@+id/okButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/button_bar_button_min_width" android:text="@android:string/ok" style="?android:attr/buttonBarButtonStyle"/>
+    </LinearLayout>
+</LinearLayout>

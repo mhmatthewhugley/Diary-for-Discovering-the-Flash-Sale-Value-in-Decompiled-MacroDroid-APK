@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="4dp" android:layout_marginEnd="4dp">
+    <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_medium">
+        <EditText android:id="@+id/arrayIndex" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="0" android:hint="@string/variable_array_index" android:inputType="number"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <include layout="@layout/include_ok_cancel_buttons"/>
+</LinearLayout>

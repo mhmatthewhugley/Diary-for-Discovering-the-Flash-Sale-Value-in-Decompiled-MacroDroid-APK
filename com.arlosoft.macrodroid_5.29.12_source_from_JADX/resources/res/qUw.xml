@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout android:id="@+id/appBarLayout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar android:theme="@style/Toolbar" android:id="@+id/toolbar" android:background="@color/settings_primary" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" android:elevation="@dimen/toolbar_elevation" app:titleTextAppearance="@style/HelveticaToolbarText.Main">
+            <TextView android:theme="@style/ToolbarText.Main" android:gravity="center_horizontal" android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/settings" app:titleTextAppearance="@style/HelveticaToolbarText.Main"/>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <FrameLayout android:id="@+id/content" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+</LinearLayout>

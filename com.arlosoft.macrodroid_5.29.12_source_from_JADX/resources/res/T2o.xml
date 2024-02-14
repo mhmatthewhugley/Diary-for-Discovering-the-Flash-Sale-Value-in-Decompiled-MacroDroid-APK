@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/scrollView" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ViewFlipper android:id="@+id/viewFlipper" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_small" android:animateLayoutChanges="true" android:layout_marginStart="@dimen/margin_medium" android:layout_marginEnd="@dimen/margin_medium">
+            <TextView android:textSize="16sp" android:textColor="@color/default_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:text="@string/report_macro_description"/>
+            <RadioGroup android:id="@+id/radioGroup" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/margin_medium">
+                <RadioButton android:id="@+id/radioButtonSpam" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="@string/report_macro_reason_spam"/>
+                <RadioButton android:id="@+id/radioButtonBadLanguage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/report_macro_reason_bad_language_offensive"/>
+                <RadioButton android:id="@+id/exactCopy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/report_macro_reason_exact_copy"/>
+            </RadioGroup>
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:layout_marginBottom="@dimen/margin_medium">
+                <androidx.appcompat.widget.AppCompatEditText android:id="@+id/justificationText" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/report_macro_justification_optional" android:maxLines="1" android:singleLine="true" android:maxLength="200" android:textCursorDrawable="@null"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <include layout="@layout/include_ok_cancel_buttons"/>
+        </LinearLayout>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center" android:id="@+id/loadingView" android:layout_width="240dp" android:layout_height="240dp" app:lottie_autoPlay="true" app:lottie_loop="true" app:lottie_rawRes="@raw/simple_loader"/>
+        </FrameLayout>
+    </ViewFlipper>
+</ScrollView>

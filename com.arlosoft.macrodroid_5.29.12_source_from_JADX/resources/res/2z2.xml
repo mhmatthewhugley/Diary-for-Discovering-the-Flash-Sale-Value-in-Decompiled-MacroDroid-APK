@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/margin_small" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="12sp" android:paddingLeft="12dp" android:paddingRight="12dp" android:paddingBottom="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pop_up_message_customizable_android_11_info"/>
+        <RadioGroup android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_small" android:layout_marginRight="@dimen/margin_small">
+            <RadioButton android:id="@+id/standardRadioButton" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/pop_up_message_option_standard" android:layout_weight="1"/>
+            <RadioButton android:id="@+id/customizableRadioButton" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/pop_up_message_option_customizable" android:layout_weight="1"/>
+        </RadioGroup>
+        <LinearLayout android:orientation="vertical" android:id="@+id/customizationsContainer" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:paddingStart="12dp" android:paddingEnd="10dp">
+                <com.google.android.material.card.MaterialCardView android:id="@+id/backgroundColorCircle" android:layout_width="40dp" android:layout_height="40dp" app:cardCornerRadius="24dp" app:strokeColor="@color/default_text_color" app:strokeWidth="2dp"/>
+                <TextView android:textSize="18sp" android:textColor="@color/default_text_color" android:layout_gravity="center_vertical" android:id="@+id/background_color_button" android:background="?attr/selectableItemBackgroundBorderless" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/background_color" android:layout_marginStart="@dimen/margin_medium"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/margin_small" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:paddingStart="12dp" android:paddingEnd="10dp">
+                <com.google.android.material.card.MaterialCardView android:id="@+id/textColorCircle" android:layout_width="40dp" android:layout_height="40dp" app:cardCornerRadius="24dp" app:strokeColor="@color/default_text_color" app:strokeWidth="2dp"/>
+                <TextView android:textSize="18sp" android:textColor="@color/default_text_color" android:layout_gravity="center_vertical" android:id="@+id/text_color_button" android:background="?attr/selectableItemBackgroundBorderless" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_color" android:layout_marginStart="@dimen/margin_medium"/>
+            </LinearLayout>
+            <TextView android:textColor="?attr/colorAccent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small_medium" android:text="@string/icon" android:layout_marginStart="14dp" android:layout_marginEnd="14dp"/>
+            <LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/margin_small" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_tiny" android:paddingStart="12dp">
+                <com.google.android.material.card.MaterialCardView android:layout_gravity="center_vertical" android:id="@+id/icon_container" android:layout_width="64dp" android:layout_height="64dp" app:cardCornerRadius="4dp" app:strokeColor="@color/default_text_color" app:strokeWidth="2dp">
+                    <ImageView android:id="@+id/icon" android:padding="6dp" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                </com.google.android.material.card.MaterialCardView>
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <CheckBox android:layout_gravity="center_vertical" android:id="@+id/display_icon_checkbox" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_small" android:layout_marginTop="@dimen/margin_tiny" android:layout_marginRight="@dimen/margin_small" android:layout_marginBottom="@dimen/margin_tiny" android:text="@string/display_icon" android:singleLine="true"/>
+                    <CheckBox android:layout_gravity="center_vertical" android:id="@+id/tint_icon_checkbox" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_small" android:layout_marginTop="@dimen/margin_tiny" android:layout_marginRight="@dimen/margin_small" android:layout_marginBottom="@dimen/margin_tiny" android:text="@string/icon_tint" android:singleLine="true"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="10dp" android:paddingEnd="10dp">
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:layout_weight="1">
+                <androidx.appcompat.widget.AppCompatEditText android:theme="@style/Theme.App.Dialog.Action" android:id="@+id/toast_message_dialog_text_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/enter_pop_up_message" android:singleLine="true">
+                    <requestFocus/>
+                </androidx.appcompat.widget.AppCompatEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+            <Button android:id="@+id/toast_message_dialog_magic_text_button" style="@style/MagicTextButton"/>
+        </LinearLayout>
+        <CheckBox android:id="@+id/maintain_spaces_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/popup_action_option_maintain_spaces" android:layout_marginStart="10dp"/>
+        <TextView android:textSize="12sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/popup_action_option_maintain_spaces_description" android:layout_marginStart="14dp" android:layout_marginEnd="14dp"/>
+        <TextView android:textColor="?attr/colorAccent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:text="@string/duration" android:layout_marginStart="14dp" android:layout_marginEnd="14dp"/>
+        <Spinner android:entries="@array/toast_duration" android:id="@+id/duration_spinner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:layout_marginBottom="4dp" android:layout_marginStart="8dp" android:layout_marginEnd="8dp"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/positionContainer" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textColor="?attr/colorAccent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:text="@string/pop_up_message_screen_position" android:layout_marginStart="14dp" android:layout_marginEnd="14dp"/>
+            <Spinner android:entries="@array/toast_positions" android:id="@+id/position_spinner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:layout_marginBottom="4dp" android:layout_marginStart="8dp" android:layout_marginEnd="8dp"/>
+            <Spinner android:entries="@array/toast_positions_horizontal" android:id="@+id/position_spinner_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:layout_marginBottom="4dp" android:layout_marginStart="8dp" android:layout_marginEnd="8dp"/>
+        </LinearLayout>
+        <CheckBox android:id="@+id/cancelPreviousCheckbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:text="@string/action_toast_cancel_previous_popup_message" android:layout_marginStart="10dp" android:layout_marginEnd="14dp"/>
+        <Button android:textColor="@color/default_text_color_inverse" android:id="@+id/testButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginTop="@dimen/margin_medium" android:layout_marginRight="@dimen/margin_medium" android:text="@string/test" android:backgroundTint="?attr/colorAccent"/>
+        <include layout="@layout/include_ok_cancel_buttons"/>
+    </LinearLayout>
+</ScrollView>

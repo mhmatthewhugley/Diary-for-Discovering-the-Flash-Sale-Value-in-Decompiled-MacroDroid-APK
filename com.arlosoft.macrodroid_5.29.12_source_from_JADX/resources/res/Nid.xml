@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:icon="@drawable/ic_action_share_white" android:id="@+id/menu_share_log" android:title="@string/share_log" app:showAsAction="ifRoom"/>
+    <item android:icon="@drawable/ic_sort_white_24dp" android:id="@+id/menu_reorder" android:title="@string/invert_order" app:showAsAction="ifRoom"/>
+    <item android:icon="@drawable/ic_action_discard_white" android:id="@+id/menu_clear_log" android:title="@string/clear_log" app:showAsAction="ifRoom"/>
+    <item android:id="@+id/menu_text_size" android:title="@string/text_size" app:showAsAction="never"/>
+    <item android:id="@+id/menu_log_triggers" android:title="@string/log_triggers" android:checkable="true" app:showAsAction="never"/>
+    <item android:id="@+id/menu_log_actions" android:title="@string/log_actions" android:checkable="true" app:showAsAction="never"/>
+    <item android:id="@+id/menu_log_constraints" android:title="@string/log_constraints" android:checkable="true" app:showAsAction="never"/>
+    <item android:id="@+id/menu_date_layout" android:title="@string/user_log_date_layout" android:checkable="true" app:showAsAction="never"/>
+    <item android:id="@+id/menu_toggle_macro_logging" android:title="@string/disable_logging_in_all_macros" app:showAsAction="never"/>
+</menu>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <com.arlosoft.macrodroid.settings.InfoCardPreference android:layout="@layout/info_card" android:key="preferences:drawer_info_card" app:iconSpaceReserved="false"/>
+    <CheckBoxPreference android:title="@string/enable_drawer" android:key="preferences:draw_enabled" android:summary="@string/enable_drawer_summary" android:defaultValue="false" app:iconSpaceReserved="false"/>
+    <Preference android:title="@string/drawer_swipe_area" android:key="preferences:drawer_swipe_area" android:summary="@string/drawer_swipe_area_summary" app:iconSpaceReserved="false"/>
+    <CheckBoxPreference android:title="@string/drawer_swipe_horizontally_to_open" android:key="preferences:swipe_horizontally_to_open" android:defaultValue="true" app:iconSpaceReserved="false"/>
+    <CheckBoxPreference android:title="@string/drawer_swipe_up_to_open" android:key="preferences:swipe_up_to_open" android:defaultValue="false" app:iconSpaceReserved="false"/>
+    <CheckBoxPreference android:title="@string/drawer_swipe_down_to_open" android:key="preferences:swipe_down_to_open" android:defaultValue="false" app:iconSpaceReserved="false"/>
+    <CheckBoxPreference android:title="@string/drawer_auto_close" android:key="preferences:drawer_auto_close" android:summary="@string/drawer_auto_close_summary" android:defaultValue="false" app:iconSpaceReserved="false"/>
+    <EditTextPreference android:hint="@string/enter_value" android:title="@string/drawer_auto_close_timeout" android:key="preferences:drawer_auto_close_timeout" android:summary="@string/drawer_auto_close_timeout_summary" android:defaultValue="5" android:inputType="number" app:iconSpaceReserved="false"/>
+    <CheckBoxPreference android:title="@string/drawer_show_on_lock_screen" android:key="preferences:drawer_show_on_lock_screen" android:defaultValue="true" app:iconSpaceReserved="false"/>
+    <ListPreference android:entries="@array/drawer_text_sizes" android:title="@string/drawer_text_size" android:key="preferences:drawer_text_size" android:defaultValue="14" android:entryValues="@array/drawer_text_size_values" app:iconSpaceReserved="false"/>
+    <Preference android:title="@string/drawer_background_color" android:key="preferences:drawer_background_color" app:iconSpaceReserved="false"/>
+    <Preference android:title="@string/drawer_header_color" android:key="preferences:drawer_header_color" app:iconSpaceReserved="false"/>
+</PreferenceScreen>

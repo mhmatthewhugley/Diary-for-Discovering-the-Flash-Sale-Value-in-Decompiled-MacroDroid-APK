@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <capability android:name="actions.intent.GET_THING">
+        <intent android:action="android.intent.action.VIEW">
+            <parameter android:name="thing.name" android:mimeType="text/*" android:key="name" android:required="true"/>
+            <url-template android:value="macrodroid://googleassistactions{?name}"/>
+        </intent>
+        <intent android:action="android.intent.action.VIEW">
+            <url-template android:value="myapp://deeplink"/>
+        </intent>
+    </capability>
+    <capability android:name="custom.actions.intent.RUN_MACRO" app:queryPatterns="@array/google_assistant_queries">
+        <intent android:action="android.intent.action.VIEW">
+            <parameter android:name="macro" android:mimeType="https://schema.org/Text" android:key="macro"/>
+            <url-template android:value="macrodroid://googleassistactions{?macro}"/>
+        </intent>
+    </capability>
+    <shortcut android:icon="@mipmap/ic_shortcut_list" android:enabled="true">
+        <intent android:targetPackage="com.arlosoft.macrodroid" android:action="android.intent.action.VIEW" android:data="macrodroid://macroList" android:targetClass="com.arlosoft.macrodroid.homescreen.NewHomeScreenActivity"/>
+        <categories android:name="android.shortcut.conversation"/>
+    </shortcut>
+    <shortcut android:icon="@mipmap/ic_shortcut_add_macro" android:enabled="true">
+        <intent android:targetPackage="com.arlosoft.macrodroid" android:action="android.intent.action.VIEW" android:targetClass="com.arlosoft.macrodroid.editscreen.EditMacroActivity"/>
+        <categories android:name="android.shortcut.conversation"/>
+    </shortcut>
+</shortcuts>

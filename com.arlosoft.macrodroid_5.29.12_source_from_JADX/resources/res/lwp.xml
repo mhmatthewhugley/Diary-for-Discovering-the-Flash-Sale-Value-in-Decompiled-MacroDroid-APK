@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/duration_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_tiny" android:paddingStart="10dp" android:paddingEnd="10dp">
+    <CheckBox android:id="@+id/all_day_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_small" android:text="@string/all_day_event"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/duration_box_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputLayout android:id="@+id/duration_textinputlayout" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <androidx.appcompat.widget.AppCompatEditText android:id="@+id/duration_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <Button android:id="@+id/duration_magic_button" style="@style/MagicTextButton"/>
+    </LinearLayout>
+    <RadioGroup android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_small">
+        <RadioButton android:id="@+id/relative_radio_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/relative"/>
+        <RadioButton android:id="@+id/fixed_radio_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fixed" android:layout_marginStart="@dimen/margin_medium"/>
+    </RadioGroup>
+    <LinearLayout android:orientation="vertical" android:id="@+id/calendar_relative_time_layout" android:background="@drawable/configure_button_bar_border" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="4dp">
+        <com.arlosoft.macrodroid.widget.NDSpinner android:id="@+id/relativeTimeOption" android:paddingLeft="4dp" android:paddingRight="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp"/>
+        <ViewFlipper android:id="@+id/relativeTimeViewFlipper" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TableLayout android:padding="12dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:layout_gravity="center_vertical" android:paddingTop="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/days_captial" android:paddingEnd="8dp"/>
+                        <com.arlosoft.macrodroid.common.NumberPicker android:id="@+id/days_picker" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                    </TableRow>
+                    <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:layout_gravity="center_vertical" android:paddingTop="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hours_capital" android:paddingEnd="8dp"/>
+                        <com.arlosoft.macrodroid.common.NumberPicker android:id="@+id/hours_picker" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                    </TableRow>
+                    <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:layout_gravity="center_vertical" android:paddingTop="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/minutes_capital" android:paddingEnd="8dp"/>
+                        <com.arlosoft.macrodroid.common.NumberPicker android:id="@+id/minutes_picker" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <RadioGroup android:orientation="horizontal" android:padding="@dimen/margin_small" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <RadioButton android:textSize="24sp" android:id="@+id/plusRadioButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="+"/>
+                    <RadioButton android:textSize="24sp" android:id="@+id/minusRadioButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="-" android:layout_marginStart="@dimen/margin_medium"/>
+                </RadioGroup>
+                <Spinner android:entries="@array/timeUnitOptions" android:id="@+id/timeUnitSpinner" android:paddingLeft="4dp" android:paddingRight="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp"/>
+            </LinearLayout>
+        </ViewFlipper>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/calendar_fixed_time_layout" android:background="@drawable/configure_button_bar_border" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="4dp">
+        <TextView android:textStyle="bold" android:textColor="@color/default_text_color" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/day_relative_to_invocation"/>
+        <TableLayout android:paddingBottom="@dimen/margin_medium" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="8dp" android:paddingEnd="8dp">
+            <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:layout_gravity="center_vertical" android:paddingTop="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/months_captial" android:paddingEnd="8dp"/>
+                <com.arlosoft.macrodroid.common.NumberPicker android:id="@+id/fixed_months_picker" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </TableRow>
+            <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:layout_gravity="center_vertical" android:paddingTop="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/days_captial" android:paddingEnd="8dp"/>
+                <com.arlosoft.macrodroid.common.NumberPicker android:id="@+id/fixed_days_picker" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </TableRow>
+        </TableLayout>
+        <TextView android:textStyle="bold" android:textColor="@color/default_text_color" android:id="@+id/time_of_day_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/time_of_day" android:paddingStart="8dp"/>
+        <TimePicker android:id="@+id/fixed_time_picker" android:layout_width="match_parent" android:layout_height="wrap_content" android:timePickerMode="spinner"/>
+    </LinearLayout>
+</LinearLayout>

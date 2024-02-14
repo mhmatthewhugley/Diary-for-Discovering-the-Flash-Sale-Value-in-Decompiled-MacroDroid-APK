@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RadioGroup android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginTop="@dimen/margin_small" android:layout_marginRight="@dimen/margin_medium" android:layout_marginHorizontal="@dimen/margin_medium">
+            <RadioButton android:id="@+id/staticFilenameRadioButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/read_from_file_static_filename" android:layout_weight="1"/>
+            <RadioButton android:id="@+id/dynamicFilenameRadioButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/read_from_file_dynamic_filename" android:layout_weight="1"/>
+        </RadioGroup>
+        <ViewFlipper android:id="@+id/viewFlipper" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginRight="@dimen/margin_medium" android:layout_marginHorizontal="@dimen/margin_medium">
+                <com.google.android.material.textfield.TextInputLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                    <androidx.appcompat.widget.AppCompatEditText android:id="@+id/staticFilename" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/filename" android:editable="false"/>
+                </com.google.android.material.textfield.TextInputLayout>
+                <ImageButton android:layout_gravity="center_vertical" android:id="@+id/selectFileButton" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/ic_file_document" app:tint="@color/default_text_color_inverse" style="@style/MagicTextButton"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:layout_marginStart="@dimen/margin_medium" android:layout_marginEnd="@dimen/margin_medium">
+                    <TextView android:textSize="18sp" android:ellipsize="start" android:layout_gravity="center_vertical" android:id="@+id/directory_text" android:layout_width="0dp" android:layout_height="wrap_content" android:maxLines="2" android:layout_weight="1"/>
+                    <ImageButton android:id="@+id/pick_dir_button" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/ic_mode_edit_white_24dp" app:tint="@color/default_text_color_inverse" style="@style/MagicTextButton"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:layout_marginStart="@dimen/margin_medium" android:layout_marginEnd="@dimen/margin_medium">
+                    <com.google.android.material.textfield.TextInputLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                        <androidx.appcompat.widget.AppCompatEditText android:id="@+id/filename" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/filename"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="48dp">
+                        <Button android:id="@+id/special_text_button_filename" style="@style/MagicTextButton"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ViewFlipper>
+        <TextView android:textColor="@color/accent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginTop="@dimen/margin_small" android:layout_marginRight="@dimen/margin_medium" android:text="@string/action_shell_script_save_output" android:layout_marginHorizontal="@dimen/margin_medium"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginTop="@dimen/margin_tiny" android:layout_marginRight="@dimen/margin_medium" android:layout_marginHorizontal="@dimen/margin_medium">
+            <com.arlosoft.macrodroid.widget.NDSpinner android:layout_gravity="center_vertical" android:id="@+id/stringVariableSpinner" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+            <Button android:layout_gravity="center_vertical" android:id="@+id/addStringVariableButton" android:layout_width="@dimen/special_text_button_width" android:layout_height="wrap_content" android:text="+" style="@style/MagicTextButton"/>
+        </LinearLayout>
+        <include layout="@layout/include_ok_cancel_buttons"/>
+    </LinearLayout>
+</ScrollView>

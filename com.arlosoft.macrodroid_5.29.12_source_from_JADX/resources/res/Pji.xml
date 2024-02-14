@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:background="@drawable/trigger_border" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/margin_medium"/>
+    <ImageView android:layout_gravity="right" android:id="@+id/delete_button" android:background="?android:attr/colorBackground" android:padding="@dimen/margin_small" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginRight="@dimen/margin_small" android:foreground="?attr/selectableItemBackgroundBorderless" android:src="@drawable/ic_delete_white_24dp" app:tint="@color/trigger_accent" style="@style/Widget.AppCompat.Button.Borderless.Colored"/>
+    <TextView android:textColor="@color/trigger_accent" android:background="?android:attr/colorBackground" android:paddingLeft="@dimen/margin_tiny" android:paddingRight="@dimen/margin_tiny" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_small" android:layout_marginTop="@dimen/margin_small" android:text="@string/intent_extra"/>
+    <LinearLayout android:orientation="vertical" android:padding="@dimen/margin_small" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/margin_small">
+        <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium">
+            <androidx.appcompat.widget.AppCompatEditText android:id="@+id/parameter_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/intent_extra_name" android:inputType="textNoSuggestions"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <androidx.appcompat.widget.AppCompatEditText android:id="@+id/value" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/intent_extra_value_to_match" android:inputType="textNoSuggestions"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <Button android:id="@+id/special_text_button" style="@style/MagicTextButton"/>
+        </LinearLayout>
+        <TextView android:id="@+id/wildcards_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_small" android:text="@string/wildcards_supported"/>
+        <TextView android:textColor="@color/trigger_accent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_tiny" android:layout_marginTop="@dimen/margin_small" android:text="@string/save_to_variable"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.arlosoft.macrodroid.widget.NDSpinner android:layout_gravity="center_vertical" android:id="@+id/variable_spinner" android:layout_width="0dp" android:layout_height="wrap_content" android:minHeight="48dp" android:layout_weight="1"/>
+            <Button android:textColor="@color/primaryText" android:id="@+id/add_variable_button" android:layout_width="48dp" android:layout_height="wrap_content" android:text="+" app:backgroundTint="?attr/colorAccent"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

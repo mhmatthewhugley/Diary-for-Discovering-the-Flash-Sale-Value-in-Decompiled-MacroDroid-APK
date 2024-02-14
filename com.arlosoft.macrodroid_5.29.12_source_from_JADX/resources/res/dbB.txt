@@ -1,0 +1,26 @@
+Versão 5.29 (dezembro de 2022)
+=====================================
+
+Adicionado suporte para assinaturas de repositório de modelos em macro/usuários para serem notificados sobre atualizações (somente usuários profissionais).
+
+Adicionada ação de saída JSON.
+
+Adicionada a ação Definir Assistente Digital.
+
+A ação do modo avião agora pode funcionar com o hack ADB (sem necessidade de tornar o MacroDroid o assistente digital padrão).
+
+O gatilho de Reconhecimento de Atividades agora oferece suporte a menos do que a comparação para detectar quando uma atividade termina.
+
+O gatilho de conteúdo da tela agora tem uma taxa de atualização ajustável.
+
+Adicionado suporte para portar um ID de dispositivo Webhook Trigger para um novo dispositivo.
+
+A ação Texto Flutuante agora oferece suporte ao alinhamento à esquerda, ao centro e à direita.
+
+Corrigido o problema em que eventos de dia inteiro no calendário poderiam ser acionados incorretamente devido aos horários de verão.
+
+Corrigido o problema em que valores específicos de gatilho (por exemplo, número de chamada de entrada) não funcionavam após uma espera antes da próxima ação de disparo.
+
+Corrigido o problema em que os números decimais nas caixas de diálogo podiam ser mostrados incorretamente como links.
+
+Corrigido o problema em que o bloco de ação não era executado em algumas situações em que a categoria não categorizada estava desabilitada.

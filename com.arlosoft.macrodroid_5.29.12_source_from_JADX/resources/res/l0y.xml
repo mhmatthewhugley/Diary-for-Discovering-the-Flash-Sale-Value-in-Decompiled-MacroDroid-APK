@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="top" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:padding="10dp" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/auto_brightness" android:layout_marginStart="10dp"/>
+            <androidx.appcompat.widget.SwitchCompat android:layout_gravity="center_vertical" android:id="@+id/brightness_dialog_auto_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="6dp" android:paddingEnd="6dp"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/brightness_dialog_values_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+            <com.arlosoft.macrodroid.widget.NDSpinner android:id="@+id/variablesSpinner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_small"/>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/brightness_bar_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+                <SeekBar android:id="@+id/brightness_dialog_seek_bar" android:layout_width="0dp" android:layout_height="wrap_content" android:max="100" android:layout_weight="1"/>
+                <TextView android:layout_gravity="center_vertical" android:id="@+id/brightness_percent_text" android:layout_width="50dp" android:layout_height="wrap_content" android:layout_marginStart="10dp"/>
+            </LinearLayout>
+            <CheckBox android:id="@+id/use_android_pie_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:text="@string/brightness_use_alternative_android_pie_mode"/>
+            <TextView android:id="@+id/use_android_pie_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:text="@string/android_pie_brightness_explanation" android:layout_marginStart="@dimen/margin_small" android:layout_marginEnd="@dimen/margin_small"/>
+            <CheckBox android:id="@+id/force_value_checkbox" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:text="@string/brightness_use_force_value"/>
+            <EditText android:id="@+id/force_value_value" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:hint="@string/enter_value" android:inputType="number" android:layout_marginStart="@dimen/margin_small" android:layout_marginEnd="@dimen/margin_small"/>
+            <TextView android:id="@+id/force_value_description" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:text="@string/brightness_use_force_value_description" android:layout_marginStart="@dimen/margin_small" android:layout_marginEnd="@dimen/margin_small"/>
+        </LinearLayout>
+        <View android:background="@color/ok_cancel_button_border" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="10dp"/>
+        <LinearLayout android:gravity="end" android:paddingTop="0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:id="@+id/cancelButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/button_bar_button_min_width" android:text="@android:string/cancel" style="?android:attr/buttonBarButtonStyle"/>
+            <View android:background="@color/ok_cancel_button_border" android:layout_width="1dp" android:layout_height="match_parent"/>
+            <Button android:id="@+id/okButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/button_bar_button_min_width" android:text="@android:string/ok" style="?android:attr/buttonBarButtonStyle"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

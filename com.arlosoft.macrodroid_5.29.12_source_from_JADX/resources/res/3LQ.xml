@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:id="@+id/menu_hide" android:title="@string/hide" android:checkable="true"/>
+    <item android:id="@+id/menu_inline" android:title="@string/local_variables_show_inline" android:checkable="true"/>
+    <item android:id="@+id/menu_bottom_bar" android:title="@string/local_variables_show_bottom_bar" android:checkable="true"/>
+</menu>

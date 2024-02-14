@@ -1,0 +1,851 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="activity_recognition_trigger_update_rate_names">
+        <item>@string/seconds_30</item>
+        <item>@string/minute_1</item>
+        <item>@string/minutes_2</item>
+        <item>@string/minutes_3</item>
+        <item>@string/minutes_4</item>
+        <item>@string/minutes_5</item>
+        <item>@string/minutes_10</item>
+    </array>
+    <array name="activity_recognition_trigger_update_rates">
+        <item>30</item>
+        <item>60</item>
+        <item>120</item>
+        <item>180</item>
+        <item>240</item>
+        <item>300</item>
+        <item>600</item>
+    </array>
+    <array name="assume_strong_biometrics_models">
+        <item>Pixel 4</item>
+        <item>Pixel 4 XL</item>
+    </array>
+    <array name="audio_streams">
+        <item>@string/ringer</item>
+        <item>@string/notification</item>
+        <item>@string/alarm</item>
+        <item>@string/music</item>
+        <item>@string/system</item>
+        <item>@string/voice_call</item>
+    </array>
+    <array name="audio_streams_values">
+        <item>2</item>
+        <item>5</item>
+        <item>4</item>
+        <item>3</item>
+        <item>1</item>
+        <item>@null</item>
+    </array>
+    <array name="audio_streams_values_int">
+        <item>2</item>
+        <item>5</item>
+        <item>4</item>
+        <item>3</item>
+        <item>1</item>
+        <item>@null</item>
+    </array>
+    <array name="availability_options">
+        <item>@string/availability_any</item>
+        <item>@string/availability_busy</item>
+        <item>@string/availability_free</item>
+    </array>
+    <array name="availability_options_set">
+        <item>@string/availability_busy</item>
+        <item>@string/availability_free</item>
+    </array>
+    <array name="button_bar_numbers">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </array>
+    <array name="cell_tower_background_scan_duration_names">
+        <item>@string/minutes_5</item>
+        <item>@string/minutes_10</item>
+        <item>@string/minutes_15</item>
+        <item>@string/minutes_30</item>
+        <item>@string/hour_1</item>
+        <item>@string/hours_2</item>
+        <item>@string/hours_4</item>
+        <item>@string/hours_8</item>
+    </array>
+    <array name="cell_tower_background_scan_durations">
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>120</item>
+        <item>240</item>
+        <item>480</item>
+    </array>
+    <array name="cell_tower_trigger_update_rate_names">
+        <item>@string/seconds_30</item>
+        <item>@string/minute_1</item>
+        <item>@string/minutes_2</item>
+        <item>@string/minutes_5</item>
+        <item>@string/minutes_10</item>
+        <item>@string/minutes_15</item>
+        <item>@string/minutes_20</item>
+        <item>@string/minutes_30</item>
+        <item>@string/minutes_45</item>
+        <item>@string/minutes_60</item>
+    </array>
+    <array name="cell_tower_trigger_update_rates">
+        <item>@null</item>
+        <item>1</item>
+        <item>2</item>
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>30</item>
+        <item>45</item>
+        <item>60</item>
+    </array>
+    <array name="cell_tower_trigger_update_rates_int">
+        <item>@null</item>
+        <item>1</item>
+        <item>2</item>
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>30</item>
+        <item>45</item>
+        <item>60</item>
+    </array>
+    <array name="configure_notification_options">
+        <item />
+        <item>@string/enable</item>
+        <item>@string/disable</item>
+    </array>
+    <array name="constraint_and_or_options">
+        <item>@string/and</item>
+        <item>@string/or</item>
+    </array>
+    <array name="crypto_fingerprint_fallback_prefixes">
+    </array>
+    <array name="crypto_fingerprint_fallback_vendors">
+        <item>samsung</item>
+    </array>
+    <array name="dark_mode_option_values">
+        <item>-1</item>
+        <item>2</item>
+        <item>1</item>
+    </array>
+    <array name="dark_mode_options">
+        <item>@string/dark_mode_use_system_setting</item>
+        <item>@string/on</item>
+        <item>@string/off</item>
+    </array>
+    <array name="delay_showing_prompt_models">
+        <item>Pixel 4</item>
+        <item>Pixel 4 XL</item>
+    </array>
+    <array name="dictionary_entry_types">
+        <item>@string/bool</item>
+        <item>@string/integer</item>
+        <item>@string/string</item>
+        <item>@string/decimal</item>
+        <item>@string/variable_type_dictionary</item>
+        <item>@string/variable_type_array</item>
+    </array>
+    <array name="dictionary_entry_types_no_sub_elements">
+        <item>@string/bool</item>
+        <item>@string/integer</item>
+        <item>@string/string</item>
+        <item>@string/decimal</item>
+    </array>
+    <array name="drawer_bg_colors">
+        <item>@color/md_white</item>
+        <item>@color/md_black</item>
+        <item>@color/md_grey_900</item>
+        <item>@color/md_grey_800</item>
+        <item>@color/md_grey_700</item>
+        <item>@color/md_grey_600</item>
+        <item>@color/md_grey_400</item>
+        <item>@color/md_grey_200</item>
+        <item>@color/md_red_300</item>
+        <item>@color/md_red_500</item>
+        <item>@color/md_red_800</item>
+        <item>@color/md_pink_300</item>
+        <item>@color/md_pink_500</item>
+        <item>@color/md_pink_800</item>
+        <item>@color/md_purple_300</item>
+        <item>@color/md_purple_500</item>
+        <item>@color/md_purple_800</item>
+        <item>@color/md_deep_purple_300</item>
+        <item>@color/md_deep_purple_500</item>
+        <item>@color/md_deep_purple_800</item>
+        <item>@color/primary</item>
+        <item>@color/md_indigo_300</item>
+        <item>@color/md_indigo_500</item>
+        <item>@color/md_indigo_800</item>
+        <item>@color/md_blue_300</item>
+        <item>@color/md_blue_500</item>
+        <item>@color/md_blue_800</item>
+        <item>@color/md_light_blue_300</item>
+        <item>@color/md_light_blue_500</item>
+        <item>@color/md_light_blue_800</item>
+        <item>@color/md_blue_grey_300</item>
+        <item>@color/md_blue_grey_500</item>
+        <item>@color/md_blue_grey_800</item>
+        <item>@color/md_cyan_300</item>
+        <item>@color/md_cyan_500</item>
+        <item>@color/md_cyan_800</item>
+        <item>@color/md_teal_300</item>
+        <item>@color/md_teal_500</item>
+        <item>@color/md_teal_800</item>
+        <item>@color/md_green_300</item>
+        <item>@color/md_green_500</item>
+        <item>@color/md_green_800</item>
+        <item>@color/md_light_green_300</item>
+        <item>@color/md_light_green_500</item>
+        <item>@color/md_light_green_800</item>
+        <item>@color/md_lime_300</item>
+        <item>@color/md_lime_500</item>
+        <item>@color/md_lime_800</item>
+        <item>@color/md_yellow_300</item>
+        <item>@color/md_yellow_500</item>
+        <item>@color/md_yellow_800</item>
+        <item>@color/md_amber_300</item>
+        <item>@color/md_amber_500</item>
+        <item>@color/md_amber_800</item>
+        <item>@color/md_orange_300</item>
+        <item>@color/md_orange_500</item>
+        <item>@color/md_orange_800</item>
+        <item>@color/md_deep_orange_300</item>
+        <item>@color/md_deep_orange_500</item>
+        <item>@color/md_deep_orange_800</item>
+        <item>@color/md_brown_300</item>
+        <item>@color/md_brown_500</item>
+        <item>@color/md_brown_800</item>
+    </array>
+    <array name="drawer_text_size_values">
+        <item>12</item>
+        <item>14</item>
+        <item>18</item>
+    </array>
+    <array name="drawer_text_sizes">
+        <item>@string/text_size_small</item>
+        <item>@string/text_size_medium</item>
+        <item>@string/text_size_large</item>
+    </array>
+    <array name="failed_login_attempt_options">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </array>
+    <array name="failed_login_attempt_timespan_options">
+        <item>@string/minute_1</item>
+        <item>@string/minutes_2</item>
+        <item>@string/minutes_5</item>
+        <item>@string/minutes_10</item>
+        <item>@string/minutes_30</item>
+        <item>@string/hour_1</item>
+    </array>
+    <array name="floating_button_action_enable_options">
+        <item>@string/floating_button_change_action_dont_change_enabled_state</item>
+        <item>@string/floating_button_change_action_enable_trigger</item>
+        <item>@string/floating_button_change_action_disable_trigger</item>
+    </array>
+    <array name="floating_button_remove_options">
+        <item>@string/floating_button_disable_macro_on_remove_option</item>
+        <item>@string/floating_button_disable_trigger_on_remove_option</item>
+    </array>
+    <array name="geofence_trigger_update_rate_names">
+        <item>@string/seconds_30</item>
+        <item>@string/minute_1</item>
+        <item>@string/minutes_2</item>
+        <item>@string/minutes_5</item>
+        <item>@string/minutes_10</item>
+        <item>@string/minutes_15</item>
+        <item>@string/minutes_20</item>
+        <item>@string/minutes_30</item>
+        <item>@string/minutes_45</item>
+        <item>@string/minutes_60</item>
+    </array>
+    <array name="geofence_trigger_update_rates_int">
+        <item>@null</item>
+        <item>1</item>
+        <item>2</item>
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>30</item>
+        <item>45</item>
+        <item>60</item>
+    </array>
+    <array name="google_assistant_queries">
+        <item>run $macro</item>
+        <item>start $macro</item>
+        <item>run macro called $macro</item>
+    </array>
+    <array name="hide_fingerprint_instantly_prefixes">
+        <item>SM-A50</item>
+        <item>SM-G973</item>
+        <item>SM-G975</item>
+        <item>SM-G977</item>
+        <item>SM-G770</item>
+        <item>SM-N970</item>
+        <item>SM-N971</item>
+        <item>SM-N975</item>
+        <item>SM-N976</item>
+        <item>SM-N770</item>
+        <item>SC-03L</item>
+        <item>SC-04L</item>
+        <item>SC-05L</item>
+        <item>SC-01M</item>
+        <item>SCV41</item>
+        <item>SCV42</item>
+        <item>SCV45</item>
+    </array>
+    <array name="http_content_types">
+        <item>@string/http_request_content_type_not_set</item>
+        <item>text/plain</item>
+        <item>text/html</item>
+        <item>application/json</item>
+        <item>application/x-www-form-urlencoded</item>
+        <item>application/xml</item>
+        <item>image/jpeg</item>
+        <item>image/png</item>
+        <item>video/mpeg</item>
+        <item>video/mp4</item>
+        <item>@string/http_content_type_custom</item>
+    </array>
+    <array name="http_request_types">
+        <item>GET</item>
+        <item>POST</item>
+        <item>PUT</item>
+        <item>DELETE</item>
+        <item>PATCH</item>
+        <item>HEAD</item>
+        <item>OPTIONS</item>
+        <item>TRACE</item>
+    </array>
+    <array name="http_request_types_int">
+        <item>@null</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </array>
+    <array name="intent_target_options">
+        <item>Activity</item>
+        <item>Broadcast</item>
+        <item>Service</item>
+    </array>
+    <array name="keyguard_biometric_and_credential_exclude_vendors">
+    </array>
+    <array name="languages">
+        <item>български</item>
+        <item>Català</item>
+        <item>Czech</item>
+        <item>Deutsch</item>
+        <item>English</item>
+        <item>Español</item>
+        <item>Francais</item>
+        <item>Magyar</item>
+        <item>Italiano</item>
+        <item>한국인</item>
+        <item>Nederlands</item>
+        <item>Polski</item>
+        <item>Portuges</item>
+        <item>русский</item>
+        <item>Română</item>
+        <item>Svenska</item>
+        <item>Türkçe</item>
+        <item>Українська</item>
+        <item>عربى</item>
+        <item>فارسی</item>
+        <item>日本語</item>
+        <item>简体中文</item>
+        <item>Tiếng Việt</item>
+    </array>
+    <array name="languages_codes">
+        <item>bg</item>
+        <item>ca</item>
+        <item>cs</item>
+        <item>de</item>
+        <item>en</item>
+        <item>es</item>
+        <item>fr</item>
+        <item>hu</item>
+        <item>it</item>
+        <item>ko</item>
+        <item>nl</item>
+        <item>pl</item>
+        <item>pt</item>
+        <item>ru</item>
+        <item>ro</item>
+        <item>sv</item>
+        <item>tr</item>
+        <item>uk</item>
+        <item>ar</item>
+        <item>fa</item>
+        <item>ja</item>
+        <item>zh-rCN</item>
+        <item>vi</item>
+    </array>
+    <array name="location_trigger_update_rate_names">
+        <item>@string/seconds_5</item>
+        <item>@string/seconds_10</item>
+        <item>@string/seconds_30</item>
+        <item>@string/minute_1</item>
+        <item>@string/minutes_2</item>
+        <item>@string/minutes_5</item>
+        <item>@string/minutes_10</item>
+        <item>@string/minutes_15</item>
+        <item>@string/minutes_20</item>
+        <item>@string/minutes_30</item>
+        <item>@string/minutes_45</item>
+        <item>@string/minutes_60</item>
+    </array>
+    <array name="location_trigger_update_rates">
+        <item>5</item>
+        <item>10</item>
+        <item>30</item>
+        <item>60</item>
+        <item>120</item>
+        <item>300</item>
+        <item>600</item>
+        <item>900</item>
+        <item>1200</item>
+        <item>1800</item>
+        <item>2700</item>
+        <item>3600</item>
+    </array>
+    <array name="location_trigger_update_rates_int">
+        <item>5</item>
+        <item>10</item>
+        <item>30</item>
+        <item>60</item>
+        <item>120</item>
+        <item>300</item>
+        <item>600</item>
+        <item>900</item>
+        <item>1200</item>
+        <item>1800</item>
+        <item>2700</item>
+        <item>3600</item>
+    </array>
+    <array name="log_levels">
+        <item>@string/system_log_level_detailed</item>
+        <item>@string/system_log_level_standard</item>
+        <item>@string/system_log_level_warnings</item>
+        <item>@string/system_log_level_errors</item>
+    </array>
+    <array name="log_levels_int">
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>40</item>
+    </array>
+    <array name="log_levels_int_with_debug">
+        <item>@null</item>
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>40</item>
+    </array>
+    <array name="log_levels_with_debug">
+        <item>Debug</item>
+        <item>@string/system_log_level_detailed</item>
+        <item>@string/system_log_level_standard</item>
+        <item>@string/system_log_level_warnings</item>
+        <item>@string/system_log_level_errors</item>
+    </array>
+    <array name="macro_list_heading_colors">
+        <item>@color/md_white</item>
+        <item>@color/md_grey_100</item>
+        <item>@color/md_grey_150</item>
+        <item>@color/md_grey_200</item>
+        <item>@color/md_grey_300</item>
+        <item>@color/md_red_50</item>
+        <item>@color/md_red_100</item>
+        <item>@color/md_red_200</item>
+        <item>@color/md_pink_50</item>
+        <item>@color/md_pink_100</item>
+        <item>@color/md_pink_200</item>
+        <item>@color/md_purple_50</item>
+        <item>@color/md_purple_100</item>
+        <item>@color/md_purple_200</item>
+        <item>@color/md_deep_purple_50</item>
+        <item>@color/md_deep_purple_100</item>
+        <item>@color/md_deep_purple_200</item>
+        <item>@color/md_indigo_50</item>
+        <item>@color/md_indigo_100</item>
+        <item>@color/md_indigo_200</item>
+        <item>@color/md_blue_50</item>
+        <item>@color/md_blue_100</item>
+        <item>@color/md_blue_200</item>
+        <item>@color/md_light_blue_50</item>
+        <item>@color/md_light_blue_100</item>
+        <item>@color/md_light_blue_200</item>
+        <item>@color/md_cyan_50</item>
+        <item>@color/md_cyan_100</item>
+        <item>@color/md_cyan_200</item>
+        <item>@color/md_teal_50</item>
+        <item>@color/md_teal_100</item>
+        <item>@color/md_teal_200</item>
+        <item>@color/md_green_50</item>
+        <item>@color/md_green_100</item>
+        <item>@color/md_green_200</item>
+        <item>@color/md_light_green_50</item>
+        <item>@color/md_light_green_100</item>
+        <item>@color/md_light_green_200</item>
+        <item>@color/md_lime_50</item>
+        <item>@color/md_lime_100</item>
+        <item>@color/md_lime_200</item>
+        <item>@color/md_yellow_50</item>
+        <item>@color/md_yellow_100</item>
+        <item>@color/md_yellow_200</item>
+        <item>@color/md_amber_50</item>
+        <item>@color/md_amber_100</item>
+        <item>@color/md_amber_200</item>
+        <item>@color/md_orange_50</item>
+        <item>@color/md_orange_100</item>
+        <item>@color/md_orange_200</item>
+        <item>@color/md_deep_orange_50</item>
+        <item>@color/md_deep_orange_100</item>
+        <item>@color/md_deep_orange_200</item>
+        <item>@color/md_brown_50</item>
+        <item>@color/md_brown_100</item>
+        <item>@color/md_brown_200</item>
+        <item>@color/md_blue_grey_50</item>
+        <item>@color/md_blue_grey_100</item>
+        <item>@color/md_blue_grey_200</item>
+    </array>
+    <array name="magic_text_bracket_option_values">
+        <item>@null</item>
+        <item>1</item>
+    </array>
+    <array name="magic_text_bracket_options">
+        <item>@string/magic_text_curly_brackets</item>
+        <item>@string/magic_text_square_brackets</item>
+    </array>
+    <array name="notification_channels">
+        <item>@string/notification_channel_action</item>
+        <item>@string/notification_channel_action_high_priority</item>
+    </array>
+    <array name="notification_colors">
+        <item>@color/md_red_500</item>
+        <item>@color/md_red_900</item>
+        <item>@color/md_pink_500</item>
+        <item>@color/md_purple_500</item>
+        <item>@color/md_deep_purple_500</item>
+        <item>@color/md_indigo_500</item>
+        <item>@color/md_blue_500</item>
+        <item>@color/md_light_blue_500</item>
+        <item>@color/md_cyan_500</item>
+        <item>@color/md_teal_500</item>
+        <item>@color/md_green_500</item>
+        <item>@color/md_light_green_500</item>
+        <item>@color/md_lime_500</item>
+        <item>@color/md_yellow_500</item>
+        <item>@color/md_amber_500</item>
+        <item>@color/md_orange_500</item>
+        <item>@color/md_deep_orange_500</item>
+        <item>@color/md_brown_500</item>
+        <item>@color/md_blue_grey_500</item>
+        <item>@color/md_black</item>
+        <item>@color/md_grey_800</item>
+        <item>@color/md_grey_600</item>
+        <item>@color/md_grey_400</item>
+        <item>@color/md_grey_200</item>
+        <item>@color/md_white</item>
+    </array>
+    <array name="notification_light_color_options">
+        <item>Green</item>
+        <item>Red</item>
+        <item>Blue</item>
+        <item>Orange</item>
+        <item>Yellow</item>
+        <item>Magenta</item>
+        <item>White</item>
+        <item>Cyan</item>
+    </array>
+    <array name="notification_light_flash_options">
+        <item>No Flash</item>
+        <item>Rapid Flash</item>
+        <item>Standard Flash</item>
+        <item>Slow Flash</item>
+    </array>
+    <array name="notification_priority_names">
+        <item>@string/maximum</item>
+        <item>@string/high</item>
+        <item>@string/default_priority</item>
+        <item>@string/low</item>
+        <item>@string/minimum</item>
+    </array>
+    <array name="notification_priority_values">
+        <item>2</item>
+        <item>1</item>
+        <item>@null</item>
+        <item>-1</item>
+        <item>-2</item>
+    </array>
+    <array name="notification_priority_values_int">
+        <item>2</item>
+        <item>1</item>
+        <item>@null</item>
+        <item>-1</item>
+        <item>-2</item>
+    </array>
+    <array name="password_protection_delay_names">
+        <item>@string/macrodroid_password_protection_delay_none</item>
+        <item>@string/seconds_5</item>
+        <item>@string/seconds_30</item>
+        <item>@string/minute_1</item>
+        <item>@string/minutes_2</item>
+        <item>@string/minutes_5</item>
+        <item>@string/minutes_10</item>
+        <item>@string/minutes_15</item>
+        <item>@string/minutes_20</item>
+        <item>@string/minutes_30</item>
+        <item>@string/minutes_45</item>
+        <item>@string/minutes_60</item>
+    </array>
+    <array name="password_protection_delay_values_seconds">
+        <item>@null</item>
+        <item>5</item>
+        <item>30</item>
+        <item>60</item>
+        <item>120</item>
+        <item>300</item>
+        <item>600</item>
+        <item>900</item>
+        <item>1200</item>
+        <item>1800</item>
+        <item>2700</item>
+        <item>3600</item>
+    </array>
+    <array name="read_screen_content_update_rate_seconds">
+        <item>0.5</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </array>
+    <array name="set_pebble_text_duration">
+        <item>@string/seconds_5</item>
+        <item>@string/seconds_10</item>
+        <item>@string/seconds_30</item>
+        <item>@string/minute_1</item>
+        <item>@string/minutes_5</item>
+        <item>@string/minutes_10</item>
+        <item>@string/minutes_30</item>
+        <item>@string/hour_1</item>
+        <item>@string/hours_2</item>
+        <item>@string/until_cleared</item>
+    </array>
+    <array name="set_pebble_text_duration_values">
+        <item>5</item>
+        <item>10</item>
+        <item>30</item>
+        <item>60</item>
+        <item>300</item>
+        <item>600</item>
+        <item>1800</item>
+        <item>3600</item>
+        <item>999999</item>
+    </array>
+    <array name="set_pebble_text_size">
+        <item>@string/text_size_small</item>
+        <item>@string/text_size_large</item>
+    </array>
+    <array name="shake_sampling_frequency">
+        <item>@string/slow</item>
+        <item>@string/normal</item>
+        <item>@string/fast</item>
+    </array>
+    <array name="shake_sensitivity_values">
+        <item>@string/shake_sensitivity_level_1_min</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>@string/shake_sensitivity_level_5_max</item>
+    </array>
+    <array name="sunset_sunrise_adjust_values">
+        <item>@string/trigger_sunrise_sunset_time_exact_time</item>
+        <item>@string/trigger_sunrise_sunset_time_in_advance</item>
+        <item>@string/trigger_sunrise_sunset_time_after_delay</item>
+    </array>
+    <array name="temperature_options">
+        <item>@string/celsius</item>
+        <item>@string/fahrenheit</item>
+    </array>
+    <array name="template_categories">
+        <item>@string/all_categories</item>
+        <item>@string/categories_auto_and_vehicles</item>
+        <item>@string/categories_battery_saving</item>
+        <item>@string/categories_call_handling</item>
+        <item>@string/categories_communication</item>
+        <item>@string/categories_device_config</item>
+        <item>@string/categories_entertainment</item>
+        <item>@string/categories_games</item>
+        <item>@string/categories_health_and_fitness</item>
+        <item>@string/categories_house_and_home</item>
+        <item>@string/categories_location_based</item>
+        <item>@string/categories_maps_and_navigation</item>
+        <item>@string/categories_miscellaneous</item>
+        <item>@string/categories_music_and_audio</item>
+        <item>@string/categories_news</item>
+        <item>@string/categories_notifications</item>
+        <item>@string/categories_personalisation</item>
+        <item>@string/categories_photography</item>
+        <item>@string/categories_productivity</item>
+        <item>@string/categories_quick_setting_tiles</item>
+        <item>@string/categories_security</item>
+        <item>@string/categories_shopping</item>
+        <item>@string/categories_social</item>
+        <item>@string/categories_sport</item>
+        <item>@string/categories_utilities</item>
+        <item>@string/categories_video</item>
+        <item>@string/categories_weather</item>
+    </array>
+    <array name="timeUnitOptions">
+        <item>@string/seconds_capital</item>
+        <item>@string/minutes_capital</item>
+        <item>@string/hours_capital</item>
+    </array>
+    <array name="toast_colors">
+        <item>@color/md_grey_800</item>
+        <item>@color/md_red_500</item>
+        <item>@color/md_red_800</item>
+        <item>@color/md_pink_500</item>
+        <item>@color/md_pink_800</item>
+        <item>@color/md_purple_500</item>
+        <item>@color/md_purple_800</item>
+        <item>@color/md_deep_purple_500</item>
+        <item>@color/md_deep_purple_800</item>
+        <item>@color/md_indigo_500</item>
+        <item>@color/md_indigo_800</item>
+        <item>@color/md_blue_500</item>
+        <item>@color/md_blue_800</item>
+        <item>@color/md_light_blue_500</item>
+        <item>@color/md_light_blue_800</item>
+        <item>@color/md_cyan_500</item>
+        <item>@color/md_cyan_800</item>
+        <item>@color/md_teal_500</item>
+        <item>@color/md_teal_800</item>
+        <item>@color/md_green_500</item>
+        <item>@color/md_green_800</item>
+        <item>@color/md_light_green_500</item>
+        <item>@color/md_light_green_800</item>
+        <item>@color/md_lime_500</item>
+        <item>@color/md_lime_800</item>
+        <item>@color/md_yellow_500</item>
+        <item>@color/md_yellow_800</item>
+        <item>@color/md_amber_500</item>
+        <item>@color/md_amber_800</item>
+        <item>@color/md_orange_500</item>
+        <item>@color/md_orange_800</item>
+        <item>@color/md_deep_orange_500</item>
+        <item>@color/md_deep_orange_800</item>
+        <item>@color/md_brown_500</item>
+        <item>@color/md_brown_800</item>
+        <item>@color/md_blue_grey_500</item>
+        <item>@color/md_blue_grey_800</item>
+        <item>@color/md_black</item>
+        <item>@color/md_grey_600</item>
+        <item>#f3f3f3</item>
+    </array>
+    <array name="toast_duration">
+        <item>@string/action_toast_long_duration</item>
+        <item>@string/action_toast_long_duration_android_bug_workaround</item>
+        <item>@string/action_toast_short_duration</item>
+    </array>
+    <array name="toast_positions">
+        <item>@string/pop_up_message_bottom</item>
+        <item>@string/pop_up_message_center</item>
+        <item>@string/pop_up_message_top</item>
+    </array>
+    <array name="toast_positions_horizontal">
+        <item>@string/pop_up_message_center</item>
+        <item>@string/left</item>
+        <item>@string/right</item>
+    </array>
+    <array name="upload_retry_rate_names">
+        <item>@string/try_once</item>
+        <item>@string/minute_1</item>
+        <item>@string/minutes_5</item>
+        <item>@string/minutes_10</item>
+        <item>@string/minutes_30</item>
+    </array>
+    <array name="upload_retry_rates">
+        <item>@null</item>
+        <item>1</item>
+        <item>5</item>
+        <item>10</item>
+        <item>30</item>
+    </array>
+    <array name="variable_boolean_action_block_input_options">
+        <item>@string/default_value</item>
+        <item>True</item>
+        <item>False</item>
+    </array>
+    <array name="variable_boolean_options">
+        <item>True</item>
+        <item>False</item>
+    </array>
+    <array name="variable_type_options">
+        <item>@string/bool</item>
+        <item>@string/integer</item>
+        <item>@string/string</item>
+        <item>@string/decimal</item>
+    </array>
+    <array name="variable_types_filter_options">
+        <item>@string/variable_type_filter_all_variables</item>
+        <item>@string/variable_filter_type_boolean</item>
+        <item>@string/variable_filter_type_integer</item>
+        <item>@string/variable_filter_type_string</item>
+        <item>@string/variable_filter_type_decimal</item>
+        <item>@string/variable_filter_type_dictionary</item>
+        <item>@string/variable_filter_type_array</item>
+    </array>
+    <array name="weather_update_rate_names">
+        <item>@string/minutes_15</item>
+        <item>@string/minutes_30</item>
+        <item>@string/hour_1</item>
+        <item>@string/hours_2</item>
+    </array>
+    <array name="weather_update_rates">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>120</item>
+    </array>
+    <array name="wifi_background_scan_rate_names">
+        <item>@string/never</item>
+        <item>@string/minute_1</item>
+        <item>@string/minutes_2</item>
+        <item>@string/minutes_5</item>
+        <item>@string/minutes_10</item>
+        <item>@string/minutes_20</item>
+        <item>@string/minutes_30</item>
+    </array>
+    <array name="wifi_background_scan_rates">
+        <item>@null</item>
+        <item>1</item>
+        <item>2</item>
+        <item>5</item>
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+    </array>
+</resources>

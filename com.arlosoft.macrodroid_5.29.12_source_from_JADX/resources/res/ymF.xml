@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:paddingTop="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="12dp" android:paddingEnd="12dp">
+        <androidx.appcompat.widget.AppCompatEditText android:id="@+id/viewIdText" android:layout_width="0dp" android:layout_height="wrap_content" android:hint="@string/ui_interaction_view_id" android:maxLines="1" android:layout_weight="1" android:inputType="textUri">
+            <requestFocus/>
+        </androidx.appcompat.widget.AppCompatEditText>
+        <Button android:id="@+id/magicTextButton" style="@style/MagicTextButton"/>
+    </LinearLayout>
+    <include android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/include_ok_cancel_buttons"/>
+</LinearLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:padding="@dimen/margin_small" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:id="@+id/scrollView1" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_tiny" android:layout_marginRight="@dimen/margin_tiny" android:layout_marginHorizontal="@dimen/margin_tiny">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.google.android.material.textfield.TextInputLayout android:id="@+id/input_layout_password" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                    <androidx.appcompat.widget.AppCompatEditText android:id="@+id/dialog_set_alarm_label" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/alarm_label" android:maxLines="1" android:singleLine="true"/>
+                </com.google.android.material.textfield.TextInputLayout>
+                <Button android:id="@+id/magic_text_button" android:layout_marginTop="4dp" style="@style/MagicTextButton"/>
+            </LinearLayout>
+            <TextView android:textSize="16sp" android:textColor="@color/actions_accent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_tiny" android:text="@string/alarm_type"/>
+            <RadioGroup android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <RadioButton android:id="@+id/dialog_set_alarm_one_off" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/one_off" android:layout_weight="1"/>
+                <RadioButton android:id="@+id/dialog_set_alarm_repeated" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/repeated" android:layout_weight="1"/>
+            </RadioGroup>
+            <ViewFlipper android:id="@+id/dialog_set_alarm_view_flipper" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="16sp" android:textColor="@color/actions_accent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_tiny" android:layout_marginTop="@dimen/margin_small_medium" android:layout_marginRight="@dimen/margin_tiny" android:layout_marginBottom="@dimen/margin_tiny" android:text="@string/alarm_time" android:layout_marginHorizontal="@dimen/margin_tiny"/>
+                    <RadioGroup android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <RadioButton android:id="@+id/dialog_set_alarm_relative" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/relative" android:layout_weight="1"/>
+                        <RadioButton android:id="@+id/dialog_set_alarm_fixed" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/fixed" android:layout_weight="1"/>
+                    </RadioGroup>
+                    <ViewFlipper android:id="@+id/dialog_set_alarm_view_flipper_one_off" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="16sp" android:textColor="@color/actions_accent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_tiny" android:layout_marginTop="@dimen/margin_small_medium" android:layout_marginRight="@dimen/margin_tiny" android:layout_marginBottom="@dimen/margin_tiny" android:text="@string/time_until_alarm" android:layout_marginHorizontal="@dimen/margin_tiny"/>
+                            <com.arlosoft.macrodroid.widget.NDSpinner android:id="@+id/dialog_set_alarm_variable_spinner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_tiny"/>
+                            <TableLayout android:id="@+id/dialog_set_alarm_relative_value_layout" android:padding="12dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                    <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hours_capital" android:paddingEnd="8dp"/>
+                                    <com.arlosoft.macrodroid.common.NumberPicker android:id="@+id/dialog_set_alarm_hour_picker" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                                </TableRow>
+                                <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                    <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/minutes_capital" android:paddingEnd="8dp"/>
+                                    <com.arlosoft.macrodroid.common.NumberPicker android:id="@+id/dialog_set_alarm_minute_picker" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                                </TableRow>
+                            </TableLayout>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="16sp" android:textColor="@color/actions_accent" android:paddingBottom="@dimen/margin_tiny" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_tiny" android:text="@string/time_of_alarm"/>
+                            <Spinner android:id="@+id/dialog_set_alarm_variable_spinner_day" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_tiny" android:layout_marginBottom="@dimen/margin_small"/>
+                            <TimePicker android:id="@+id/dialog_set_alarm_one_off_timePicker" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:timePickerMode="spinner"/>
+                        </LinearLayout>
+                    </ViewFlipper>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="16sp" android:textColor="@color/actions_accent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_tiny" android:text="@string/days_of_the_week"/>
+                    <TableLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TableRow android:paddingTop="@dimen/margin_tiny" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="22dp" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/monday_first_letter" android:layout_weight="1"/>
+                            <TextView android:textSize="22dp" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tuesday_first_letter" android:layout_weight="1"/>
+                            <TextView android:textSize="22dp" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wednesday_first_letter" android:layout_weight="1"/>
+                            <TextView android:textSize="22dp" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/thursday_first_letter" android:layout_weight="1"/>
+                            <TextView android:textSize="22dp" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/friday_first_letter" android:layout_weight="1"/>
+                            <TextView android:textSize="22dp" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/saturday_first_letter" android:layout_weight="1"/>
+                            <TextView android:textSize="22dp" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sunday_first_letter" android:layout_weight="1"/>
+                        </TableRow>
+                        <TableRow android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="6dp">
+                            <CheckBox android:id="@+id/checkBoxMonday" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"/>
+                            <CheckBox android:id="@+id/checkBoxTuesday" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"/>
+                            <CheckBox android:id="@+id/checkBoxWednesday" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"/>
+                            <CheckBox android:id="@+id/checkBoxThursday" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"/>
+                            <CheckBox android:id="@+id/checkBoxFriday" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"/>
+                            <CheckBox android:id="@+id/checkBoxSaturday" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"/>
+                            <CheckBox android:id="@+id/checkBoxSunday" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"/>
+                        </TableRow>
+                    </TableLayout>
+                    <TextView android:textSize="16sp" android:textColor="@color/actions_accent" android:paddingBottom="@dimen/margin_tiny" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_tiny" android:text="@string/time_of_day"/>
+                    <TimePicker android:id="@+id/dialog_set_alarm_timePicker" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:timePickerMode="spinner"/>
+                </LinearLayout>
+            </ViewFlipper>
+        </LinearLayout>
+    </ScrollView>
+    <View android:background="@color/ok_cancel_button_border" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="4dp"/>
+    <LinearLayout android:gravity="end" android:id="@+id/button_bar" android:paddingTop="0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:id="@+id/cancelButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/button_bar_button_min_width" android:text="@android:string/cancel" style="?android:attr/buttonBarButtonStyle"/>
+        <View android:background="@color/ok_cancel_button_border" android:layout_width="1dp" android:layout_height="match_parent"/>
+        <Button android:id="@+id/okButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/button_bar_button_min_width" android:text="@android:string/ok" style="?android:attr/buttonBarButtonStyle"/>
+    </LinearLayout>
+</LinearLayout>

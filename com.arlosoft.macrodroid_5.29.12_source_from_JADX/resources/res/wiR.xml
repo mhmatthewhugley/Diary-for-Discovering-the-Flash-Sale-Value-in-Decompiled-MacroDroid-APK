@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:icon="@drawable/ic_cloud_upload_white_24dp" android:id="@+id/menu_upload" android:title="@string/upload_template" app:showAsAction="ifRoom"/>
+    <item android:id="@+id/menu_sign_in" android:title="@string/sign_in" app:showAsAction="never"/>
+    <item android:icon="@drawable/ic_account_white_24dp" android:id="@+id/menu_my_profile" android:title="@string/my_profile" app:showAsAction="never"/>
+    <item android:icon="@drawable/ic_account_white_24dp" android:id="@+id/menu_my_subscriptions" android:title="@string/my_subscriptions" app:showAsAction="never"/>
+    <item android:id="@+id/menu_compact_mode" android:title="@string/template_store_compact_mode" android:checkable="true"/>
+    <item android:id="@+id/auto_translate" android:title="@string/auto_translate_toggle" android:checkable="true"/>
+</menu>

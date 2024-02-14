@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.google.android.material.appbar.AppBarLayout android:id="@+id/appBarLayout" android:background="@color/videos_primary" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:elevation="@dimen/toolbar_elevation">
+            <androidx.appcompat.widget.Toolbar android:theme="@style/Toolbar" android:id="@+id/toolbar" android:background="@color/videos_primary" android:layout_width="match_parent" android:layout_height="wrap_content" app:titleTextAppearance="@style/TitleToolbarText"/>
+        </com.google.android.material.appbar.AppBarLayout>
+        <FrameLayout android:id="@+id/loadingView" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true"/>
+        </FrameLayout>
+        <FrameLayout android:id="@+id/errorView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:paddingBottom="@dimen/margin_large" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.airbnb.lottie.LottieAnimationView android:layout_width="160dp" android:layout_height="160dp" app:lottie_autoPlay="true" app:lottie_loop="true" app:lottie_rawRes="@raw/cloud_disconnection"/>
+                <TextView android:textSize="18sp" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/could_not_connect"/>
+                <androidx.appcompat.widget.AppCompatButton android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@+id/retryButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:text="@string/retry" app:backgroundTint="@color/videos_primary"/>
+            </LinearLayout>
+        </FrameLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/videoEntries" android:paddingLeft="@dimen/margin_tiny" android:paddingTop="@dimen/margin_small" android:paddingRight="@dimen/margin_tiny" android:paddingBottom="@dimen/margin_small" android:visibility="gone" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"/>
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

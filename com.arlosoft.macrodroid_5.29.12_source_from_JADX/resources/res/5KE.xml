@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:animateLayoutChanges="true">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:layout_marginStart="@dimen/margin_medium" android:layout_marginEnd="@dimen/margin_medium">
+        <TextView android:ellipsize="start" android:layout_gravity="center_vertical" android:id="@+id/directory_text" android:layout_width="0dp" android:layout_height="wrap_content" android:maxLines="2" android:layout_weight="1"/>
+        <ImageButton android:id="@+id/pick_dir_button" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/ic_mode_edit_white_24dp" app:backgroundTint="@color/actions_accent" app:tint="@color/default_text_color_inverse"/>
+    </LinearLayout>
+    <RadioGroup android:id="@+id/filename_radio_buttons" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/margin_small">
+        <RadioButton android:textSize="16sp" android:id="@+id/default_filename_radio_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/action_record_microphone_default_filename"/>
+        <RadioButton android:textSize="16sp" android:id="@+id/custom_filename_radio_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_tiny" android:text="@string/action_record_microphone_custom_filename"/>
+    </RadioGroup>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/customFilenameLayout" android:paddingTop="@dimen/margin_small" android:paddingBottom="@dimen/margin_small" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="14dp" android:paddingEnd="16dp">
+        <androidx.appcompat.widget.AppCompatEditText android:id="@+id/custom_filename_text" android:layout_width="0dp" android:layout_height="wrap_content" android:hint="@string/filename" android:ems="10" android:singleLine="true" android:layout_weight="1" android:inputType="none" android:layout_marginEnd="@dimen/margin_small"/>
+        <TextView android:textSize="18sp" android:textColor="@color/default_text_color" android:id="@+id/fileExtension" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/margin_medium"/>
+        <Button android:id="@+id/filename_magic_text_button" style="@style/MagicTextButton"/>
+    </LinearLayout>
+    <View android:background="@color/ok_cancel_button_border" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="10dp"/>
+    <LinearLayout android:gravity="end" android:id="@+id/button_bar" android:paddingTop="0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:id="@+id/cancelButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/button_bar_button_min_width" android:text="@android:string/cancel" style="?android:attr/buttonBarButtonStyle"/>
+        <View android:background="@color/ok_cancel_button_border" android:layout_width="1dp" android:layout_height="match_parent"/>
+        <Button android:id="@+id/okButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/button_bar_button_min_width" android:text="@android:string/ok" style="?android:attr/buttonBarButtonStyle"/>
+    </LinearLayout>
+</LinearLayout>

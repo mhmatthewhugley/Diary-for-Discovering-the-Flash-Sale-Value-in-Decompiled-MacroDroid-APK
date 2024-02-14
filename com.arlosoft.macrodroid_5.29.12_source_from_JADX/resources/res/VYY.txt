@@ -1,0 +1,26 @@
+5.29-es verzió (2022. december)
+=====================================
+
+Hozzáadásra került a sablontároló-előfizetések támogatása a makrókon/felhasználókon, hogy értesítést kapjanak a frissítésekről (csak profi felhasználók számára).
+
+JSON-kimeneti művelet hozzáadva.
+
+Hozzáadva a Digitális asszisztens beállítása művelethez.
+
+A repülőgép üzemmód akció mostantól működhet az ADB hackeléssel (nincs szükség arra, hogy a MacroDroid legyen az alapértelmezett digitális asszisztens).
+
+A tevékenységfelismerési eseményindító mostantól kevesebb, mint összehasonlítást támogat a tevékenység befejezésének észleléséhez.
+
+A Képernyőtartalom eseményindító mostantól állítható frissítési gyakorisággal rendelkezik.
+
+Támogatás hozzáadva egy webhook-eseményindító eszközazonosítójának új eszközre való portolásához.
+
+A lebegő szöveg művelet mostantól támogatja a bal, középső és jobb oldali igazítást.
+
+Kijavítottuk azt a hibát, amely miatt a naptárban szereplő egész napos események helytelenül aktiválódhattak a nyári időszámítás miatt.
+
+Kijavítottuk azt a hibát, amely miatt az eseményindító adott értékei (pl. bejövő hívás száma) nem működtek a következő eseményindító művelet előtti várakozás után.
+
+Kijavítottuk azt a hibát, amely miatt a párbeszédablakokban lévő decimális számok helytelenül jelenhettek meg hivatkozásként.
+
+Kijavítottuk azt a hibát, amely miatt a műveletblokk nem futott bizonyos helyzetekben, amikor a kategorizálatlan kategória le volt tiltva.

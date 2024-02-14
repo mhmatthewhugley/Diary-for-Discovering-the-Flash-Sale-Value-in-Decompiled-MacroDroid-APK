@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ViewFlipper android:id="@+id/view_flipper" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="@dimen/ten">
+                <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:textColor="@color/upgrade_primary_dark" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ten" android:text="@string/upgrade_support"/>
+                <Button android:textColor="@color/upgrade_primary_dark" android:layout_gravity="center_horizontal" android:id="@+id/about_dialog_already_purchased" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/already_purchased" android:contentDescription="@string/help" android:paddingStart="@dimen/margin_small" android:paddingEnd="@dimen/margin_small" style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"/>
+                <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ten" android:text="@string/unable_to_upgrade"/>
+                <Button android:textColor="@color/upgrade_primary_dark" android:layout_gravity="center_horizontal" android:id="@+id/update_support_request_support_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/request_upgrade_support" android:onClick="onRequestUpdateSupport" style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"/>
+                <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:textColor="@color/upgrade_primary_dark" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_large" android:layout_marginBottom="@dimen/ten" android:text="@string/upgrade_code"/>
+                <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ten" android:text="@string/enter_upgrade_code"/>
+                <androidx.appcompat.widget.AppCompatEditText android:ellipsize="end" android:id="@+id/upgrade_support_email" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/enter_email_address" android:ems="10" android:singleLine="true">
+                    <requestFocus/>
+                </androidx.appcompat.widget.AppCompatEditText>
+                <androidx.appcompat.widget.AppCompatEditText android:ellipsize="end" android:id="@+id/upgrade_support_serial" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/enter_serial" android:ems="10" android:singleLine="true"/>
+                <Button android:textColor="@color/upgrade_primary_dark" android:layout_gravity="center_horizontal" android:id="@+id/upgrade_support_upgrade_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/upgrade" android:onClick="onUpgrade" style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"/>
+                <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:textSize="12sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ten" android:text="@string/upgrade_contact_permission_required"/>
+            </LinearLayout>
+            <RelativeLayout android:id="@+id/loading_view" android:background="#eeffffff" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+                <ProgressBar android:id="@+id/progress_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:progressTint="@color/accent"/>
+                <TextView android:textSize="20sp" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:text="@string/requesting_upgrade_support" android:layout_below="@+id/progress_bar" android:layout_centerHorizontal="true"/>
+            </RelativeLayout>
+        </FrameLayout>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <ProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true"/>
+        </FrameLayout>
+    </ViewFlipper>
+</ScrollView>

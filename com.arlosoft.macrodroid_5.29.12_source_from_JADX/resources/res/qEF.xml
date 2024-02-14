@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/stopwatch1" layout="@layout/include_stopwatch_tile_entry"/>
+    <include android:id="@+id/stopwatch2" layout="@layout/include_stopwatch_tile_entry"/>
+    <include android:id="@+id/stopwatch3" layout="@layout/include_stopwatch_tile_entry"/>
+    <include android:id="@+id/stopwatch4" layout="@layout/include_stopwatch_tile_entry"/>
+</LinearLayout>

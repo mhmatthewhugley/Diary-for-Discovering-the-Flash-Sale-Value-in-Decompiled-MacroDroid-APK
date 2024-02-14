@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="drawable_action_icon_pressed_background">#22000000</drawable>
+    <drawable name="drawable_transparent">#00000000</drawable>
+    <drawable name="material_ic_keyboard_arrow_next_black_24dp">@drawable/material_ic_keyboard_arrow_right_black_24dp</drawable>
+    <drawable name="material_ic_keyboard_arrow_previous_black_24dp">@drawable/material_ic_keyboard_arrow_left_black_24dp</drawable>
+    <drawable name="notification_template_icon_bg">#3333b5e5</drawable>
+    <drawable name="notification_template_icon_low_bg">#0cffffff</drawable>
+    <drawable name="select_item_pressed">#06000000</drawable>
+    <drawable name="select_item_pressed_light">#1dffffff</drawable>
+    <drawable name="text_alignment_selected_background">#3f000000</drawable>
+</resources>

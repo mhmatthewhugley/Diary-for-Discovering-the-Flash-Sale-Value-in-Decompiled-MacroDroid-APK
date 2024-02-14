@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent" android:foreground="@drawable/bottom_shadow" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <com.arlosoft.macrodroid.widget.NonSwipeableViewPager android:id="@+id/viewPager" android:layout_width="match_parent" android:layout_height="match_parent" android:splitMotionEvents="false" app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+        </FrameLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/loading_view" android:background="@color/report_bug_blocker" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ProgressBar android:id="@+id/progress_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:progressTint="#222222"/>
+        <TextView android:textSize="20sp" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:text="@string/submitting_bug" android:layout_below="@+id/progress_bar" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</FrameLayout>

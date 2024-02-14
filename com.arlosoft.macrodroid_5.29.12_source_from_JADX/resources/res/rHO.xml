@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="@color/default_text_color" android:paddingLeft="@dimen/margin_medium" android:paddingTop="@dimen/margin_medium" android:paddingRight="@dimen/margin_medium" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/adb_hack"/>
+    <ScrollView android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textColor="@color/default_text_color" android:id="@+id/adbHackPC" android:paddingLeft="@dimen/margin_medium" android:paddingTop="@dimen/margin_medium" android:paddingRight="@dimen/margin_medium" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/abd_hack_need_a_pc"/>
+            <TextView android:textColor="@color/default_text_color" android:id="@+id/adbToolDownload" android:paddingLeft="@dimen/margin_medium" android:paddingTop="@dimen/margin_medium" android:paddingRight="@dimen/margin_medium" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/adb_hack_connect_to_device"/>
+            <TextView android:textColor="@color/default_text_color" android:paddingLeft="@dimen/margin_medium" android:paddingTop="@dimen/margin_medium" android:paddingRight="@dimen/margin_medium" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/abd_hack_terminal_command"/>
+            <TextView android:textSize="14sp" android:textColor="@color/adb_command_color" android:id="@+id/terminalCommands" android:paddingLeft="@dimen/margin_medium" android:paddingTop="@dimen/margin_medium" android:paddingRight="@dimen/margin_medium" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="pm grant blah blah" android:lineSpacingMultiplier="1.2" android:textIsSelectable="true" android:fontFamily="monospace"/>
+            <TextView android:textColor="@color/default_text_color" android:paddingLeft="@dimen/margin_medium" android:paddingTop="@dimen/margin_medium" android:paddingRight="@dimen/margin_medium" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingMultiplier="1.2"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <Button android:textColor="?attr/colorAccent" android:layout_gravity="end" android:id="@+id/forumButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_small" android:text="@string/macrodroid_forum" style="@style/Widget.AppCompat.Button.Borderless"/>
+                <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                <Button android:textColor="?attr/colorAccent" android:layout_gravity="end" android:id="@+id/adbHackOkButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_small" android:text="@android:string/ok" style="@style/Widget.AppCompat.Button.Borderless"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

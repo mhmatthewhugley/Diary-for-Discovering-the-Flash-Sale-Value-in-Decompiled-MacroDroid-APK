@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <androidx.appcompat.widget.SearchView android:id="@+id/search_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_small" android:iconifiedByDefault="false" android:queryHint="@string/search" app:iconifiedByDefault="false"/>
+    <ListView android:scrollbarStyle="outsideInset" android:id="@+id/contacts_list" android:padding="2dp" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/include_exclude_options" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:background="#bbbbbb" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <RadioGroup android:orientation="horizontal" android:id="@+id/radio_options" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:layout_marginStart="@dimen/margin_medium" android:layout_marginEnd="@dimen/margin_medium">
+            <RadioButton android:id="@+id/radio_include" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/include" android:layout_weight="1"/>
+            <RadioButton android:id="@+id/radio_exclude" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/exclude" android:layout_weight="1"/>
+        </RadioGroup>
+    </LinearLayout>
+    <include layout="@layout/include_ok_cancel_buttons"/>
+</LinearLayout>

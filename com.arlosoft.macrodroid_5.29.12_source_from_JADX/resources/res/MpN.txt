@@ -1,0 +1,26 @@
+Verze 5.29 (listopad/prosinec 2022)
+=====================================
+
+Přidána podpora pro předplatné úložiště šablon na makra/uživatele, aby byli upozorněni na aktualizace (pouze profesionální uživatelé).
+
+Přidána akce výstupu JSON.
+
+Přidána akce Set Digital Assistant.
+
+Akce režimu Letadlo nyní může pracovat s hackem ADB (bez požadavku, aby se MacroDroid stal výchozím digitálním asistentem).
+
+Trigger rozpoznávání aktivity teď podporuje méně než porovnání pro zjištění, kdy aktivita skončí.
+
+Spoušť obsahu obrazovky má nyní nastavitelnou obnovovací frekvenci.
+
+Byla přidána podpora pro přenos ID zařízení triggeru Webhooku na nové zařízení.
+
+Akce plovoucího textu nyní podporuje zarovnání vlevo, na střed a vpravo.
+
+Byl opraven problém, kdy se celodenní události v kalendáři mohly nesprávně spouštět kvůli letnímu času.
+
+Byl opraven problém, kdy hodnoty specifické pro aktivační událost (např. číslo příchozího hovoru) nefungovaly po čekání před další aktivační akcí.
+
+Byl opraven problém, kdy se desetinná čísla v dialozích mohla nesprávně zobrazovat jako odkazy.
+
+Opraven problém, kdy se blok akce nespouštěl v některých situacích, když byla zakázána nezařazená kategorie.

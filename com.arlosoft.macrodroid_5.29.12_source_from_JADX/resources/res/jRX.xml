@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/category_container" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:elevation="2dp">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/group_cickable_area" android:padding="10dp" android:duplicateParentState="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="@drawable/select_item_background" android:minHeight="52dp">
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/lockImage" android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/ic_lock_white_24dp" android:layout_marginEnd="@dimen/margin_small" app:tint="@color/default_text_color_secondary"/>
+        <TextView android:textSize="18sp" android:textColor="@color/default_text_color" android:layout_gravity="center_vertical" android:id="@+id/group_title" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:fontFamily="@font/heading_font" android:paddingEnd="8dp"/>
+        <com.arlosoft.macrodroid.widget.SwitchPlus android:theme="@style/Theme.App.MacroListSwitch" android:layout_gravity="center_vertical" android:id="@+id/group_on_off_button" android:paddingTop="6dp" android:paddingBottom="6dp" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:switchMinWidth="50dp" android:paddingStart="8dp" android:paddingEnd="7dp"/>
+    </LinearLayout>
+    <View android:id="@+id/divider_bottom" android:background="@color/macro_list_header_seperator" android:layout_width="wrap_content" android:layout_height="1px"/>
+</LinearLayout>

@@ -1,0 +1,26 @@
+Phiên bản 5.29 (Tháng MườI MộT / Tháng Mười Hai 2022)
+=====================================
+
+Đã thêm hỗ trợ cho đăng ký cửa hàng mẫu trên macro / người dùng để nhận thông báo về các bản cập nhật (chỉ dành cho người dùng chuyên nghiệp).
+
+Đã thêm hành động JSON Output.
+
+Đã thêm hành động Đặt Trợ lý kỹ thuật số.
+
+Hành động chế độ trên máy bay hiện có thể hoạt động với bản hack ADB (không yêu cầu biến MacroDroid thành trợ lý kỹ thuật số mặc định).
+
+Trình kích hoạt Nhận dạng hoạt động hiện hỗ trợ ít hơn so sánh để phát hiện thời điểm một hoạt động kết thúc.
+
+Kích hoạt Nội dung màn hình hiện có tốc độ cập nhật có thể điều chỉnh.
+
+Đã thêm hỗ trợ để chuyển id thiết bị Webhook Trigger sang thiết bị mới.
+
+Hành động Văn bản nổi hiện hỗ trợ căn chỉnh trái, giữa và phải.
+
+Khắc phục sự cố trong đó các sự kiện cả ngày trên lịch có thể kích hoạt không chính xác do thời gian tiết kiệm ánh sáng ban ngày.
+
+Đã khắc phục sự cố trong đó kích hoạt các giá trị cụ thể (ví dụ: số cuộc gọi đến) sẽ không hoạt động sau khi chờ trước hành động kích hoạt tiếp theo.
+
+Đã khắc phục sự cố trong đó số thập phân trong hộp thoại có thể được hiển thị không chính xác dưới dạng liên kết.
+
+Khắc phục sự cố trong đó khối hành động sẽ không chạy trong một số trường hợp khi danh mục chưa được phân loại bị vô hiệu hóa.

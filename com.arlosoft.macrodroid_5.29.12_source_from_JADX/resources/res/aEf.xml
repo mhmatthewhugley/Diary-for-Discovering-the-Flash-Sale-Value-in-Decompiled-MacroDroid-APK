@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:paddingTop="@dimen/margin_small" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="@dimen/margin_medium" android:paddingEnd="@dimen/margin_medium">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/margin_tiny">
+        <TextView android:textColor="@color/default_text_color" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zone_name"/>
+        <TextView android:textSize="20sp" android:textColor="?attr/colorAccent" android:id="@+id/zone_name_button" android:background="?android:attr/selectableItemBackground" android:padding="@dimen/margin_tiny" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/margin_tiny"/>
+    </LinearLayout>
+    <RadioGroup android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_tiny">
+        <RadioButton android:id="@+id/area_enter_option" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/trigger_location_area_entered"/>
+        <RadioButton android:id="@+id/area_exit_option" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_tiny" android:text="@string/trigger_location_area_exited"/>
+    </RadioGroup>
+    <CheckBox android:id="@+id/location_unknown_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:text="@string/trigger_if_previous_location_unknown"/>
+    <LinearLayout android:id="@+id/update_rate_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:layout_marginStart="@dimen/margin_tiny">
+        <TextView android:textColor="@color/default_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/location_update_rate"/>
+        <TextView android:textColor="@color/trigger_accent" android:id="@+id/update_frequency_link" android:background="@drawable/select_item_background" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/margin_medium"/>
+    </LinearLayout>
+    <TextView android:id="@+id/update_rate_description" android:background="@drawable/select_item_background" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:text="@string/update_rate_battery_drain" android:layout_marginStart="@dimen/margin_tiny"/>
+    <View android:background="@color/ok_cancel_button_border" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="10dp"/>
+    <LinearLayout android:gravity="end" android:id="@+id/button_bar" android:paddingTop="0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:id="@+id/cancelButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/button_bar_button_min_width" android:text="@android:string/cancel" style="?android:attr/buttonBarButtonStyle"/>
+        <View android:background="@color/ok_cancel_button_border" android:layout_width="1dp" android:layout_height="match_parent"/>
+        <Button android:id="@+id/okButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/button_bar_button_min_width" android:text="@android:string/ok" style="?android:attr/buttonBarButtonStyle"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:layout_marginStart="@dimen/margin_medium" android:layout_marginEnd="@dimen/margin_medium">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/widget_preview_border" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:textColor="@android:color/white" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/preview"/>
+                <ImageView android:layout_gravity="center_horizontal" android:id="@+id/widget_configure_preview_image" android:layout_width="48dp" android:layout_height="48dp"/>
+                <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:textColor="@android:color/white" android:layout_gravity="center_horizontal" android:id="@+id/widget_configure_preview_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1"/>
+            </LinearLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                <Button android:id="@+id/widget_configure_select_icon_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/select_image" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <CheckBox android:textColor="@color/default_text_color" android:id="@+id/faded_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:text="@string/fade_image" android:layout_marginStart="@dimen/margin_medium" android:layout_marginEnd="@dimen/margin_medium"/>
+        <LinearLayout android:paddingTop="@dimen/margin_medium" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/margin_medium" android:layout_marginEnd="@dimen/margin_medium">
+            <TextView android:textSize="16sp" android:textColor="?attr/colorAccent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label"/>
+            <androidx.appcompat.widget.AppCompatEditText android:id="@+id/widget_configure_label" android:layout_width="0dp" android:layout_height="wrap_content" android:ems="10" android:singleLine="true" android:layout_weight="1" android:layout_marginStart="@dimen/margin_small"/>
+            <Button android:id="@+id/special_text_button" style="@style/MagicTextButton"/>
+        </LinearLayout>
+        <View android:background="@color/ok_cancel_button_border" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="10dp"/>
+        <LinearLayout android:gravity="end" android:id="@+id/button_bar" android:paddingTop="0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:id="@+id/cancelButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/button_bar_button_min_width" android:text="@android:string/cancel" style="?android:attr/buttonBarButtonStyle"/>
+            <View android:background="@color/ok_cancel_button_border" android:layout_width="1dp" android:layout_height="match_parent"/>
+            <Button android:id="@+id/okButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/button_bar_button_min_width" android:text="@android:string/ok" style="?android:attr/buttonBarButtonStyle"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

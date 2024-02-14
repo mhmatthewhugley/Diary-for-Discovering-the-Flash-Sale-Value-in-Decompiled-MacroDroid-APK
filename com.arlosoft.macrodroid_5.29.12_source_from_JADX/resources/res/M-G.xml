@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:paddingTop="4dp" android:paddingBottom="4dp" android:layout_width="match_parent" android:layout_height="match_parent" android:baselineAligned="false">
+    <FrameLayout android:paddingBottom="4dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <com.arlosoft.macrodroid.widget.IconTextView android:textSize="24dp" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/select_android_wear_icon_1" android:background="@drawable/item_list_circle_background_selector" android:padding="4dp" android:layout_width="48dp" android:layout_height="48dp"/>
+    </FrameLayout>
+    <FrameLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <com.arlosoft.macrodroid.widget.IconTextView android:textSize="24dp" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/select_android_wear_icon_2" android:background="@drawable/item_list_circle_background_selector" android:padding="4dp" android:layout_width="48dp" android:layout_height="48dp"/>
+    </FrameLayout>
+    <FrameLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <com.arlosoft.macrodroid.widget.IconTextView android:textSize="24dp" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/select_android_wear_icon_3" android:background="@drawable/item_list_circle_background_selector" android:padding="4dp" android:layout_width="48dp" android:layout_height="48dp"/>
+    </FrameLayout>
+    <FrameLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <com.arlosoft.macrodroid.widget.IconTextView android:textSize="24dp" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/select_android_wear_icon_4" android:background="@drawable/item_list_circle_background_selector" android:padding="4dp" android:layout_width="48dp" android:layout_height="48dp"/>
+    </FrameLayout>
+</LinearLayout>

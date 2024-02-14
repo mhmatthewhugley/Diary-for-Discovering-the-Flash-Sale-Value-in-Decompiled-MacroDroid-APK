@@ -1,0 +1,589 @@
+Version 5.28 (oktober 2022)
+=============================
+
+Åtgärden Flytande text har lagts till.
+
+Lade till "Arbetsvariabler" i åtgärdsblock.
+
+Åtgärdsblockeringsåtgärd stöder nu alternativet att blockera nästa åtgärder tills de är slutförda (aktiverat som standard).
+
+Åtgärden Rensa ordlista/matris har lagts till så att enskilda poster kan rensas eller tas bort.
+
+Stöd för automatiserade översättningar i realtid i Template Store har lagts till.
+
+Stöd för satellitvy i Geofence-konfigurationsskärmen har lagts till.
+
+Lade till magisk text för signalstyrka för mobiltornets signalstyrka.
+
+Förbättrad sökning i åtgärdsblocklistskärmen för att även söka efter åtgärder inom block.
+
+Åtgärdat problem där textmanipulation delad till array inte skulle fungera med flera teckenavgränsare.
+
+Lade till ny inställning i utlösningsalternativ för att justera strömbrytarens växlingsutlösares tid att slutföra.
+
+Andra mindre korrigeringar och förbättringar.
+
+Version 5.27.8 (september 2022)
+===============================
+
+Liten buggfixutgåva för att åtgärda ett antal mindre problem.
+
+Version 5.27 (september 2022)
+=============================
+
+Åtgärden Tillgänglighetstjänst har lagts till (ADB-hack krävs).
+
+Tillagd funktionalitet för att hålla tillgänglighetstjänster aktiverade för att komma runt problem där vissa enheter kan inaktivera dem (ADB Hack krävs).
+
+Systeminställningsbegränsning har lagts till.
+
+Lade till totala och tillgängliga RAM-värden till magiska textalternativ.
+
+Numeriska indikatorer för tonhöjds- och hastighetsvärden i text-till-tal-åtgärder har lagts till.
+
+Tillagd lösning för Samsung launcher-problem för att förhindra att genvägar förlorar sin ikon / etikett när du slår på / av mörkt läge.
+
+Lade till magisk text för SIM / operatörsnätverksnamn.
+
+Lade till magisk text för cellanslutningstyp (t.ex. 3G / 4G / 5G).
+
+Tillagd magisk text för MacroDroid är pro (returnerar sant eller falskt)
+
+Lade till stöd för alternativet "Detta makro" till makroaktiverad / inaktiverad begränsning.
+
+Lagt till alternativet behåll utrymmen för att popup-meddelandeåtgärd.
+
+Lagt till stöd för att byta namn på stoppur.
+
+Lagt till alternativ för att visa senast redigerad tid på makrolistskärmen (Alla värden kommer initialt att vara okända tills de redigeras med den senaste versionen).
+
+Ställ in variabel åtgärd (med alternativet Ny variabel) skapar nu variabeln vid körning och stöder magisk text för variabelnamn.
+
+Wear OS companion app gör det nu möjligt att bläddra igenom listan med roterande kontroll.
+
+Förbättringar och korrigeringar kring ordliste-/matrishantering i Variabel utlösare och begränsning.
+
+Åtgärdat problem där ange variabelåtgärd i vissa situationer kunde skapa en ordlista i stället för en matris.
+
+Åtgärdade ett problem där den lokala matrisen/ordlistevariabeln inte kunde byta namn.
+
+Åtgärdat problem där visning av en mall med åtgärdsblock kunde lägga till oönskade globala variabler.
+
+Åtgärdat problem med att om du tog bort en post från en ordlista/matris för åtgärdsblock skulle ordlistan/matrisen tas bort.
+
+Version 5.26 (juli 2022)
+========================
+
+Åtgärderna Kör makro, Avbryt makro och Inaktivera makro stöder nu inmatning av makro efter namn (stöder magisk text för att tillåta referens till makronamn från en variabel).
+
+Ytterligare inställningar som solnedgång / soluppgångsplats och väderplats sparas nu vid export och via automatisk säkerhetskopiering.
+
+MacroDroid Variable-begränsningen stöder nu alternativet definiera nycklar manuellt för ordboks-/matrisvariabler.
+
+Alternativdialogrutan stöder nu grundläggande HTML-formatering i huvudmeddelandetexten.
+
+Åtgärdat problem där kategorier inte kunde läggas till eller tas bort från kategorilistskärmen.
+
+Åtgärdat problem i inkommande SMS/samtalsutlösare där nummerjämförelsen inte alltid skulle fungera korrekt när du använder magisk text.
+
+Åtgärdat problem där start av en MacroDroid-genväg skulle minimera MacroDroid om den är i förgrunden.
+
+Åtgärdat problem där åtgärdsblock kunde dupliceras vid import av ett makro som redan refererar till samma åtgärdsblock.
+
+Åtgärdat problem där åtgärdsblock kunde tas bort vid testning av vissa åtgärder.
+
+Åtgärdat problem där avbrott från loop inte alltid skulle fungera korrekt med iterera ordlista/matrisåtgärd.
+
+Åtgärdat problem där ikonsökning inte fungerade korrekt för ikonpaket.
+
+Åtgärdat problem där flytande knappkonfiguration inte tillät val av utlösare i en vänta tills utlösaråtgärd.
+
+Andra mindre korrigeringar.
+
+Version 5.25.6 (juli 2022)
+===============================
+
+Liten buggfixuppdatering till tidigare v5.25-utgåva. Åtgärdar ett antal mindre problem som hittades i den tidigare versionen.
+
+Version 5.25 (juni 2022)
+========================
+
+Makroaktiverad utlösare har lagts till.
+
+Lagt till alternativ till Flytande knapputlösare för att inaktivera avtryckaren (inte hela makrot) när den tas bort via fackikonen.
+
+Konfigurera åtgärd för flytande knapp har lagts till.
+
+Uppdaterad magisk text för att stödja klammerparenteser för att minska förvirring med ordboks-/matrissyntax. (Hakparenteser stöds fortfarande, {system_time} och [system_time] både arbete och standard kan ändras i MacroDroid-inställningarna)
+
+Lade till bättre array / ordboksstöd till åtgärder som HTTP-begäran och filläsning för att tillåta direkt skrivning till anpassade nycklar.
+
+Lade till alternativet "Dela till matris" till textmanipuleringsåtgärd.
+
+Justerad kalenderutlösare för att fungera bättre med alla dagshändelser i olika tidszoner.
+
+När du visar ett mallmakro är ett nytt menyalternativ tillgängligt för "Lägg till inaktiverat".
+
+Röstinmatning stöder nu inställning direkt i nya ordlistenycklar/matrisindex med magisk text.
+
+Popup-meddelandeåtgärd stöder nu grundläggande html som <b>FET</b> och <i>KURSIV</i>
+
+Tillagd Aktivera / inaktivera (inklusive barn) för att redigera makroskärmen gör det enklare att aktivera stora förhållanden och slingor.
+
+Lagt till alternativ för att aktivera / inaktivera horisontella svep för att öppna MacroDroid-lådan.
+
+Lade till alternativet "Skriv över" för att skriva till filåtgärd.
+
+Lagt till alternativ till WhatsApp Skicka åtgärd för att stödja både standard- och affärsapp.
+
+Lade till magisk text för ordboks- / matrisstorlek.
+
+Åtgärdat problem där användning av cut på ett IF/Loop-block inte skulle fungera korrekt.
+
+Åtgärdat problem där alternativet fortsätt med alternativdialogrutan inte fungerade korrekt.
+
+Åtgärdat problem där inspelning av mikrofonåtgärd inte skulle skriva rätt filtillägg.
+
+Åtgärdat problem där en variabels värde inte skulle uppdateras om det uppdaterades medan MacroDroid-lådan är öppen.
+
+Åtgärdat problem där redigering av ett inaktiverat makro kunde återaktivera det.
+
+Åtgärdat problem där visningsmeddelandet inte skickade variabler korrekt i alternativet Kör när du trycker på det.
+
+Lade till alternativ i inställningen för att återställa alla hjälpinformationskort som tidigare skickades.
+
+Version 5.24.3 (juni 2022)
+==========================
+
+Den här uppdateringen krävdes av Google för att lägga till en recognizer-tjänst när du använder MacroDroid som standardassistent.
+
+Version 5.24 (maj 2022)
+==========================
+
+Åtgärden Lässkärmsinnehåll har lagts till.
+
+Tillagd utlösare för skärminnehåll.
+
+Åtgärden Läs från fil har lagts till.
+
+Tillagd kategori aktiverad/inaktiverad begränsning.
+
+Åtgärden Exportera logg har lagts till.
+
+Lagt till alternativ för att manuellt ange visnings-ID i klick på UI-interaktion.
+
+Lade till förgrundsalternativ för att ställa in volymåtgärd för enheter som inte tillåter inställning av volym med MacroDroid i bakgrunden.
+
+Lagt till alternativ i popup-meddelandeåtgärd för att avbryta tidigare popup (användbart för andra nedräkningar till exempel)
+
+Lagt till alternativ i meddelandedialog och alternativdialogåtgärder för att förhindra att dialogrutan för bakåtknappen stängs.
+
+Stöd har lagts till i WebHook-utlösaren för att ange ordliste-/matrisvariabelposter.
+
+Rapportera en felfunktion inkluderar nu möjligheten att lägga till skärmdumpar.
+
+Stöd för att byta namn på genvägar i MacroDroid-lådan har lagts till.
+
+MacroDroid Drawer stöder nu alternativ för att öppna via svep uppåt och / eller svep nedåt gest.
+
+Andra mindre korrigeringar och tweaks.
+
+Version 5.23 (april 2022)
+==========================
+
+Variabeltyperna Ordlista och Matris har lagts till (endast Pro-användare).
+
+Åtgärden Iterera ordlista/matris har lagts till som kan användas för att slinga över alla element i en ordlista/array.
+
+Json-parsningsåtgärd har lagts till.
+
+Åtgärden Ställ in snabbinställning Paneltillstånd har ändrats till Åtgärden Konfigurera snabbpanel för att tillåta ytterligare inställning av ikon och etikett.
+
+Lade till gestsekvensalternativ i UI Interaction-åtgärden för att aktivera komplexa gester som sveplåsmönster.
+
+Lagt till alternativ på konfigurationsskärmen för UI-interaktion för att växla överlägg för pekplats.
+
+Möjlighet att aktivera/inaktivera enskilda buffertar har lagts till i Logcat-utlösaren.
+
+Ip-adressbegränsning har lagts till.
+
+Lade till magisk text för WebHook bas-url.
+
+Sökfunktionen har lagts till på skärmen Åtgärdsblockeringslista.
+
+Lagt till alternativ för att exportera systemloggning i HTML så att den kan mata ut samma färgkodning som visas i appen.
+
+Lagt till klippalternativ för att redigera makro- och åtgärdsblockskärmar för att möjliggöra fullständig klipp-, kopierings- och klistra-funktionalitet.
+
+Åtgärdsblock "Teståtgärder" visar nu en sammanfattning av utdatavariablerna när de körs.
+
+Åtgärdat problem där makroanropsmetoden inte skulle fungera korrekt i alla fall.
+
+Åtgärdade problemet med att villkoret "inte i händelse" inte fungerade korrekt i kalenderbegränsningen.
+
+Åtgärdat problem där filnamnet i HTTP-begäran inte korrekt bearbetade magiska textvärden.
+
+Åtgärdat problem där åtgärder inom ett åtgärdsblock inte skulle avbrytas när det överordnade makrot avbryts.
+
+Åtgärdat problem där bakgrundsbilder kunde roteras felaktigt på vissa enheter.
+
+Andra mindre fasta och tweaks.
+
+Version 5.22.6 (februari 2022)
+============================
+
+Åtgärdat problem där MacroDroid-videor inte skulle fungera.
+
+Version 5.22 (februari 2022)
+============================
+
+Lade till http-begäran åtgärd.
+
+Begränsningen för anropsmetod har lagts till för att tillåta identifiering när ett makro anropas från makroutlösare som inte är standard.
+
+Grundläggande (endast engelska) sökfunktioner har lagts till i ikonväljaren.
+
+Stöd för åtgärdsblock har lagts till i MacroDroid-lådan.
+
+Stöd för biometri och fördröjning av lösenordsprompten har lagts till i inställningarna för lösenordsskydd.
+
+Lade till magisk text för MacroDroid-versionsnummer.
+
+Alternativet Ignorera skiftläge har lagts till i Variabel utlösare och begränsning.
+
+Stöd för att skicka booleska variabelvärden till indataparametrar för åtgärdsblock har lagts till.
+
+Alternativet Ignorera (Avbryt makro) har lagts till för alternativdialogrutan för att förhindra att ytterligare åtgärder körs om du väljer det.
+
+Möjlighet att filtrera variabler efter typ på skärmen för globala variabler har lagts till.
+
+Lade till uteslutningsalternativ för att ringa / sms-baserade utlösare och lade till sökbara kontaktnamn i valdialogrutan.
+
+Åtgärdat problem där montering av taskermatrisvärden i en enda sträng ibland skulle få fel ordning på element.
+
+Åtgärdat problem där delning till enhet i närheten inte alltid skulle fungera på Android 12-enheter.
+
+Åtgärdat problem där val av en global variabel för åtgärden Röstutdata kunde ställa in fel variabel.
+
+Åtgärdat problem där Bluetooth-fyrutlösaren kunde sluta utlösas flera gånger för en enda händelse.
+
+Åtgärdat problem där Geofence inte skulle centrera på rätt område när man sökte eller zoomade in/ut.
+
+Åtgärdat problem där Wifi SSID-listan kunde innehålla dubblettposter.
+
+Åtgärdat problem där en mycket lång sträng i en lokal variabel kunde förhindra att OK-knappen var tillgänglig.
+
+Åtgärdat problem där ikonen Ange MacroDroid inte skulle uppdatera ikonen i vissa scenarier.
+
+Åtgärdat problem där heldagshändelser i kalenderbegränsningen inte fungerade korrekt i olika tidszoner.
+
+Många andra mindre korrigeringar och tweaks.
+
+Version 5.21
+============
+
+Liten buggfixutgåva.
+
+Justerad åtgärdsblockinmatningsparameterhantering så att du kan skicka in ett tomt värde och alltid använda standardinmatningsparmvärde.
+
+Lade till alternativet "Dela som bild" på redigeringsskärmen för åtgärdsblock.
+
+Åtgärdade flera små problem kring redigering av åtgärdsblock.
+
+Åtgärdat problem där fria användare kunde förlora makron om de befinner sig vid gränsen på 5 makron och de ignorerar en redigering till ett makro eller åtgärdsblock.
+
+Åtgärdat problem med att panelen "Senast öppnad" på startskärmen inte fungerade i vissa situationer.
+
+Åtgärdat problem med åtgärden "Röstinmatning" som inte orsakade att en variabelutlösare avfyrades när den skrev till en variabel.
+
+Åtgärdat problem där inklistring av objekt i ett åtgärdsblock inte alltid skulle konfigurera åtgärder korrekt.
+
+Version 5.20
+============
+
+Åtgärdsblock har lagts till för att tillåta gruppering av vanliga åtgärder som kan anropas från makron eller andra åtgärdsblock.
+
+Stöd för delning till enheter i närheten har lagts till från redigeringsskärmen för makroredigering och åtgärdsblock.
+
+Åtgärden "Ställ in knappfältsbild" har lagts till för att möjliggöra uppdatering av knappar med MacroDroid-meddelandeknappfältet.
+
+Röstinmatningsåtgärden har lagts till för att fråga efter talad text och sedan spara den i en strängvariabel.
+
+Lade till WhatsApp-åtgärd (beta) för att endast tillåta grundläggande meddelandesändning till enskilda kontakter.
+
+Lade till möjlighet att markera makron som favorit och enkelt filtrera mellan favorit/ alla makron.
+
+Lade till startskärmspanel för att ge snabb genvägslänk till favoritmakron.
+
+Tillagd startskärmspanel för MacroDroid-videor som innehåller länkar till nya officiella MacroDroid YouTube-videor.
+
+Översättningsskärmen visar nu hur fullständig översättningen för varje språk är.
+
+Olika mindre buggfixar och små förbättringar.
+
+Version 5.19.11
+===============
+
+Åtgärdat problem där lösenordsprompten inte skulle visas i vissa fall när du använder lösenordsskydd för att komma in i appen.
+
+Åtgärdat problem där dela sista fotot inte skulle fungera i alla fall.
+
+Åtgärdat problem där sömnutlösaren inte kontrollerade begränsningar.
+
+Andra mindre buggfixar.
+
+Version 5.19.9
+==============
+
+Observera att den här versionen är uppdaterad för att rikta in sig på Android 11 SDK som tillämpar strängare begränsningar för filåtkomst än tidigare versioner. Ett litet antal makron kan behöva uppdateras för att fortsätta skriva till filer.
+
+** Rapportera eventuella buggar eller problem med den här utgåvan via "Rapportera ett fel" i felsökningsavsnittet **
+
+Tillagd sömnutlösare (Android 10+).
+
+Åtgärden Rensa variabler har lagts till.
+
+Lagt till logcat-alternativ för att stödja Clipboard Trigger för användare av Android 10+ (Root / ADB-hack).
+
+Tillagd Uppdateringsåtgärd urklipp för att få innehållet i Urklipp till MacroDroid för Android 10+ användare.
+
+Stöd för upp till tre åtgärdsknappar har lagts till i åtgärden Visa meddelande som kan köra andra makron när du trycker på dem.
+
+Åtgärdat problem där lådan inte visades korrekt på enheten med höger till vänster-layout.
+
+Förbättrad prestanda när flera flytande knappar läggs till/tas bort.
+
+Åtgärden Skicka UDP stöder nu magisk text för mål- och portfält.
+
+Lagt till avsluta på baksidan tryckalternativ för If Then Confirm åtgärd.
+
+Alternativet "Tillåt alla certifikat" har lagts till i HTTP Get.
+
+Stöd för att skicka e-post via SMTP har lagts till i åtgärden Dela plats.
+
+Lagt till stöd för att köra shell-skriptkommandon via hjälpfil (kräver hjälpfil 1.7)
+
+Begränsat stöd för åtkomst till tasker array-värden (Tasker plugin/action) har lagts till genom att spara alla värden i kommatecken eller ny radseparerad sträng.
+
+En korrigering av tidigare uppdatering: Stort tack till lamvankhoat1 för den grundliga vietnamesiska översättningen.
+
+Version 5.18
+============
+
+Mindre felrättningsutgåva
+
+Tillagd växling för att aktivera / inaktivera HTML-sändningsläge på Skicka e-post (via SMTP).
+
+Åtgärdat problem där ikonen inte kunde väljas vid meddelandeåtgärden.
+
+Åtgärdat problem där åtgärden Ta skärmdump skulle skicka felaktig bild på vissa enheter.
+
+Åtgärdat problem där åtgärden Om bekräftad inte skulle fungera korrekt om den anropades när skärmen är avstängd.
+
+Åtgärdade ett problem där vissa gestvärden för gränssnittsinteraktion inte skulle återge rätt värde.
+
+Åtgärdat problem där du inte kunde redigera data i SMS-åtgärden Skicka när den hade konfigurerats.
+
+Andra småfixar. W
+
+Version 5.17
+============
+
+Tillagd utlösare för mörk temaändring (Android 10+)
+
+Ändrade makrobeskrivningstexten på redigeringsmakroskärmen så att den rullas med makroinnehåll och utökade antalet tillåtna tecken.
+
+Stöd för variabler i åtgärden Interaktionsgest har lagts till.
+
+Stöd för lösenordsinmatning har lagts till i åtgärden Ange variabel – användarprompt.
+
+Åtgärdat problem där alternativet gränssnittsinteraktion identifierar i app inte fungerade på vissa enheter.
+
+Lade till vietnamesiskt språk (Stort tack till lamvankhoat1 för att slutföra detta)
+
+Tillagd möjlighet att ändra text i applikationsgenvägar i MacroDroid-lådan.
+
+Massor av andra små korrigeringar och tweaks.
+
+Version 5.16.2
+==============
+
+Åtgärdat problem där appstartad utlösare och identifiering av förgrundsprogram inte skulle fungera på vissa enheter.
+
+Andra småfixar.
+
+Version 5.16
+============
+
+Åtgärdat problem där vissa makron kunde saknas i malllistan.
+
+Massor av mindre buggfixar.
+
+Version 5.15
+============
+
+Återställt inverterat ordningsalternativ till systemloggen.
+
+Lagt till alternativ för att fånga Logcat-meddelanden (och välja en post) till Logcat-utlösaren.
+
+Lade till länk till wiki i sidomenyn (Wiki är endast engelska).
+
+Stöd för undertext i meddelandeutlösare (och tillhörande magisk text) har lagts till.
+
+Åtgärdat problem där flytande knappar inte behöll sin tidigare position.
+
+Åtgärdat problem där öppen systemlogg inte fungerade korrekt.
+
+Åtgärdat problem där det inte skulle fungera korrekt att bifoga systemlogg för att skicka e-post.
+
+Massor av andra små korrigeringar och tweaks.
+
+Version 5.14
+============
+
+Åtgärden Återställ dolda meddelanden (Android 11+) har lagts till för att tillåta att beständiga meddelanden som tidigare var dolda med åtgärden Rensa aviseringar återställs.
+
+Åtgärdat problem där systemloggen inte skulle visa länkar till makron.
+
+Andra små korrigeringar och förbättringar.
+
+Version 5.13
+============
+
+Ny systemlogg med sök- och filtreringsfunktioner.
+
+Stöd för att visa loggen för ett enda makro har lagts till endast från makrolistan och redigeringsmakroskärmen.
+
+Återinförd SMS-utlösare. (MacroDroid får nu använda nödvändig behörighet)
+
+Återställde alternativet "övervaka inkorg" på SMS-avtryckaren. (MacroDroid får nu använda nödvändig behörighet)
+
+Åtgärden Spela upp ljud stöder nu inställningen av ljudkanalen för en enskild åtgärd.
+
+Åtgärdat problem där åtgärden Vänta tills utlösaren felaktigt kunde anropa andra block som den inte borde.
+
+Stöd för magisk text har lagts till i åtgärden Systeminställning.
+
+Snabbkörning makrodata ingår nu när du exporterar/importerar makron.
+
+Utlösare för missat samtal och samtal aktivt stöder nu direktnummerinmatning och gruppval.
+
+Kategorier och makron i makrolistan stöder nu anpassade färger så att valfri färg kan ställas in.
+
+Åtgärdat problem där vissa makron i mallarkivet inte kunde importeras.
+
+Version 5.12
+============
+
+Geofence -begränsningen (plats) har lagts till.
+
+Google Assistant-utlösaren har lagts till så att du enkelt kan avgöra om ett makro anropades av assistenten (och inte någon annan utlösare).
+
+Loopar och villkorsåtgärder med underordnade åtgärder kan nu komprimeras/expanderas för att göra det enklare att redigera stora makron.
+
+Version 5.11
+============
+
+Nu ingår stöd för att köra makron via Google-assistenten (endast engelska för närvarande). Se till att både enhetens språk och Googles assistentspråk är konfigurerade till engelska för att använda den här funktionen.
+
+Anropa makron genom att säga "Ok Google kör" makronamn "i MacroDroid". För närvarande stöder Google endast den här funktionen för amerikansk engelska. Jag kommer att lägga till stöd för andra språk och språk när Google tillåter det.
+
+Anpassade meddelandekanaler har lagts till för användning med åtgärden för visningsmeddelande.
+
+Åtgärden Bryt från loop har lagts till.
+
+Åtgärden Fortsätt loop har lagts till.
+
+Ytterligare buggfixar och små förbättringar.
+
+Version 5.10
+============
+
+Utgivning av buggfix. Åtgärdar flera små problem och sällsynta kraschar.
+
+Förbättrad hantering kring vissa saknade behörigheter.
+
+Version 5.9
+===========
+
+Tillagd molnbackupfunktion på skärmen för automatisk säkerhetskopiering (endast Pro-användare).
+
+MacroDroid-forumet har flyttat från Tapatalk till ett renare forum med egen värd.
+
+Flera mindre buggfixar.
+
+Version 5.8
+===========
+
+Ställ in Wifi-åtgärd kräver nu en hjälpfil på Android 10+ (Google-begränsning tvingas på appar).
+
+Åtgärden Vänta till utlösaren har lagts till så att ett makro som körs kan pausas tills en viss utlösare utlöses.
+
+Lagt till alternativ för att låsa kategorier med ett lösenord / stift.
+
+Tillagd möjlighet att lägga till MacroDroid-makron på strömknappsmenyn (endast Android 11)
+
+Lade till textfärgsalternativ för popup-meddelandeåtgärd.
+
+Tillagd vänta tills det är klart alternativ för åtgärden "Makrokörning".
+
+Lade till textfärgalternativ och ikonfärg i popup-meddelandeåtgärden.
+
+Åtgärden Läs upp text tillåter nu att språk anges för varje enskild åtgärdsinstans.
+
+Åtgärden Lägg till kalenderpost har nu stöd för att ställa in postens tid i förhållande till en variabels värde.
+
+Åtgärdat problem med att logcat_line magisk text inte fungerade.
+
+Åtgärdat problem där avbryt makroåtgärder inte skulle avbryta åtgärden Vänta tills utlösaren inte avbröts.
+
+Korrigerade vissa logikproblem där kapslade IF/ELSE-kommandon inte skulle fungera som förväntat i vissa gränsfall.
+
+Version 5.7
+===========
+
+Listan Över insticksprogram har lagts till för att upptäcka/dela appar från tredje part som är kompatibla med MacroDroid (panelen På startskärmen).
+
+Startskärmspanel har lagts till för snabb åtkomst till det senast redigerade makrot.
+
+Lade till startskärmspanel för snabba makron.
+
+Lade till kamera aktivera / inaktivera åtgärd för att tillåta att kameran inaktiveras för alla applikationer på enheten.
+
+Justerad kontrollmediaåtgärd så att alternativet Simulera ljudknapp fungerar bättre för att styra det senast använda medieprogrammet.
+
+Dag/tid-utlösaren gör det nu möjligt att ställa in ett specifikt sekundvärde.
+
+Lägg till sökfunktionen på variabellistskärmen.
+
+Version 5.6
+===========
+
+Flygplanslägesåtgärder kan nu göras på en icke-rotad enhet på Android 7+ (genom att göra MacroDroid till standardassistentappen).
+
+Åtgärden Starta program stöder nu ett paketnamnsalternativ (inklusive magisk text för att stödja variabler osv.).
+
+MacroDroid-variabelvärden kan nu skickas till Tasker-plugins med Tasker-formateringsstil (% varname).
+
+Meddelandeknappfältets bakgrund / nyans och SMTP-inställningar sparas nu när du exporterar makron.
+
+Lade till vindriktningsvärde till väderutlösare (och väderspecifik magisk text).
+
+Uppdaterade heltalsvariabler så att de nu backas upp av en lång typ så att de kan innehålla värden > 2 147 483 647.
+
+Andra mindre korrigeringar och förbättringar.
+
+Version 5.5
+===========
+
+Lade till snabb kakelväxling för att aktivera / inaktivera MacroDroid (Android 7+).
+
+Alternativet för att dölja makroinformation har lagts till i makrolistvyn.
+
+Åtgärdat problem där VPN-utlösaren inte skulle avfyras.
+
+Åtgärdat problem där konfigurering av meddelandefältets knapputlösare inte skulle visa ikoner.
+
+Betydande uppdateringar av vissa översättningar.
+
+Andra mindre korrigeringar och UI-tweaks.

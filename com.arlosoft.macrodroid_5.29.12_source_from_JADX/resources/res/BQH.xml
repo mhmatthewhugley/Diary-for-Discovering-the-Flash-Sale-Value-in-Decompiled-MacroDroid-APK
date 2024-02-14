@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:animateLayoutChanges="true">
+        <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_small" android:layout_marginTop="@dimen/margin_small" android:layout_marginRight="@dimen/margin_small" android:layout_marginBottom="@dimen/margin_small" android:layout_marginHorizontal="@dimen/margin_small" layout="@layout/info_card"/>
+        <ViewFlipper android:id="@+id/view_flipper" android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycler_view" android:padding="@dimen/margin_micro" android:scrollbars="vertical" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" app:fastScrollEnabled="true" app:fastScrollHorizontalThumbDrawable="@drawable/thumb_drawable" app:fastScrollHorizontalTrackDrawable="@drawable/line_drawable" app:fastScrollVerticalThumbDrawable="@drawable/thumb_drawable" app:fastScrollVerticalTrackDrawable="@drawable/line_drawable"/>
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@+id/variables_emptyView" android:paddingBottom="@dimen/margin_medium" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center_horizontal" android:id="@+id/animation_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="-40dp" app:lottie_autoPlay="true" app:lottie_loop="true" app:lottie_rawRes="@raw/pencil_write" app:lottie_scale="0.2"/>
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textStyle="italic" android:textColor="@color/default_text_color" android:gravity="center" android:layout_gravity="center" android:paddingTop="@dimen/margin_tiny" android:paddingBottom="@dimen/margin_tiny" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/margin_medium" android:layout_marginBottom="100dp" android:text="@string/no_events_logged"/>
+            </LinearLayout>
+        </ViewFlipper>
+    </LinearLayout>
+</LinearLayout>

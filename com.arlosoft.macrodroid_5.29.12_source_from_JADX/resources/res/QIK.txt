@@ -1,0 +1,26 @@
+Version 5.29 (Dezember 2022)
+=====================================
+
+Unterstützung für Template-Store-Abonnements für Makros/Benutzer hinzugefügt, um über Updates benachrichtigt zu werden (nur für Profi-Benutzer).
+
+JSON-Ausgabeaktion hinzugefügt.
+
+Aktion "Digitalen Assistenten festlegen" hinzugefügt.
+
+Die Aktion im Flugzeugmodus kann jetzt mit dem ADB-Hack arbeiten (MacroDroid muss nicht zum standardmäßigen digitalen Assistenten gemacht werden).
+
+Der Auslöser für die Aktivitätserkennung unterstützt jetzt weniger als den Vergleich, um zu erkennen, wann eine Aktivität endet.
+
+Der Trigger für Bildschirminhalte verfügt jetzt über eine einstellbare Aktualisierungsrate.
+
+Unterstützung hinzugefügt, um eine Webhook-Trigger-Geräte-ID auf ein neues Gerät zu portieren.
+
+Die Aktion "Unverankerter Text" unterstützt jetzt die Ausrichtung nach links, zentriert und rechts.
+
+Es wurde ein Problem behoben, bei dem alle Tagesereignisse im Kalender aufgrund von Sommerzeit falsch ausgelöst werden konnten.
+
+Es wurde ein Problem behoben, bei dem triggerspezifische Werte (z. B. eingehende Anrufnummer) nach einer Wartezeit vor der nächsten Triggeraktion nicht mehr funktionierten.
+
+Problem behoben, bei dem Dezimalzahlen in Dialogen fälschlicherweise als Links angezeigt werden konnten.
+
+Es wurde ein Problem behoben, bei dem der Aktionsblock in einigen Situationen nicht ausgeführt wurde, wenn die nicht kategorisierte Kategorie deaktiviert war.

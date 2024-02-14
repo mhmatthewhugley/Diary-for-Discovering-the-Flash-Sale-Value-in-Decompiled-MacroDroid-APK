@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RadioGroup android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:layout_marginStart="@dimen/margin_small" android:layout_marginEnd="@dimen/margin_small">
+        <RadioButton android:id="@+id/radio_button_local" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="@string/variable_local"/>
+        <RadioButton android:id="@+id/radio_button_global" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/variable_global" android:layout_marginStart="@dimen/margin_medium"/>
+    </RadioGroup>
+    <androidx.appcompat.widget.AppCompatEditText android:id="@+id/enter_new_variable_name_dialog_variable_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="12dp" android:hint="@string/enter_variable_name" android:maxLines="1" android:inputType="textUri">
+        <requestFocus/>
+    </androidx.appcompat.widget.AppCompatEditText>
+    <View android:background="@color/ok_cancel_button_border" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="10dp"/>
+    <LinearLayout android:gravity="end" android:id="@+id/button_bar" android:paddingTop="0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:id="@+id/cancelButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/button_bar_button_min_width" android:text="@android:string/cancel" style="?android:attr/buttonBarButtonStyle"/>
+        <View android:background="@color/ok_cancel_button_border" android:layout_width="1dp" android:layout_height="match_parent"/>
+        <Button android:enabled="false" android:id="@+id/okButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/button_bar_button_min_width" android:text="@android:string/ok" style="?android:attr/buttonBarButtonStyle"/>
+    </LinearLayout>
+</LinearLayout>

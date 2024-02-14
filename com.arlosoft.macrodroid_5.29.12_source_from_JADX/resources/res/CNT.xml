@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginRight="@dimen/margin_medium" android:layout_marginHorizontal="@dimen/margin_medium">
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginEnd="@dimen/margin_small">
+            <TextView android:textSize="18sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="X:"/>
+            <androidx.appcompat.widget.AppCompatEditText android:gravity="center_horizontal" android:id="@+id/xLocation" android:layout_width="0dp" android:layout_height="wrap_content" android:ems="10" android:layout_weight="1" android:inputType="number">
+                <requestFocus/>
+            </androidx.appcompat.widget.AppCompatEditText>
+            <Button android:id="@+id/xMagicTextButton" style="@style/MagicTextButton"/>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="@dimen/margin_small">
+            <TextView android:textSize="18sp" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Y:"/>
+            <androidx.appcompat.widget.AppCompatEditText android:gravity="center_horizontal" android:id="@+id/yLocation" android:layout_width="0dp" android:layout_height="wrap_content" android:ems="10" android:layout_weight="1" android:inputType="number"/>
+            <Button android:id="@+id/yMagicTextButton" style="@style/MagicTextButton"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

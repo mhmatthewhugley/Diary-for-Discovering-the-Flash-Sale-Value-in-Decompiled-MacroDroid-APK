@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:icon="@drawable/ic_home_white_24dp" android:enabled="true" android:id="@+id/navigation_home" android:title="@string/bottom_tab_home_button" app:showAsAction="ifRoom"/>
+    <item android:icon="@drawable/ic_format_list_bulleted_white_24dp" android:enabled="true" android:id="@+id/navigation_macro_list" android:title="@string/list_macros" app:showAsAction="ifRoom"/>
+    <item android:icon="@drawable/ic_templates" android:enabled="true" android:id="@+id/navigation_templates" android:title="@string/view_templates" app:showAsAction="ifRoom"/>
+    <item android:icon="@drawable/ic_settings_white_24dp" android:enabled="true" android:id="@+id/navigation_settings" android:title="@string/settings" app:showAsAction="ifRoom"/>
+</menu>

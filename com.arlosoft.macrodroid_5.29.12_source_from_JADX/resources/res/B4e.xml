@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:icon="@drawable/unfold_more_horizontal" android:id="@+id/menu_expand_collapse_categories" android:title="@string/expand_categories" app:showAsAction="ifRoom"/>
+</menu>

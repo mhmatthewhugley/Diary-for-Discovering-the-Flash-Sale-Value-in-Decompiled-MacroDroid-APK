@@ -1,0 +1,26 @@
+Versiunea 5.29 (decembrie 2022)
+=====================================
+
+S-a adăugat suport pentru abonamentele de magazin de șabloane pe macrocomenzi/utilizatori pentru a primi notificări cu privire la actualizări (numai pentru utilizatorii profesioniști).
+
+Adăugat JSON ieșire acțiune.
+
+S-a adăugat acțiunea Setare asistent digital.
+
+Acțiunea modului avion poate funcționa acum cu hack-ul ADB (nicio cerință pentru a face MacroDroid asistentul digital implicit).
+
+Declanșatorul Recunoaștere activitate acceptă acum mai puțin decât comparația pentru a detecta când se termină o activitate.
+
+Declanșatorul Conținut ecran are acum o rată de actualizare reglabilă.
+
+S-a adăugat suport pentru a porta un ID de dispozitiv Webhook Trigger pe un dispozitiv nou.
+
+Acțiunea text flotant acceptă acum alinierea la stânga, la centru și la dreapta.
+
+S-a remediat problema în care toate evenimentele din calendar se puteau declanșa incorect din cauza orelor de vară.
+
+Fix problemă în cazul în care declanșa valori specifice (de exemplu, numărul de apel primite) nu ar funcționa după o așteptare înainte de următoarea acțiune de declanșare.
+
+S-a remediat problema în care numerele zecimale din dialoguri puteau fi afișate incorect ca linkuri.
+
+Fix problemă în cazul în care blocul de acțiune nu s-ar executa în unele situații când categoria uncategorized a fost dezactivat.

@@ -1,0 +1,26 @@
+Versió 5.29 (desembre 2022)
+=====================================
+
+S'ha afegit suport per a subscripcions a la botiga de plantilles en macro/usuaris per rebre notificacions a les actualitzacions (només usuaris professionals).
+
+S'ha afegit l'acció de sortida JSON.
+
+S'ha afegit l'acció De l'Assistent Digital.
+
+L'acció en mode avió ara pot funcionar amb el hack ADB (no hi ha cap requisit per fer de MacroDroid l'assistent digital predeterminat).
+
+L'activador de reconeixement d'activitat ara admet menys de la comparació per detectar quan finalitza una activitat.
+
+L'activador de contingut de pantalla ara té una taxa d'actualització ajustable.
+
+S'ha afegit suport per portar un identificador de dispositiu Webhook Trigger a un dispositiu nou.
+
+L'acció Text flotant ara admet l'alineació esquerra, centre i dreta.
+
+S'ha solucionat un problema en què els esdeveniments de tot el dia del calendari es poden activar incorrectament a causa de les hores d'estalvi de llum del dia.
+
+S'ha corregit un problema en què s'activen valors específics (per exemple, el número de trucada entrant) no funcionarien després d'esperar abans de l'acció d'activació següent.
+
+S'ha corregit el problema en què els nombres decimals dels diàlegs es podrien mostrar incorrectament com a enllaços.
+
+S'ha solucionat un problema en què el bloc d'accions no s'executaria en algunes situacions en què la categoria no classificada estava desactivada.

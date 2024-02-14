@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:paddingTop="10dp" android:paddingBottom="6dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/trigger_activity_recognition_confidence_info" android:paddingStart="14dp" android:paddingEnd="14dp"/>
+    <RadioGroup android:padding="12dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RadioButton android:id="@+id/greater_than_radio_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/greater_than"/>
+        <RadioButton android:id="@+id/less_than_radio_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/less_than"/>
+    </RadioGroup>
+    <LinearLayout android:orientation="vertical" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:layout_gravity="center_horizontal" android:id="@+id/dialog_activity_recognition_confidence_percent_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="50%" android:layout_weight="1"/>
+        <SeekBar android:id="@+id/dialog_activity_recognition_confidence_seek_bar" android:layout_width="match_parent" android:layout_height="wrap_content" android:max="100" android:layout_weight="1"/>
+    </LinearLayout>
+    <include layout="@layout/include_ok_cancel_buttons"/>
+</LinearLayout>

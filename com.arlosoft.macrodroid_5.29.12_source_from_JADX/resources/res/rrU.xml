@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ViewFlipper xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/viewFlipper" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="16sp" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_very_large" android:layout_marginRight="@dimen/margin_very_large" android:text="@string/http_content_body_not_used_for_this_request_type" android:lineSpacingMultiplier="1.2"/>
+    </FrameLayout>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textColor="@color/actions_accent" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginTop="@dimen/margin_medium" android:layout_marginRight="@dimen/margin_medium" android:text="@string/http_content_type"/>
+            <Spinner android:entries="@array/http_content_types" android:id="@+id/contentTypeSpinner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginTop="@dimen/margin_small" android:layout_marginRight="@dimen/margin_medium"/>
+            <EditText android:id="@+id/contentTypeCustom" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginTop="@dimen/margin_medium" android:layout_marginRight="@dimen/margin_medium" android:hint="@string/http_content_type_custom"/>
+            <TextView android:textColor="@color/actions_accent" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginTop="@dimen/margin_medium" android:layout_marginRight="@dimen/margin_medium" android:text="@string/http_request_content_body"/>
+            <RadioGroup android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginTop="@dimen/margin_small" android:layout_marginRight="@dimen/margin_medium">
+                <RadioButton android:id="@+id/radioButtonText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text"/>
+                <RadioButton android:id="@+id/radioButtonFile" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/http_request_content_body_type_file"/>
+            </RadioGroup>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/bodyTextLayout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginTop="@dimen/margin_small" android:layout_marginRight="@dimen/margin_medium">
+                <androidx.appcompat.widget.AppCompatEditText android:id="@+id/contentBodyText" android:layout_width="0dp" android:layout_height="wrap_content" android:hint="@string/text" android:layout_weight="1"/>
+                <Button android:id="@+id/bodyMagicTextButton" style="@style/MagicTextButton"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/bodyFileLayout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginTop="@dimen/margin_small" android:layout_marginRight="@dimen/margin_medium">
+                <TextView android:textSize="16sp" android:layout_gravity="center_vertical" android:id="@+id/bodyFilePath" android:layout_width="0dp" android:layout_height="wrap_content" android:hint="@string/text" android:layout_weight="1"/>
+                <ImageButton android:id="@+id/selectFileButton" android:layout_width="@dimen/special_text_button_width" android:layout_height="@dimen/special_text_button_width" android:src="@drawable/ic_mode_edit_white_24dp" app:tint="@color/default_text_color_inverse" style="@style/MagicTextButton"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</ViewFlipper>

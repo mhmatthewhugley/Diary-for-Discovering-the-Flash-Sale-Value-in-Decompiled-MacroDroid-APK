@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent" android:animateLayoutChanges="true">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:background="@color/upgrade_list_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.google.android.material.appbar.AppBarLayout android:background="@color/primary" android:layout_width="match_parent" android:layout_height="wrap_content" android:elevation="4dp">
+            <com.google.android.material.appbar.CollapsingToolbarLayout android:layout_width="match_parent" android:layout_height="match_parent" app:contentScrim="?attr/colorPrimaryDark" app:layout_scrollFlags="13" app:titleEnabled="false">
+                <LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/margin_medium" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="8dp" android:layout_marginEnd="8dp">
+                    <FrameLayout android:layout_width="match_parent" android:layout_height="?attr/actionBarSize">
+                        <ImageView android:layout_gravity="center" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/onboarding_intro"/>
+                    </FrameLayout>
+                    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_small">
+                        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="8dp">
+                            <TextView android:textSize="26sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/macrodroid" android:textAllCaps="true" android:fontFamily="@font/helvetica"/>
+                            <TextView android:textSize="24sp" android:textStyle="bold" android:textColor="@color/md_grey_300" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="-2dp" android:text="@string/pro_version_short" android:fontFamily="@font/helvetica"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@+id/flashSaleContainer" android:background="@drawable/flash_sale_background" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="18dp" android:textColor="@color/white" android:layout_gravity="center_vertical" android:id="@+id/flashSaleTitle" android:paddingLeft="6dp" android:paddingRight="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/flash_sale"/>
+                        <TextView android:textSize="16dp" android:textColor="@color/white" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="-"/>
+                        <TextView android:textSize="18sp" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@+id/flashSaleTimeRemaining" android:background="@color/md_red_500" android:paddingLeft="6dp" android:paddingRight="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="23:59:12"/>
+                    </LinearLayout>
+                    <TextView android:textSize="18sp" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@+id/wasPrice" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:text="Was $4.99"/>
+                    <FrameLayout android:layout_gravity="center_horizontal" android:id="@+id/priceContainer" android:background="@drawable/purchase_only_button" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small">
+                        <ViewFlipper android:id="@+id/priceViewFlipper" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <ProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateTint="@color/white" style="?android:attr/progressBarStyleSmall"/>
+                            <TextView android:textSize="18sp" android:textColor="@color/white" android:layout_gravity="center" android:id="@+id/priceText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Only $4.99"/>
+                        </ViewFlipper>
+                    </FrameLayout>
+                    <TextView android:textSize="14sp" android:textColor="@color/white_transparent" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small_medium" android:text="@string/one_time_purchase"/>
+                </LinearLayout>
+                <androidx.appcompat.widget.Toolbar android:theme="@style/Toolbar" android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" app:layout_collapseMode="1" app:popupTheme="@style/ThemeOverlay.AppCompat.Light" app:titleTextAppearance="@style/HelveticaToolbarText.Main">
+                    <TextView android:textSize="16sp" android:textColor="@color/white" android:layout_gravity="end" android:id="@+id/helpButton" android:background="?attr/selectableItemBackgroundBorderless" android:padding="8dp" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/help"/>
+                </androidx.appcompat.widget.Toolbar>
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/recyclerView" android:paddingBottom="96dp" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <FrameLayout android:layout_gravity="bottom" android:background="@color/upgrade_list_bg_transparent" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:textSize="18sp" android:textStyle="bold" android:textColor="@color/white" android:id="@+id/upgradeNowButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_marginBottom="16dp" android:minHeight="64dp" android:text="@string/upgrade_now" android:layout_marginStart="32dp" android:layout_marginEnd="32dp" style="@style/RoundedButton.Green"/>
+        <View android:background="@color/upgrade_list_divider" android:layout_width="match_parent" android:layout_height="1dp"/>
+    </FrameLayout>
+</FrameLayout>

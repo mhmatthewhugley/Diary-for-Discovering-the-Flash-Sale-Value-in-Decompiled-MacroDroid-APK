@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:padding="@dimen/margin_medium" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/webhook_import_device_id_message"/>
+    <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <EditText android:id="@+id/deviceId" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginRight="@dimen/margin_medium" android:hint="@string/webhook_device_id_hint" android:maxLines="1" android:singleLine="true" android:layout_marginHorizontal="@dimen/margin_medium"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_tiny">
+        <EditText android:id="@+id/password" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginRight="@dimen/margin_medium" android:hint="@string/password" android:maxLines="1" android:singleLine="true" android:layout_marginHorizontal="@dimen/margin_medium"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:id="@+id/importButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginTop="@dimen/margin_small" android:layout_marginRight="@dimen/margin_medium" android:text="@string/webhook_import_device_id_title" android:layout_marginHorizontal="@dimen/margin_medium" style="@style/ColoredButton"/>
+        <ProgressBar android:layout_gravity="center" android:id="@+id/importingProgressIndicator" android:visibility="gone" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginTop="3dp" android:indeterminate="true"/>
+    </FrameLayout>
+    <Button android:layout_gravity="end" android:id="@+id/cancelButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginRight="@dimen/margin_medium" android:minWidth="@dimen/button_bar_button_min_width" android:text="@android:string/cancel" android:layout_marginHorizontal="@dimen/margin_medium" style="?android:attr/buttonBarButtonStyle"/>
+</LinearLayout>

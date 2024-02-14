@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.appcompat.widget.AppCompatEditText android:id="@+id/noticationChannel" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginTop="@dimen/margin_small" android:layout_marginRight="@dimen/margin_medium" android:layout_marginBottom="@dimen/margin_small" android:maxLines="1" android:inputType="textNoSuggestions">
+        <requestFocus/>
+    </androidx.appcompat.widget.AppCompatEditText>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:text="@string/notification_priority" android:layout_marginStart="@dimen/margin_medium"/>
+    <Spinner android:entries="@array/notification_priority_names" android:id="@+id/prioritySpinner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:entryValues="@array/notification_priority_values" android:layout_marginStart="@dimen/margin_small_medium"/>
+    <include layout="@layout/include_ok_cancel_buttons"/>
+</LinearLayout>

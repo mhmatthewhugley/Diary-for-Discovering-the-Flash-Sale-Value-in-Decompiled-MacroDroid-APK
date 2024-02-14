@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/mobile_navigation" app:startDestination="@+id/navigation_home">
+    <fragment android:label="@string/bottom_tab_home_button" android:name="com.arlosoft.macrodroid.homescreen.HomeFragment" android:id="@+id/navigation_home"/>
+    <fragment android:label="@string/macro_list" android:name="com.arlosoft.macrodroid.macrolist.MacroListFragment" android:id="@+id/navigation_macro_list">
+        <deepLink android:id="@+id/deepLink" app:uri="macrodroid://macroList"/>
+    </fragment>
+    <fragment android:label="@string/template_macros" android:name="com.arlosoft.macrodroid.templatestore.p071ui.TemplateStoreFragment" android:id="@+id/navigation_templates"/>
+    <fragment android:label="@string/settings" android:name="com.arlosoft.macrodroid.settings.PreferencesTopLevelFragment" android:id="@+id/navigation_settings"/>
+</navigation>

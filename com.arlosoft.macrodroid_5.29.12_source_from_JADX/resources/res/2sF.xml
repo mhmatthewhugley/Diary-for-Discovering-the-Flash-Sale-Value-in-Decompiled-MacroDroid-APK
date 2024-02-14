@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:theme="@style/Theme.App.Action.ColoredButton" android:textSize="18sp" android:textColor="@color/default_text_color_inverse" android:id="@+id/actionBlockName" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginTop="@dimen/margin_small" android:layout_marginRight="@dimen/margin_medium" android:layout_weight="1" android:textAllCaps="false" android:layout_marginHorizontal="@dimen/margin_medium"/>
+        </LinearLayout>
+        <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/actions_accent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginTop="@dimen/margin_small_medium" android:layout_marginRight="@dimen/margin_medium" android:layout_marginBottom="@dimen/margin_tiny" android:text="@string/input_variables" android:layout_marginHorizontal="@dimen/margin_medium"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/inputVarsContainer" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/actions_accent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginTop="@dimen/margin_medium" android:layout_marginRight="@dimen/margin_medium" android:text="@string/output_variables" android:layout_marginHorizontal="@dimen/margin_medium"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/outputVarsContainer" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <CheckBox android:textSize="16sp" android:id="@+id/waitToCompleteCheckBox" android:background="?attr/selectableItemBackground" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_small_medium" android:layout_marginTop="@dimen/margin_medium" android:layout_marginRight="@dimen/margin_small_medium" android:layout_marginBottom="@dimen/margin_small" android:text="@string/block_actions_until_complete" android:layout_marginHorizontal="@dimen/margin_small_medium"/>
+        <include layout="@layout/include_ok_cancel_buttons"/>
+    </LinearLayout>
+</ScrollView>

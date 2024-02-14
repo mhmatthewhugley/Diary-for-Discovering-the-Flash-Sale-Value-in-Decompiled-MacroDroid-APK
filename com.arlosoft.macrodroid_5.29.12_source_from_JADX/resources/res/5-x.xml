@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:icon="@drawable/ic_action_new_white" android:id="@+id/menu_add" android:title="@string/add" app:showAsAction="always">
+        <menu>
+            <item android:id="@+id/menu_scan_towers" android:title="@string/trigger_cell_tower_scan_towers"/>
+            <item android:id="@+id/menu_add_tower_id" android:title="@string/trigger_cell_tower_add_tower_id"/>
+        </menu>
+    </item>
+</menu>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/cell_tower_record_card" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_small" android:layout_marginStart="@dimen/margin_small" android:layout_marginEnd="@dimen/margin_small" app:cardBackgroundColor="@color/cell_towers_primary_dark" app:cardCornerRadius="8dp" app:cardElevation="3dp">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/header_bg" android:background="@color/cell_towers_primary" android:padding="@dimen/margin_small" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textColor="@android:color/white" android:id="@+id/cell_tower_time" android:layout_width="50sp" android:layout_height="wrap_content"/>
+            <TextView android:textColor="@android:color/white" android:id="@+id/cell_tower_id" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginEnd="@dimen/margin_medium"/>
+            <TextView android:textColor="@color/white_transparent" android:id="@+id/ignored_label" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <org.apmem.tools.layouts.FlowLayout android:gravity="top|left|center_vertical|center_horizontal|center|start" android:id="@+id/flow_layout" android:paddingTop="@dimen/margin_small" android:paddingBottom="@dimen/margin_small" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

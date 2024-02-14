@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RadioGroup android:id="@+id/radioGroup1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="16dp">
+        <RadioButton android:textSize="18sp" android:gravity="center_vertical" android:id="@+id/weather_conditions_dialog_clear" android:layout_width="wrap_content" android:layout_height="48dp" android:checked="true" android:text="@string/trigger_weather_clear" android:paddingStart="16dp"/>
+        <RadioButton android:textSize="18sp" android:id="@+id/weather_conditions_dialog_cloudy" android:layout_width="wrap_content" android:layout_height="48dp" android:text="@string/trigger_weather_cloudy" android:paddingStart="16dp"/>
+        <RadioButton android:textSize="18sp" android:id="@+id/weather_conditions_dialog_rain" android:layout_width="wrap_content" android:layout_height="48dp" android:text="@string/trigger_weather_rain" android:paddingStart="16dp"/>
+        <RadioButton android:textSize="18sp" android:id="@+id/weather_conditions_dialog_thunder" android:layout_width="wrap_content" android:layout_height="48dp" android:text="@string/trigger_weather_thunder" android:paddingStart="16dp"/>
+        <RadioButton android:textSize="18sp" android:id="@+id/weather_conditions_dialog_snow" android:layout_width="wrap_content" android:layout_height="48dp" android:text="@string/trigger_weather_snow" android:paddingStart="16dp"/>
+    </RadioGroup>
+    <View android:background="@color/ok_cancel_button_border" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="6dp"/>
+    <LinearLayout android:gravity="end" android:id="@+id/button_bar" android:paddingTop="0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:id="@+id/cancelButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/button_bar_button_min_width" android:text="@android:string/cancel" style="?android:attr/buttonBarButtonStyle"/>
+        <View android:background="@color/ok_cancel_button_border" android:layout_width="1dp" android:layout_height="match_parent"/>
+        <Button android:id="@+id/okButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/button_bar_button_min_width" android:text="@android:string/ok" style="?android:attr/buttonBarButtonStyle"/>
+    </LinearLayout>
+</LinearLayout>

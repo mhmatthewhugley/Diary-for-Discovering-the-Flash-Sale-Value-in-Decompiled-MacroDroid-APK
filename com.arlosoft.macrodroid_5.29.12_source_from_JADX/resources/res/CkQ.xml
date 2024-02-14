@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true">
+    <TextView android:textSize="18sp" android:textColor="@color/white" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_medium" android:text="@string/edit_comment"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatEditText android:theme="@style/LightEditText" android:textColor="@color/white" android:textColorHint="@color/white" android:id="@+id/commentText" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_small" android:hint="@string/enter_a_comment" android:layout_weight="1" android:foregroundTint="@color/white"/>
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/updateCommentButton" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_send_white_24dp" android:contentDescription="@string/add_comment"/>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/uploadingLayout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_medium" android:layout_marginStart="@dimen/margin_medium" android:layout_marginEnd="@dimen/margin_medium">
+        <TextView android:textColor="@color/white" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/uploading" android:layout_weight="1"/>
+        <ProgressBar android:id="@+id/uploadingSpinner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" android:indeterminateTint="@color/white" style="?android:attr/progressBarStyleSmall"/>
+    </LinearLayout>
+</LinearLayout>

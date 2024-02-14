@@ -1,0 +1,26 @@
+Versión 5.29 (diciembre de 2022)
+=====================================
+
+Se agregó soporte para suscripciones de tienda de plantillas en macros / usuarios para recibir notificaciones sobre actualizaciones (solo usuarios pro).
+
+Se agregó la acción Salida JSON.
+
+Se ha añadido la acción Establecer asistente digital.
+
+La acción del modo avión ahora puede funcionar con ADB hack (no es necesario hacer de MacroDroid el asistente digital predeterminado).
+
+El desencadenador de reconocimiento de actividad ahora admite menos que la comparación para detectar cuándo finaliza una actividad.
+
+El activador de contenido de pantalla ahora tiene una tasa de actualización ajustable.
+
+Se agregó compatibilidad para portar un ID de dispositivo Webhook Trigger a un nuevo dispositivo.
+
+La acción Texto flotante ahora admite la alineación izquierda, central y derecha.
+
+Se ha corregido un problema por el que todos los eventos del día en el calendario podían activarse incorrectamente debido al horario de verano.
+
+Se ha corregido un problema por el que los valores específicos del desencadenante (por ejemplo, el número de llamada entrante) no funcionaban después de esperar antes de la siguiente acción de activación.
+
+Se ha corregido el problema por el que los números decimales en los cuadros de diálogo se podían mostrar incorrectamente como enlaces.
+
+Se ha corregido el problema por el que el bloqueo de acción no se ejecutaba en algunas situaciones cuando la categoría sin categorizar estaba deshabilitada.

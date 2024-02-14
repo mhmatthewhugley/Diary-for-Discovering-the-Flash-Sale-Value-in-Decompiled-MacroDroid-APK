@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:padding="@dimen/margin_tiny" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:padding="@dimen/margin_small" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/category" android:layout_marginStart="@dimen/margin_tiny"/>
+        <Spinner android:layout_gravity="center_vertical" android:id="@+id/enter_name_and_category_spinner" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="10dp" android:layout_marginEnd="10dp"/>
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/enter_name_and_category_help" android:padding="6dp" android:layout_width="36dp" android:layout_height="36dp" android:src="@drawable/ic_help_outline_black_24dp" android:tint="@color/default_text_color" android:alpha="0.8"/>
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatEditText android:id="@+id/enter_name_and_category_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="8dp" android:hint="@string/enter_macro_name" android:maxLines="1" android:inputType="textCapSentences" android:textCursorDrawable="@null">
+        <requestFocus/>
+    </androidx.appcompat.widget.AppCompatEditText>
+    <View android:background="@color/ok_cancel_button_border" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="10dp"/>
+    <LinearLayout android:gravity="end" android:id="@+id/button_bar" android:paddingTop="0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:id="@+id/cancelButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/button_bar_button_min_width" android:text="@android:string/cancel" style="?android:attr/buttonBarButtonStyle"/>
+        <View android:background="@color/ok_cancel_button_border" android:layout_width="1dp" android:layout_height="match_parent"/>
+        <Button android:enabled="false" android:id="@+id/okButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/button_bar_button_min_width" android:text="@android:string/ok" style="?android:attr/buttonBarButtonStyle"/>
+    </LinearLayout>
+</LinearLayout>

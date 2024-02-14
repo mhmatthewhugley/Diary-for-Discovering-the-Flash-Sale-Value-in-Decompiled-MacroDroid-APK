@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <androidx.appcompat.widget.SearchView android:id="@+id/search_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_small" android:iconifiedByDefault="false" android:queryHint="@string/search" app:iconifiedByDefault="false"/>
+    <ListView android:scrollbarStyle="outsideInset" android:id="@+id/application_list" android:padding="2dp" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/include_exclude_options" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:background="#bbbbbb" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <RadioGroup android:orientation="horizontal" android:id="@+id/radio_options" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:layout_marginStart="@dimen/margin_medium" android:layout_marginEnd="@dimen/margin_medium">
+            <RadioButton android:id="@+id/radio_include" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/include" android:layout_weight="1"/>
+            <RadioButton android:id="@+id/radio_exclude" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/exclude" android:layout_weight="1"/>
+        </RadioGroup>
+        <CheckBox android:id="@+id/non_launchable_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:text="@string/show_non_launchable_apps" android:layout_marginStart="@dimen/margin_medium" android:layout_marginEnd="@dimen/margin_medium"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="end" android:id="@+id/button_bar" android:paddingTop="0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:id="@+id/allAppsButton" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/button_bar_button_min_width" android:text="@string/select_all_apps_very_short" style="?android:attr/buttonBarButtonStyle"/>
+        <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <Button android:id="@+id/cancelButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/button_bar_button_min_width" android:text="@android:string/cancel" style="?android:attr/buttonBarButtonStyle"/>
+        <Button android:id="@+id/okButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/button_bar_button_min_width" android:text="@android:string/ok" style="?android:attr/buttonBarButtonStyle"/>
+    </LinearLayout>
+</LinearLayout>

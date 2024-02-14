@@ -1,0 +1,26 @@
+Version 5.29 (December 2022)
+=====================================
+
+Added support for template store subscriptions on macro/users to get notified on updates (pro users only).
+
+Added JSON Output action.
+
+Added Set Digital Assistant action.
+
+Airplane mode action can now work with ADB hack (no requirement to make MacroDroid the default digital assistant).
+
+Activity Recognition trigger now supports less than comparison for detecting when an activity ends.
+
+Screen Content trigger now has an adjustable update rate.
+
+Added support to port a Webhook Trigger device id to a new device.
+
+Floating Text action now supports left, center and right alignment.
+
+Fixed issue where all day events on the calendar could trigger incorrectly due to daylight savings times.
+
+Fixed issue where trigger specific values (e.g. incoming call number) would not function after a wait before next trigger action.
+
+Fixed issue where decimal numbers in dialogs could be shown incorrectly as links.
+
+Fixed issue where action block would not run in some situations when the uncategorized category was disabled.

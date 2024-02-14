@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:icon="@drawable/unfold_more_horizontal" android:id="@+id/menu_expand_collapse_categories" android:title="@string/expand_categories" app:showAsAction="ifRoom"/>
+    <item android:id="@+id/enable_all" android:title="@string/enable_logging_in_all_macros" app:showAsAction="never"/>
+    <item android:id="@+id/disable_all" android:title="@string/disable_logging_in_all_macros" app:showAsAction="never"/>
+</menu>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:title="@string/notification_bar_options" android:key="preferences:screen_notification_bar" android:summary="@string/notification_bar_options_summary" app:iconSpaceReserved="false">
+    <Preference android:title="@string/action_macrodroid_settings_notification_bar_icon" android:key="preferences:notification_icon" android:summary="@string/notification_icon_summary" app:iconSpaceReserved="false"/>
+    <ListPreference android:entries="@array/notification_priority_names" android:title="@string/notification_priority" android:key="preferences:notification_priority" android:summary="@string/notification_priority_summary" android:defaultValue="2" android:entryValues="@array/notification_priority_values" app:iconSpaceReserved="false"/>
+    <CheckBoxPreference android:title="@string/notification_list_macros" android:key="preferences:notification_list_macros" android:summary="@string/notification_list_macros_summary" android:defaultValue="false" app:iconSpaceReserved="false"/>
+    <Preference android:title="@string/configure_button_bar" android:key="preferences:configure_notification_button_bar" android:summary="@string/configure_button_bar_summary" android:defaultValue="true" app:iconSpaceReserved="false"/>
+    <CheckBoxPreference android:title="@string/force_hide_icon" android:key="preferences:force_hide_icon" android:summary="@string/force_hide_icon_summary" android:defaultValue="false" app:iconSpaceReserved="false"/>
+    <Preference android:title="@string/hide_notification_oreo" android:key="preference:oreo_hide_info" android:summary="@string/hide_notification_oreo_summary" app:iconSpaceReserved="false"/>
+</PreferenceScreen>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <Button android:id="@+id/showTouchOverlayButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginTop="@dimen/margin_small" android:layout_marginRight="@dimen/margin_medium" android:text="@string/ui_interaction_show_touch_location_overlay" android:textAllCaps="false" android:layout_marginHorizontal="@dimen/margin_medium" style="@style/ColoredButton"/>
+    <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:textColor="@color/actions_accent" android:layout_gravity="center_horizontal" android:id="@+id/touch_screen_resolution_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_small" android:text="@string/screen_resolution"/>
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/margin_medium" android:layout_marginEnd="@dimen/margin_medium">
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="18sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="X:"/>
+            <androidx.appcompat.widget.AppCompatEditText android:gravity="center_horizontal" android:id="@+id/touch_screen_config_x_location" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="@string/x_location" android:ems="10" android:inputType="number">
+                <requestFocus/>
+            </androidx.appcompat.widget.AppCompatEditText>
+            <Button android:id="@+id/x_magic_text_button" style="@style/MagicTextButton"/>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="18sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Y:"/>
+            <androidx.appcompat.widget.AppCompatEditText android:gravity="center_horizontal" android:id="@+id/touch_screen_config_y_location" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="@string/y_location" android:ems="10" android:inputType="number"/>
+            <Button android:id="@+id/y_magic_text_button" style="@style/MagicTextButton"/>
+        </LinearLayout>
+    </LinearLayout>
+    <include layout="@layout/include_ok_cancel_buttons"/>
+</LinearLayout>

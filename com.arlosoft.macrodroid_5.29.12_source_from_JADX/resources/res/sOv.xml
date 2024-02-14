@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:minWidth="300dp" android:layout_marginStart="@dimen/margin_small">
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <TextView android:textSize="18sp" android:textColor="@color/default_text_color" android:id="@+id/variable_user_prompt_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:layout_marginStart="@dimen/margin_medium" android:layout_marginEnd="@dimen/margin_medium"/>
+    </ScrollView>
+    <EditText android:textSize="20sp" android:id="@+id/variable_user_prompt_variable_value" android:paddingTop="15dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/enter_value" android:layout_marginStart="12dp" android:layout_marginEnd="12dp"/>
+    <RadioGroup android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/variable_user_prompt_radio_group" android:paddingTop="16dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="10dp" android:paddingEnd="10dp">
+        <RadioButton android:textSize="18sp" android:id="@+id/variable_user_prompt_radio_true" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/true_label" android:layout_weight="1"/>
+        <RadioButton android:textSize="18sp" android:id="@+id/variable_user_prompt_radio_false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:text="@string/false_label" android:layout_weight="1"/>
+    </RadioGroup>
+    <include layout="@layout/include_ok_cancel_buttons"/>
+</LinearLayout>

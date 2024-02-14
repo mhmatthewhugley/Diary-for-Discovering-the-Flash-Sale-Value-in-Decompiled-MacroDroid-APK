@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/margin_medium" android:paddingEnd="@dimen/margin_small">
+        <TextView android:textColor="@color/default_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_tiny" android:layout_marginTop="@dimen/margin_medium" android:layout_marginRight="@dimen/margin_tiny" android:text="@string/trigger_media_button_press_warning"/>
+        <RadioGroup android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RadioButton android:textSize="18sp" android:id="@+id/single_press" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:text="@string/trigger_media_button_pressed_single_press" android:paddingStart="@dimen/margin_small"/>
+            <RadioButton android:textSize="18sp" android:id="@+id/double_press" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small_medium" android:text="@string/trigger_media_button_pressed_2_presses" android:paddingStart="@dimen/margin_small"/>
+            <RadioButton android:textSize="18sp" android:id="@+id/treble_press" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small_medium" android:text="@string/trigger_media_button_pressed_3_presses" android:paddingStart="@dimen/margin_small"/>
+            <RadioButton android:textSize="18sp" android:id="@+id/long_press" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small_medium" android:text="@string/trigger_media_button_pressed_long_press" android:paddingStart="@dimen/margin_small"/>
+        </RadioGroup>
+        <LinearLayout android:gravity="end" android:id="@+id/button_bar" android:paddingTop="0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:id="@+id/cancelButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/button_bar_button_min_width" android:text="@android:string/cancel" style="?android:attr/buttonBarButtonStyle"/>
+            <Button android:id="@+id/okButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/button_bar_button_min_width" android:text="@android:string/ok" style="?android:attr/buttonBarButtonStyle"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

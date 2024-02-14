@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.cardview.widget.CardView android:layout_gravity="center" android:id="@+id/adbHackCard" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_small" android:layout_marginTop="@dimen/margin_small" android:layout_marginRight="@dimen/margin_small" app:cardBackgroundColor="@color/macro_error_tile" app:cardCornerRadius="8dp">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textColor="@color/white" android:id="@+id/infoCardTitle" android:paddingLeft="@dimen/margin_medium" android:paddingTop="@dimen/margin_medium" android:paddingRight="@dimen/margin_medium" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/root_or_adb_hack" style="@style/InfoCardText.Title"/>
+                <TextView android:textColor="@color/white" android:padding="@dimen/margin_medium" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/adb_hack_or_root_required_description" style="@style/InfoCardText"/>
+                <Button android:textColor="@color/white" android:layout_gravity="end" android:id="@+id/adbHackOkButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/button_bar_button_min_width" android:text="@string/help" style="?android:attr/buttonBarButtonStyle"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <include android:id="@+id/infoCard" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_small" android:layout_marginTop="@dimen/margin_small" android:layout_marginRight="@dimen/margin_small" layout="@layout/info_card"/>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/accessibilityServiceList" android:layout_width="match_parent" android:layout_height="wrap_content" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

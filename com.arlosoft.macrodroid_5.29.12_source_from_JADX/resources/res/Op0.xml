@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar android:theme="@style/Toolbar" android:id="@+id/toolbar" android:background="@color/primary" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" android:elevation="@dimen/toolbar_elevation" app:title="@string/donate" app:titleTextAppearance="@style/TitleToolbarText"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/margin_medium" android:paddingEnd="@dimen/margin_medium">
+                <ImageView android:layout_gravity="center_horizontal" android:layout_width="160dp" android:layout_height="160dp" app:srcCompat="@drawable/coder"/>
+                <TextView android:textSize="16sp" android:textColor="@color/default_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/donate_info" android:lineSpacingMultiplier="1.2"/>
+            </LinearLayout>
+            <View android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+                <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton android:layout_gravity="center_horizontal" android:id="@+id/donate_button_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:src="@drawable/ic_attach_money_white_24dp" android:scaleType="centerInside" android:contentDescription="$2.50\10€2.50\10£1.75" app:backgroundTint="@color/trigger_primary" app:elevation="6dp"/>
+                    <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textStyle="bold" android:textColor="@color/trigger_text" android:layout_gravity="center" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="$2.50\10€2.50\10£1.75"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton android:layout_gravity="center_horizontal" android:id="@+id/donate_button_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:src="@drawable/ic_attach_money_white_24dp" android:scaleType="centerInside" android:contentDescription="$5.00\10€5.00\10£3.50" app:backgroundTint="@color/actions_primary" app:elevation="6dp"/>
+                    <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textStyle="bold" android:textColor="@color/actions_accent" android:layout_gravity="center" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="$5.00\10€5.00\10£3.50"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton android:layout_gravity="center_horizontal" android:id="@+id/donate_button_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:src="@drawable/ic_attach_money_white_24dp" android:scaleType="centerInside" android:contentDescription="$10.00\10€10.00\10£7.00" app:backgroundTint="@color/constraints_primary" app:elevation="6dp"/>
+                    <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textStyle="bold" android:textColor="@color/constraints_primary_dark" android:layout_gravity="center" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="$10.00\10€10.00\10£7.00"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

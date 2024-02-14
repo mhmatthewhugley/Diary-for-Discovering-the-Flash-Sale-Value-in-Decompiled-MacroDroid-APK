@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<accessibility-service xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:description="@string/accessibility_service_detail_volume_button_monitor" android:notificationTimeout="500" android:accessibilityFlags="flagDefault|flagRequestFilterKeyEvents" android:canRetrieveWindowContent="false" android:canRequestFilterKeyEvents="true"/>

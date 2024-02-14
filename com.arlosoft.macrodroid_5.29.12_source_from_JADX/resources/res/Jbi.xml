@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.google.android.material.appbar.AppBarLayout android:id="@+id/appBarLayout" android:background="@color/plugins_primary" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:elevation="@dimen/toolbar_elevation">
+            <androidx.appcompat.widget.Toolbar android:theme="@style/Toolbar" android:id="@+id/toolbar" android:background="@color/auto_backup_primary" android:layout_width="match_parent" android:layout_height="wrap_content" app:titleTextAppearance="@style/TitleToolbarText"/>
+            <com.google.android.material.tabs.TabLayout android:id="@+id/tabLayout" android:background="@color/auto_backup_primary" android:layout_width="match_parent" android:layout_height="wrap_content" app:tabIndicatorColor="@color/white" app:tabMode="1" app:tabTextAppearance="@style/TabStyle" app:tabTextColor="@color/white"/>
+        </com.google.android.material.appbar.AppBarLayout>
+        <androidx.viewpager2.widget.ViewPager2 android:id="@+id/viewPager" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/loadingView" android:background="@color/loading_view_dimmer_darker" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center" android:layout_width="240dp" android:layout_height="240dp" app:lottie_autoPlay="true" app:lottie_loop="true" app:lottie_rawRes="@raw/simple_loader"/>
+    </FrameLayout>
+</FrameLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/margin_medium" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/margin_medium" android:paddingEnd="@dimen/margin_medium">
+        <com.google.android.material.textfield.TextInputLayout android:id="@+id/keyNameLayout" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <androidx.appcompat.widget.AppCompatEditText android:id="@+id/keyName" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/variable_dictionary_key" android:inputType="text" android:layout_marginEnd="16dp">
+                <requestFocus/>
+            </androidx.appcompat.widget.AppCompatEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+        <Button android:id="@+id/keyNameMagicTextButton" style="@style/MagicTextButton"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:layout_marginBottom="@dimen/margin_medium">
+        <TextView android:textSize="16sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/variable_type_heading" android:layout_marginStart="16dp"/>
+        <Spinner android:entries="@array/dictionary_entry_types" android:id="@+id/valueTypeSpinner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="16dp"/>
+    </LinearLayout>
+    <include layout="@layout/include_ok_cancel_buttons"/>
+</LinearLayout>

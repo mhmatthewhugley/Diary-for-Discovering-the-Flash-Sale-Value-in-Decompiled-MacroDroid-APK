@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/coordinator_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:animateLayoutChanges="true">
+        <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_small" android:layout_marginTop="@dimen/margin_small" android:layout_marginRight="@dimen/margin_small" layout="@layout/info_card"/>
+        <ListView android:id="@+id/cell_tower_group_list" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/margin_small" android:divider="@color/transparent_color" android:dividerHeight="0dp"/>
+        <FrameLayout android:id="@+id/celltowers_emptyView" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:paddingBottom="@dimen/margin_medium" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center" android:id="@+id/animation_view" android:layout_width="wrap_content" android:layout_height="wrap_content" app:lottie_autoPlay="true" app:lottie_loop="true" app:lottie_rawRes="@raw/radar_scanning"/>
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textStyle="italic" android:textColor="@color/default_text_color" android:gravity="center" android:layout_gravity="center" android:id="@+id/celltowers_empty_text" android:paddingTop="@dimen/margin_medium" android:paddingBottom="@dimen/margin_tiny" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/trigger_cell_tower_no_groups_configured"/>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton android:layout_gravity="bottom|right|center_vertical|center_horizontal|center|end" android:id="@+id/cell_tower_add_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_medium" android:src="@drawable/ic_action_new_white" android:scaleType="centerInside" android:layout_alignParentBottom="true" android:contentDescription="@string/add" android:layout_marginEnd="@dimen/margin_medium" android:layout_alignParentEnd="true" app:backgroundTint="@color/cell_towers_primary"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

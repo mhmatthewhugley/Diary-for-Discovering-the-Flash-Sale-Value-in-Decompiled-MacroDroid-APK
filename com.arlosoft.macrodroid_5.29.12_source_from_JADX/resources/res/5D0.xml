@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:height="15dp" android:width="21dp" android:viewportWidth="21" android:viewportHeight="15">
+    <path android:fillColor="@drawable/$flag_za__0" android:pathData="M0,0h21v15h-21z" android:strokeColor="#00000000" android:strokeWidth="1" android:fillType="1"/>
+    <path android:fillColor="@drawable/$flag_za__1" android:pathData="M0,0h21v15h-21z" android:strokeColor="#00000000" android:strokeWidth="1" android:fillType="1"/>
+    <path android:fillColor="@drawable/$flag_za__2" android:pathData="M0,2l7,5.5l-7,5.5z" android:strokeColor="#00000000" android:strokeWidth="1" android:fillType="1"/>
+    <path android:fillColor="@drawable/$flag_za__3" android:pathData="M-1,2.25l6.75,5.25l-6.75,5.25z" android:strokeColor="#00000000" android:strokeWidth="1" android:fillType="1"/>
+    <path android:fillColor="#ffffff" android:pathData="M9,6l-7,-6l19,0l0,6z" android:strokeColor="#00000000" android:strokeWidth="1" android:fillType="1"/>
+    <path android:fillColor="@drawable/$flag_za__4" android:pathData="M9.25,5l-6,-5l17.75,0l0,5z" android:strokeColor="#00000000" android:strokeWidth="1" android:fillType="1"/>
+    <path android:fillColor="#ffffff" android:pathData="M2,15l19,0l0,-6l-12,0z" android:strokeColor="#00000000" android:strokeWidth="1" android:fillType="1"/>
+    <path android:fillColor="@drawable/$flag_za__5" android:pathData="M3.25,15l17.75,0l0,-5l-11.75,0z" android:strokeColor="#00000000" android:strokeWidth="1" android:fillType="1"/>
+</vector>

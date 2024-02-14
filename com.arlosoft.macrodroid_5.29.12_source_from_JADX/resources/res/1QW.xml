@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:orientation="horizontal" android:paddingTop="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="12dp" android:paddingEnd="12dp">
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">&gt; 
+                <androidx.appcompat.widget.AppCompatEditText android:id="@+id/componentName" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/trigger_logcat_component" android:maxLines="1" android:inputType="textNoSuggestions">
+                    <requestFocus/>
+                </androidx.appcompat.widget.AppCompatEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+            <Button android:layout_gravity="bottom" android:id="@+id/componentMagicTextButton" style="@style/MagicTextButton"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:paddingStart="12dp" android:paddingEnd="12dp">
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <androidx.appcompat.widget.AppCompatEditText android:id="@+id/textToMatch" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/enter_text_to_match" android:maxLines="1" android:inputType="textNoSuggestions">
+                    <requestFocus/>
+                </androidx.appcompat.widget.AppCompatEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+            <Button android:layout_gravity="bottom" android:id="@+id/magicTextButton" style="@style/MagicTextButton"/>
+        </LinearLayout>
+        <TextView android:id="@+id/wildcard_Text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_tiny" android:layout_marginBottom="@dimen/margin_small" android:text="@string/wildcards_supported" android:layout_marginStart="14dp"/>
+        <TextView android:textStyle="bold" android:textColor="@color/trigger_accent" android:id="@+id/enabledBuffers" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:text="@string/logcat_trigger_enabled_buffers" android:layout_marginStart="14dp"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14dp" android:layout_marginTop="@dimen/margin_tiny" android:layout_marginRight="14dp" android:layout_marginBottom="@dimen/margin_small" android:text="@string/logcat_trigger_enabled_buffers_explanation" android:layout_marginHorizontal="14dp"/>
+        <CheckBox android:id="@+id/bufferMainCheckbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/logcat_buffer_main" android:layout_marginStart="12dp"/>
+        <CheckBox android:id="@+id/bufferSystemCheckbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/logcat_buffer_system" android:layout_marginStart="12dp"/>
+        <CheckBox android:id="@+id/bufferCrashCheckbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/logcat_buffer_crash" android:layout_marginStart="12dp"/>
+        <CheckBox android:id="@+id/bufferKernelCheckbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/logcat_buffer_kernel" android:layout_marginStart="12dp"/>
+        <CheckBox android:id="@+id/bufferRadioCheckbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/logcat_buffer_radio" android:layout_marginStart="12dp"/>
+        <CheckBox android:id="@+id/bufferEventsCheckbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/logcat_buffer_events" android:layout_marginStart="12dp"/>
+        <Button android:textColor="@color/default_text_color_inverse" android:id="@+id/captureMessagesButton" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="12dp" android:text="@string/trigger_logcat_capture_messages" android:textAllCaps="false" style="@style/MagicTextButton"/>
+        <include android:id="@+id/buttonBar" layout="@layout/include_ok_cancel_buttons"/>
+    </LinearLayout>
+</ScrollView>

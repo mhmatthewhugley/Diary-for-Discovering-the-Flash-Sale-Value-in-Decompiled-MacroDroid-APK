@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+
+        <style>
+            body {
+	            margin: 0; padding: 0;
+                background: url(../images/body_bg.gif) repeat-y right #FFFFFF;
+                font: normal 13px Arial, Georgia, Droid-Sans, Helvetica, sans-serif ;
+                color: #222222;
+            }
+
+            ul {
+                padding: 0px;
+                margin: 20px;
+            }
+        </style>
+	</head>
+	<body>
+
+    <div id="4b"  style="padding:10px;" >
+	<h2>Introduction</h2>
+	<p>MacroDroid is an easy to use tool to automate a series of actions based on event triggers.</p>
+	
+	<p>A macro consists of the following:</p>
+	<ul><li type=square><p>A trigger</p></li></ul>
+	<p>A particular event occurring on the device (e.g incoming SMS, headphones inserted)</p>
+	<ul><li type=square><p>One or more actions</p></li></ul>
+	<p>An action that the device can perform (e.g. set wallpaper, take picture)</p>
+	<ul><li type=square><p>One or more constraints</p></li></ul>
+	<p>A constraint that must be satisfied for the trigger to fire (e.g. day of week, battery level)</p>
+	
+	<h2>Adding a macro</h2>
+	<p>Select "+" from the MacroDroid home screen or edit macro page.</p>
+	<p>Select a trigger from the list. If the trigger has additional configuration settings you will prompted to set the relevant options before moving on to the list of actions.</p>
+	<p>Select an action from the list and configure as prompted. Select additional actions until you have all the actions you desire. When done, click the right arrow to move on. Note that you must select at least one action before moving on to the list of constraints.</p>
+	<p>To add a constraint select it from the list and configure as prompted. Select additional constraints and when complete click the right arrow to move on. There is no requirement to add any constraints before moving on.</p>
+	<p>You will now be prompted to give the macro a name so you can identify it later. Enter a suitable name and click 'OK'. You will see the new macro appear in your macro list.</p>
+	<p>Note that when selecting triggers, actions and constraints you can long press on them to pop up additional help information.</p>
+
+	<h2>Editing/Deleting a macro</h2>	
+	<p>Select "Macros" from the MacroDroid home screen.</p>
+	<p>You will see the list of currently configured macros and each macro has a switch so it can be quickly enabled/disabled. Each macro has an edit button that you can click to be taken to the edit screen.</p>
+	<p>From the edit screen you can add/remove actions and constraints and change the macros trigger. When you have finished editing press the tick icon in the action bar to save the macro.</p>
+	<p>To delete a macro press the trash can icon in the action bar.</p>
+	<p>In the action bar overflow menu (or via the menu button on the device) you will see additional options to clone a macro, share a macro and test the current set of actions for a macro.</p>
+
+	<h2>Template Macros</h2>
+	<p>Select "Templates" from the MacroDroid home screen.</p>
+	<p>MacroDroid includes a number of example template macros. These templates can be used as is or customised to your individual needs.</p>
+	<p>Select a template from the list and you will then see the list of triggers, actions and constraints which can be edited as desired. If you wish to add it as a macro press the "Add" button, else press back to go back to the template list.</p>
+	<p>Note that some templates require configuration as they reference device specific properties (such as a contact). In these cases an invalid field is shown in red and the "Add" button will be disabled.</p>
+	
+	<h2>Export/Import Macros</h2>
+	<p>Select "Export/Import" from the MacroDroid home screen.</p>
+	<p>The current list of macros can be backed up to the device's SD card. This backup file can then be imported if the application is reinstalled or transferred onto a new device.</p>
+	<p>When exporting you will be prompted to enter a backup filename and you may choose the location to export to.</p>
+	<p>When importing you should select a backup file via the file picker.</p>
+	<p>Note that when importing from a full backup any existing macros will be cleared. If importing to a new device it is possible some macros will need to be re-configured as they may reference device specific properties. Any macro's that need configuring will be shown in red in the standard macro list.</p>
+    <p>You can also share individual macros using the share button from the edit macro page.</p>
+
+    <h2>Widget Buttons</h2>
+	<p>MacroDroid allows you to add widgets to your home screen that will act as buttons to activate macros.</p>
+	<p>To add a widget, from your home screen select Menu->Add->Widgets and locate the widget button you wish to add.</p>
+	<p>MacroDroid includes 4 standard coloured buttons that can be assigned to different macros and an unlimited number of user customisable buttons.</p>
+
+    <h2>Integration with other apps</h2>
+        <p>Every Macro can be launched as a standard Android shortcut, allowing macros to be launched from any third-party app or home screen that supports Android shortcuts. A 'Launch Shortcut' action is available to invoke other applications that expose functionality through shortcuts. MacroDroid also supports Locale/Tasker plugins, however some Tasker specific extensions in such plugins may not be available from within MacroDroid.</p>
+
+    <h2>Pro Version Upgrade</h2>
+	<p>The free version of MacroDroid is limited to five macros and contains adverts.</p>
+	<p>To remove this restriction you may upgrade to the pro version, which allows an unlimited number of macros and removes all adverts.</p>
+    
+    <h2>FAQs</h2>
+	<ul><li type=square><p>MacroDroid won't stay alive in the background</p></li></ul>
+	<p> Many modern devices kill off background services by default unless configured not to. For advice on how to prevent this, please check this excellent website: <a href="https://dontkillmyapp.com/">https://dontkillmyapp.com/</a></p>
+    <ul><li type=square><p>What is the point of MacroDroid Modes?</p></li></ul>
+    <p>MacroDroid modes are primarily used to constrain triggers. For example, one trigger may set the device into 'Car Mode' and another trigger may only function when the device is in 'Car Mode'.</p>
+    <ul><li type=square><p>What type of NFC tag do I need to use with MacroDroid?</p></li></ul>
+    <p>Any NFC Tag that is NDEF compatible and writable can be used.</p>
+    <ul><li type=square><p>Why does a certain trigger/action/constraint not work properly on my device?</p></li></ul>
+    <p>It could be a bug in the software or it could be a limitation with the device. Please let us know what's broken and your device type/OS Version and I'll do my best to resolve it.</p>
+    <ul><li type=square><p>Can you add feature 'x' to MacroDroid?</p></li></ul>
+    <p>Maybe, please post in the feature request section of the forum to share your idea.</p>
+    <ul><li type=square><p>Why on earth does this app use so many permissions, it seems a bit dodgy to me?</p></li></ul>
+    <p>That's just the nature of the app. It needs access to all those bits and pieces to listen for triggers and invoke all the various actions. The app will *never* abuse these permissions and slurp any of your personal data. I'm just trying to make a cool useful app so you'll either have to trust the app, or if you're still suspicious then get yourself Charles/Fiddler/Wireshark (or similar) and look what the app is up to!</p>
+	<ul><li type=square><p>Why do I have to pay to get full functionality?</p></li></ul>
+    <p>I know that no one likes to pay for their apps, but writing software is time consuming and demands a great deal of effort (and like everyone else I have bills to pay). I tried to make the free version of MacroDroid useful for basic operations and hope that users with more advanced needs will be happy to pay a small amount.</p>
+    <ul><li type=square><p>Why can't I uninstall MacroDroid?</p></li></ul>
+    <p>If you have enabled device admin access for MacroDroid then you will need to disable this before you can uninstall. Some versions of Android do not warn you of this at the uninstall point so it can be unclear why you can't uninstall. For convenience I have included an option to uninstall in the MacroDroid settings to take care of all this.</p>
+    </div>
+	</body>
+</html>

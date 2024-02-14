@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:background="@drawable/action_border" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/margin_medium"/>
+    <ImageView android:layout_gravity="end" android:id="@+id/delete_button" android:background="?android:attr/colorBackground" android:padding="@dimen/margin_small" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/ic_delete_white_24dp" android:layout_marginEnd="@dimen/margin_small" app:tint="@color/actions_accent" style="@style/Widget.AppCompat.Button.Borderless.Colored"/>
+    <TextView android:textColor="@color/actions_accent" android:id="@+id/actionButtonTitle" android:background="?android:attr/colorBackground" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:text="@string/notification_action_button_title" android:paddingStart="@dimen/margin_tiny" android:paddingEnd="@dimen/margin_tiny" android:layout_marginStart="@dimen/margin_small"/>
+    <LinearLayout android:orientation="vertical" android:padding="@dimen/margin_small" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/margin_small">
+        <LinearLayout android:orientation="horizontal" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:layout_weight="1" android:layout_marginStart="@dimen/margin_small">
+                <com.google.android.material.textfield.TextInputEditText android:id="@+id/actionButtonLabel" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/notification_action_button_label" android:singleLine="true"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <Button android:layout_gravity="bottom" android:id="@+id/actionButtonLabelMagicTextButton" android:layout_marginBottom="@dimen/margin_tiny" style="@style/MagicTextButton"/>
+        </LinearLayout>
+        <TextView android:textColor="@color/actions_accent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:text="@string/notification_action_button_run_when_pressed" android:layout_marginStart="@dimen/margin_small"/>
+        <Spinner android:layout_gravity="center_vertical" android:id="@+id/macroSpinner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="200dp" android:minHeight="48dp"/>
+        <Button android:id="@+id/configInputOutputParams" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:text="@string/action_block_configure_input_output_params" android:textAllCaps="false" style="@style/ColoredButton"/>
+        <CheckBox android:id="@+id/clearOnPress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/notification_action_button_clear_notification_on_press"/>
+    </LinearLayout>
+</FrameLayout>

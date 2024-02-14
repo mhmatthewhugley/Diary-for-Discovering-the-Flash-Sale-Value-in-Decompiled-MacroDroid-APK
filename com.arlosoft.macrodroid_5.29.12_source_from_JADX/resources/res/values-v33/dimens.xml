@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="fingerprint_status_layout_margin_vertical_bottom">16dp</dimen>
+    <dimen name="fingerprint_status_layout_margin_vertical_top">48dp</dimen>
+</resources>

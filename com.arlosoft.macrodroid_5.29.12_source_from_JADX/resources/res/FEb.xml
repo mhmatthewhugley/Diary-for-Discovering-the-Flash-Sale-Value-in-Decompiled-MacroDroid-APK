@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:padding="@dimen/margin_medium" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatEditText android:id="@+id/text" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_medium" android:hint="@string/enter_text" android:layout_weight="1"/>
+        <Button android:id="@+id/special_text_button" style="@style/MagicTextButton"/>
+    </LinearLayout>
+    <TextView android:id="@+id/invoke_macro_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:text="@string/invoke_macro_when_pressed"/>
+    <Spinner android:id="@+id/macro_spinner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:minWidth="200dp"/>
+    <CheckBox android:textColor="@color/default_text_color" android:id="@+id/ignore_constraints" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:text="@string/action_force_macro_run_ignore_constraints"/>
+</LinearLayout>

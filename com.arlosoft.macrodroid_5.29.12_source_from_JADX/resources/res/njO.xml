@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginStart="@dimen/margin_medium" android:layout_marginEnd="@dimen/margin_medium">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium">
+        <com.google.android.material.textfield.TextInputLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <androidx.appcompat.widget.AppCompatEditText android:id="@+id/urlText" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/enter_url" android:maxLines="1" android:inputType="textUri">
+                <requestFocus/>
+            </androidx.appcompat.widget.AppCompatEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+        <Button android:id="@+id/urlMagicTextButton" android:layout_marginTop="@dimen/margin_tiny" style="@style/MagicTextButton"/>
+    </LinearLayout>
+    <com.google.android.material.textfield.TextInputLayout android:id="@+id/timeoutMsTextInput" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small">
+        <androidx.appcompat.widget.AppCompatEditText android:id="@+id/timeoutMs" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:maxLength="7" android:inputType="number">
+            <requestFocus/>
+        </androidx.appcompat.widget.AppCompatEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+    <TextView android:textSize="14sp" android:textColor="@color/actions_accent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:text="@string/save_to_variable"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Spinner android:id="@+id/booleanVariableSpinner" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <Button android:textColor="@color/default_text_color_inverse" android:id="@+id/addVariableButton" android:layout_width="@dimen/special_text_button_width" android:layout_height="wrap_content" android:text="+" app:backgroundTint="@color/actions_accent"/>
+    </LinearLayout>
+    <CheckBox android:id="@+id/blockActionsCheckbox" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:layout_marginBottom="@dimen/margin_small" android:text="@string/block_actions_until_complete"/>
+    <LinearLayout android:gravity="end" android:id="@+id/button_bar" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:id="@+id/cancelButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/button_bar_button_min_width" android:text="@android:string/cancel" style="?android:attr/buttonBarButtonStyle"/>
+        <Button android:id="@+id/okButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/button_bar_button_min_width" android:text="@android:string/ok" style="?android:attr/buttonBarButtonStyle"/>
+    </LinearLayout>
+</LinearLayout>

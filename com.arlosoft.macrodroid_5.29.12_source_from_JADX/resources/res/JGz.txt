@@ -1,0 +1,589 @@
+Phiên bản 5.28 (Tháng MườI MộT 2022)
+=============================
+
+Đã thêm hành động Văn bản nổi.
+
+Đã thêm "Biến làm việc" vào các khối hành động.
+
+Action Block action hiện hỗ trợ tùy chọn chặn các hành động tiếp theo cho đến khi hoàn tất (được bật theo mặc định).
+
+Đã thêm hành động xóa mục nhập Từ điển/Mảng để cho phép xóa hoặc xóa các mục nhập riêng lẻ.
+
+Đã thêm hỗ trợ cho các bản dịch tự động trong thời gian thực trong Cửa hàng mẫu.
+
+Đã thêm hỗ trợ cho chế độ xem vệ tinh trong màn hình định cấu hình Geofence.
+
+Đã thêm văn bản ma thuật cho Cường độ tín hiệu Tháp di động.
+
+Cải thiện tìm kiếm trong màn hình danh sách chặn hành động để cũng tìm kiếm các hành động trong các khối.
+
+Đã khắc phục sự cố trong đó Thao tác văn bản được tách thành mảng sẽ không hoạt động với dấu phân cách nhiều ký tự.
+
+Đã thêm cài đặt mới trong các tùy chọn kích hoạt để điều chỉnh thời gian kích hoạt Chuyển đổi nút nguồn để hoàn thành.
+
+Các bản sửa lỗi và cải tiến nhỏ khác.
+
+Phiên bản 5.27.8 (Tháng Chín 2022)
+===============================
+
+Phát hành sửa lỗi nhỏ, để khắc phục một số vấn đề nhỏ.
+
+Phiên bản 5.27 (Tháng Chín 2022)
+=============================
+
+Đã thêm hành động Dịch vụ trợ năng (yêu cầu tấn công ADB).
+
+Đã thêm chức năng để giữ cho các dịch vụ trợ năng được bật để giải quyết các sự cố trong đó một số thiết bị có thể vô hiệu hóa chúng (yêu cầu Tấn công ADB).
+
+Đã thêm ràng buộc Cài đặt hệ thống.
+
+Đã thêm tổng số và giá trị RAM có sẵn vào các tùy chọn văn bản kỳ diệu.
+
+Đã thêm các chỉ báo số cho các giá trị cao độ và tốc độ trong hành động chuyển văn bản thành giọng nói.
+
+Đã thêm cách giải quyết cho sự cố trình khởi chạy Samsung để ngăn các phím tắt mất biểu tượng / nhãn của chúng khi bật / tắt chế độ tối.
+
+Đã thêm văn bản kỳ diệu cho tên mạng SIM / nhà cung cấp dịch vụ.
+
+Đã thêm văn bản ma thuật cho loại kết nối ô (ví dụ: 3G / 4G / 5G).
+
+Đã thêm văn bản ma thuật cho MacroDroid là chuyên nghiệp (trả về đúng hoặc sai)
+
+Đã thêm hỗ trợ cho tùy chọn 'Macro này' vào ràng buộc Đã bật / Tắt Macro.
+
+Đã thêm tùy chọn duy trì khoảng trắng để bật lên hành động tin nhắn.
+
+Đã thêm hỗ trợ đổi tên đồng hồ bấm giờ.
+
+Đã thêm tùy chọn để hiển thị thời gian chỉnh sửa cuối cùng trong màn hình danh sách macro (Tất cả các giá trị ban đầu sẽ không xác định cho đến khi được chỉnh sửa bằng phiên bản mới nhất này).
+
+Đặt hành động Biến (sử dụng tùy chọn Biến mới) bây giờ sẽ tạo biến tại thời điểm chạy và hỗ trợ văn bản ma thuật cho tên biến.
+
+Ứng dụng đồng hành Wear OS hiện cho phép cuộn qua danh sách với điều khiển xoay.
+
+Cải tiến và sửa lỗi xung quanh xử lý từ điển / mảng trong Trình kích hoạt và ràng buộc biến.
+
+Đã khắc phục sự cố trong đó đặt hành động biến có thể trong một số trường hợp tạo từ điển thay vì mảng.
+
+Đã khắc phục sự cố trong đó không thể đổi tên biến mảng/từ điển cục bộ.
+
+Khắc phục sự cố trong đó việc xem mẫu có khối hành động có thể thêm các biến toàn cục không mong muốn.
+
+Đã khắc phục sự cố trong đó việc xóa một mục nhập khỏi từ điển/mảng khối hành động sẽ xóa từ điển/mảng.
+
+Phiên bản 5.26 (tháng 2022 năm XNUMX)
+========================
+
+Chạy Macro, Hủy Macro và Tắt các hành động Macro hiện hỗ trợ nhập macro theo tên (hỗ trợ văn bản ma thuật để cho phép tham chiếu tên macro từ một biến).
+
+Các cài đặt bổ sung như vị trí hoàng hôn / mặt trời mọc và vị trí thời tiết hiện được lưu khi xuất và thông qua tự động sao lưu.
+
+MacroDroid Variable constraint hiện hỗ trợ tùy chọn xác định các phím theo cách thủ công cho các biến từ điển / mảng.
+
+Tùy chọn Hộp thoại hiện hỗ trợ định dạng HTML cơ bản trong văn bản tin nhắn chính.
+
+Đã khắc phục sự cố trong đó không thể thêm hoặc xóa các danh mục khỏi màn hình danh sách danh mục.
+
+Đã khắc phục sự cố trong trình kích hoạt SMS / cuộc gọi đến trong đó so sánh số không phải lúc nào cũng hoạt động chính xác khi sử dụng văn bản ma thuật.
+
+Đã khắc phục sự cố trong đó việc khởi chạy phím tắt MacroDroid sẽ giảm thiểu MacroDroid nếu nó ở nền trước.
+
+Đã khắc phục sự cố trong đó khối hành động có thể bị trùng lặp khi nhập macro đã tham chiếu đến cùng một khối hành động.
+
+Đã khắc phục sự cố trong đó các thao tác chặn hành động có thể bị xóa khi thử nghiệm một số hành động nhất định.
+
+Đã khắc phục sự cố trong đó break from loop không phải lúc nào cũng hoạt động chính xác với hành động lặp lại từ điển/mảng.
+
+Đã khắc phục sự cố trong đó tìm kiếm biểu tượng không hoạt động chính xác cho các gói biểu tượng.
+
+Đã khắc phục sự cố trong đó cấu hình Nút nổi sẽ không cho phép lựa chọn trình kích hoạt trong hành động Chờ cho đến khi kích hoạt.
+
+Các bản sửa lỗi nhỏ khác.
+
+Phiên bản 5.25.6 (tháng 2022 năm XNUMX)
+===============================
+
+Bản cập nhật sửa lỗi nhỏ cho bản phát hành v5.25 trước đó. Khắc phục một số sự cố nhỏ được tìm thấy trong bản phát hành trước.
+
+Phiên bản 5.25 (Tháng Sáu 2022)
+========================
+
+Đã thêm Kích hoạt Macro Kích hoạt.
+
+Đã thêm tùy chọn vào Trình kích hoạt nút nổi để tắt kích hoạt (không phải toàn bộ macro) khi bị xóa qua biểu tượng thùng rác.
+
+Đã thêm hành động cấu hình Nút nổi.
+
+Cập nhật văn bản ma thuật để hỗ trợ dấu ngoặc nhọn để giảm nhầm lẫn với cú pháp từ điển / mảng. (Dấu ngoặc vuông vẫn được hỗ trợ, {system_time} và [system_time] cả công việc và mặc định đều có thể được thay đổi trong cài đặt MacroDroid)
+
+Đã thêm hỗ trợ mảng / từ điển tốt hơn cho các hành động như Yêu cầu HTTP và Đọc tệp để cho phép ghi trực tiếp vào các khóa tùy chỉnh.
+
+Đã thêm tùy chọn "Split to array" vào hành động Thao tác văn bản.
+
+Kích hoạt Lịch được tinh chỉnh để hoạt động tốt hơn với các sự kiện cả ngày ở các múi giờ khác nhau.
+
+Khi xem macro mẫu, một mục menu mới có sẵn cho "Thêm đã bị vô hiệu hóa".
+
+Nhập liệu bằng giọng nói hiện hỗ trợ cài đặt trực tiếp vào các khóa từ điển / chỉ mục mảng mới với văn bản kỳ diệu.
+
+Hành động tin nhắn bật lên hiện hỗ trợ html cơ bản như <b>BOLD</b> và <i>ITALIC</i>
+
+Đã thêm Bật / Tắt (bao gồm cả trẻ em) để chỉnh sửa màn hình macro giúp cho phép các điều kiện và vòng lặp lớn dễ dàng hơn.
+
+Đã thêm tùy chọn để bật / tắt vuốt ngang để mở MacroDroid Drawer.
+
+Đã thêm tùy chọn 'Ghi đè' vào hành động Ghi vào Tệp.
+
+Đã thêm tùy chọn vào hành động WhatsApp Send để hỗ trợ cả ứng dụng tiêu chuẩn và ứng dụng kinh doanh.
+
+Đã thêm văn bản kỳ diệu cho kích thước từ điển / mảng.
+
+Đã khắc phục sự cố trong đó việc sử dụng cắt trên khối IF / Loop sẽ không hoạt động chính xác.
+
+Đã khắc phục sự cố trong đó tùy chọn tiếp tục hộp thoại tùy chọn sẽ không hoạt động chính xác.
+
+Đã khắc phục sự cố trong đó hành động micrô ghi lại sẽ không ghi đúng phần mở rộng tệp.
+
+Đã khắc phục sự cố trong đó giá trị của một biến sẽ không làm mới nếu được cập nhật trong khi ngăn kéo MacroDroid đang mở.
+
+Đã khắc phục sự cố trong đó việc chỉnh sửa macro bị vô hiệu hóa có thể bật lại macro đó.
+
+Đã khắc phục sự cố trong đó thông báo hiển thị sẽ không chuyển các biến một cách chính xác trong tùy chọn Chạy khi được nhấn.
+
+Đã thêm tùy chọn trong cài đặt để khôi phục tất cả các thẻ thông tin trợ giúp đã bị xóa trước đó.
+
+Phiên bản 5.24.3 (Tháng Sáu 2022)
+==========================
+
+Bản cập nhật này được yêu cầu bởi Google để thêm dịch vụ nhận dạng khi sử dụng MacroDroid làm trợ lý mặc định.
+
+Phiên bản 5.24 (tháng 2022 năm XNUMX)
+==========================
+
+Đã thêm hành động Đọc nội dung màn hình.
+
+Đã thêm trình kích hoạt Nội dung màn hình.
+
+Đã thêm Đọc từ hành động tệp.
+
+Đã thêm hạn chế Danh mục Đã bật / Bị vô hiệu hóa.
+
+Đã thêm hành động Nhật ký xuất khẩu.
+
+Đã thêm tùy chọn để nhập thủ công id chế độ xem trong các nhấp chuột Tương tác giao diện người dùng.
+
+Đã thêm tùy chọn nền trước vào Đặt hành động Âm lượng cho các thiết bị không cho phép đặt âm lượng bằng MacroDroid trong nền.
+
+Đã thêm tùy chọn vào hành động Tin nhắn bật lên để hủy cửa sổ bật lên trước đó (Ví dụ hữu ích cho lần đếm ngược thứ hai)
+
+Đã thêm tùy chọn vào Hộp thoại Tin nhắn và Tùy chọn Hành động hộp thoại để ngăn hộp thoại đóng nút quay lại.
+
+Đã thêm hỗ trợ trong trình kích hoạt WebHook để thiết lập các mục nhập biến từ điển / mảng.
+
+Báo cáo tính năng lỗi hiện bao gồm khả năng thêm ảnh chụp màn hình.
+
+Đã thêm hỗ trợ để đổi tên Phím tắt trong ngăn kéo MacroDroid.
+
+MacroDroid Drawer hiện hỗ trợ các tùy chọn để mở thông qua vuốt lên và / hoặc cử chỉ vuốt xuống.
+
+Các bản sửa lỗi và chỉnh sửa nhỏ khác.
+
+Phiên bản 5.23 (tháng 2022 năm XNUMX)
+==========================
+
+Đã thêm các loại biến Dictionary và Array (chỉ dành cho người dùng Pro).
+
+Đã thêm hành động Lặp lại Từ điển/Mảng có thể được sử dụng để lặp lại tất cả các phần tử trong từ điển/mảng.
+
+Đã thêm hành động JSON Parse.
+
+Đã thay đổi hành động Đặt Cài đặt Nhanh Trạng thái Ô xếp thành Tác vụ Ô xếp Nhanh để cho phép cài đặt thêm biểu tượng và nhãn.
+
+Đã thêm tùy chọn trình tự cử chỉ vào hành động Tương tác giao diện người dùng để kích hoạt các cử chỉ phức tạp như mẫu khóa vuốt.
+
+Đã thêm tùy chọn vào màn hình cấu hình Tương tác giao diện người dùng để chuyển đổi lớp phủ vị trí cảm ứng.
+
+Đã thêm khả năng bật / tắt các bộ đệm riêng lẻ để kích hoạt Logcat.
+
+Đã thêm ràng buộc Địa chỉ IP.
+
+Đã thêm Văn bản ma thuật cho url cơ sở WebHook.
+
+Đã thêm chức năng tìm kiếm vào màn hình danh sách Thao tác nhanh.
+
+Đã thêm tùy chọn để xuất nhật ký hệ thống trong HTML để nó có thể xuất ra mã màu giống như được hiển thị trong ứng dụng.
+
+Đã thêm tùy chọn cắt vào màn hình Chỉnh sửa Macro và Khối hành động để cho phép cắt, sao chép và dán đầy đủ chức năng.
+
+Action Block "Test Actions" bây giờ sẽ hiển thị tóm tắt các biến đầu ra khi chạy.
+
+Đã khắc phục sự cố trong đó Phương pháp gọi Macro sẽ không hoạt động chính xác trong mọi trường hợp.
+
+Đã khắc phục sự cố với điều kiện "không phải trong sự kiện" không hoạt động chính xác trong ràng buộc Lịch.
+
+Đã khắc phục sự cố trong đó tên tệp trong hành động HTTP Request sẽ không xử lý chính xác các giá trị văn bản kỳ diệu.
+
+Đã khắc phục sự cố trong đó các hành động trong một khối hành động sẽ không bị hủy khi macro mẹ bị hủy.
+
+Đã khắc phục sự cố trong đó hình nền có thể được xoay không chính xác trên một số thiết bị.
+
+Các chỉnh sửa và cố định nhỏ khác.
+
+Phiên bản 5.22.6 (Tháng Hai 2022)
+============================
+
+Đã khắc phục sự cố trong đó video MacroDroid không hoạt động.
+
+Phiên bản 5.22 (Tháng Hai 2022)
+============================
+
+Đã thêm hành động Yêu cầu Http.
+
+Đã thêm ràng buộc Phương pháp gọi để cho phép phát hiện khi macro được gọi từ các trình kích hoạt macro không chuẩn.
+
+Đã thêm chức năng tìm kiếm cơ bản (chỉ bằng tiếng Anh) vào bộ chọn biểu tượng.
+
+Đã thêm hỗ trợ Action Block vào MacroDroid Drawer.
+
+Đã thêm hỗ trợ cho sinh trắc học và trì hoãn lời nhắc mật khẩu trong cài đặt bảo vệ bằng mật khẩu.
+
+Đã thêm văn bản ma thuật cho số phiên bản MacroDroid.
+
+Đã thêm tùy chọn bỏ qua trường hợp vào Trình kích hoạt biến và ràng buộc.
+
+Đã thêm hỗ trợ để chuyển các giá trị biến boolean vào các tham số đầu vào khối hành động.
+
+Đã thêm bỏ qua (Hủy macro) tùy chọn cho hộp thoại tùy chọn để ngăn chạy bất kỳ hành động nào khác nếu được chọn.
+
+Đã thêm khả năng lọc các biến theo loại trên màn hình biến toàn cục.
+
+Đã thêm tùy chọn loại trừ để kích hoạt dựa trên cuộc gọi / sms và thêm tên liên hệ có thể tìm kiếm vào hộp thoại lựa chọn.
+
+Đã khắc phục sự cố trong đó việc lắp ráp các giá trị mảng của trình tác vụ thành một chuỗi đơn lẻ đôi khi sẽ bị sai thứ tự các phần tử.
+
+Đã khắc phục sự cố trong đó tính năng chia sẻ với thiết bị ở gần không phải lúc nào cũng hoạt động trên các thiết bị Android 12.
+
+Đã khắc phục sự cố trong đó việc chọn một biến toàn cục cho hành động Đầu ra giọng nói có thể đặt sai biến.
+
+Đã khắc phục sự cố trong đó kích hoạt đèn hiệu bluetooth có thể kết thúc kích hoạt nhiều lần cho một sự kiện.
+
+Đã khắc phục sự cố trong đó Geofence sẽ không tập trung vào đúng khu vực khi tìm kiếm hoặc phóng to / thu nhỏ.
+
+Đã khắc phục sự cố trong đó danh sách Wifi SSID có thể chứa các mục nhập trùng lặp.
+
+Đã khắc phục sự cố trong đó một chuỗi rất dài trong một biến cục bộ có thể ngăn nút OK có thể truy cập được.
+
+Đã khắc phục sự cố trong đó biểu tượng Set MacroDroid sẽ không cập nhật được biểu tượng trong một số trường hợp.
+
+Đã khắc phục sự cố trong đó các sự kiện cả ngày trong giới hạn lịch sẽ không hoạt động chính xác ở các múi giờ khác nhau.
+
+Nhiều bản sửa lỗi và chỉnh sửa nhỏ khác.
+
+Phiên bản 5.21
+============
+
+Phát hành sửa lỗi nhỏ.
+
+Xử lý tham số đầu vào khối hành động được tinh chỉnh để bạn có thể chuyển giá trị trống và luôn sử dụng giá trị mệnh giá đầu vào mặc định.
+
+Đã thêm tùy chọn "Chia sẻ dưới dạng hình ảnh" vào màn hình chỉnh sửa Thao tác nhanh.
+
+Đã khắc phục một số sự cố nhỏ xung quanh chỉnh sửa khối hành động.
+
+Đã khắc phục sự cố trong đó người dùng miễn phí có thể mất macro nếu họ ở giới hạn macro 5 và họ loại bỏ chỉnh sửa đối với macro hoặc khối hành động.
+
+Khắc phục sự cố với ô xếp "Mở lần cuối" trên màn hình chính không hoạt động trong một số trường hợp.
+
+Khắc phục sự cố với hành động "Nhập liệu bằng giọng nói" không khiến trình kích hoạt biến kích hoạt khi ghi vào một biến.
+
+Đã khắc phục sự cố trong đó việc dán các mục trong một khối hành động không phải lúc nào cũng định cấu hình hành động một cách chính xác.
+
+Phiên bản 5.20
+============
+
+Đã thêm các khối hành động, để cho phép nhóm các hành động thường được sử dụng có thể được gọi từ macro hoặc các khối hành động khác.
+
+Đã thêm hỗ trợ để chia sẻ với các thiết bị lân cận từ chỉnh sửa macro và màn hình chỉnh sửa khối hành động.
+
+Đã thêm hành động "Đặt hình ảnh thanh nút" để cho phép cập nhật các nút bằng thanh nút thông báo MacroDroid.
+
+Đã thêm hành động Nhập liệu bằng giọng nói để nhắc văn bản được đọc và sau đó lưu nó vào một biến chuỗi.
+
+Đã thêm hành động WhatsApp (beta) để chỉ cho phép gửi tin nhắn cơ bản đến các liên hệ riêng lẻ.
+
+Đã thêm khả năng đánh dấu macro là yêu thích và dễ dàng lọc giữa các macro yêu thích / tất cả các macro.
+
+Đã thêm ô xếp màn hình chính để cung cấp liên kết tắt nhanh đến các macro yêu thích.
+
+Đã thêm ô màn hình chính cho MacroDroid Videos có chứa các liên kết đến các video MacroDroid YouTube chính thức mới.
+
+Màn hình Bản dịch hiện cho thấy mức độ hoàn chỉnh của bản dịch cho từng ngôn ngữ.
+
+Nhiều bản sửa lỗi nhỏ và cải tiến nhỏ.
+
+Phiên bản 5.19.11
+===============
+
+Đã khắc phục sự cố trong đó lời nhắc mật khẩu sẽ không xuất hiện trong một số trường hợp khi sử dụng bảo vệ bằng mật khẩu để vào ứng dụng.
+
+Đã khắc phục sự cố trong đó tính năng chia sẻ ảnh cuối cùng sẽ không hoạt động trong mọi trường hợp.
+
+Đã khắc phục sự cố trong đó trình kích hoạt giấc ngủ không kiểm tra các ràng buộc.
+
+Các bản sửa lỗi nhỏ khác.
+
+Phiên bản 5.19.9
+==============
+
+Xin lưu ý rằng bản phát hành này được cập nhật để nhắm mục tiêu SDK Android 11 thực thi các hạn chế chặt chẽ hơn đối với quyền truy cập tệp so với các phiên bản trước. Một số lượng nhỏ macro có thể cần cập nhật để tiếp tục ghi vào tệp.
+
+** Vui lòng báo cáo bất kỳ lỗi hoặc sự cố nào với bản phát hành này qua "Báo cáo lỗi" trong phần khắc phục sự cố **
+
+Đã thêm Trình kích hoạt giấc ngủ (Android 10+).
+
+Đã thêm hành động Clear Variables.
+
+Đã thêm tùy chọn logcat để hỗ trợ Clipboard Trigger cho người dùng Android 10+ (Hack Root / ADB).
+
+Đã thêm hành động Làm mới clipboard để lấy nội dung của bảng tạm vào MacroDroid cho người dùng Android 10+.
+
+Đã thêm hỗ trợ cho tối đa ba nút hành động cho hành động Thông báo hiển thị có thể chạy các macro khác khi được nhấn.
+
+Khắc phục sự cố trong đó ngăn kéo sẽ không hiển thị chính xác trên thiết bị có bố cục từ phải sang trái.
+
+Cải thiện hiệu suất khi nhiều nút nổi được thêm / xóa.
+
+Hành động Gửi UDP hiện hỗ trợ văn bản ma thuật cho các trường đích và cổng.
+
+Đã thêm tùy chọn thoát trên tùy chọn nhấn ngược cho hành động Nếu sau đó xác nhận.
+
+Đã thêm tùy chọn 'Cho phép bất kỳ chứng chỉ nào' vào HTTP Get.
+
+Đã thêm hỗ trợ để gửi email qua SMTP đến hành động Chia sẻ vị trí.
+
+Đã thêm hỗ trợ để chạy các lệnh tập lệnh shell thông qua tệp trợ giúp (Yêu cầu tệp trợ giúp 1.7)
+
+Đã thêm hỗ trợ hạn chế để truy cập các giá trị mảng tasker (Tasker plugin / action) bằng cách lưu tất cả các giá trị vào dấu phẩy hoặc chuỗi phân tách dòng mới.
+
+Một bản sửa lỗi cho bản cập nhật trước: Rất cám ơn lamvankhoat1 vì bản dịch tiếng Việt kỹ lưỡng.
+
+Phiên bản 5.18
+============
+
+Bản phát hành sửa lỗi nhỏ
+
+Đã thêm nút chuyển đổi để bật / tắt chế độ gửi HTML trên Gửi email (qua SMTP).
+
+Đã khắc phục sự cố trong đó không thể chọn biểu tượng trong hành động Thông báo.
+
+Đã khắc phục sự cố trong đó hành động Take ScreenShot sẽ gửi hình ảnh không chính xác trên một số thiết bị.
+
+Khắc phục sự cố trong đó Hành động nếu được xác nhận sẽ không hoạt động chính xác nếu được gọi khi màn hình tắt.
+
+Đã khắc phục sự cố trong đó một số giá trị cử chỉ Tương tác giao diện người dùng sẽ không lặp lại giá trị chính xác.
+
+Khắc phục sự cố trong đó bạn không thể chỉnh sửa dữ liệu trong hành động Gửi SMS sau khi được định cấu hình.
+
+Các bản sửa lỗi nhỏ khác. W
+
+Phiên bản 5.17
+============
+
+Đã thêm trình kích hoạt thay đổi chủ đề tối (Android 10+)
+
+Sửa đổi văn bản mô tả macro trong màn hình chỉnh sửa macro để nó sẽ cuộn với nội dung macro và mở rộng số lượng ký tự được phép.
+
+Đã thêm hỗ trợ cho các biến trong hành động cử chỉ Tương tác giao diện người dùng.
+
+Đã thêm hỗ trợ cho mục nhập mật khẩu trong hành động Đặt biến - lời nhắc của người dùng.
+
+Đã khắc phục sự cố trong đó Tương tác giao diện người dùng xác định trong tùy chọn ứng dụng không hoạt động trên một số thiết bị.
+
+Đã thêm ngôn ngữ tiếng Việt (Rất cám ơn lamvankhoat1 đã hoàn thành việc này)
+
+Đã thêm khả năng thay đổi văn bản của các phím tắt ứng dụng trong MacroDroid Drawer.
+
+Rất nhiều bản sửa lỗi và chỉnh sửa nhỏ khác.
+
+Phiên bản 5.16.2
+==============
+
+Đã khắc phục sự cố trong đó ứng dụng được khởi chạy kích hoạt và phát hiện ứng dụng nền trước sẽ không hoạt động trên một số thiết bị.
+
+Các bản sửa lỗi nhỏ khác.
+
+Phiên bản 5.16
+============
+
+Đã khắc phục sự cố trong đó một số macro có thể bị thiếu trong danh sách mẫu.
+
+Rất nhiều bản sửa lỗi nhỏ.
+
+Phiên bản 5.15
+============
+
+Tùy chọn thứ tự đảo ngược được khôi phục vào nhật ký hệ thống.
+
+Đã thêm tùy chọn để chụp tin nhắn Logcat (và chọn một mục nhập) để kích hoạt Logcat.
+
+Đã thêm liên kết đến wiki trong menu bên (Wiki chỉ có tiếng Anh).
+
+Đã thêm hỗ trợ cho văn bản phụ trong trình kích hoạt thông báo (và văn bản ma thuật được liên kết).
+
+Đã khắc phục sự cố trong đó các nút nổi sẽ không giữ nguyên vị trí trước đó của chúng.
+
+Đã khắc phục sự cố trong đó nhật ký hệ thống mở sẽ không hoạt động chính xác.
+
+Đã khắc phục sự cố trong đó việc đính kèm nhật ký hệ thống để gửi hành động email sẽ không hoạt động chính xác.
+
+Rất nhiều bản sửa lỗi và chỉnh sửa nhỏ khác.
+
+Phiên bản 5.14
+============
+
+Đã thêm hành động Khôi phục thông báo ẩn (Android 11 trở lên), để cho phép các thông báo liên tục đã bị ẩn trước đó với hành động Xóa thông báo được khôi phục.
+
+Đã khắc phục sự cố trong đó nhật ký hệ thống sẽ không hiển thị liên kết đến macro.
+
+Các bản sửa lỗi và cải tiến nhỏ khác.
+
+Phiên bản 5.13
+============
+
+Nhật ký hệ thống mới với các tính năng tìm kiếm và lọc.
+
+Đã thêm hỗ trợ để xem nhật ký cho một macro duy nhất chỉ từ danh sách macro và chỉnh sửa màn hình macro.
+
+Khôi phục trình kích hoạt SMS đã gửi. (MacroDroid hiện được phép sử dụng quyền cần thiết)
+
+Khôi phục tùy chọn 'hộp thư đến giám sát' trên trình kích hoạt SMS Đã nhận. (MacroDroid hiện được phép sử dụng quyền cần thiết)
+
+Hành động Phát âm thanh hiện hỗ trợ cài đặt kênh âm thanh cho một hành động riêng lẻ.
+
+Đã khắc phục sự cố trong đó hành động Chờ cho đến khi kích hoạt có thể gọi không chính xác các khối khác mà hành động đó không nên làm.
+
+Đã thêm hỗ trợ văn bản kỳ diệu vào hành động Cài đặt hệ thống.
+
+Chạy nhanh Dữ liệu Macro hiện được bao gồm khi xuất/nhập macro.
+
+Kích hoạt cuộc gọi nhỡ và kích hoạt cuộc gọi hiện hỗ trợ nhập số trực tiếp và lựa chọn nhóm.
+
+Các thể loại và macro trong danh sách macro hiện hỗ trợ màu tùy chỉnh để cho phép đặt bất kỳ màu nào.
+
+Đã khắc phục sự cố trong đó không thể nhập một số macro trong kho lưu trữ mẫu.
+
+Phiên bản 5.12
+============
+
+Đã thêm ràng buộc Geofence (Vị trí).
+
+Đã thêm trình kích hoạt Trợ lý Google để bạn có thể dễ dàng xác định xem một macro có được gọi bởi trợ lý hay không (chứ không phải một số trình kích hoạt khác).
+
+Các vòng lặp và hành động điều kiện với các hành động con hiện có thể được thu gọn/mở rộng để giúp chỉnh sửa các macro lớn dễ dàng hơn.
+
+Phiên bản 5.11
+============
+
+Bây giờ bao gồm hỗ trợ để chạy Macro thông qua trợ lý Google (hiện chỉ có bằng tiếng Anh). Vui lòng đảm bảo cả ngôn ngữ thiết bị và ngôn ngữ của trợ lý Google đều được định cấu hình thành tiếng Anh để sử dụng tính năng này.
+
+Gọi macro bằng cách nói "Ok Google chạy 'macroname' trong MacroDroid". Hiện tại Google chỉ hỗ trợ chức năng này cho tiếng Anh Mỹ. Tôi sẽ thêm hỗ trợ cho các ngôn ngữ và ngôn ngữ khác khi Google cho phép.
+
+Đã thêm các kênh thông báo tùy chỉnh để sử dụng với hành động thông báo hiển thị.
+
+Đã thêm hành động Break from Loop.
+
+Đã thêm hành động Continue Loop.
+
+Sửa lỗi thêm và cải tiến nhỏ.
+
+Phiên bản 5.10
+============
+
+Bản phát hành sửa lỗi. Khắc phục một số sự cố nhỏ và sự cố hiếm gặp.
+
+Cải thiện xử lý xung quanh một số quyền bị thiếu.
+
+Phiên bản 5.9
+===========
+
+Đã thêm tính năng sao lưu đám mây trong màn hình sao lưu tự động (chỉ dành cho người dùng Pro).
+
+Diễn đàn MacroDroid đã chuyển từ Tapatalk sang một diễn đàn tự lưu trữ sạch hơn.
+
+Một số sửa lỗi nhỏ.
+
+Phiên bản 5.8
+===========
+
+Đặt hành động Wifi bây giờ yêu cầu tệp trợ giúp trên Android 10 trở lên (hạn chế của Google bắt buộc đối với các ứng dụng).
+
+Đã thêm hành động Chờ cho đến khi Kích hoạt để cho phép macro đang chạy tạm dừng cho đến khi một trình kích hoạt cụ thể kích hoạt.
+
+Đã thêm tùy chọn để khóa danh mục bằng mật khẩu / mã pin.
+
+Đã thêm khả năng thêm macro MacroDroid trên menu nút nguồn (chỉ dành cho Android 11)
+
+Đã thêm tùy chọn màu văn bản vào hành động tin nhắn bật lên.
+
+Đã thêm tùy chọn đợi cho đến khi hoàn tất tùy chọn cho hành động 'Macro Run'.
+
+Đã thêm tùy chọn màu văn bản và tông màu biểu tượng vào hành động Tin nhắn bật lên.
+
+Hành động Nói văn bản hiện cho phép đặt ngôn ngữ trên từng phiên bản hành động riêng lẻ.
+
+Thêm hành động Nhập lịch hiện hỗ trợ đặt thời gian của mục nhập so với giá trị của biến.
+
+Đã khắc phục sự cố với logcat_line văn bản kỳ diệu không hoạt động.
+
+Đã khắc phục sự cố trong đó hủy hành động macro sẽ không hủy hành động Chờ cho đến khi kích hoạt.
+
+Đã khắc phục một số sự cố logic trong đó các lệnh IF/ELSE lồng nhau sẽ không hoạt động như mong đợi trong một số trường hợp cạnh.
+
+Phiên bản 5.7
+===========
+
+Đã thêm danh sách Plugin để khám phá / chia sẻ các ứng dụng của bên thứ ba tương thích với MacroDroid (ô màn hình chính).
+
+Đã thêm lát màn hình chính để truy cập nhanh vào macro đã chỉnh sửa gần đây nhất.
+
+Đã thêm ô xếp màn hình chính cho các macro chạy nhanh.
+
+Đã thêm hành động Bật / Tắt Máy ảnh để cho phép máy ảnh bị vô hiệu hóa cho tất cả các ứng dụng trên thiết bị.
+
+Hành động phương tiện điều khiển được tinh chỉnh để tùy chọn Nút mô phỏng âm thanh hoạt động tốt hơn để kiểm soát ứng dụng phương tiện được sử dụng cuối cùng.
+
+Kích hoạt Ngày / Giờ hiện cho phép đặt giá trị giây cụ thể.
+
+Thêm tính năng Tìm kiếm vào màn hình danh sách biến.
+
+Phiên bản 5.6
+===========
+
+Hành động chế độ trên máy bay hiện có thể được thực hiện trên thiết bị chưa root trên Android 7+ (bằng cách đặt MacroDroid làm ứng dụng trợ lý mặc định).
+
+Khởi chạy Hành động ứng dụng hiện hỗ trợ tùy chọn tên gói (bao gồm văn bản ma thuật để hỗ trợ các biến, v.v.).
+
+Các giá trị biến MacroDroid hiện có thể được chuyển đến các plugin Tasker bằng cách sử dụng kiểu định dạng Tasker (% varname).
+
+Thanh thông báo thanh nền / tint và cài đặt SMTP hiện được lưu khi xuất macro.
+
+Đã thêm giá trị hướng gió vào kích hoạt thời tiết (và văn bản ma thuật thời tiết cụ thể).
+
+Các biến số nguyên được cập nhật để chúng hiện được hỗ trợ bởi một kiểu dài để chúng có thể giữ các giá trị > 2,147,483,647.
+
+Các bản sửa lỗi và cải tiến nhỏ khác.
+
+Phiên bản 5.5
+===========
+
+Đã thêm nút chuyển đổi gạch nhanh để bật / tắt MacroDroid (Android 7+).
+
+Đã thêm tùy chọn để ẩn chi tiết macro trong dạng xem danh sách macro.
+
+Đã khắc phục sự cố trong đó VPN Trigger sẽ không kích hoạt.
+
+Đã khắc phục sự cố trong đó kích hoạt nút thanh thông báo định cấu hình sẽ không hiển thị biểu tượng.
+
+Cập nhật đáng kể cho một số bản dịch.
+
+Các bản sửa lỗi nhỏ khác và chỉnh sửa giao diện người dùng.

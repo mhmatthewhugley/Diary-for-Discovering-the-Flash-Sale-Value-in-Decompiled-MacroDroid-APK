@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:id="@+id/scroll_view" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:orientation="vertical" android:padding="@dimen/margin_tiny" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:layout_marginEnd="12dp">
+                <com.google.android.material.textfield.TextInputLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                    <androidx.appcompat.widget.AppCompatEditText android:id="@+id/configure_option_dialog_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:layout_marginBottom="6dp" android:hint="@string/action_confirm_title_label" android:maxLines="1" android:inputType="textNoSuggestions" android:layout_marginStart="10dp" android:layout_marginEnd="10dp"/>
+                </com.google.android.material.textfield.TextInputLayout>
+                <Button android:id="@+id/option_dialog_title_magic_text_button" style="@style/MagicTextButton"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginEnd="12dp">
+                <com.google.android.material.textfield.TextInputLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                    <androidx.appcompat.widget.AppCompatEditText android:id="@+id/configure_option_dialog_message" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:layout_marginBottom="6dp" android:minWidth="300dp" android:hint="@string/action_confirm_message_label" android:maxLines="1" android:inputType="textNoSuggestions" android:layout_marginStart="10dp" android:layout_marginEnd="10dp"/>
+                </com.google.android.material.textfield.TextInputLayout>
+                <Button android:id="@+id/option_dialog_message_magic_text_button" style="@style/MagicTextButton"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/margin_small" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/margin_tiny" android:paddingEnd="@dimen/margin_tiny" android:layout_marginStart="@dimen/margin_small" android:layout_marginEnd="@dimen/margin_small">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <com.google.android.material.textfield.TextInputLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                        <androidx.appcompat.widget.AppCompatEditText android:textSize="14sp" android:layout_gravity="center_vertical" android:id="@+id/configure_option_dialog_1" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/left_button" android:maxLines="1" android:inputType="textNoSuggestions" android:imeOptions="actionDone"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <Button android:id="@+id/option_dialog_button1_magic_text_button" style="@style/MagicTextButton"/>
+                </LinearLayout>
+                <Spinner android:layout_gravity="center_vertical" android:id="@+id/configure_option_dialog_spinner_1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_tiny" android:layout_marginBottom="@dimen/margin_tiny"/>
+                <Button android:id="@+id/configInputOutputParams1" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:text="@string/action_block_configure_input_output_params" android:textAllCaps="false" style="@style/ColoredButton"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/margin_tiny" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:paddingStart="@dimen/margin_tiny" android:paddingEnd="@dimen/margin_tiny" android:layout_marginStart="@dimen/margin_small" android:layout_marginEnd="@dimen/margin_small">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <com.google.android.material.textfield.TextInputLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                        <androidx.appcompat.widget.AppCompatEditText android:textSize="14sp" android:layout_gravity="center_vertical" android:id="@+id/configure_option_dialog_2" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/center_button" android:maxLines="1" android:inputType="textNoSuggestions" android:imeOptions="actionDone"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <Button android:id="@+id/option_dialog_button2_magic_text_button" style="@style/MagicTextButton"/>
+                </LinearLayout>
+                <Spinner android:layout_gravity="center_vertical" android:id="@+id/configure_option_dialog_spinner_2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_tiny" android:layout_marginBottom="@dimen/margin_tiny"/>
+                <Button android:id="@+id/configInputOutputParams2" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:text="@string/action_block_configure_input_output_params" android:textAllCaps="false" style="@style/ColoredButton"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/margin_tiny" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:paddingStart="@dimen/margin_tiny" android:paddingEnd="@dimen/margin_tiny" android:layout_marginStart="@dimen/margin_small" android:layout_marginEnd="@dimen/margin_small">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <com.google.android.material.textfield.TextInputLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                        <androidx.appcompat.widget.AppCompatEditText android:textSize="14sp" android:layout_gravity="center_vertical" android:id="@+id/configure_option_dialog_3" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/right_button" android:maxLines="1" android:inputType="textNoSuggestions" android:imeOptions="actionDone" android:paddingEnd="8dp"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <Button android:id="@+id/option_dialog_button3_magic_text_button" style="@style/MagicTextButton"/>
+                </LinearLayout>
+                <Spinner android:layout_gravity="center_vertical" android:id="@+id/configure_option_dialog_spinner_3" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_tiny" android:layout_marginBottom="@dimen/margin_tiny"/>
+                <Button android:id="@+id/configInputOutputParams3" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:text="@string/action_block_configure_input_output_params" android:textAllCaps="false" style="@style/ColoredButton"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_medium">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/default_option"/>
+                <Spinner android:id="@+id/default_option_spinner" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/margin_small"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/timeout_options" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_small">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/timeout" android:layout_marginStart="@dimen/margin_small"/>
+                    <TextView android:id="@+id/seconds_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/margin_small"/>
+                </LinearLayout>
+                <SeekBar android:id="@+id/default_timeout_seekbar" android:padding="@dimen/margin_small" android:layout_width="match_parent" android:layout_height="wrap_content" android:max="23" android:layout_marginStart="@dimen/margin_small" android:layout_marginEnd="@dimen/margin_small"/>
+            </LinearLayout>
+            <CheckBox android:id="@+id/prevent_back_button_checkbox" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="11dp" android:text="@string/prevent_back_button_closing_dialog_option" android:layout_marginStart="@dimen/margin_small" android:layout_marginEnd="@dimen/margin_small"/>
+            <CheckBox android:id="@+id/block_next_actions" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="11dp" android:layout_marginBottom="4dp" android:text="@string/block_actions_until_complete" android:layout_marginStart="@dimen/margin_small" android:layout_marginEnd="@dimen/margin_small"/>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:gravity="end" android:id="@+id/button_bar" android:paddingTop="0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:id="@+id/cancelButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/button_bar_button_min_width" android:text="@android:string/cancel" style="?android:attr/buttonBarButtonStyle"/>
+        <View android:background="@color/ok_cancel_button_border" android:layout_width="1dp" android:layout_height="match_parent"/>
+        <Button android:id="@+id/okButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/button_bar_button_min_width" android:text="@android:string/ok" style="?android:attr/buttonBarButtonStyle"/>
+    </LinearLayout>
+</LinearLayout>

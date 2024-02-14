@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:animateLayoutChanges="true">
+        <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_small" android:layout_marginTop="@dimen/margin_small" android:layout_marginRight="@dimen/margin_small" android:layout_marginBottom="@dimen/margin_small" android:layout_marginHorizontal="@dimen/margin_small" layout="@layout/info_card"/>
+        <ListView android:id="@+id/edit_modes_list" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+        <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:gravity="center" android:id="@+id/edit_modes_no_entries" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/no_user_defined_modes"/>
+    </LinearLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton android:layout_gravity="bottom|right|center_vertical|center_horizontal|center|end" android:id="@+id/fab" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_medium" android:src="@drawable/ic_plus_white_24dp" android:contentDescription="@string/add_category" android:layout_marginEnd="@dimen/margin_medium" app:backgroundTint="@color/modes_config_primary"/>
+</FrameLayout>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <Preference android:title="@string/ignore_battery_optimisations" android:key="preferences:ignore_battery_optimisations" android:summary="@string/ignore_battery_optimisations_summary" app:iconSpaceReserved="false"/>
+    <Preference android:title="@string/macrodroid_helper_file" android:key="preferences:helper_file" android:summary="@string/macrodroid_helper_file_summary" app:iconSpaceReserved="false"/>
+    <Preference android:title="@string/keep_accessibility_services_running" android:key="preferences:keep_accessibility_running" android:summary="@string/keep_accessibility_services_running_summary" app:iconSpaceReserved="false"/>
+    <ListPreference android:entries="@array/dark_mode_options" android:title="@string/dark_mode" android:key="preferences:dark_mode" android:summary="@string/dark_mode_description" android:defaultValue="-1" android:entryValues="@array/dark_mode_option_values" app:iconSpaceReserved="false"/>
+    <ListPreference android:entries="@array/magic_text_bracket_options" android:title="@string/magic_text_default_bracket_style" android:key="preferences:magic_text_default_brackets" android:defaultValue="0" android:entryValues="@array/magic_text_bracket_option_values" app:iconSpaceReserved="false"/>
+    <CheckBoxPreference android:title="@string/enable_root_features" android:key="preferences:show_root" android:summary="@string/show_features_that_only_work_root" android:defaultValue="@bool/root_enabled" app:iconSpaceReserved="false"/>
+    <CheckBoxPreference android:title="@string/experimental_features" android:key="preferences:enable_experimental_features" android:summary="@string/experimental_features_summary" android:defaultValue="false" app:iconSpaceReserved="false"/>
+    <CheckBoxPreference android:title="@string/add_macro_wizard_mode" android:key="preferences:add_macro_wizard_mode" android:summary="@string/add_macro_wizard_mode_summary" android:defaultValue="false" app:iconSpaceReserved="false"/>
+    <CheckBoxPreference android:title="@string/show_whats_new" android:key="preferences:show_what_new_popup" android:summary="@string/show_whats_new_info" android:defaultValue="true" app:iconSpaceReserved="false"/>
+    <Preference android:title="@string/restore_all_help_cards" android:key="preferences:restore_all_help_info_cards" android:summary="@string/restore_all_help_cards_info" app:iconSpaceReserved="false"/>
+    <Preference android:title="@string/edit_categories" android:key="preferences:edit_categories" android:summary="@string/edit_list_of_categories" app:iconSpaceReserved="false"/>
+    <Preference android:title="@string/edit_macrodroid_modes" android:key="preferences:edit_custom_modes" android:summary="@string/edit_list_of_modes" app:iconSpaceReserved="false"/>
+    <ListPreference android:title="@string/language_to_speak" android:key="preferences:spoken_langugage" android:summary="@string/set_language_summary" app:iconSpaceReserved="false"/>
+    <ListPreference android:entries="@array/audio_streams" android:title="@string/spoken_text_audio_stream" android:key="preferences:spoke_language_output_channel" android:summary="@string/set_audio_stream_spoken_text_summary" android:defaultValue="5" android:dialogTitle="@string/select_audio_stream" android:entryValues="@array/audio_streams_values" app:iconSpaceReserved="false"/>
+    <ListPreference android:entries="@array/audio_streams" android:title="@string/play_sound_audio_stream" android:key="preferences:play_sound_output_channel" android:summary="@string/set_audio_stream_play_sound_summary" android:defaultValue="5" android:dialogTitle="@string/select_audio_stream" android:entryValues="@array/audio_streams_values" app:iconSpaceReserved="false"/>
+    <Preference android:title="@string/twitter_account" android:key="preferences:twitter" android:summary="@string/configure_twitter_account" app:iconSpaceReserved="false"/>
+    <Preference android:title="@string/facebook_account" android:key="preferences:facebook" android:summary="@string/configure_facebook_account" app:iconSpaceReserved="false"/>
+    <PreferenceScreen android:title="@string/notification_options" android:key="preference:notification_options_screen" android:summary="@string/notification_options_summary" app:iconSpaceReserved="false">
+        <CheckBoxPreference android:title="@string/show_location_services_warning" android:key="preferences:show_location_services_warning" android:summary="@string/show_location_services_warning_summary" android:defaultValue="true" app:iconSpaceReserved="false"/>
+        <Preference android:title="@string/notification_channels" android:key="preferences:notification_channels" android:summary="@string/notification_channels_description" app:iconSpaceReserved="false"/>
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/trigger_options" android:key="preference:trigger_options_screen" android:summary="@string/trigger_options_summary" app:iconSpaceReserved="false">
+        <PreferenceScreen android:title="@string/activity_recognition_trigger" android:key="preferences:screen_activity_recognition_trigger" app:iconSpaceReserved="false">
+            <ListPreference android:entries="@array/activity_recognition_trigger_update_rate_names" android:title="@string/activity_recognition_update_rate" android:key="preferences:activity_recognition_update_rate" android:summary="@string/activity_recognition_update_rate_summary" android:defaultValue="120" android:dialogTitle="@string/activity_recognition_update_rate" android:entryValues="@array/activity_recognition_trigger_update_rates" app:iconSpaceReserved="false"/>
+        </PreferenceScreen>
+        <PreferenceScreen android:title="@string/read_screen_contents" android:key="preferences:read_screen_contents_trigger" app:iconSpaceReserved="false">
+            <ListPreference android:entries="@array/read_screen_content_update_rate_seconds" android:title="@string/read_screen_update_rate" android:key="preferences:read_screen_contents_update_rate" android:summary="@string/read_screen_update_rate_help" android:defaultValue="2" android:dialogTitle="@string/read_screen_update_rate_seconds" android:entryValues="@array/read_screen_content_update_rate_seconds" app:iconSpaceReserved="false"/>
+        </PreferenceScreen>
+        <PreferenceScreen android:title="@string/trigger_incoming_sms" android:key="preferences:sms_received_trigger" app:iconSpaceReserved="false">
+            <CheckBoxPreference android:title="@string/monitor_inbox" android:key="preferences:use_inbox_incoming_sms" android:summary="@string/monitor_inbox_summary" android:defaultValue="false" app:iconSpaceReserved="false"/>
+        </PreferenceScreen>
+        <PreferenceScreen android:title="@string/widget_button_trigger" android:key="preferences:screen_widget_button" app:iconSpaceReserved="false">
+            <CheckBoxPreference android:title="@string/vibrate_on_press" android:key="preferences:widget_button_vibrate_on_press" android:summary="@string/vibrate_on_press_summary" android:defaultValue="false" app:iconSpaceReserved="false"/>
+        </PreferenceScreen>
+        <PreferenceScreen android:title="@string/wifi_trigger" android:key="preferences:screen_wifi_ssid_trigger" app:iconSpaceReserved="false">
+            <ListPreference android:entries="@array/wifi_background_scan_rate_names" android:title="@string/wifi_background_scan_rate" android:key="preferences:wifi_background_scan_rate" android:summary="@string/wifi_background_scan_rate_summary" android:defaultValue="2" android:dialogTitle="@string/action_macrodroid_settings_wifi_background_scan" android:entryValues="@array/wifi_background_scan_rates" app:iconSpaceReserved="false"/>
+        </PreferenceScreen>
+        <PreferenceScreen android:title="@string/cell_tower_trigger" android:key="preferences:screen_cell_tower_trigger" app:iconSpaceReserved="false">
+            <ListPreference android:entries="@array/cell_tower_trigger_update_rate_names" android:title="@string/cell_tower_update_rate" android:key="preferences:cell_tower_update_rate" android:summary="@string/cell_tower_update_rate_summary" android:defaultValue="5" android:dialogTitle="@string/cell_tower_update_rate" android:entryValues="@array/cell_tower_trigger_update_rates" app:iconSpaceReserved="false"/>
+            <CheckBoxPreference android:title="@string/use_alarm" android:key="preferences:cell_tower_use_alarm" android:summary="@string/use_alarm_description" android:defaultValue="false" app:iconSpaceReserved="false"/>
+        </PreferenceScreen>
+        <PreferenceScreen android:title="@string/location_trigger" android:key="preferences:screen_location_trigger" app:iconSpaceReserved="false">
+            <ListPreference android:entries="@array/location_trigger_update_rate_names" android:title="@string/location_update_rate" android:key="preferences:location_update_rate_seconds" android:summary="@string/location_update_rate_summary" android:defaultValue="600" android:dialogTitle="@string/location_update_rate" android:entryValues="@array/location_trigger_update_rates" app:iconSpaceReserved="false"/>
+        </PreferenceScreen>
+        <PreferenceScreen android:title="@string/trigger_power_button_toggle" android:key="preferences:screen_power_button_trigger" app:iconSpaceReserved="false">
+            <androidx.preference.EditTextPreference android:title="@string/power_button_toggle_max_time_period" android:key="preferences:power_button_toggle_timeout" android:summary="@string/power_button_toggle_max_time_period_detail" android:defaultValue="3500" android:inputType="number" app:iconSpaceReserved="false"/>
+        </PreferenceScreen>
+        <PreferenceScreen android:title="@string/volume_button_trigger" android:key="preferences:screen_volume_button_trigger" app:iconSpaceReserved="false">
+            <CheckBoxPreference android:title="@string/use_alternative_config" android:key="preferences:alternative_configuration" android:summary="@string/use_alternative_config_summary" android:defaultValue="false" app:iconSpaceReserved="false"/>
+        </PreferenceScreen>
+        <PreferenceScreen android:title="@string/shake_trigger" android:key="preferences:screen_shake_trigger" app:iconSpaceReserved="false">
+            <CheckBoxPreference android:title="@string/work_with_screen_off" android:key="preferences:shake_screen_off" android:summary="@string/work_with_screen_off_summary" android:defaultValue="false" app:iconSpaceReserved="false"/>
+            <CheckBoxPreference android:title="@string/vibrate_on_shake" android:key="preferences:shake_vibrate" android:summary="@string/vibrate_on_shake_summary" android:defaultValue="true" app:iconSpaceReserved="false"/>
+            <ListPreference android:entries="@array/shake_sensitivity_values" android:title="@string/shake_sensitivity" android:key="preferences:shake_sensitivity" android:summary="@string/shake_sensitivity_summary" android:defaultValue="3" android:dialogTitle="@string/shake_sensitivity" android:entryValues="@array/shake_sensitivity_values" app:iconSpaceReserved="false"/>
+            <ListPreference android:entries="@array/shake_sampling_frequency" android:title="@string/shake_detection_rate" android:key="preferences:shake_detect_frequency" android:summary="@string/shake_detection_rate_summary" android:defaultValue="Normal" android:dialogTitle="@string/shake_detection_rate" android:entryValues="@array/shake_sampling_frequency" app:iconSpaceReserved="false"/>
+        </PreferenceScreen>
+        <PreferenceScreen android:title="@string/flip_device_trigger" android:key="preferences:screen_flip_device_trigger" app:iconSpaceReserved="false">
+            <CheckBoxPreference android:title="@string/work_with_screen_off" android:key="preferences:flip_device_screen_off" android:summary="@string/work_with_screen_off_summary" android:defaultValue="false" app:iconSpaceReserved="false"/>
+            <CheckBoxPreference android:title="@string/vibrate_on_activation" android:key="preferences:flip_device_screen_vibrate" android:summary="@string/vibrate_on_activation_summary" android:defaultValue="true" app:iconSpaceReserved="false"/>
+        </PreferenceScreen>
+        <PreferenceScreen android:title="@string/proximity_sensor_trigger" android:key="preferences:screen_proximity_sensor_trigger" app:iconSpaceReserved="false">
+            <CheckBoxPreference android:title="@string/work_with_screen_off" android:key="preferences:proximity_sensor_screen_off" android:summary="@string/work_with_screen_off_summary" android:defaultValue="false" app:iconSpaceReserved="false"/>
+        </PreferenceScreen>
+        <PreferenceScreen android:title="@string/weather_trigger" android:key="preferences:screen_weather_trigger" app:iconSpaceReserved="false">
+            <Preference android:title="@string/weather_location" android:key="preferences:weather_location" android:summary="@string/weather_location_summary" android:defaultValue="false" app:iconSpaceReserved="false"/>
+            <ListPreference android:entries="@array/weather_update_rate_names" android:title="@string/weather_update_rate" android:key="preferences:weather_update_rate" android:summary="@string/weather_update_rate_summary" android:defaultValue="30" android:dialogTitle="@string/weather_update_rate" android:entryValues="@array/weather_update_rates" app:iconSpaceReserved="false"/>
+        </PreferenceScreen>
+        <PreferenceScreen android:title="@string/trigger_sunrise_sunset" android:key="preferences:screen_sunset_sunrise_trigger" app:iconSpaceReserved="false">
+            <Preference android:title="@string/sunrise_sunset_location" android:key="preferences:sunrise_sunset_location" android:summary="@string/sunrise_sunset_location_summary" android:defaultValue="false" app:iconSpaceReserved="false"/>
+        </PreferenceScreen>
+        <PreferenceScreen android:title="@string/app_launched_trigger" android:key="preferences:app_launched_screen" app:iconSpaceReserved="false">
+            <CheckBoxPreference android:title="@string/app_launched_alternative_mechanism" android:key="preferences:api_22_app_launched_trigger" android:summary="@string/app_launched_alternative_mechanism_summary" android:defaultValue="false" app:iconSpaceReserved="false"/>
+        </PreferenceScreen>
+        <PreferenceScreen android:title="@string/light_sensor_trigger" android:key="preferences:light_sensor_trigger" app:iconSpaceReserved="false">
+            <ListPreference android:entries="@array/wifi_background_scan_rate_names" android:title="@string/light_sensor_bg_update_rate" android:key="preferences:light_sensor_bg_update_rate" android:summary="@string/light_sensor_bg_update_rate_summary" android:defaultValue="0" android:dialogTitle="@string/light_sensor_bg_update_rate" android:entryValues="@array/wifi_background_scan_rates" app:iconSpaceReserved="false"/>
+        </PreferenceScreen>
+        <PreferenceScreen android:title="@string/trigger_media_button_v2" android:key="preferences:media_button_v2_trigger" app:iconSpaceReserved="false">
+            <CheckBoxPreference android:title="@string/media_button_passthrough_title" android:key="preferences:media_button_pass_through_unhandled" android:summary="@string/media_button_passthrough_summary" android:defaultValue="true" app:iconSpaceReserved="false"/>
+        </PreferenceScreen>
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/action_options" android:key="preferences:screen_action_options" android:summary="@string/action_options_summary" app:iconSpaceReserved="false">
+        <PreferenceScreen android:title="@string/take_picture_action" android:key="preferences:picture_quality_screen" app:iconSpaceReserved="false">
+            <ListPreference android:title="@string/rear_camera" android:key="preferences:rear_camera_resolution" android:summary="@string/rear_camera_summary" app:iconSpaceReserved="false"/>
+            <ListPreference android:title="@string/front_camera" android:key="preferences:front_camera_resolution" android:summary="@string/front_camera_summary" app:iconSpaceReserved="false"/>
+        </PreferenceScreen>
+        <PreferenceScreen android:title="@string/share_last_photo_action" android:key="preferences:screen_share_last_photo_action" app:iconSpaceReserved="false">
+            <ListPreference android:entries="@array/upload_retry_rate_names" android:title="@string/upload_retry_period" android:key="preferences:upload_photo_retry_period" android:summary="@string/upload_retry_period_summary" android:defaultValue="5" android:dialogTitle="@string/upload_retry_period" android:entryValues="@array/upload_retry_rates" app:iconSpaceReserved="false"/>
+            <CheckBoxPreference android:title="@string/notify_when_done" android:key="preferences:upload_photo_notify_success" android:summary="@string/notify_when_done_summary" android:defaultValue="true" app:iconSpaceReserved="false"/>
+            <CheckBoxPreference android:title="@string/notify_failure" android:key="preferences:upload_photo_notify_failure" android:summary="@string/notify_failure_summary" android:defaultValue="true" app:iconSpaceReserved="false"/>
+        </PreferenceScreen>
+        <PreferenceScreen android:title="@string/share_location_action" android:key="preferences:screen_share_location_action" app:iconSpaceReserved="false">
+            <ListPreference android:entries="@array/upload_retry_rate_names" android:title="@string/upload_retry_period" android:key="preferences:share_location_retry_period" android:summary="@string/upload_retry_period_location_summary" android:defaultValue="5" android:dialogTitle="@string/upload_retry_period" android:entryValues="@array/upload_retry_rates" app:iconSpaceReserved="false"/>
+            <CheckBoxPreference android:title="@string/notify_when_done" android:key="preferences:share_location_notify_success" android:summary="@string/notify_when_done_location_summary" android:defaultValue="true" app:iconSpaceReserved="false"/>
+            <CheckBoxPreference android:title="@string/notify_failure" android:key="preferences:share_location_notify_failure" android:summary="@string/notify_when_failure_location_summary" android:defaultValue="true" app:iconSpaceReserved="false"/>
+        </PreferenceScreen>
+        <PreferenceScreen android:title="@string/tweet_action" android:key="preferences:screen_tweet_action" app:iconSpaceReserved="false">
+            <ListPreference android:entries="@array/upload_retry_rate_names" android:title="@string/upload_retry_period" android:key="preferences:tweet_retry_period" android:summary="@string/upload_rettry_period_summary_tweet" android:defaultValue="5" android:dialogTitle="@string/upload_retry_period" android:entryValues="@array/upload_retry_rates" app:iconSpaceReserved="false"/>
+            <CheckBoxPreference android:title="@string/notify_when_done" android:key="preferences:tweet_notify_success" android:summary="@string/notify_when_done_tweet_summary" android:defaultValue="true" app:iconSpaceReserved="false"/>
+            <CheckBoxPreference android:title="@string/notify_failure" android:key="preferences:tweet_notify_failure" android:summary="@string/notify_when_failure_tweet_summary" android:defaultValue="true" app:iconSpaceReserved="false"/>
+        </PreferenceScreen>
+        <PreferenceScreen android:title="@string/record_microphone_action" android:key="preferences:screen_record_microphone_action" app:iconSpaceReserved="false">
+            <CheckBoxPreference android:title="@string/hide_from_media_library" android:key="preferences:hidden_microphone_recording" android:summary="@string/hide_from_media_library_summary" android:defaultValue="false" app:iconSpaceReserved="false"/>
+        </PreferenceScreen>
+        <PreferenceScreen android:title="@string/udp_command_action" android:key="preferences:screen_udp_command_action" app:iconSpaceReserved="false">
+            <CheckBoxPreference android:title="@string/notify_failure" android:key="preferences:notify_when_failure_udp" android:summary="@string/notify_when_failure_udp_summary" android:defaultValue="true" app:iconSpaceReserved="false"/>
+        </PreferenceScreen>
+        <PreferenceScreen android:title="@string/action_speak_text" android:key="preferences:screen_speak_text_action" app:iconSpaceReserved="false">
+            <ListPreference android:title="@string/preference_text_to_speech_engine_to_use" android:key="preferences:texttospeech_engine" app:iconSpaceReserved="false"/>
+        </PreferenceScreen>
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/constraint_options" android:key="preferences:screen_constraint_options" android:summary="@string/constraint_options_summary" app:iconSpaceReserved="false">
+        <PreferenceScreen android:title="@string/constraint_face_up_down" android:key="preferences:screen_constraint_facing" app:iconSpaceReserved="false">
+            <CheckBoxPreference android:title="@string/work_with_screen_off" android:key="device_facing_constraint_screen_off" android:summary="@string/work_with_screen_off_summary" android:defaultValue="false" app:iconSpaceReserved="false"/>
+        </PreferenceScreen>
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/email_settings" android:key="preferences:screen_email_settings" android:summary="@string/email_settings_summary" app:iconSpaceReserved="false">
+        <PreferenceScreen android:title="@string/gmail_account" android:key="preferences:screen_gmail_settings" app:iconSpaceReserved="false">
+            <Preference android:title="@string/gmail_account" android:key="preferences:gmail_account" app:iconSpaceReserved="false"/>
+        </PreferenceScreen>
+        <PreferenceScreen android:title="@string/smtp_server" android:key="preferences:screen_smtp_settings" app:iconSpaceReserved="false">
+            <com.arlosoft.macrodroid.utils.preference.EditTextSummaryPreference android:hint="@string/smtp_server_address" android:title="@string/smtp_server_address" android:key="preferences:smtp_server_address" android:inputType="textNoSuggestions" app:iconSpaceReserved="false"/>
+            <com.arlosoft.macrodroid.utils.preference.EditTextSummaryPreference android:hint="@string/smtp_server_port" android:title="@string/smtp_server_port" android:key="preferences:smtp_server_port" android:inputType="number" app:iconSpaceReserved="false"/>
+            <CheckBoxPreference android:title="@string/smtp_use_authentication" android:key="preferences:smtp_use_authentication" android:defaultValue="true" app:iconSpaceReserved="false"/>
+            <com.arlosoft.macrodroid.utils.preference.EditTextSummaryPreference android:hint="@string/smtp_username" android:title="@string/smtp_username" android:key="preferences:smtp_username" android:inputType="textNoSuggestions" app:iconSpaceReserved="false"/>
+            <androidx.preference.EditTextPreference android:hint="@string/password" android:password="true" android:title="@string/password" android:key="preferences:smtp_password" android:inputType="textPassword" app:iconSpaceReserved="false"/>
+            <CheckBoxPreference android:title="@string/smtp_server_support_start_tls" android:key="preferences:start_tls_enabled" android:defaultValue="false" app:iconSpaceReserved="false"/>
+            <CheckBoxPreference android:title="@string/notify_when_done" android:key="preferences:send_email_notify_success" android:summary="@string/notify_when_done_email_summary" android:defaultValue="true" app:iconSpaceReserved="false"/>
+            <CheckBoxPreference android:title="@string/notify_failure" android:key="preferences:send_email_notify_failure" android:summary="@string/notify_failure_email_summary" android:defaultValue="true" app:iconSpaceReserved="false"/>
+        </PreferenceScreen>
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/template_macros" android:key="preferences:screen_template_store" android:summary="@string/template_settings_summary" app:iconSpaceReserved="false">
+        <CheckBoxPreference android:title="@string/auto_translate_templates_header" android:key="auto_translate_templates" android:summary="@string/auto_translate_foreign_templates" android:defaultValue="true" app:iconSpaceReserved="false"/>
+    </PreferenceScreen>
+    <Preference android:title="@string/password_protection" android:key="preferences:password_protect" android:summary="@string/password_protection_summary" app:iconSpaceReserved="false"/>
+    <Preference android:title="@string/remove_helper_file" android:key="preferences:remove_helper_file" android:summary="@string/remove_helper_file_summary" app:iconSpaceReserved="false"/>
+    <ListPreference android:entries="@array/languages" android:title="@string/force_language" android:key="preferences:force_language" android:summary="@string/force_language_summary" android:entryValues="@array/languages" app:iconSpaceReserved="false"/>
+    <Preference android:title="@string/pebble_watch_app" android:key="preferences:pebble_install_watchapp" android:summary="@string/pebble_watch_app_summary" app:iconSpaceReserved="false"/>
+    <Preference android:title="@string/export_preferences_title" android:key="preferences:export_preferences" android:summary="@string/export_preferences" app:iconSpaceReserved="false"/>
+</PreferenceScreen>
