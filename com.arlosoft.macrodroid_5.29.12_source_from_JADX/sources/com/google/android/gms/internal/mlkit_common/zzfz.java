@@ -1,0 +1,40 @@
+package com.google.android.gms.internal.mlkit_common;
+
+import com.google.firebase.encoders.FieldDescriptor;
+import com.google.firebase.encoders.ObjectEncoder;
+import com.google.firebase.encoders.ObjectEncoderContext;
+import java.io.IOException;
+
+/* compiled from: com.google.mlkit:common@@18.5.0 */
+final class zzfz implements ObjectEncoder {
+
+    /* renamed from: a */
+    static final zzfz f42485a = new zzfz();
+
+    /* renamed from: b */
+    private static final FieldDescriptor f42486b;
+
+    /* renamed from: c */
+    private static final FieldDescriptor f42487c;
+
+    static {
+        FieldDescriptor.Builder a = FieldDescriptor.m7731a("confidence");
+        zzbh zzbh = new zzbh();
+        zzbh.mo51821a(1);
+        f42486b = a.mo23604b(zzbh.mo51822b()).mo23603a();
+        FieldDescriptor.Builder a2 = FieldDescriptor.m7731a("languageCode");
+        zzbh zzbh2 = new zzbh();
+        zzbh2.mo51821a(2);
+        f42487c = a2.mo23604b(zzbh2.mo51822b()).mo23603a();
+    }
+
+    private zzfz() {
+    }
+
+    /* renamed from: a */
+    public final /* bridge */ /* synthetic */ void mo19314a(Object obj, Object obj2) throws IOException {
+        zzke zzke = (zzke) obj;
+        ObjectEncoderContext objectEncoderContext = (ObjectEncoderContext) obj2;
+        throw null;
+    }
+}
