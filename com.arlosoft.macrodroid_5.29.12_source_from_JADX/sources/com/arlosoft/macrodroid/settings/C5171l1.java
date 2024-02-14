@@ -1,0 +1,19 @@
+package com.arlosoft.macrodroid.settings;
+
+import androidx.preference.Preference;
+
+/* renamed from: com.arlosoft.macrodroid.settings.l1 */
+/* compiled from: R8$$SyntheticClass */
+public final /* synthetic */ class C5171l1 implements Preference.OnPreferenceClickListener {
+
+    /* renamed from: a */
+    public final /* synthetic */ C5141f2 f12955a;
+
+    public /* synthetic */ C5171l1(C5141f2 f2Var) {
+        this.f12955a = f2Var;
+    }
+
+    public final boolean onPreferenceClick(Preference preference) {
+        return this.f12955a.m19859Z1(preference);
+    }
+}

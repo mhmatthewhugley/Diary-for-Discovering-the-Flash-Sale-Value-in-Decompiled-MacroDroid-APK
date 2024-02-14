@@ -1,0 +1,34 @@
+package com.google.android.gms.internal.ads;
+
+import android.os.IBinder;
+import android.os.Parcel;
+import android.os.RemoteException;
+import com.google.android.gms.ads.internal.client.zze;
+
+/* compiled from: com.google.android.gms:play-services-ads-lite@@21.3.0 */
+public final class zzbsj extends zzarz implements zzbsl {
+    zzbsj(IBinder iBinder) {
+        super(iBinder, "com.google.android.gms.ads.internal.instream.client.IInstreamAdLoadCallback");
+    }
+
+    /* renamed from: A */
+    public final void mo42949A(int i) throws RemoteException {
+        Parcel y = mo41869y();
+        y.writeInt(i);
+        mo41865A1(2, y);
+    }
+
+    /* renamed from: C */
+    public final void mo42950C(zze zze) throws RemoteException {
+        Parcel y = mo41869y();
+        zzasb.m42227e(y, zze);
+        mo41865A1(3, y);
+    }
+
+    /* renamed from: U1 */
+    public final void mo42951U1(zzbsf zzbsf) throws RemoteException {
+        Parcel y = mo41869y();
+        zzasb.m42229g(y, zzbsf);
+        mo41865A1(1, y);
+    }
+}

@@ -1,0 +1,34 @@
+package com.google.android.gms.ads.internal.client;
+
+import android.os.Parcel;
+import android.os.Parcelable;
+import com.google.android.gms.ads.search.SearchAdRequest;
+import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
+import com.google.android.gms.common.internal.safeparcel.SafeParcelWriter;
+import com.google.android.gms.common.internal.safeparcel.SafeParcelable;
+
+@SafeParcelable.Class
+@SafeParcelable.Reserved
+/* compiled from: com.google.android.gms:play-services-ads-lite@@21.3.0 */
+public final class zzfb extends AbstractSafeParcelable {
+    public static final Parcelable.Creator<zzfb> CREATOR = new zzfc();
+    @SafeParcelable.Field
+
+    /* renamed from: a */
+    public final String f1971a;
+
+    public zzfb(SearchAdRequest searchAdRequest) {
+        this.f1971a = searchAdRequest.mo20719a();
+    }
+
+    public final void writeToParcel(Parcel parcel, int i) {
+        int a = SafeParcelWriter.m4563a(parcel);
+        SafeParcelWriter.m4586x(parcel, 15, this.f1971a, false);
+        SafeParcelWriter.m4564b(parcel, a);
+    }
+
+    @SafeParcelable.Constructor
+    zzfb(@SafeParcelable.Param String str) {
+        this.f1971a = str;
+    }
+}
